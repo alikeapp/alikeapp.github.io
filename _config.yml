@@ -8,6 +8,13 @@ baseurl: ""
 
 contact_email: oleksandr.solokha@gmail.com
 
+# Year of first publication, which is what a copyright line states — not the
+# current year. Kept fixed so it stays aligned with COPYRIGHT in the app repo's
+# tools/prepare_app_store_upload_bundle.py, which App Store Connect shows as
+# "2026 Oleksandr Solokha. Alike". Auto-generating this from `now` would silently
+# diverge from that field every January.
+copyright_year: 2026
+
 # No plugins. The sitemap is generated with Liquid in sitemap.xml and the SEO
 # tags live in _includes/seo-meta.html, which keeps the build usable with
 # actions/jekyll-build-pages and avoids plugin drift.
