@@ -369,10 +369,15 @@ a:hover { color: var(--accent); }
 
 /* ---------- screenshots ---------- */
 
+/* Five frames, one row. `auto-fit` with a 220px floor needs 1228px to lay out
+   five columns, but the content box is 1072px — so it silently dropped to four
+   and orphaned the fifth on its own line. The slot count is fixed by
+   _data/screens.yml, so state it: five explicit columns, each free to shrink
+   below the phone's 260px cap. */
 .shots {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: var(--s-xl);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--s-lg);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -441,6 +446,18 @@ a:hover { color: var(--accent); }
   .privacy { grid-template-columns: 1fr; }
   .privacy__art { order: -1; }
   .privacy__art img { width: min(220px, 65%); }
+
+  /* Five across stops being legible well before the layout breaks. Three, not
+     `auto-fit`: at this width auto-fit lands on four columns and strands the
+     fifth frame alone on the next row — the exact thing being fixed above.
+     Five items over three columns reads as 3 + 2. */
+  .shots { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 519px) {
+  /* One per row on a phone. Two columns would leave a lone fifth frame again,
+     and `.phone` already caps itself at 260px and centres. */
+  .shots { grid-template-columns: 1fr; }
 }
 
 /* ---------- buttons ---------- */
