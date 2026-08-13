@@ -36,9 +36,50 @@ if [ ! -d "$SITE" ]; then
   exit 1
 fi
 
-# Keep in step with `languages` in _config.yml. The directory is the URL path
-# (lowercase), which is why pt-BR appears here as pt-br.
-LOCALE_DIRS=("" "uk" "de" "fr" "es" "pt-br")
+# Derived from `languages` in _config.yml, not restated here: a second hand-kept
+# list is exactly the drift this script exists to catch, and it would fail
+# open — add a seventh locale, forget to add it here, and CI keeps checking six
+# and reports green on a missing page.
+#
+# The directory is the URL path, which is lowercase, so pt-BR becomes pt-br. The
+# default language lives at the root and has no directory at all.
+CONFIG="${SITE_CONFIG:-$(cd "$(dirname "$0")/.." && pwd)/_config.yml}"
+if [ ! -f "$CONFIG" ]; then
+  echo "::error::Cannot read $CONFIG to derive the locale list." >&2
+  exit 1
+fi
+
+languages_line=$(grep -E '^languages:[[:space:]]*\[' "$CONFIG" | head -1)
+default_lang=$(grep -E '^default_lang:' "$CONFIG" | head -1 | sed -E 's/^default_lang:[[:space:]]*//; s/[[:space:]]*(#.*)?$//')
+if [ -z "$languages_line" ] || [ -z "$default_lang" ]; then
+  echo "::error::_config.yml must define an inline 'languages: [...]' list and 'default_lang'." >&2
+  exit 1
+fi
+
+LOCALE_DIRS=()
+# `|| [ -n "$lang" ]` catches the last item: the stream has no trailing newline,
+# and a bare `read` discards an unterminated final line — which silently dropped
+# pt-BR, the last locale in the list, and still reported green.
+while IFS= read -r lang || [ -n "$lang" ]; do
+  [ -z "$lang" ] && continue
+  if [ "$lang" = "$default_lang" ]; then
+    LOCALE_DIRS+=("")
+  else
+    LOCALE_DIRS+=("$(printf '%s' "$lang" | tr '[:upper:]' '[:lower:]')")
+  fi
+done < <(printf '%s' "$languages_line" \
+           | sed -E 's/^languages:[[:space:]]*\[//; s/\][[:space:]]*(#.*)?$//' \
+           | tr ',' '\n' \
+           | sed -E 's/^[[:space:]]*//; s/[[:space:]]*$//; s/^["'"'"']//; s/["'"'"']$//')
+
+if [ "${#LOCALE_DIRS[@]}" -lt 2 ]; then
+  echo "::error::Derived only ${#LOCALE_DIRS[@]} locale(s) from $CONFIG; the parse is wrong." >&2
+  exit 1
+fi
+printf 'Locales from _config.yml (%d):' "${#LOCALE_DIRS[@]}"
+for d in "${LOCALE_DIRS[@]}"; do printf ' /%s' "$d"; done
+printf '\n'
+
 PAGES=("" "privacy" "terms" "support")
 
 echo "==> 1. Locale matrix"

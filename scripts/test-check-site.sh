@@ -71,6 +71,34 @@ expect_fail "a missing locale page fails" \
   "Missing page: /es/terms/" \
   'rm -rf "$S/es/terms"'
 
+# The matrix is derived from _config.yml rather than restated in the checker, so
+# these two pin the derivation itself. Without them the list can quietly go short
+# — it already did once, dropping the last locale and still reporting green.
+echo "the locale list is derived, not hardcoded"
+derived=$("$CHECK" "$SITE" 2>&1 | sed -n '1p')
+ran=$((ran + 1))
+if printf '%s' "$derived" | grep -qF "(6): / /uk /de /fr /es /pt-br"; then
+  printf 'ok    every locale in _config.yml reaches the matrix\n'
+else
+  printf 'FAIL  derived locale list is wrong: %s\n' "$derived" >&2
+  status=1
+fi
+
+# A seventh locale in _config.yml must make the checker demand its pages.
+SEVENTH="$WORK/_config-seventh.yml"
+sed -E 's/^languages:.*/languages: [en, uk, de, fr, es, pt-BR, ja]/' "$HERE/../_config.yml" > "$SEVENTH"
+ran=$((ran + 1))
+# Capture before matching: under `pipefail` the checker's own non-zero exit —
+# which is the point of this case — would decide the pipeline's status no matter
+# what grep found.
+seventh_out="$(SITE_CONFIG="$SEVENTH" "$CHECK" "$SITE" 2>&1)"
+if printf '%s' "$seventh_out" | grep -qF "Missing page: /ja/"; then
+  printf 'ok    adding a locale to _config.yml demands its pages\n'
+else
+  printf 'FAIL  a locale added to _config.yml was not checked — the matrix is not derived\n' >&2
+  status=1
+fi
+
 echo "==> 2. internal links"
 expect_fail "a dangling site-absolute link fails" \
   "Broken internal link '/de/nope/'" \
