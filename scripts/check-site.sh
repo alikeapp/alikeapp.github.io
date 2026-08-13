@@ -96,7 +96,8 @@ for loc in "${LOCALE_DIRS[@]}"; do
   done
 done
 
-# Resolve a site-absolute URL path to the file that serves it.
+# Resolve a site-absolute URL path to the file that serves it. Used by the
+# hreflang check, whose targets are always absolute.
 resolves() {
   local p="${1%%#*}"; p="${p%%\?*}"
   case "$p" in
@@ -109,19 +110,50 @@ resolves() {
   return 1
 }
 
+# Every reference a browser would actually fetch, extracted from one file.
+# Restricting this to href/src="/..." would leave real forms unchecked, and the
+# site uses two of them: the Terms pages link the Privacy Policy relatively
+# (../privacy/), and every <picture> carries a srcset.
+extract_refs() {
+  local f="$1"
+  grep -ohE '(href|src)="[^"]*"'  "$f" | sed -E 's/^(href|src)="//; s/"$//'
+  grep -ohE "(href|src)='[^']*'"  "$f" | sed -E "s/^(href|src)='//; s/'\$//"
+  # srcset is a comma-separated list of "<url> <descriptor>" pairs.
+  grep -ohE 'srcset="[^"]*"' "$f" | sed -E 's/^srcset="//; s/"$//' \
+    | tr ',' '\n' | sed -E 's/^[[:space:]]+//; s/[[:space:]].*$//'
+  # url(...) in a stylesheet or an inline <style> block.
+  grep -ohE "url\([\"']?[^)\"']+[\"']?\)" "$f" | sed -E "s/^url\([\"']?//; s/[\"']?\)\$//"
+}
+
+# Resolve a reference the way a browser would: relative to the page it appeared
+# on. `..` is left for the filesystem to collapse, which is the same thing the
+# URL would do because every page is served from its own directory.
+ref_resolves() {
+  local ref="${1%%#*}"; ref="${ref%%\?*}"
+  local from="$2" base
+  [ -z "$ref" ] && return 0
+  case "$ref" in
+    http://*|https://*|//*|mailto:*|tel:*|data:*|javascript:*) return 0 ;;
+    /*) base="$SITE$ref" ;;
+    *)  base="$(dirname "$from")/$ref" ;;
+  esac
+  [ -f "$base" ] && return 0
+  [ -f "${base%/}/index.html" ] && return 0
+  return 1
+}
+
 echo "==> 2. Internal links"
 broken=0
-while IFS= read -r html; do
-  # href/src values that start with a single slash: this site's own pages and assets.
+while IFS= read -r f; do
   while IFS= read -r target; do
     [ -z "$target" ] && continue
-    if ! resolves "$target"; then
-      fail "Broken internal link '$target' in ${html#$SITE}"
+    if ! ref_resolves "$target" "$f"; then
+      fail "Broken internal link '$target' in ${f#$SITE}"
       broken=$((broken + 1))
     fi
-  done < <(grep -ohE '(href|src)="/[^"]*"' "$html" | sed -E 's/^(href|src)="//; s/"$//' | sort -u)
-done < <(find "$SITE" -name '*.html')
-[ "$broken" -eq 0 ] && pass "every internal link resolves"
+  done < <(extract_refs "$f" | sort -u)
+done < <(find "$SITE" \( -name '*.html' -o -name '*.css' \) )
+[ "$broken" -eq 0 ] && pass "every href, src, srcset and url() resolves — absolute and relative"
 
 echo "==> 3. hreflang"
 while IFS= read -r html; do

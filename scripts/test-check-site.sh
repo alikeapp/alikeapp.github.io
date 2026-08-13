@@ -104,6 +104,21 @@ expect_fail "a dangling site-absolute link fails" \
   "Broken internal link '/de/nope/'" \
   'perl -0pi -e "s{href=\"/de/privacy/\"}{href=\"/de/nope/\"}" "$S/de/support/index.html"'
 
+# The Terms pages link the Privacy Policy relatively, and every <picture> carries
+# a srcset. Both were invisible to a check that only looked at href/src="/...".
+expect_fail "a dangling relative link fails" \
+  "Broken internal link '../nope/'" \
+  'perl -0pi -e "s{href=\"\.\./privacy/\"}{href=\"../nope/\"}" "$S/de/terms/index.html"'
+expect_fail "a dangling srcset candidate fails" \
+  "Broken internal link '/assets/img/nope.avif'" \
+  'perl -0pi -e "s{/assets/img/icon\.avif}{/assets/img/nope.avif}" "$S/index.html"'
+expect_fail "a dangling single-quoted href fails" \
+  "Broken internal link '/de/nope/'" \
+  'perl -0pi -e "s{href=\"/de/privacy/\"}{href=\x27/de/nope/\x27}" "$S/de/support/index.html"'
+expect_fail "a dangling stylesheet url() fails" \
+  "Broken internal link '/assets/img/nope.png'" \
+  'printf "\n.x { background: url(/assets/img/nope.png); }\n" >> "$S/assets/css/main.css"'
+
 echo "==> 3. hreflang"
 expect_fail "an x-default pointing at a translation fails" \
   "x-default is" \
