@@ -20,7 +20,16 @@ copyright_year: 2026
 # actions/jekyll-build-pages and avoids plugin drift.
 plugins: []
 
-languages: [en, uk]
+# The published locales, in the order the language switcher lists them. Every
+# entry needs a `_data/<lang>.yml`, a page directory, and a `defaults` scope
+# below; the build check in scripts/check-site.sh walks this list and fails on
+# a locale that is missing any of its four pages.
+#
+# `es` is deliberately one page serving two App Store listings, es-ES and es-MX.
+# The legal copy does not need the regional vocabulary split, so /es/ carries the
+# Spain wording and also advertises hreflang="es-419" for the Latin American
+# storefront. See _data/es.yml.
+languages: [en, uk, de, fr, es, pt-BR]
 default_lang: en
 
 exclude:
@@ -28,10 +37,17 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  # Build tooling, not content. Without this Jekyll copies the checker into the
+  # published site, where it is both a pointless public file and an input to its
+  # own third-party-host scan.
+  - scripts
 
 sass:
   style: compressed
 
+# URL paths are lowercase, the way the rest of the web writes them, while `lang`
+# keeps Apple's casing because it is also the `_data/` filename, the `<html lang>`
+# value and the hreflang tag. That is why the pt-BR scope path and its lang differ.
 defaults:
   - scope:
       path: ""
@@ -42,3 +58,19 @@ defaults:
       path: "uk"
     values:
       lang: uk
+  - scope:
+      path: "de"
+    values:
+      lang: de
+  - scope:
+      path: "fr"
+    values:
+      lang: fr
+  - scope:
+      path: "es"
+    values:
+      lang: es
+  - scope:
+      path: "pt-br"
+    values:
+      lang: pt-BR

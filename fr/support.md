@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Підтримка
-permalink: /uk/support/
-lang: uk
+title: Assistance
+permalink: /fr/support/
+lang: fr
 page_key: support
-description: "Підтримка Alike. Без облікових записів і систем тікетів — напишіть листа, і ви отримаєте відповідь."
+description: "Assistance pour Alike. Aucun compte et aucun système de tickets — écrivez-nous et vous aurez une réponse."
 ---
 
 {%- assign t = site.data[page.lang] %}

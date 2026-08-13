@@ -1,6 +1,6 @@
 ---
 layout: home
-lang: uk
+lang: pt-BR
 page_key: home
-permalink: /uk/
+permalink: /pt-br/
 ---

@@ -3,7 +3,7 @@ layout: page
 title: Terms of Use
 permalink: /terms/
 lang: en
-alt_url: /uk/terms/
+page_key: terms
 description: "Terms of Use for Alike, including the Alike Pro subscription, billing, renewal, trial, and cancellation."
 ---
 

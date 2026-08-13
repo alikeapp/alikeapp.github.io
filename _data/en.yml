@@ -1,8 +1,9 @@
 locale: en
 locale_tag: en
+# The language's name in itself. It is what the switcher shows, so it has to be
+# readable by someone who cannot read the page they are currently on.
 locale_name: English
-switch_to: Українською
-switch_url: /uk/
+og_locale: en_US
 home_url: /
 privacy_url: /privacy/
 terms_url: /terms/
@@ -19,6 +20,7 @@ nav:
   faq: FAQ
   support: Support
   menu: Menu
+  language: Language
   skip: Skip to content
 
 hero:
@@ -64,8 +66,10 @@ features:
       body: "Reviewed, Remaining, Selected, and Estimated Savings, plus a cleanup history grouped by month."
     - title: A layout that fits you
       body: "An adaptive grid that switches between a roomy single column and a denser layout, remembered between launches."
-    - title: Two languages, Dark Mode
-      body: "Full English and Ukrainian throughout, and complete Dark Mode support."
+    # The app ships seven languages as of the Tier 1 localization work. Keep this
+    # count in step with the catalogs, not with the languages this site is in.
+    - title: Seven languages, Dark Mode
+      body: "English, Ukrainian, German, French, Spanish, Latin American Spanish, and Brazilian Portuguese throughout, and complete Dark Mode support."
 
 screenshots:
   title: A look inside
@@ -145,8 +149,20 @@ support:
   before_body: "The in-app guide covers most of what people ask. Open Alike, go to Settings, then How to Use."
   bug_title: Reporting a bug
   bug_body: "Please describe what you did, what you expected, and what happened instead. Do not send photos from your library — we do not need them and would rather not receive them."
+  details_title: "Useful details to include:"
+  details:
+    - "Your iPhone model and iOS version"
+    - "The Alike version, shown at the bottom of Settings"
+    - "What you did, what you expected, and what happened instead"
+    - "Whether the photo library permission is set to Full Access or Limited Access"
   privacy_title: Privacy questions
   privacy_body: "Alike has no server and collects nothing, so there is no account data to export or delete. The Privacy Policy explains this in full, and Delete Alike Data in Settings erases everything stored on your device."
+  subs_title: Subscriptions and refunds
+  subs_body: "Alike Pro is sold by Apple. Subscriptions, cancellations, and refunds are handled entirely through your Apple Account, and we cannot cancel or refund on your behalf."
+  subs_manage: "To manage or cancel: iOS Settings → your name → Subscriptions"
+  subs_refund_prefix: "To request a refund:"
+  subs_refund_link: "Apple's refund process"
+  subs_restore: "To restore a purchase on a new device: Alike Settings → Restore Purchases"
 
 footer:
   tagline: "Find visually similar photos. Keep the best. Clear the rest."

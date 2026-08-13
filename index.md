@@ -1,6 +1,6 @@
 ---
 layout: home
 lang: en
+page_key: home
 permalink: /
-alt_url: /uk/
 ---

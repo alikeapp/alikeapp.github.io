@@ -12,24 +12,31 @@
 <link rel="canonical" href="{{ canonical }}">
 
 {%- comment -%}
-Pair every page with its translation so search engines serve the right language.
-x-default points at English.
+Pair every page with its translations so search engines serve the right language.
+
+The set is derived rather than written out: `page.page_key` says which of the four
+documents this is, and every _data/<lang>.yml carries that document's URL under
+`<page_key>_url`. So one loop over site.languages covers all six locales, and a
+seventh would need no change here. x-default points at the default language.
+
+`hreflang_alt` is for a locale that legitimately answers to more than one tag —
+/es/ serves both the es-ES and es-MX storefronts, so it also claims es-419.
 {%- endcomment -%}
-{%- if page.alt_url %}
-  {%- if page.lang == "en" %}
-<link rel="alternate" hreflang="en" href="{{ page.url | absolute_url }}">
-<link rel="alternate" hreflang="uk" href="{{ page.alt_url | absolute_url }}">
-<link rel="alternate" hreflang="x-default" href="{{ page.url | absolute_url }}">
-  {%- else %}
-<link rel="alternate" hreflang="uk" href="{{ page.url | absolute_url }}">
-<link rel="alternate" hreflang="en" href="{{ page.alt_url | absolute_url }}">
-<link rel="alternate" hreflang="x-default" href="{{ page.alt_url | absolute_url }}">
-  {%- endif %}
+{%- if page.page_key %}
+  {%- assign url_key = page.page_key | append: "_url" %}
+  {%- for lang in site.languages %}
+    {%- assign d = site.data[lang] %}
+<link rel="alternate" hreflang="{{ d.locale_tag }}" href="{{ d[url_key] | absolute_url }}">
+    {%- for extra in d.hreflang_alt %}
+<link rel="alternate" hreflang="{{ extra }}" href="{{ d[url_key] | absolute_url }}">
+    {%- endfor %}
+  {%- endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ site.data[site.default_lang][url_key] | absolute_url }}">
 {%- endif %}
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:locale" content="{% if page.lang == 'uk' %}uk_UA{% else %}en_US{% endif %}">
+<meta property="og:locale" content="{{ t.og_locale }}">
 <meta property="og:title" content="{{ page_title }}">
 <meta property="og:description" content="{{ page_description | strip_html | normalize_whitespace }}">
 <meta property="og:url" content="{{ canonical }}">
@@ -53,7 +60,7 @@ x-default points at English.
   "description": {{ t.meta.description | jsonify }},
   "url": {{ canonical | jsonify }},
   "image": {{ '/assets/img/og-image.jpg' | absolute_url | jsonify }},
-  "inLanguage": ["en", "uk"],
+  "inLanguage": {{ site.languages | jsonify }},
   "author": {
     "@type": "Person",
     "name": "Oleksandr Solokha"

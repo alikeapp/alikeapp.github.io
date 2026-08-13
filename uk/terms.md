@@ -3,7 +3,7 @@ layout: page
 title: Умови використання
 permalink: /uk/terms/
 lang: uk
-alt_url: /terms/
+page_key: terms
 description: "Умови використання Alike, зокрема підписка Alike Pro, оплата, поновлення, пробний період і скасування."
 ---
 

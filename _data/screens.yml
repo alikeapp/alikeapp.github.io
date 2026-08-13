@@ -7,6 +7,16 @@
 # No layout or CSS changes are needed.
 #
 # `shot` refers to the numbered row in Docs/screenshot-shot-list.md.
+#
+# Captions are keyed by locale *inside* each entry, because the frame and its
+# screenshot are shared and only the words change. Every locale in _config.yml
+# `languages` needs a block in every entry; scripts/check-site.sh fails the build
+# on a caption that renders empty.
+#
+# The screenshots themselves are the English captures in all locales. The app UI
+# in them is English; that is a known gap, not an oversight. Replacing them with
+# per-locale captures is a screenshot-pipeline job (tools/import_device_screenshots.py),
+# not a site change.
 
 site:
   - shot: 1
@@ -17,6 +27,18 @@ site:
     uk:
       caption: Почати сканування
       alt: "Вкладка сканера Alike, готова почати сканування."
+    de:
+      caption: Einen Scan starten
+      alt: "Der Scanner-Tab von Alike, bereit für einen Scan."
+    fr:
+      caption: Lancer une analyse
+      alt: "L'onglet Analyse d'Alike, prêt à lancer une analyse."
+    es:
+      caption: Iniciar un análisis
+      alt: "La pestaña de análisis de Alike, lista para empezar."
+    pt-BR:
+      caption: Começar uma análise
+      alt: "A aba de análise do Alike, pronta para começar."
 
   - shot: 3
     image: cleanup-queue
@@ -26,6 +48,18 @@ site:
     uk:
       caption: Робота з чергою
       alt: "Вкладка прибирання зі списком груп схожих фото та позначками перегляду."
+    de:
+      caption: Die Liste abarbeiten
+      alt: "Der Aufräumen-Tab mit Gruppen ähnlicher Fotos und Status-Markierungen."
+    fr:
+      caption: Avancer dans la liste
+      alt: "L'onglet Nettoyage listant des groupes de photos similaires avec leurs badges."
+    es:
+      caption: Avanzar por la lista
+      alt: "La pestaña de limpieza con grupos de fotos similares y sus marcas de revisión."
+    pt-BR:
+      caption: Percorrer a fila
+      alt: "A aba de limpeza listando grupos de fotos parecidas com selos de revisão."
 
   - shot: 4
     image: cluster-details
@@ -35,6 +69,18 @@ site:
     uk:
       caption: Найкращий знімок уже обрано
       alt: "Група схожих фото з виділеним найкращим знімком та обраними іншими."
+    de:
+      caption: Beste Aufnahme, schon gewählt
+      alt: "Eine Gruppe ähnlicher Fotos mit hervorgehobener bester Aufnahme und ausgewählten übrigen."
+    fr:
+      caption: La meilleure prise, déjà choisie
+      alt: "Un groupe de photos similaires avec la meilleure prise mise en avant et les autres sélectionnées."
+    es:
+      caption: La mejor toma, ya elegida
+      alt: "Un grupo de fotos similares con la mejor toma destacada y las demás seleccionadas."
+    pt-BR:
+      caption: A melhor foto, já escolhida
+      alt: "Um grupo de fotos parecidas com a melhor em destaque e as outras selecionadas."
 
   - shot: 5
     image: comparison-review
@@ -44,6 +90,18 @@ site:
     uk:
       caption: Порівняння поруч
       alt: "Дві візуально схожі фотографії, показані поруч для порівняння."
+    de:
+      caption: Nebeneinander vergleichen
+      alt: "Zwei visuell ähnliche Fotos nebeneinander im Vergleich."
+    fr:
+      caption: Comparer côte à côte
+      alt: "Deux photos visuellement similaires comparées côte à côte."
+    es:
+      caption: Comparar en paralelo
+      alt: "Dos fotos visualmente similares comparadas una al lado de la otra."
+    pt-BR:
+      caption: Comparar lado a lado
+      alt: "Duas fotos visualmente parecidas comparadas lado a lado."
 
   - shot: 7
     image: cleanup-progress
@@ -53,3 +111,15 @@ site:
     uk:
       caption: Скільки місця звільнено
       alt: "Екран успішного прибирання з обсягом звільненого місця."
+    de:
+      caption: Sieh, was frei geworden ist
+      alt: "Ein Abschlussbildschirm mit dem freigewordenen Speicherplatz."
+    fr:
+      caption: Voyez l'espace récupéré
+      alt: "Un écran de fin de nettoyage indiquant l'espace de stockage libéré."
+    es:
+      caption: Mira cuánto liberaste
+      alt: "Una pantalla de limpieza completada con el espacio de almacenamiento liberado."
+    pt-BR:
+      caption: Veja quanto você liberou
+      alt: "Uma tela de limpeza concluída mostrando o espaço de armazenamento liberado."

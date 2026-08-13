@@ -3,7 +3,7 @@ layout: page
 title: Політика конфіденційності
 permalink: /uk/privacy/
 lang: uk
-alt_url: /privacy/
+page_key: privacy
 description: "Як Alike працює з вашими фотографіями: аналіз на пристрої, нічого не завантажується, без аналітики, і видалення лише з вашого підтвердження."
 ---
 

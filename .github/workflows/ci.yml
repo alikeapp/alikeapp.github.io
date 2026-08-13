@@ -1,0 +1,38 @@
+name: Check site
+
+# Nothing used to run on pull requests: the third-party-host check only fired
+# after a merge to main, which meant the first sign of a broken locale, a dead
+# link or a Terms page that lost its EULA reference was a failed deploy. This
+# runs the same gate as pages.yml, before the merge instead of after it.
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: check-site-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # The same action pages.yml deploys with, so a page that builds here builds
+      # there. No Ruby setup: the site declares `plugins: []` on purpose.
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      # The gate is only worth its CI minutes if it fails when it should, so its
+      # own regression tests run first.
+      - name: Test the checker
+        run: ./scripts/test-check-site.sh ./_site
+
+      - name: Check the rendered site
+        run: ./scripts/check-site.sh ./_site
