@@ -1,4 +1,5 @@
 {%- assign t = site.data[page.lang] -%}
+{%- assign url_key = page.page_key | default: "home" | append: "_url" -%}
 
 <footer class="site-footer">
   <div class="wrap site-footer__inner">
@@ -9,7 +10,22 @@
       <a href="{{ t.terms_url | relative_url }}">{{ t.footer.terms }}</a>
       <a href="{{ t.support_url | relative_url }}">{{ t.footer.support }}</a>
       <a href="mailto:{{ site.contact_email }}">{{ t.footer.contact }}</a>
-      <a href="{{ page.alt_url | default: t.switch_url | relative_url }}" lang="{% if page.lang == 'en' %}uk{% else %}en{% endif %}" rel="alternate">{{ t.switch_to }}</a>
+    </nav>
+
+    {%- comment -%}
+    The footer lists every language flat rather than behind a disclosure: this is
+    the bottom of the page, there is room, and a reader who scrolled here looking
+    for their language should not have to open anything.
+    {%- endcomment -%}
+    <nav class="site-footer__langs" aria-label="{{ t.nav.language }}">
+      {%- for lang in site.languages %}
+        {%- assign d = site.data[lang] %}
+        {%- if lang == page.lang %}
+      <span class="site-footer__lang site-footer__lang--current" aria-current="true" lang="{{ d.locale_tag }}">{{ d.locale_name }}</span>
+        {%- else %}
+      <a class="site-footer__lang" href="{{ d[url_key] | relative_url }}" lang="{{ d.locale_tag }}" hreflang="{{ d.locale_tag }}" rel="alternate">{{ d.locale_name }}</a>
+        {%- endif %}
+      {%- endfor %}
     </nav>
 
     <p class="site-footer__legal">

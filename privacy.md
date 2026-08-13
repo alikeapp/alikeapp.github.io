@@ -3,7 +3,7 @@ layout: page
 title: Privacy Policy
 permalink: /privacy/
 lang: en
-alt_url: /uk/privacy/
+page_key: privacy
 description: "How Alike handles your photos: on-device analysis, nothing uploaded, no analytics, and deletion only ever with your confirmation."
 ---
 

@@ -1,5 +1,11 @@
 {%- assign t = site.data[page.lang] -%}
 {%- assign home = t.home_url | relative_url -%}
+{%- comment -%}
+The switcher keeps the reader on the same document rather than dropping them on
+the home page: page_key names the document, and each locale's data file holds
+that document's URL under <page_key>_url.
+{%- endcomment -%}
+{%- assign url_key = page.page_key | default: "home" | append: "_url" -%}
 
 <a class="skip-link" href="#main">{{ t.nav.skip }}</a>
 
@@ -32,8 +38,26 @@
         <li class="nav__anchor"><a href="{{ home }}#pricing">{{ t.nav.pricing }}</a></li>
         {%- endif %}
         <li><a href="{{ t.support_url | relative_url }}">{{ t.nav.support }}</a></li>
+        {%- comment -%}
+        Six locales do not fit the one-link toggle this replaced, and the site
+        ships no JavaScript, so the switcher is a <details> disclosure — the same
+        CSS-only pattern the FAQ uses. Each language is named in itself, which is
+        the only label a reader who cannot read the current page can follow. No
+        flags: they are a hosted asset the third-party-host check would reject,
+        and they name countries rather than languages.
+        {%- endcomment -%}
         <li class="nav__lang">
-          <a href="{{ page.alt_url | default: t.switch_url | relative_url }}" lang="{% if page.lang == 'en' %}uk{% else %}en{% endif %}" rel="alternate">{{ t.switch_to }}</a>
+          <details class="lang">
+            <summary class="lang__current" aria-label="{{ t.nav.language }}">{{ t.locale_name }}</summary>
+            <ul class="lang__list">
+              {%- for lang in site.languages %}
+                {%- unless lang == page.lang %}
+                  {%- assign d = site.data[lang] %}
+              <li><a href="{{ d[url_key] | relative_url }}" lang="{{ d.locale_tag }}" hreflang="{{ d.locale_tag }}" rel="alternate">{{ d.locale_name }}</a></li>
+                {%- endunless %}
+              {%- endfor %}
+            </ul>
+          </details>
         </li>
       </ul>
     </nav>

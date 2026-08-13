@@ -191,14 +191,62 @@ a:hover { color: var(--accent); }
   font-weight: 500;
 }
 .nav__list a:hover { color: var(--text); }
-.nav__lang a {
+
+/* Language switcher. Six locales are too many for the single pill-shaped link
+   this replaced, and the site ships no JavaScript, so it is a <details>
+   disclosure — the same mechanism the FAQ uses. The summary keeps the old pill
+   styling, so the header looks unchanged until it is opened. */
+.lang { position: relative; }
+.lang__current {
   color: var(--accent-strong);
   font-weight: 600;
+  font-size: 15px;
   padding: var(--s-xxs) var(--s-sm);
+  padding-inline-end: calc(var(--s-sm) + 12px);
   border: 1px solid var(--border);
   border-radius: 999px;
   white-space: nowrap;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
 }
+.lang__current::-webkit-details-marker { display: none; }
+.lang__current::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: var(--s-sm);
+  top: calc(50% - 3px);
+  width: 6px;
+  height: 6px;
+  border-inline-end: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.18s ease;
+}
+.lang[open] .lang__current::after { transform: rotate(-135deg); }
+
+.lang__list {
+  position: absolute;
+  inset-inline-end: 0;
+  top: calc(100% + var(--s-xs));
+  z-index: 20;
+  min-width: 100%;
+  margin: 0;
+  padding: var(--s-xxs);
+  list-style: none;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 12%);
+}
+.lang__list li { margin: 0; }
+.lang__list a {
+  display: block;
+  padding: var(--s-xxs) var(--s-sm);
+  border-radius: var(--r-sm);
+  white-space: nowrap;
+}
+.lang__list a:hover { background: var(--bg-tint); color: var(--text); }
 
 /* Narrow screens drop the in-page anchors: those sections are directly below
    the fold and the footer repeats every link, so Support and the language
@@ -664,6 +712,20 @@ a:hover { color: var(--accent); }
 }
 .site-footer__links a { color: var(--text-muted); text-decoration: none; font-size: 15px; }
 .site-footer__links a:hover { color: var(--accent-strong); text-decoration: underline; }
+
+/* All six languages, flat. This is the bottom of the page, there is room, and a
+   reader who scrolled here looking for their language should not have to open a
+   disclosure to find it. */
+.site-footer__langs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-xs) var(--s-md);
+  margin-bottom: var(--s-md);
+}
+.site-footer__lang { color: var(--text-muted); text-decoration: none; font-size: 14px; }
+a.site-footer__lang:hover { color: var(--accent-strong); text-decoration: underline; }
+.site-footer__lang--current { color: var(--text); font-weight: 600; }
+
 .site-footer__legal { margin: 0; color: var(--text-muted); font-size: 13px; }
 .site-footer__built { display: block; }
 
@@ -679,7 +741,7 @@ a:hover { color: var(--accent); }
 }
 
 @media print {
-  .site-header, .site-footer__links, .hero__art, .skip-link { display: none; }
+  .site-header, .site-footer__links, .site-footer__langs, .hero__art, .skip-link { display: none; }
   body { background: #fff; color: #000; }
   .faq__item[open] .faq__a, .faq__a { display: block; }
 }

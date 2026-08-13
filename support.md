@@ -3,7 +3,7 @@ layout: page
 title: Support
 permalink: /support/
 lang: en
-alt_url: /uk/support/
+page_key: support
 description: "Support for Alike. No account and no ticket system — email us and you will get a reply."
 ---
 
@@ -27,25 +27,21 @@ description: "Support for Alike. No account and no ticket system — email us an
 
 {{ t.support.bug_body }}
 
-Useful details to include:
+{{ t.support.details_title }}
 
-- Your iPhone model and iOS version
-- The Alike version, shown at the bottom of Settings
-- What you did, what you expected, and what happened instead
-- Whether the photo library permission is set to Full Access or Limited Access
-
+{% for item in t.support.details %}- {{ item }}
+{% endfor %}
 ## {{ t.support.privacy_title }}
 
 {{ t.support.privacy_body }}
 
-- [Privacy Policy]({{ t.privacy_url | relative_url }})
-- [Terms of Use]({{ t.terms_url | relative_url }})
+- [{{ t.footer.privacy }}]({{ t.privacy_url | relative_url }})
+- [{{ t.footer.terms }}]({{ t.terms_url | relative_url }})
 
-## Subscriptions and refunds
+## {{ t.support.subs_title }}
 
-Alike Pro is sold by Apple. Subscriptions, cancellations, and refunds are handled
-entirely through your Apple Account, and we cannot cancel or refund on your behalf.
+{{ t.support.subs_body }}
 
-- To manage or cancel: iOS Settings → your name → Subscriptions
-- To request a refund: [Apple's refund process](https://support.apple.com/HT204084)
-- To restore a purchase on a new device: Alike Settings → Restore Purchases
+- {{ t.support.subs_manage }}
+- {{ t.support.subs_refund_prefix }} [{{ t.support.subs_refund_link }}](https://support.apple.com/HT204084)
+- {{ t.support.subs_restore }}

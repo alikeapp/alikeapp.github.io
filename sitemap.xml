@@ -9,9 +9,16 @@ layout: null
 {%- if page.permalink and page.layout and page.layout != "null" %}
   <url>
     <loc>{{ page.url | absolute_url }}</loc>
-    {%- if page.alt_url %}
-    <xhtml:link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url | absolute_url }}"/>
-    <xhtml:link rel="alternate" hreflang="{% if page.lang == 'en' %}uk{% else %}en{% endif %}" href="{{ page.alt_url | absolute_url }}"/>
+    {%- if page.page_key %}
+    {%- assign url_key = page.page_key | append: "_url" %}
+    {%- for lang in site.languages %}
+    {%- assign d = site.data[lang] %}
+    <xhtml:link rel="alternate" hreflang="{{ d.locale_tag }}" href="{{ d[url_key] | absolute_url }}"/>
+    {%- for extra in d.hreflang_alt %}
+    <xhtml:link rel="alternate" hreflang="{{ extra }}" href="{{ d[url_key] | absolute_url }}"/>
+    {%- endfor %}
+    {%- endfor %}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.data[site.default_lang][url_key] | absolute_url }}"/>
     {%- endif %}
     <changefreq>monthly</changefreq>
   </url>

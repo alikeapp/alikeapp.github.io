@@ -3,7 +3,7 @@ layout: page
 title: Підтримка
 permalink: /uk/support/
 lang: uk
-alt_url: /support/
+page_key: support
 description: "Підтримка Alike. Без облікових записів і систем тікетів — напишіть листа, і ви отримаєте відповідь."
 ---
 
@@ -27,26 +27,21 @@ description: "Підтримка Alike. Без облікових записів
 
 {{ t.support.bug_body }}
 
-Корисні деталі, які варто вказати:
+{{ t.support.details_title }}
 
-- Модель вашого iPhone і версію iOS
-- Версію Alike, показану внизу Налаштувань
-- Що ви робили, чого очікували та що сталося натомість
-- Чи встановлено дозвіл на медіатеку як повний або обмежений доступ
-
+{% for item in t.support.details %}- {{ item }}
+{% endfor %}
 ## {{ t.support.privacy_title }}
 
 {{ t.support.privacy_body }}
 
-- [Політика конфіденційності]({{ t.privacy_url | relative_url }})
-- [Умови використання]({{ t.terms_url | relative_url }})
+- [{{ t.footer.privacy }}]({{ t.privacy_url | relative_url }})
+- [{{ t.footer.terms }}]({{ t.terms_url | relative_url }})
 
-## Підписки та повернення коштів
+## {{ t.support.subs_title }}
 
-Alike Pro продає Apple. Підписки, скасування та повернення коштів повністю
-здійснюються через ваш Apple Account, і ми не можемо скасувати підписку чи
-повернути кошти замість вас.
+{{ t.support.subs_body }}
 
-- Керування або скасування: Налаштування iOS → ваше ім'я → «Підписки»
-- Запит на повернення коштів: [процедура Apple](https://support.apple.com/HT204084)
-- Відновлення покупки на новому пристрої: Налаштування Alike → «Відновити покупки»
+- {{ t.support.subs_manage }}
+- {{ t.support.subs_refund_prefix }} [{{ t.support.subs_refund_link }}](https://support.apple.com/HT204084)
+- {{ t.support.subs_restore }}
