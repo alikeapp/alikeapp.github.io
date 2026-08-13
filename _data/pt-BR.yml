@@ -1,0 +1,177 @@
+locale: pt-BR
+locale_tag: pt-BR
+locale_name: Português (Brasil)
+og_locale: pt_BR
+# The URL path is lowercase (/pt-br/) the way the rest of the web writes paths,
+# while the tag keeps Apple's casing because it is also the App Store locale.
+home_url: /pt-br/
+privacy_url: /pt-br/privacy/
+terms_url: /pt-br/terms/
+support_url: /pt-br/support/
+
+# Registro: "você", igual ao aviso de assinatura em
+# Docs/legal/subscription-disclosure.md. O vocabulário de sistema segue a
+# terminologia da Apple em português do Brasil — "Apagados recentemente",
+# "capturas de tela", "Ajustes".
+meta:
+  title: "Alike — encontre fotos visualmente parecidas no seu iPhone"
+  description: "O Alike encontra e agrupa fotos visualmente parecidas na sua fototeca com análise no próprio aparelho, escolhe a melhor foto e ajuda você a apagar o resto. Sem conta, sem servidor, nada sai do seu iPhone."
+
+nav:
+  features: Recursos
+  privacy: Privacidade
+  pricing: Preços
+  faq: Perguntas
+  support: Suporte
+  menu: Menu
+  language: Idioma
+  skip: Ir para o conteúdo
+
+hero:
+  eyebrow: iPhone
+  headline: "Sua fototeca, sem as quase duplicadas."
+  subhead: "O Alike agrupa as fotos que se parecem, escolhe a melhor de cada grupo e ajuda você a apagar o resto — sem que uma única foto saia do seu aparelho."
+  badge: Em breve na App Store
+  badge_note: "Download gratuito, com assinatura Pro opcional."
+  trust: "Sem conta. Sem servidor. Nada é enviado."
+  image_alt: "O mascote do Alike, um personagem roxo segurando uma lupa sobre duas fotos."
+
+steps:
+  title: Como funciona
+  subtitle: "Três passos, e em todos eles o controle é seu."
+  items:
+    - title: Analisar
+      body: "O Alike compara sua fototeca com o framework Vision da Apple, inteiramente no seu aparelho. Fotos próximas em tempo e lugar são comparadas; capturas de tela ficam de fora, a menos que você peça para incluí-las."
+      image: step-scan
+      image_alt: "O mascote procurando entre fotos com uma lupa."
+    - title: Revisar
+      body: "Cada grupo abre com a melhor foto já escolhida, então você decide em segundos. Manter só a melhor, selecionar tudo exceto a melhor, ou escolher na mão."
+      image: step-review
+      image_alt: "O mascote comemorando ao lado de uma melhor foto em destaque."
+    - title: Limpar
+      body: "Você confirma e as fotos escolhidas vão para \"Apagados recentemente\", onde o iOS as guarda por cerca de 30 dias. Nada é removido sem você dizer."
+      image: step-clean
+      image_alt: "O mascote comemorando ao lado de uma fototeca organizada."
+
+features:
+  title: O que você ganha
+  items:
+    - title: Análise no aparelho
+      body: "Cada comparação usa o framework Vision da Apple, localmente. Não há envio, nem fila, nem processamento na nuvem."
+    - title: Três níveis de sensibilidade
+      body: "Baixo, médio ou alto. Aperte o limite quando quiser só fotos quase idênticas, ou solte para pegar mais."
+    - title: Detecção da melhor foto
+      body: "Uma escolha determinística da foto mais forte de cada grupo, para que sempre haja uma opção sensata a manter."
+    - title: Revisão guiada
+      body: "Avance grupo a grupo com \"Manter só a melhor\", \"Selecionar tudo exceto a melhor\" e \"Limpar seleção\"."
+    - title: Selos de revisão
+      body: "Nova, em revisão, revisada e a revisar depois de uma nova análise. Você sempre sabe onde parou."
+    - title: Progresso e espaço liberado
+      body: "Revisadas, restantes, selecionadas e economia estimada, além de um histórico de limpeza agrupado por mês."
+    - title: Um layout que combina com você
+      body: "Uma grade adaptável que alterna entre uma coluna espaçosa e uma visão mais densa, lembrada entre as aberturas."
+    - title: Sete idiomas, modo escuro
+      body: "Inglês, ucraniano, alemão, francês, espanhol, espanhol da América Latina e português do Brasil em todo o app, com modo escuro completo."
+
+screenshots:
+  title: Uma olhada por dentro
+  subtitle: "Telas do app."
+  pending: "As capturas estão sendo preparadas antes do lançamento."
+
+privacy:
+  title: Privacidade é o ponto inteiro
+  subtitle: "Limpar fotos significa entregar a um app a sua coleção mais pessoal. O Alike foi feito para que ela nunca precise sair das suas mãos."
+  image_alt: "O mascote descansando ao lado de uma fototeca arrumada e finalizada."
+  claims:
+    - title: A análise roda no seu aparelho
+      body: "O framework Vision da Apple compara suas fotos localmente. Não existe servidor do Alike para onde enviar qualquer coisa."
+    - title: As fotos nunca são enviadas
+      body: "Nenhuma foto, miniatura ou impressão de características sai do seu aparelho."
+    - title: Sem análise de uso, sem rastreamento
+      body: "Sem eventos de uso, sem identificadores de publicidade, sem SDK de relatório de falhas, sem cookies. O app não faz nenhuma requisição de rede por conta própria."
+    - title: Apagar é sempre decisão sua
+      body: "Toda limpeza precisa da sua confirmação, o iOS pergunta uma segunda vez, e as fotos vão para \"Apagados recentemente\"."
+  cta: Ler a política de privacidade completa
+
+pricing:
+  title: Preços
+  subtitle: "O Alike é gratuito para baixar. O Alike Pro tira os limites."
+  free:
+    name: Alike Free
+    price: Grátis
+    period: ""
+    features:
+      - "3 análises por mês"
+      - "Revisão guiada com melhor foto"
+      - "Ordenação e histórico de limpeza"
+      - "Limpar uma foto por vez"
+  pro:
+    name: Alike Pro
+    badge: Recomendado
+    price_note: "Planos anual e mensal, na sua moeda local."
+    trial: 7 dias de teste grátis no plano anual
+    features:
+      - "Análises ilimitadas"
+      - "Limpar seleções inteiras de uma vez"
+      - "Limpeza de capturas de tela"
+      - "Limpeza de fotos tremidas"
+      - "Filtros avançados"
+      - "Lembretes de limpeza personalizados"
+  # Idêntico palavra por palavra ao aviso da paywall, cuja fonte é
+  # Docs/legal/subscription-disclosure.md. PurchasesUITests/SubscriptionDisclosureTests
+  # trava a versão do app; esta página não pode virar uma terceira cópia divergente.
+  disclosure_renewal: "As assinaturas são renovadas automaticamente, a menos que sejam canceladas pelo menos 24 horas antes do fim do período atual. A cobrança é feita na sua conta Apple."
+  disclosure_trial: "O plano anual inclui 7 dias de teste grátis para novos assinantes qualificados. A cobrança começa quando o teste termina, a menos que você cancele pelo menos 24 horas antes. Gerencie ou cancele quando quiser nos Ajustes do iOS."
+
+faq:
+  title: Perguntas comuns
+  items:
+    - q: O Alike envia minhas fotos para algum lugar?
+      a: "Não. Toda a comparação acontece no seu aparelho com o framework Vision da Apple, e o app não faz nenhuma requisição de rede por conta própria. A única atividade de saída é feita pela Apple quando você compra ou restaura uma assinatura."
+    - q: O Alike apaga fotos sem perguntar?
+      a: "Nunca. Você seleciona o que remover, o Alike pede confirmação, e o iOS mostra a própria confirmação antes de apagar qualquer coisa. As fotos apagadas vão para \"Apagados recentemente\", onde o iOS as guarda por cerca de 30 dias."
+    - q: Preciso de uma conta?
+      a: "Não. O Alike não tem conta, nem login, nem servidor. Você abre o app e começa a analisar."
+    - q: O que o Alike acessa de fato?
+      a: "Sua fototeca, solicitada uma vez no começo. Você pode dar acesso completo ou acesso limitado e escolher quais fotos o Alike pode ver, e mudar isso quando quiser nos Ajustes do iOS. A permissão de notificações só é pedida se você ativar o lembrete semanal de limpeza."
+    - q: Como ele decide quais fotos são parecidas?
+      a: "Cada foto recebe uma impressão numérica de características do framework Vision. Fotos próximas na data e no local da captura são comparadas, e uma foto só entra em um grupo se for parecida com todas as que já estão nele. O nível de sensibilidade define o quanto de parecido é suficiente."
+    - q: O que é a melhor foto?
+      a: "Uma escolha determinística da foto mais forte de cada grupo, para que sempre haja uma opção sensata a manter. Você sempre pode trocar."
+    - q: Como cancelo uma assinatura?
+      a: "Nos Ajustes do iOS, toque no seu nome e depois em \"Assinaturas\". Cancelar interrompe as renovações futuras e você mantém o acesso até o fim do período pago. Assinaturas e reembolsos são tratados pela Apple, não por nós."
+    - q: Posso apagar tudo o que o Alike guardou?
+      a: "Sim. Ajustes, depois \"Dados e Privacidade\", depois \"Apagar dados do Alike\". Isso apaga resultados de análise, histórico de limpeza e preferências, e não toca nas suas fotos, no acesso às fotos nem na assinatura."
+
+support:
+  title: Suporte
+  subtitle: "Sem conta, sem sistema de chamados. Mande um e-mail e você terá resposta."
+  contact_title: Fale com a gente
+  contact_body: "E-mail é o jeito mais rápido de nos alcançar. Inclua sua versão do iOS, seu aparelho e o que você esperava que acontecesse."
+  response: "A resposta costuma chegar em poucos dias."
+  before_title: Antes de escrever
+  before_body: "O guia dentro do app cobre a maior parte do que perguntam. Abra o Alike, vá em Ajustes e depois em \"Como usar\"."
+  bug_title: Relatar um problema
+  bug_body: "Descreva o que você fez, o que esperava e o que aconteceu no lugar. Não envie fotos da sua fototeca — não precisamos delas e preferimos não recebê-las."
+  details_title: "Detalhes úteis para incluir:"
+  details:
+    - "O modelo do seu iPhone e a versão do iOS"
+    - "A versão do Alike, mostrada no fim dos Ajustes"
+    - "O que você fez, o que esperava e o que aconteceu no lugar"
+    - "Se a permissão da fototeca está como acesso completo ou acesso limitado"
+  privacy_title: Dúvidas de privacidade
+  privacy_body: "O Alike não tem servidor e não coleta nada, então não há dados de conta para exportar ou apagar. A política de privacidade explica isso por completo, e \"Apagar dados do Alike\" nos Ajustes apaga tudo o que está guardado no seu aparelho."
+  subs_title: Assinaturas e reembolsos
+  subs_body: "O Alike Pro é vendido pela Apple. Assinaturas, cancelamentos e reembolsos são tratados inteiramente pela sua conta Apple, e não podemos cancelar nem reembolsar no seu lugar."
+  subs_manage: "Gerenciar ou cancelar: Ajustes do iOS → seu nome → \"Assinaturas\""
+  subs_refund_prefix: "Pedir um reembolso:"
+  subs_refund_link: "o processo de reembolso da Apple"
+  subs_restore: "Restaurar uma compra em um aparelho novo: Ajustes do Alike → \"Restaurar compras\""
+
+footer:
+  tagline: "Encontre fotos visualmente parecidas. Fique com a melhor. Apague o resto."
+  privacy: Política de Privacidade
+  terms: Termos de Uso
+  support: Suporte
+  contact: Contato
+  built: "Feito com Swift e SwiftUI."
