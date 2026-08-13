@@ -128,13 +128,19 @@ extract_refs() {
   grep -ohE "url\([\"']?[^)\"']+[\"']?\)" "$f" | sed -E "s/^url\([\"']?//; s/[\"']?\)\$//"
 }
 
-# Collapse "." and ".." the way a URL does, and refuse to climb above the root.
+# Collapse "." and ".." exactly as RFC 3986 remove_dot_segments does, which is
+# what a browser and a static host both do.
 #
-# Resolving against the filesystem alone is not enough: $SITE sits inside the
-# repository, so `../Gemfile` from the home page finds a real file on disk and
-# reports as fine while being a 404 on the deployed site. A URL path that walks
-# off the root has no target, whatever happens to exist next to the build
-# directory. Returns 1 in that case.
+# A ".." that would climb above the root is *discarded*, not an error: the
+# browser clamps, so `../privacy/` on the home page is a request for /privacy/
+# and returns 200. Treating the climb as broken would report those links as dead
+# when they work — and this site's Terms pages link the Privacy Policy relatively.
+#
+# Clamping is also what keeps a link inside the build directory. The result never
+# has a leading "..", so `$SITE$urlpath` cannot address anything outside $SITE —
+# which matters because $SITE sits inside the repository, and resolving straight
+# to a filesystem path let `../Gemfile` match a real file while being a 404 on the
+# deployed site.
 normalize_url_path() {
   local path="$1" out="" seg oldifs="$IFS"
   IFS='/'
@@ -142,11 +148,8 @@ normalize_url_path() {
   for seg in $path; do
     case "$seg" in
       ''|.) ;;
-      ..)
-        if [ -z "$out" ]; then IFS="$oldifs"; set +f; return 1; fi
-        out="${out%/*}"
-        ;;
-      *) out="$out/$seg" ;;
+      ..)  out="${out%/*}" ;;   # at root this is already "", so it stays there
+      *)   out="$out/$seg" ;;
     esac
   done
   IFS="$oldifs"; set +f
@@ -170,7 +173,7 @@ ref_resolves() {
     /*) urlpath="$ref" ;;
     *)  urlpath="$page_dir/$ref" ;;
   esac
-  urlpath="$(normalize_url_path "$urlpath")" || return 1
+  urlpath="$(normalize_url_path "$urlpath")"
   [ -f "$SITE$urlpath" ] && return 0
   [ -f "$SITE${urlpath%/}/index.html" ] && return 0
   return 1

@@ -28,6 +28,23 @@ fi
 WORK="$(mktemp -d)"
 trap 'rm -rf "$WORK"' EXIT
 
+# A mutation that silently matched nothing leaves the site untouched, and the
+# case then reports on unmodified input — green against the very bug it exists to
+# catch. This has already happened twice here, so it is asserted rather than
+# remembered: every case fingerprints the copy before and after.
+fingerprint() {
+  find "$1" -type f -exec cksum {} + | sort | cksum
+}
+
+apply_mutation() {
+  local S="$1"; shift
+  local before after
+  before="$(fingerprint "$S")"
+  ( S="$S"; eval "$@" )
+  after="$(fingerprint "$S")"
+  [ "$before" != "$after" ]
+}
+
 # expect_fail <name> <expected-message-fragment> <mutation-command...>
 # The mutation runs with $S bound to a throwaway copy of the site.
 expect_fail() {
@@ -35,7 +52,11 @@ expect_fail() {
   local S="$WORK/case"
   rm -rf "$S"; cp -R "$SITE" "$S"
   ran=$((ran + 1))
-  ( S="$S"; eval "$@" )
+  if ! apply_mutation "$S" "$@"; then
+    printf 'FAIL  %s — the mutation changed nothing; the case would report on unmodified input\n' "$name" >&2
+    status=1
+    return
+  fi
   local out
   out="$("$CHECK" "$S" 2>&1)"
   local rc=$?
@@ -48,6 +69,30 @@ expect_fail() {
     status=1
   else
     printf 'ok    %s\n' "$name"
+  fi
+}
+
+# Mutate a copy and require the checker to still pass. The mirror of expect_fail:
+# a gate that rejects working input is as broken as one that accepts bad input,
+# and only this direction catches an over-strict rule.
+expect_pass_mutated() {
+  local name="$1"; shift
+  local S="$WORK/case"
+  rm -rf "$S"; cp -R "$SITE" "$S"
+  ran=$((ran + 1))
+  if ! apply_mutation "$S" "$@"; then
+    printf 'FAIL  %s — the mutation changed nothing; the case would report on unmodified input\n' "$name" >&2
+    status=1
+    return
+  fi
+  local out
+  out="$("$CHECK" "$S" 2>&1)"
+  if [ $? -eq 0 ]; then
+    printf 'ok    %s\n' "$name"
+  else
+    printf 'FAIL  %s — check-site.sh rejected a site that should pass\n' "$name" >&2
+    printf '%s\n' "$out" | grep '::error' | head -3 >&2
+    status=1
   fi
 }
 
@@ -124,17 +169,26 @@ expect_fail "a single-quoted srcset candidate is not skipped" \
 
 # $SITE lives inside the repository, so a link that climbs out of it can match a
 # real file on disk while being a 404 on the deployed site. Resolution is by URL
-# path, not filesystem path, so climbing above the root has no target at all.
+# path, and ".." clamps at the root the way RFC 3986 says, so the climb lands
+# back inside the site and the file next door is never reachable.
 #
 # Both cases plant the escape target next to the site copy first. Without that
 # the link would fail merely because nothing is there, and the case would pass
 # against the very bug it exists to catch.
-expect_fail "a link escaping the site root fails even though the file exists" \
+expect_fail "a link climbing out of the site root does not reach the file next to it" \
   "Broken internal link '../outside.txt'" \
   'touch "$S/../outside.txt"; perl -0pi -e "s{href=\"/privacy/\"}{href=\"../outside.txt\"}" "$S/index.html"'
-expect_fail "a deep climb out of the site root fails even though the file exists" \
+expect_fail "a deep climb does not reach the file next to the site root" \
   "Broken internal link '../../../outside.txt'" \
   'touch "$S/../outside.txt"; perl -0pi -e "s{href=\"/de/privacy/\"}{href=\"../../../outside.txt\"}" "$S/de/support/index.html"'
+
+# The other half of clamping: a climb past the root is not broken, it is clamped.
+# `../privacy/` on the home page is a request for /privacy/ and returns 200, so
+# reporting it as a dead link would be a false positive on a working link.
+expect_pass_mutated "a climb past the root clamps to a page that exists" \
+  'perl -0pi -e "s{href=\"/privacy/\"}{href=\"../privacy/\"}" "$S/index.html"'
+expect_pass_mutated "a deep climb past the root clamps to a page that exists" \
+  'perl -0pi -e "s{href=\"/de/privacy/\"}{href=\"../../../de/privacy/\"}" "$S/de/index.html"'
 
 echo "==> 3. hreflang"
 expect_fail "an x-default pointing at a translation fails" \
