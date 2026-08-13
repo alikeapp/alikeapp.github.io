@@ -37,6 +37,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  # Build tooling, not content. Without this Jekyll copies the checker into the
+  # published site, where it is both a pointless public file and an input to its
+  # own third-party-host scan.
+  - scripts
 
 sass:
   style: compressed

@@ -150,12 +150,20 @@ echo "==> 5. Third-party hosts"
 # absolute URLs, so omitting it fails the build on the site's own links.
 hosts='alikeapp\.github\.io|apple\.com|w3\.org|schema\.org|sitemaps\.org'
 allowed="([a-z0-9-]+\.)*($hosts)"
+#
+# The trailing (:port)? and delimiter are load-bearing, not tidiness. Matching
+# the allow-list as a bare prefix accepts any host that merely *starts* with an
+# allowed one, so https://apple.com.attacker.example/tracker.js and
+# https://alikeapp.github.io.evil/x.css both read as allowed — the exact
+# exfiltration this gate exists to stop. A hostname ends at a delimiter or at
+# the end of the URL, and nowhere else. scripts/test-check-site.sh pins both.
+boundary='(:[0-9]+)?([/?#]|$)'
 # -I skips binary files. PNGs carry the string "apple.com" in colour-profile
 # metadata, and on BSD grep that surfaces as a "Binary file ... matches" line
 # that would otherwise be read as an external host.
 external=$(grep -rhoIE 'https?://[^"'"'"' )<>]+' "$SITE" \
              | sort -u \
-             | grep -vE "^https?://($allowed)" || true)
+             | grep -vE "^https?://($allowed)$boundary" || true)
 if [ -n "$external" ]; then
   fail "External hosts found in the built site:"
   printf '%s\n' "$external" >&2

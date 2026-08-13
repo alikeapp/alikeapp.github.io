@@ -29,5 +29,10 @@ jobs:
           source: ./
           destination: ./_site
 
+      # The gate is only worth its CI minutes if it fails when it should, so its
+      # own regression tests run first.
+      - name: Test the checker
+        run: ./scripts/test-check-site.sh ./_site
+
       - name: Check the rendered site
         run: ./scripts/check-site.sh ./_site
