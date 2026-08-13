@@ -118,6 +118,23 @@ expect_fail "a dangling single-quoted href fails" \
 expect_fail "a dangling stylesheet url() fails" \
   "Broken internal link '/assets/img/nope.png'" \
   'printf "\n.x { background: url(/assets/img/nope.png); }\n" >> "$S/assets/css/main.css"'
+expect_fail "a single-quoted srcset candidate is not skipped" \
+  "Broken internal link '/assets/img/nope.avif'" \
+  'perl -0pi -e "s{srcset=\"[^\"]*\"}{srcset=\x27/assets/img/nope.avif 1x\x27}" "$S/uk/index.html"'
+
+# $SITE lives inside the repository, so a link that climbs out of it can match a
+# real file on disk while being a 404 on the deployed site. Resolution is by URL
+# path, not filesystem path, so climbing above the root has no target at all.
+#
+# Both cases plant the escape target next to the site copy first. Without that
+# the link would fail merely because nothing is there, and the case would pass
+# against the very bug it exists to catch.
+expect_fail "a link escaping the site root fails even though the file exists" \
+  "Broken internal link '../outside.txt'" \
+  'touch "$S/../outside.txt"; perl -0pi -e "s{href=\"/privacy/\"}{href=\"../outside.txt\"}" "$S/index.html"'
+expect_fail "a deep climb out of the site root fails even though the file exists" \
+  "Broken internal link '../../../outside.txt'" \
+  'touch "$S/../outside.txt"; perl -0pi -e "s{href=\"/de/privacy/\"}{href=\"../../../outside.txt\"}" "$S/de/support/index.html"'
 
 echo "==> 3. hreflang"
 expect_fail "an x-default pointing at a translation fails" \

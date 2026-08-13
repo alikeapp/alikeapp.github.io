@@ -118,27 +118,61 @@ extract_refs() {
   local f="$1"
   grep -ohE '(href|src)="[^"]*"'  "$f" | sed -E 's/^(href|src)="//; s/"$//'
   grep -ohE "(href|src)='[^']*'"  "$f" | sed -E "s/^(href|src)='//; s/'\$//"
-  # srcset is a comma-separated list of "<url> <descriptor>" pairs.
-  grep -ohE 'srcset="[^"]*"' "$f" | sed -E 's/^srcset="//; s/"$//' \
-    | tr ',' '\n' | sed -E 's/^[[:space:]]+//; s/[[:space:]].*$//'
+  # srcset is a comma-separated list of "<url> <descriptor>" pairs. Both quote
+  # styles, for the same reason href and src take both: which one the generator
+  # emits today is not a property this check should depend on.
+  { grep -ohE 'srcset="[^"]*"' "$f" | sed -E 's/^srcset="//; s/"$//'
+    grep -ohE "srcset='[^']*'" "$f" | sed -E "s/^srcset='//; s/'\$//"
+  } | tr ',' '\n' | sed -E 's/^[[:space:]]+//; s/[[:space:]].*$//'
   # url(...) in a stylesheet or an inline <style> block.
   grep -ohE "url\([\"']?[^)\"']+[\"']?\)" "$f" | sed -E "s/^url\([\"']?//; s/[\"']?\)\$//"
 }
 
-# Resolve a reference the way a browser would: relative to the page it appeared
-# on. `..` is left for the filesystem to collapse, which is the same thing the
-# URL would do because every page is served from its own directory.
+# Collapse "." and ".." the way a URL does, and refuse to climb above the root.
+#
+# Resolving against the filesystem alone is not enough: $SITE sits inside the
+# repository, so `../Gemfile` from the home page finds a real file on disk and
+# reports as fine while being a 404 on the deployed site. A URL path that walks
+# off the root has no target, whatever happens to exist next to the build
+# directory. Returns 1 in that case.
+normalize_url_path() {
+  local path="$1" out="" seg oldifs="$IFS"
+  IFS='/'
+  set -f                      # segments are literal, never globs
+  for seg in $path; do
+    case "$seg" in
+      ''|.) ;;
+      ..)
+        if [ -z "$out" ]; then IFS="$oldifs"; set +f; return 1; fi
+        out="${out%/*}"
+        ;;
+      *) out="$out/$seg" ;;
+    esac
+  done
+  IFS="$oldifs"; set +f
+  printf '%s' "${out:-/}"
+}
+
+# Resolve a reference the way a browser would: as a URL path relative to the page
+# it appeared on, normalized first, and only then mapped onto the build output.
+# Resolving straight to a filesystem path would let a link escape $SITE and match
+# something in the repository that the deployed site does not serve.
 ref_resolves() {
   local ref="${1%%#*}"; ref="${ref%%\?*}"
-  local from="$2" base
+  local from="$2" urlpath page_dir
   [ -z "$ref" ] && return 0
   case "$ref" in
     http://*|https://*|//*|mailto:*|tel:*|data:*|javascript:*) return 0 ;;
-    /*) base="$SITE$ref" ;;
-    *)  base="$(dirname "$from")/$ref" ;;
   esac
-  [ -f "$base" ] && return 0
-  [ -f "${base%/}/index.html" ] && return 0
+  # The page's own URL directory, e.g. _site/de/terms/index.html -> /de/terms
+  page_dir="${from#$SITE}"; page_dir="${page_dir%/*}"
+  case "$ref" in
+    /*) urlpath="$ref" ;;
+    *)  urlpath="$page_dir/$ref" ;;
+  esac
+  urlpath="$(normalize_url_path "$urlpath")" || return 1
+  [ -f "$SITE$urlpath" ] && return 0
+  [ -f "$SITE${urlpath%/}/index.html" ] && return 0
   return 1
 }
 
