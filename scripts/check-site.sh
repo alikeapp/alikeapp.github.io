@@ -247,6 +247,17 @@ check_terms "de"    "Standard EULA"                                             
 check_terms "fr"    "licence utilisateur final standard"                         "renouvelle automatiquement"  "essai gratuit de 7 jours"
 check_terms "es"    "licencia de usuario final estándar"                         "renueva automáticamente"     "prueba gratuita de 7 días"
 check_terms "pt-br" "Contrato de Licença de Usuário Final Padrão"                "renovada automaticamente"    "7 dias de teste grátis"
+# The it sentinel skips the apostrophe in "l'utente": kramdown turns it into a
+# typographic ’ in the rendered page, and a straight one would never match.
+check_terms "it"    "utente finale standard di Apple"                             "si rinnova automaticamente"  "prova gratuita di 7 giorni"
+check_terms "nl"    "standaardlicentieovereenkomst voor eindgebruikers"           "automatisch verlengd"        "proefperiode van 7 dagen"
+# Polish declines the phrase, so the sentinel is the part that does not change
+# with case: "umowy licencyjnej" reads as the genitive the sentence needs.
+check_terms "pl"    "licencyjnej użytkownika końcowego Apple"                     "odnawia się automatycznie"   "bezpłatny okres próbny"
+check_terms "tr"    "Standart Son Kullanıcı Lisans Sözleşmesi"                    "otomatik olarak yenilenir"   "7 günlük ücretsiz deneme"
+# zh-Hant has no case to be insensitive about, and no spaces: the fragments are
+# short strings of Han characters that appear verbatim in the prose.
+check_terms "zh-hant" "標準使用者授權合約"                                          "自動續訂"                     "7 天免費試用"
 
 echo "==> 5. Third-party hosts"
 # The privacy policy states that Alike collects nothing and makes no network

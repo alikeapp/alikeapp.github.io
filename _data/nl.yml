@@ -1,0 +1,175 @@
+locale: nl
+locale_tag: nl
+locale_name: Nederlands
+og_locale: nl_NL
+home_url: /nl/
+privacy_url: /nl/privacy/
+terms_url: /nl/terms/
+support_url: /nl/support/
+
+# Register: consequent "je", net als de paywalltekst in
+# Docs/legal/subscription-disclosure.md. Systeemtermen volgen Apples eigen
+# Nederlandse terminologie — 'Recent verwijderd', 'Schermafbeeldingen'.
+meta:
+  title: "Alike — visueel vergelijkbare foto's vinden op je iPhone"
+  description: "Alike vindt en groepeert visueel vergelijkbare foto's in je bibliotheek met analyse op het apparaat zelf, kiest de beste opname en helpt je de rest op te ruimen. Geen account, geen server, niets verlaat je iPhone."
+
+nav:
+  features: Functies
+  privacy: Privacy
+  pricing: Prijzen
+  faq: Vragen
+  support: Ondersteuning
+  menu: Menu
+  language: Taal
+  skip: Ga naar de inhoud
+
+hero:
+  eyebrow: iPhone
+  headline: "Je bibliotheek, zonder de bijna-dubbele foto's."
+  subhead: "Alike groepeert foto's die op elkaar lijken, kiest in elke groep de beste opname en helpt je de rest op te ruimen — zonder dat één foto je apparaat verlaat."
+  badge: Binnenkort in de App Store
+  badge_note: "Gratis te downloaden, met een optioneel Pro-abonnement."
+  trust: "Geen account. Geen server. Er wordt niets geüpload."
+  image_alt: "De mascotte van Alike, een paars figuurtje met een vergrootglas boven twee foto's."
+
+steps:
+  title: Zo werkt het
+  subtitle: "Drie stappen, en bij elke stap houd jij de controle."
+  items:
+    - title: Scannen
+      body: "Alike vergelijkt je bibliotheek met Apples Vision-framework, volledig op je apparaat. Foto's die qua tijd en plaats dicht bij elkaar liggen worden vergeleken; schermafbeeldingen blijven erbuiten tenzij je ze uitdrukkelijk meeneemt."
+      image: step-scan
+      image_alt: "De mascotte zoekt met een vergrootglas door foto's."
+    - title: Bekijken
+      body: "Elke groep opent met een beste opname die al gekozen is, zodat je in seconden beslist. Alleen de beste bewaren, alles behalve de beste selecteren of met de hand kiezen."
+      image: step-review
+      image_alt: "De mascotte lacht naast een uitgelichte beste foto."
+    - title: Opruimen
+      body: "Bevestig, en de geselecteerde foto's gaan naar 'Recent verwijderd', waar iOS ze ongeveer 30 dagen bewaart. Er verdwijnt nooit iets zonder jouw woord."
+      image: step-clean
+      image_alt: "De mascotte juicht naast een opgeruimde fotobibliotheek."
+
+features:
+  title: Wat je krijgt
+  items:
+    - title: Analyse op het apparaat
+      body: "Elke vergelijking draait lokaal via Apples Vision-framework. Geen upload, geen wachtrij, geen verwerking in de cloud."
+    - title: Drie niveaus van gevoeligheid
+      body: "Laag, gemiddeld of hoog. Strakker als je alleen bijna identieke opnamen wilt, ruimer om meer te vangen."
+    - title: Beste opname herkennen
+      body: "Een navolgbare keuze van de sterkste foto in elke groep, zodat er altijd een verstandige standaardkeuze klaarstaat."
+    - title: Begeleid bekijken
+      body: "Werk groep voor groep met 'Alleen de beste bewaren', 'Selecteer alles behalve de beste' en 'Deselecteer'."
+    - title: Statuslabels
+      body: "Nieuw, wordt bekeken, bekeken en na een nieuwe scan opnieuw te bekijken. Je weet altijd waar je gebleven was."
+    - title: Voortgang en besparing
+      body: "Bekeken, resterend, geselecteerd en geschatte besparing, plus een opruimgeschiedenis per maand."
+    - title: Een indeling die bij je past
+      body: "Een meegroeiend raster dat wisselt tussen een ruime kolom en een dichtere weergave, en dat tussen sessies onthouden wordt."
+    - title: Twaalf talen, donkere modus
+      body: "Engels, Oekraïens, Duits, Frans, Spaans, Latijns-Amerikaans Spaans, Braziliaans Portugees, Italiaans, Nederlands, Pools, Turks en traditioneel Chinees, overal, met een volledige donkere modus."
+
+screenshots:
+  title: Een blik naar binnen
+  subtitle: "Schermen uit de app."
+  pending: "De schermafbeeldingen worden voor de lancering klaargemaakt."
+
+privacy:
+  title: Privacy is de hele bedoeling
+  subtitle: "Foto's opruimen betekent dat je een app je persoonlijkste verzameling toevertrouwt. Alike is zo gebouwd dat die nooit uit je handen hoeft."
+  image_alt: "De mascotte rust naast een opgeruimde, afgeronde fotobibliotheek."
+  claims:
+    - title: De analyse draait op je apparaat
+      body: "Apples Vision-framework vergelijkt je foto's lokaal. Er is geen Alike-server om iets naartoe te sturen."
+    - title: Foto's worden nooit geüpload
+      body: "Geen foto, miniatuur of kenmerkafdruk verlaat ooit je apparaat."
+    - title: Geen analytics, geen tracking
+      body: "Geen gebruiksgebeurtenissen, geen advertentie-id's, geen crashrapportage-SDK, geen cookies. De app doet uit zichzelf geen netwerkverzoeken."
+    - title: Verwijderen doe jij
+      body: "Elke opruimactie vraagt je bevestiging, iOS vraagt het een tweede keer, en de foto's belanden in 'Recent verwijderd'."
+  cta: Lees het volledige privacybeleid
+
+pricing:
+  title: Prijzen
+  subtitle: "Alike is gratis te downloaden. Alike Pro haalt de grenzen weg."
+  free:
+    name: Alike Free
+    price: Gratis
+    period: ""
+    features:
+      - "3 scans per maand"
+      - "Begeleid bekijken met de beste opname"
+      - "Sorteren en opruimgeschiedenis"
+      - "Eén foto tegelijk opruimen"
+  pro:
+    name: Alike Pro
+    badge: Aanbevolen
+    price_note: "Jaar- en maandplannen, in je eigen valuta."
+    trial: 7 dagen gratis proberen op het jaarplan
+    features:
+      - "Onbeperkt scannen"
+      - "Hele selecties in één keer opruimen"
+      - "Schermafbeeldingen opruimen"
+      - "Wazige foto's opruimen"
+      - "Geavanceerde filters"
+      - "Eigen opruimherinneringen"
+  # Woordelijk gelijk aan de paywalltekst in
+  # Docs/legal/subscription-disclosure.md. PurchasesUITests/SubscriptionDisclosureTests
+  # pint daar de app-kant vast; deze pagina mag geen derde, afwijkende versie
+  # worden.
+  disclosure_renewal: "Abonnementen worden automatisch verlengd, tenzij ze minstens 24 uur voor het einde van de huidige periode worden opgezegd. Het bedrag wordt afgeschreven van je Apple Account."
+  disclosure_trial: "Het jaarabonnement bevat een gratis proefperiode van 7 dagen voor nieuwe abonnees die daarvoor in aanmerking komen. De facturering begint zodra de proefperiode afloopt, tenzij je minstens 24 uur van tevoren opzegt. Je kunt je abonnement altijd beheren of opzeggen in de iOS-instellingen."
+
+faq:
+  title: Veelgestelde vragen
+  items:
+    - q: Uploadt Alike mijn foto's ergens naartoe?
+      a: "Nee. De hele vergelijking draait op je apparaat met Apples Vision-framework, en de app doet uit zichzelf geen netwerkverzoeken. De enige uitgaande activiteit regelt Apple, wanneer je een abonnement koopt of herstelt."
+    - q: Verwijdert Alike foto's zonder te vragen?
+      a: "Nooit. Jij kiest wat weg mag, Alike vraagt je om bevestiging, en iOS toont zijn eigen bevestiging voordat er iets verdwijnt. Verwijderde foto's gaan naar 'Recent verwijderd', waar iOS ze ongeveer 30 dagen bewaart."
+    - q: Heb ik een account nodig?
+      a: "Nee. Alike heeft geen account, geen inlog en geen server. Je opent de app en begint."
+    - q: Waar krijgt Alike eigenlijk toegang toe?
+      a: "Tot je fotobibliotheek, één keer aan het begin gevraagd. Je kunt volledige toegang geven of beperkte toegang en zelf kiezen welke foto's Alike mag zien; dat kun je altijd wijzigen in de iOS-instellingen. Om berichtgevingen wordt alleen gevraagd als je de wekelijkse opruimherinnering aanzet."
+    - q: Hoe bepaalt Alike welke foto's op elkaar lijken?
+      a: "Elke foto krijgt van het Vision-framework een numerieke kenmerkafdruk. Foto's die qua tijd en plaats dicht bij elkaar liggen worden vergeleken, en een foto komt alleen in een groep als hij op alle foto's daarin lijkt. Het gevoeligheidsniveau bepaalt hoe gelijkend gelijkend genoeg is."
+    - q: Wat is de beste opname?
+      a: "Een navolgbare keuze van de sterkste foto in elke groep, zodat er altijd een verstandige standaardkeuze klaarstaat. Je kunt die altijd overrulen."
+    - q: Hoe zeg ik een abonnement op?
+      a: "Tik in de iOS-instellingen op je naam en dan op 'Abonnementen'. Opzeggen stopt toekomstige verlengingen, en je houdt toegang tot het einde van de betaalde periode. Abonnementen en terugbetalingen regelt Apple, niet wij."
+    - q: Kan ik alles verwijderen wat Alike heeft bewaard?
+      a: "Ja. Instellingen, dan 'Gegevens en privacy', dan 'Verwijder Alike-gegevens'. Dat wist scanresultaten, opruimgeschiedenis en voorkeuren en laat je foto's, de fototoegang en je abonnement onaangeroerd."
+
+support:
+  title: Ondersteuning
+  subtitle: "Geen account, geen ticketsysteem. Stuur een e-mail en je krijgt antwoord."
+  contact_title: Neem contact op
+  contact_body: "E-mail is de snelste manier om ons te bereiken. Noem je iOS-versie, je apparaat en wat je had verwacht."
+  response: "Reken op antwoord binnen een paar dagen."
+  before_title: Voordat je schrijft
+  before_body: "De handleiding in de app dekt het meeste waar naar gevraagd wordt. Open Alike, ga naar Instellingen en dan naar 'Handleiding'."
+  bug_title: Een fout melden
+  bug_body: "Beschrijf wat je deed, wat je verwachtte en wat er in plaats daarvan gebeurde. Stuur geen foto's uit je bibliotheek mee — we hebben ze niet nodig en ontvangen ze liever niet."
+  details_title: "Nuttige gegevens:"
+  details:
+    - "Je iPhone-model en je iOS-versie"
+    - "De Alike-versie, onderaan in Instellingen"
+    - "Wat je deed, wat je verwachtte en wat er in plaats daarvan gebeurde"
+    - "Of de toestemming voor de fotobibliotheek op volledige of beperkte toegang staat"
+  privacy_title: Vragen over privacy
+  privacy_body: "Alike heeft geen server en verzamelt niets, dus er zijn geen accountgegevens om te exporteren of te verwijderen. Het privacybeleid legt dat volledig uit, en 'Verwijder Alike-gegevens' in Instellingen haalt alles weg wat op je apparaat is bewaard."
+  subs_title: Abonnementen en terugbetalingen
+  subs_body: "Alike Pro wordt door Apple verkocht. Abonnementen, opzeggingen en terugbetalingen lopen volledig via je Apple Account, en wij kunnen niet voor jou opzeggen of terugbetalen."
+  subs_manage: "Beheren of opzeggen: iOS-instellingen → je naam → 'Abonnementen'"
+  subs_refund_prefix: "Terugbetaling aanvragen:"
+  subs_refund_link: "Apples terugbetalingsprocedure"
+  subs_restore: "Aankoop op een nieuw apparaat herstellen: Alike-instellingen → 'Herstel aankopen'"
+
+footer:
+  tagline: "Vind visueel vergelijkbare foto's. Houd de beste. Ruim de rest op."
+  privacy: Privacybeleid
+  terms: Gebruiksvoorwaarden
+  support: Ondersteuning
+  contact: Contact
+  built: "Gemaakt met Swift en SwiftUI."

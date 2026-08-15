@@ -1,0 +1,175 @@
+locale: pl
+locale_tag: pl
+locale_name: Polski
+og_locale: pl_PL
+home_url: /pl/
+privacy_url: /pl/privacy/
+terms_url: /pl/terms/
+support_url: /pl/support/
+
+# Rejestr: konsekwentnie na „ty”, tak jak komunikat na paywallu w
+# Docs/legal/subscription-disclosure.md. Terminy systemowe idą za polską
+# terminologią Apple — „Ostatnio usunięte”, „Zrzuty ekranu”.
+meta:
+  title: "Alike — znajdź wizualnie podobne zdjęcia na iPhonie"
+  description: "Alike znajduje i grupuje wizualnie podobne zdjęcia w Twojej bibliotece, analizując je na urządzeniu, wybiera najlepsze ujęcie i pomaga uporządkować resztę. Bez konta, bez serwera, nic nie opuszcza Twojego iPhone'a."
+
+nav:
+  features: Funkcje
+  privacy: Prywatność
+  pricing: Ceny
+  faq: Pytania
+  support: Pomoc
+  menu: Menu
+  language: Język
+  skip: Przejdź do treści
+
+hero:
+  eyebrow: iPhone
+  headline: "Twoja biblioteka, bez prawie identycznych zdjęć."
+  subhead: "Alike grupuje zdjęcia, które wyglądają podobnie, wybiera w każdej grupie najlepsze ujęcie i pomaga uporządkować resztę — a żadne zdjęcie nie opuszcza Twojego urządzenia."
+  badge: Wkrótce w App Store
+  badge_note: "Pobranie za darmo, z opcjonalną subskrypcją Pro."
+  trust: "Bez konta. Bez serwera. Nic nie jest wysyłane."
+  image_alt: "Maskotka Alike, fioletowa postać z lupą nad dwoma zdjęciami."
+
+steps:
+  title: Jak to działa
+  subtitle: "Trzy kroki, a przy każdym decydujesz Ty."
+  items:
+    - title: Skanuj
+      body: "Alike porównuje Twoją bibliotekę za pomocą frameworka Vision od Apple, w całości na urządzeniu. Porównywane są zdjęcia zrobione blisko siebie w czasie i miejscu; zrzuty ekranu zostają poza wynikami, chyba że wyraźnie je włączysz."
+      image: step-scan
+      image_alt: "Maskotka przegląda zdjęcia z lupą."
+    - title: Przejrzyj
+      body: "Każda grupa otwiera się z już wybranym najlepszym ujęciem, więc decyzja zajmuje sekundy. Zostaw tylko najlepsze, zaznacz wszystkie oprócz najlepszego albo wybierz ręcznie."
+      image: step-review
+      image_alt: "Maskotka cieszy się obok wyróżnionego najlepszego zdjęcia."
+    - title: Uporządkuj
+      body: "Potwierdź, a wybrane zdjęcia trafią do albumu „Ostatnio usunięte”, gdzie iOS trzyma je około 30 dni. Nic nie znika bez Twojej zgody."
+      image: step-clean
+      image_alt: "Maskotka świętuje obok uporządkowanej biblioteki zdjęć."
+
+features:
+  title: Co dostajesz
+  items:
+    - title: Analiza na urządzeniu
+      body: "Każde porównanie działa lokalnie, na frameworku Vision od Apple. Bez wysyłania, bez kolejki, bez przetwarzania w chmurze."
+    - title: Trzy poziomy czułości
+      body: "Niska, średnia albo wysoka. Ciaśniej, gdy chcesz tylko niemal identyczne ujęcia, szerzej, żeby złapać więcej."
+    - title: Wykrywanie najlepszego ujęcia
+      body: "Zrozumiały wybór najmocniejszego zdjęcia w grupie, żeby zawsze był sensowny domyślny kandydat do zachowania."
+    - title: Prowadzony przegląd
+      body: "Pracuj grupa po grupie z opcjami „Zostaw tylko najlepsze”, „Zaznacz wszystkie oprócz najlepszego” i „Odznacz”."
+    - title: Znaczniki stanu
+      body: "Nowe, w trakcie przeglądu, przejrzane i wymagające przeglądu po ponownym skanowaniu. Zawsze wiesz, gdzie skończyłeś."
+    - title: Postęp i oszczędność
+      body: "Przejrzane, pozostałe, wybrane i szacowana oszczędność, a do tego historia porządków pogrupowana według miesięcy."
+    - title: Układ dopasowany do Ciebie
+      body: "Elastyczna siatka, która przełącza się między przestronną jedną kolumną a gęstszym widokiem i zapamiętuje wybór między uruchomieniami."
+    - title: Dwanaście języków, tryb ciemny
+      body: "Angielski, ukraiński, niemiecki, francuski, hiszpański, hiszpański latynoamerykański, portugalski brazylijski, włoski, niderlandzki, polski, turecki i chiński tradycyjny, wszędzie, z pełnym trybem ciemnym."
+
+screenshots:
+  title: Rzut oka do środka
+  subtitle: "Ekrany z aplikacji."
+  pending: "Zrzuty ekranu przygotowujemy przed premierą."
+
+privacy:
+  title: Prywatność to cały sens
+  subtitle: "Porządkowanie zdjęć oznacza powierzenie aplikacji najbardziej osobistej kolekcji, jaką masz. Alike jest zbudowany tak, żeby nigdy nie musiała opuścić Twoich rąk."
+  image_alt: "Maskotka odpoczywa obok uporządkowanej, gotowej biblioteki zdjęć."
+  claims:
+    - title: Analiza działa na Twoim urządzeniu
+      body: "Framework Vision od Apple porównuje zdjęcia lokalnie. Nie ma serwera Alike, na który dałoby się cokolwiek wysłać."
+    - title: Zdjęcia nigdy nie są wysyłane
+      body: "Żadne zdjęcie, miniatura ani odcisk cech nigdy nie opuszcza Twojego urządzenia."
+    - title: Bez analityki, bez śledzenia
+      body: "Bez zdarzeń użycia, bez identyfikatorów reklamowych, bez SDK do raportowania awarii, bez ciasteczek. Aplikacja sama z siebie nie wykonuje żadnych zapytań sieciowych."
+    - title: O usuwaniu decydujesz Ty
+      body: "Każde porządki wymagają Twojego potwierdzenia, iOS pyta drugi raz, a zdjęcia trafiają do albumu „Ostatnio usunięte”."
+  cta: Przeczytaj pełną politykę prywatności
+
+pricing:
+  title: Ceny
+  subtitle: "Alike pobierzesz za darmo. Alike Pro znosi ograniczenia."
+  free:
+    name: Alike Free
+    price: Za darmo
+    period: ""
+    features:
+      - "3 skanowania miesięcznie"
+      - "Prowadzony przegląd z najlepszym ujęciem"
+      - "Sortowanie i historia porządków"
+      - "Porządki po jednym zdjęciu"
+  pro:
+    name: Alike Pro
+    badge: Polecane
+    price_note: "Plan roczny i miesięczny, w Twojej walucie."
+    trial: 7 dni bezpłatnego okresu próbnego w planie rocznym
+    features:
+      - "Nieograniczone skanowania"
+      - "Porządki w całych zaznaczeniach naraz"
+      - "Porządki w zrzutach ekranu"
+      - "Porządki w rozmytych zdjęciach"
+      - "Zaawansowane filtry"
+      - "Własne przypomnienia o porządkach"
+  # Słowo w słowo tak samo jak komunikat na paywallu w
+  # Docs/legal/subscription-disclosure.md. PurchasesUITests/SubscriptionDisclosureTests
+  # pilnuje tam strony aplikacji; ta strona nie może stać się trzecią, rozbieżną
+  # wersją.
+  disclosure_renewal: "Subskrypcje odnawiają się automatycznie, o ile nie zostaną anulowane co najmniej 24 godziny przed końcem bieżącego okresu. Płatność jest pobierana z Twojego konta Apple."
+  disclosure_trial: "Plan roczny obejmuje 7-dniowy bezpłatny okres próbny dla uprawnionych nowych subskrybentów. Naliczanie opłat zaczyna się po zakończeniu okresu próbnego, chyba że anulujesz subskrypcję co najmniej 24 godziny wcześniej. Subskrypcją możesz zarządzać lub anulować ją w dowolnym momencie w Ustawieniach iOS."
+
+faq:
+  title: Częste pytania
+  items:
+    - q: Czy Alike gdzieś wysyła moje zdjęcia?
+      a: "Nie. Całe porównywanie działa na Twoim urządzeniu, na frameworku Vision od Apple, a aplikacja sama z siebie nie wykonuje zapytań sieciowych. Jedyny ruch wychodzący obsługuje Apple, kiedy kupujesz albo przywracasz subskrypcję."
+    - q: Czy Alike usuwa zdjęcia bez pytania?
+      a: "Nigdy. To Ty wybierasz, co ma zniknąć, Alike prosi o potwierdzenie, a iOS pokazuje własne potwierdzenie, zanim cokolwiek zostanie usunięte. Usunięte zdjęcia trafiają do albumu „Ostatnio usunięte”, gdzie iOS trzyma je około 30 dni."
+    - q: Czy potrzebuję konta?
+      a: "Nie. Alike nie ma konta, logowania ani serwera. Otwierasz aplikację i zaczynasz."
+    - q: Do czego właściwie ma dostęp Alike?
+      a: "Do Twojej biblioteki zdjęć, o co pyta raz na początku. Możesz przyznać pełny dostęp albo dostęp ograniczony i sam wybrać, które zdjęcia Alike widzi; zmienisz to w dowolnej chwili w Ustawieniach iOS. O powiadomienia pytamy tylko wtedy, gdy włączysz cotygodniowe przypomnienie o porządkach."
+    - q: Jak Alike decyduje, które zdjęcia są podobne?
+      a: "Framework Vision nadaje każdemu zdjęciu numeryczny odcisk cech. Porównywane są zdjęcia zrobione blisko siebie w czasie i miejscu, a zdjęcie trafia do grupy tylko wtedy, gdy jest podobne do wszystkich już w niej obecnych. Poziom czułości ustala, jak podobne znaczy wystarczająco podobne."
+    - q: Czym jest najlepsze ujęcie?
+      a: "Zrozumiałym wyborem najmocniejszego zdjęcia w grupie, żeby zawsze był sensowny domyślny kandydat do zachowania. Zawsze możesz go zmienić."
+    - q: Jak anulować subskrypcję?
+      a: "W Ustawieniach iOS dotknij swojego imienia, a potem „Subskrypcje”. Anulowanie zatrzymuje przyszłe odnowienia, a dostęp zostaje do końca opłaconego okresu. Subskrypcje i zwroty obsługuje Apple, nie my."
+    - q: Czy mogę usunąć wszystko, co Alike zapisał?
+      a: "Tak. Ustawienia, potem „Dane i prywatność”, potem „Usuń dane Alike”. To kasuje wyniki skanowania, historię porządków i ustawienia, a zostawia nietknięte Twoje zdjęcia, dostęp do zdjęć i subskrypcję."
+
+support:
+  title: Pomoc
+  subtitle: "Bez konta, bez systemu zgłoszeń. Napisz e-mail, a dostaniesz odpowiedź."
+  contact_title: Napisz do nas
+  contact_body: "E-mail to najszybszy sposób, żeby nas złapać. Podaj wersję iOS, model urządzenia i to, czego się spodziewałeś."
+  response: "Odpowiedzi można się spodziewać w ciągu kilku dni."
+  before_title: Zanim napiszesz
+  before_body: "Instrukcja w aplikacji odpowiada na większość pytań, które dostajemy. Otwórz Alike, wejdź w Ustawienia, a potem w „Instrukcję”."
+  bug_title: Zgłoś błąd
+  bug_body: "Opisz, co robiłeś, czego się spodziewałeś i co stało się zamiast tego. Nie wysyłaj zdjęć ze swojej biblioteki — nie są nam potrzebne i wolimy ich nie dostawać."
+  details_title: "Przydatne informacje:"
+  details:
+    - "Model iPhone'a i wersja iOS"
+    - "Wersja Alike, na dole Ustawień"
+    - "Co robiłeś, czego się spodziewałeś i co stało się zamiast tego"
+    - "Czy uprawnienie do biblioteki zdjęć jest ustawione na pełny czy ograniczony dostęp"
+  privacy_title: Pytania o prywatność
+  privacy_body: "Alike nie ma serwera i niczego nie zbiera, więc nie istnieją żadne dane konta do wyeksportowania ani usunięcia. Polityka prywatności wyjaśnia to w całości, a „Usuń dane Alike” w Ustawieniach kasuje wszystko, co zapisano na Twoim urządzeniu."
+  subs_title: Subskrypcje i zwroty
+  subs_body: "Alike Pro sprzedaje Apple. Subskrypcje, anulowania i zwroty przechodzą w całości przez Twoje konto Apple, a my nie możemy anulować ani zwrócić pieniędzy za Ciebie."
+  subs_manage: "Zarządzanie i anulowanie: Ustawienia iOS → Twoje imię → „Subskrypcje”"
+  subs_refund_prefix: "Wniosek o zwrot:"
+  subs_refund_link: "procedura zwrotów Apple"
+  subs_restore: "Przywrócenie zakupu na nowym urządzeniu: Ustawienia Alike → „Przywróć zakupy”"
+
+footer:
+  tagline: "Znajdź wizualnie podobne zdjęcia. Zostaw najlepsze. Uporządkuj resztę."
+  privacy: Polityka prywatności
+  terms: Warunki korzystania
+  support: Pomoc
+  contact: Kontakt
+  built: "Zrobione w Swift i SwiftUI."

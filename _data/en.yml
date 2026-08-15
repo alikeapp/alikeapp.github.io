@@ -68,8 +68,8 @@ features:
       body: "An adaptive grid that switches between a roomy single column and a denser layout, remembered between launches."
     # The app ships seven languages as of the Tier 1 localization work. Keep this
     # count in step with the catalogs, not with the languages this site is in.
-    - title: Seven languages, Dark Mode
-      body: "English, Ukrainian, German, French, Spanish, Latin American Spanish, and Brazilian Portuguese throughout, and complete Dark Mode support."
+    - title: Twelve languages, Dark Mode
+      body: "English, Ukrainian, German, French, Spanish, Latin American Spanish, Brazilian Portuguese, Italian, Dutch, Polish, Turkish and Traditional Chinese throughout, and complete Dark Mode support."
 
 screenshots:
   title: A look inside
