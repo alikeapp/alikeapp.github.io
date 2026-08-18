@@ -1,0 +1,175 @@
+locale: it
+locale_tag: it
+locale_name: Italiano
+og_locale: it_IT
+home_url: /it/
+privacy_url: /it/privacy/
+terms_url: /it/terms/
+support_url: /it/support/
+
+# Registro: sempre il "tu", come nella comunicazione della paywall in
+# Docs/legal/subscription-disclosure.md. I termini di sistema seguono la
+# terminologia italiana di Apple — «Eliminati di recente», «Screenshot».
+meta:
+  title: "Alike — trova le foto visivamente simili sul tuo iPhone"
+  description: "Alike trova e raggruppa le foto visivamente simili nella tua libreria con analisi direttamente sul dispositivo, sceglie lo scatto migliore e ti aiuta a eliminare il resto. Nessun account, nessun server, niente lascia il tuo iPhone."
+
+nav:
+  features: Funzioni
+  privacy: Privacy
+  pricing: Prezzi
+  faq: Domande
+  support: Assistenza
+  menu: Menu
+  language: Lingua
+  skip: Vai al contenuto
+
+hero:
+  eyebrow: iPhone
+  headline: "La tua libreria, senza i quasi-doppioni."
+  subhead: "Alike raggruppa le foto che si somigliano, sceglie lo scatto migliore di ogni gruppo e ti aiuta a eliminare il resto — senza che una sola foto lasci il tuo dispositivo."
+  badge: Presto su App Store
+  badge_note: "Download gratuito, con abbonamento Pro facoltativo."
+  trust: "Nessun account. Nessun server. Niente viene caricato online."
+  image_alt: "La mascotte di Alike, un personaggio viola con una lente d'ingrandimento sopra due foto."
+
+steps:
+  title: Come funziona
+  subtitle: "Tre passaggi, e a ognuno mantieni il controllo."
+  items:
+    - title: Scansiona
+      body: "Alike confronta la tua libreria con il framework Vision di Apple, interamente sul tuo dispositivo. Vengono confrontate le foto vicine nel tempo e nel luogo; gli screenshot restano fuori se non li richiedi espressamente."
+      image: step-scan
+      image_alt: "La mascotte cerca tra le foto con una lente d'ingrandimento."
+    - title: Controlla
+      body: "Ogni gruppo si apre con lo scatto migliore già selezionato, così decidi in pochi secondi. Tieni solo la migliore, seleziona tutte tranne la migliore oppure scegli a mano."
+      image: step-review
+      image_alt: "La mascotte sorride accanto a una foto migliore evidenziata."
+    - title: Pulisci
+      body: "Conferma, e le foto selezionate finiscono in «Eliminati di recente», dove iOS le conserva per circa 30 giorni. Niente viene rimosso senza il tuo assenso."
+      image: step-clean
+      image_alt: "La mascotte esulta accanto a una libreria di foto in ordine."
+
+features:
+  title: Cosa ottieni
+  items:
+    - title: Analisi sul dispositivo
+      body: "Ogni confronto avviene in locale, con il framework Vision di Apple. Nessun caricamento, nessuna coda, nessuna elaborazione nel cloud."
+    - title: Tre livelli di sensibilità
+      body: "Bassa, media o alta. Più stretta se vuoi solo gli scatti quasi identici, più ampia per prendere di più."
+    - title: Riconoscimento dello scatto migliore
+      body: "Una scelta comprensibile della foto più riuscita di ogni gruppo, così c'è sempre un'opzione sensata da tenere."
+    - title: Controllo guidato
+      body: "Procedi gruppo per gruppo con «Tieni solo la migliore», «Seleziona tutte tranne la migliore» e «Deseleziona»."
+    - title: Indicatori di stato
+      body: "Nuovo, in controllo, controllato e da rivedere dopo una nuova scansione. Sai sempre dove eri rimasto."
+    - title: Avanzamento e risparmio
+      body: "Controllate, rimanenti, selezionate e risparmio stimato, più una cronologia pulizia raggruppata per mese."
+    - title: Un layout che ti somiglia
+      body: "Una griglia adattiva che passa da una colonna ampia a una vista più fitta e ricorda la tua scelta tra un avvio e l'altro."
+    - title: Dodici lingue, modalità scura
+      body: "Inglese, ucraino, tedesco, francese, spagnolo, spagnolo latinoamericano, portoghese brasiliano, italiano, olandese, polacco, turco e cinese tradizionale, ovunque, con modalità scura completa."
+
+screenshots:
+  title: Uno sguardo dentro
+  subtitle: "Schermate dell'app."
+  pending: "Gli screenshot sono in preparazione prima del lancio."
+
+privacy:
+  title: La privacy è tutto il punto
+  subtitle: "Fare ordine tra le foto significa affidare a un'app la tua raccolta più personale. Alike è costruita perché non debba mai lasciare le tue mani."
+  image_alt: "La mascotte riposa accanto a una libreria di foto ordinata e completata."
+  claims:
+    - title: L'analisi avviene sul tuo dispositivo
+      body: "Il framework Vision di Apple confronta le tue foto in locale. Non esiste un server Alike a cui inviare qualcosa."
+    - title: Le foto non vengono mai caricate
+      body: "Nessuna foto, miniatura o impronta caratteristica lascia mai il tuo dispositivo."
+    - title: Nessuna analisi statistica, nessun tracciamento
+      body: "Nessun evento d'uso, nessun identificativo pubblicitario, nessun SDK di crash reporting, nessun cookie. L'app non fa richieste di rete di propria iniziativa."
+    - title: A eliminare sei sempre tu
+      body: "Ogni pulizia richiede la tua conferma, iOS chiede una seconda volta e le foto finiscono in «Eliminati di recente»."
+  cta: Leggi l'informativa sulla privacy completa
+
+pricing:
+  title: Prezzi
+  subtitle: "Alike si scarica gratis. Alike Pro toglie i limiti."
+  free:
+    name: Alike Free
+    price: Gratis
+    period: ""
+    features:
+      - "3 scansioni al mese"
+      - "Controllo guidato con lo scatto migliore"
+      - "Ordinamento e cronologia pulizia"
+      - "Pulizia di una foto alla volta"
+  pro:
+    name: Alike Pro
+    badge: Consigliato
+    price_note: "Piani annuale e mensile, nella tua valuta locale."
+    trial: 7 giorni di prova gratuita sul piano annuale
+    features:
+      - "Scansioni illimitate"
+      - "Pulizia di intere selezioni in una volta"
+      - "Pulizia screenshot"
+      - "Pulizia foto sfocate"
+      - "Filtri avanzati"
+      - "Promemoria di pulizia personalizzati"
+  # Identico parola per parola alla comunicazione della paywall in
+  # Docs/legal/subscription-disclosure.md. PurchasesUITests/SubscriptionDisclosureTests
+  # verifica lì il lato app; questa pagina non deve diventare una terza versione
+  # divergente.
+  disclosure_renewal: "Gli abbonamenti si rinnovano automaticamente se non vengono annullati almeno 24 ore prima della fine del periodo in corso. Il pagamento viene addebitato sul tuo account Apple."
+  disclosure_trial: "Il piano annuale include una prova gratuita di 7 giorni per i nuovi abbonati idonei. La fatturazione inizia al termine della prova, a meno che tu non annulli almeno 24 ore prima. Puoi gestire o annullare l'abbonamento in qualsiasi momento in Impostazioni di iOS."
+
+faq:
+  title: Domande frequenti
+  items:
+    - q: Alike carica le mie foto da qualche parte?
+      a: "No. Tutto il confronto avviene sul tuo dispositivo con il framework Vision di Apple, e l'app non fa richieste di rete di propria iniziativa. L'unica attività in uscita la gestisce Apple, quando acquisti o ripristini un abbonamento."
+    - q: Alike elimina foto senza chiedere?
+      a: "Mai. Sei tu a scegliere cosa rimuovere, Alike ti chiede conferma e iOS mostra la propria conferma prima che qualcosa venga eliminato. Le foto eliminate finiscono in «Eliminati di recente», dove iOS le conserva per circa 30 giorni."
+    - q: Serve un account?
+      a: "No. Alike non ha account, non ha accesso e non ha server. Apri l'app e inizi."
+    - q: A cosa accede esattamente Alike?
+      a: "Alla tua libreria di foto, richiesta una sola volta all'inizio. Puoi concedere l'accesso completo oppure l'accesso limitato e scegliere tu quali foto Alike può vedere; puoi cambiare idea in qualsiasi momento in Impostazioni di iOS. Le notifiche vengono richieste solo se attivi il promemoria settimanale di pulizia."
+    - q: Come decide Alike quali foto sono simili?
+      a: "Il framework Vision assegna a ogni foto un'impronta numerica. Vengono confrontate le foto vicine nel tempo e nel luogo, e una foto entra in un gruppo solo se somiglia a tutte quelle già presenti. Il livello di sensibilità stabilisce quanto simile sia abbastanza simile."
+    - q: Cos'è lo scatto migliore?
+      a: "Una scelta comprensibile della foto più riuscita di ogni gruppo, così c'è sempre un'opzione sensata da tenere. Puoi sempre sovrascriverla."
+    - q: Come annullo un abbonamento?
+      a: "In Impostazioni di iOS tocca il tuo nome, poi «Abbonamenti». L'annullamento ferma i rinnovi futuri, e l'accesso resta fino alla fine del periodo pagato. Abbonamenti e rimborsi li gestisce Apple, non noi."
+    - q: Posso eliminare tutto quello che Alike ha salvato?
+      a: "Sì. Impostazioni, poi «Dati e privacy», poi «Elimina i dati di Alike». Cancella risultati delle scansioni, cronologia pulizia e preferenze, e lascia intatti le tue foto, l'accesso alle foto e l'abbonamento."
+
+support:
+  title: Assistenza
+  subtitle: "Nessun account, nessun sistema di ticket. Scrivi un'email e ricevi una risposta."
+  contact_title: Scrivici
+  contact_body: "L'email è il modo più rapido per raggiungerci. Indica la versione di iOS, il dispositivo e cosa ti aspettavi."
+  response: "Una risposta arriva di norma entro pochi giorni."
+  before_title: Prima di scrivere
+  before_body: "Le istruzioni dentro l'app coprono quasi tutto quello che ci viene chiesto. Apri Alike, vai in Impostazioni e poi in «Istruzioni»."
+  bug_title: Segnalare un problema
+  bug_body: "Descrivi cosa hai fatto, cosa ti aspettavi e cosa è successo invece. Non inviare foto della tua libreria — non ci servono e preferiamo non riceverle."
+  details_title: "Informazioni utili:"
+  details:
+    - "Il modello di iPhone e la versione di iOS"
+    - "La versione di Alike, in fondo alle Impostazioni"
+    - "Cosa hai fatto, cosa ti aspettavi e cosa è successo invece"
+    - "Se il permesso per la libreria è su accesso completo o limitato"
+  privacy_title: Domande sulla privacy
+  privacy_body: "Alike non ha server e non raccoglie nulla, quindi non esistono dati di account da esportare o eliminare. L'informativa sulla privacy lo spiega per intero, e «Elimina i dati di Alike» nelle Impostazioni rimuove tutto ciò che è salvato sul tuo dispositivo."
+  subs_title: Abbonamenti e rimborsi
+  subs_body: "Alike Pro è venduto da Apple. Abbonamenti, annullamenti e rimborsi passano interamente dal tuo account Apple, e non possiamo annullare né rimborsare al posto tuo."
+  subs_manage: "Gestire o annullare: Impostazioni di iOS → il tuo nome → «Abbonamenti»"
+  subs_refund_prefix: "Chiedere un rimborso:"
+  subs_refund_link: "la procedura di rimborso di Apple"
+  subs_restore: "Ripristinare l'acquisto su un nuovo dispositivo: Impostazioni di Alike → «Ripristina acquisti»"
+
+footer:
+  tagline: "Trova le foto visivamente simili. Tieni la migliore. Elimina il resto."
+  privacy: Informativa sulla privacy
+  terms: Condizioni d'uso
+  support: Assistenza
+  contact: Contatti
+  built: "Fatta con Swift e SwiftUI."

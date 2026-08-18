@@ -122,16 +122,16 @@ expect_fail "a missing locale page fails" \
 echo "the locale list is derived, not hardcoded"
 derived=$("$CHECK" "$SITE" 2>&1 | sed -n '1p')
 ran=$((ran + 1))
-if printf '%s' "$derived" | grep -qF "(6): / /uk /de /fr /es /pt-br"; then
+if printf '%s' "$derived" | grep -qF "(11): / /uk /de /fr /es /pt-br /it /nl /pl /tr /zh-hant"; then
   printf 'ok    every locale in _config.yml reaches the matrix\n'
 else
   printf 'FAIL  derived locale list is wrong: %s\n' "$derived" >&2
   status=1
 fi
 
-# A seventh locale in _config.yml must make the checker demand its pages.
+# One more locale in _config.yml must make the checker demand its pages.
 SEVENTH="$WORK/_config-seventh.yml"
-sed -E 's/^languages:.*/languages: [en, uk, de, fr, es, pt-BR, ja]/' "$HERE/../_config.yml" > "$SEVENTH"
+sed -E 's/^languages:.*/languages: [en, uk, de, fr, es, pt-BR, it, nl, pl, tr, zh-Hant, ja]/' "$HERE/../_config.yml" > "$SEVENTH"
 ran=$((ran + 1))
 # Capture before matching: under `pipefail` the checker's own non-zero exit —
 # which is the point of this case — would decide the pipeline's status no matter

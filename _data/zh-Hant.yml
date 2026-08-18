@@ -1,0 +1,175 @@
+locale: zh-Hant
+locale_tag: zh-Hant
+locale_name: 繁體中文
+og_locale: zh_TW
+home_url: /zh-hant/
+privacy_url: /zh-hant/privacy/
+terms_url: /zh-hant/terms/
+support_url: /zh-hant/support/
+
+# 語體：全篇以「你」稱呼讀者，與 Docs/legal/subscription-disclosure.md 的付費牆
+# 文案一致。系統詞彙沿用 Apple 自己的繁中用語 —「最近刪除」、「螢幕快照」。
+# 螢幕快照一詞是 Apple 的台灣用字，日常較常見的是「螢幕截圖」；這是體例決定，
+# 記錄在 Docs/Localization/native-review.md。
+meta:
+  title: "Alike — 在 iPhone 上找出視覺上相似的照片"
+  description: "Alike 以裝置端分析找出並分組你照片圖庫中視覺上相似的照片，挑出最佳照片，並幫你清理其餘的。沒有帳戶、沒有伺服器，任何東西都不會離開你的 iPhone。"
+
+nav:
+  features: 功能
+  privacy: 隱私權
+  pricing: 價格
+  faq: 常見問題
+  support: 支援
+  menu: 選單
+  language: 語言
+  skip: 跳到主要內容
+
+hero:
+  eyebrow: iPhone
+  headline: "你的照片圖庫，沒有那些近乎重複的照片。"
+  subhead: "Alike 會把看起來相像的照片分成一組組，在每一組中挑出最佳照片，並幫你清理其餘的——而且沒有任何一張照片會離開你的裝置。"
+  badge: 即將登上 App Store
+  badge_note: "免費下載，可選購 Pro 訂閱。"
+  trust: "沒有帳戶。沒有伺服器。不會上傳任何東西。"
+  image_alt: "Alike 的吉祥物，一個紫色角色拿著放大鏡在兩張照片上方。"
+
+steps:
+  title: 運作方式
+  subtitle: "三個步驟，每一步都由你作主。"
+  items:
+    - title: 掃描
+      body: "Alike 以 Apple 的 Vision 框架比對你的照片圖庫，全程在你的裝置上完成。系統只比對拍攝時間與地點相近的照片；螢幕快照除非你特別納入，否則不會出現在結果中。"
+      image: step-scan
+      image_alt: "吉祥物拿著放大鏡在照片裡尋找。"
+    - title: 檢視
+      body: "每一組打開時都已選好最佳照片，你只需幾秒就能決定。可以只保留最佳照片、選取除最佳照片外的全部，或自行手動挑選。"
+      image: step-review
+      image_alt: "吉祥物在一張被標示為最佳的照片旁開心地笑著。"
+    - title: 清理
+      body: "確認之後，選取的照片會移到「最近刪除」，iOS 會在那裡保留約 30 天。未經你同意，不會移除任何東西。"
+      image: step-clean
+      image_alt: "吉祥物在整理好的照片圖庫旁歡呼。"
+
+features:
+  title: 你會得到什麼
+  items:
+    - title: 裝置端分析
+      body: "每一次比對都透過 Apple 的 Vision 框架在本機執行。不上傳、不排隊、不在雲端處理。"
+    - title: 三種敏感度
+      body: "低、中或高。想只看幾乎完全相同的照片就調緊，想撈得更廣就放寬。"
+    - title: 最佳照片偵測
+      body: "以可理解的方式挑出每一組中最好的一張，讓你永遠有一個合理的保留預設值。"
+    - title: 引導式檢視
+      body: "一組一組處理，可用「只保留最佳照片」、「選取除最佳照片外的全部」與「取消選取」。"
+    - title: 狀態標記
+      body: "新項目、檢視中、已檢視，以及重新掃描後的待檢視。你隨時知道自己看到哪裡。"
+    - title: 進度與可省空間
+      body: "已檢視、剩餘、已選取與預估可省空間，另有依月份分組的清理歷史記錄。"
+    - title: 適合你的版面
+      body: "可自動調整的格線，在寬鬆的單欄與較緊湊的檢視之間切換，並在下次啟動時記住你的選擇。"
+    - title: 十二種語言、深色模式
+      body: "英文、烏克蘭文、德文、法文、西班牙文、拉丁美洲西班牙文、巴西葡萄牙文、義大利文、荷蘭文、波蘭文、土耳其文與繁體中文，全程支援，並完整支援深色模式。"
+
+screenshots:
+  title: 看看裡面
+  subtitle: "App 中的畫面。"
+  pending: "螢幕快照會在推出前準備好。"
+
+privacy:
+  title: 隱私就是重點所在
+  subtitle: "整理照片意味著把你最私密的收藏交給一個 App。Alike 從一開始就設計成讓它永遠不必離開你的手中。"
+  image_alt: "吉祥物在整理完成的照片圖庫旁休息。"
+  claims:
+    - title: 分析在你的裝置上執行
+      body: "Apple 的 Vision 框架在本機比對你的照片。並不存在可以傳送任何東西的 Alike 伺服器。"
+    - title: 照片永遠不會被上傳
+      body: "任何照片、縮覽圖或特徵指紋都不會離開你的裝置。"
+    - title: 沒有分析追蹤，沒有行為追蹤
+      body: "沒有使用事件、沒有廣告識別碼、沒有當機回報 SDK、沒有 Cookie。App 不會自行發出任何網路請求。"
+    - title: 刪不刪永遠由你決定
+      body: "每一次清理都需要你確認，iOS 還會再問一次，而照片會進入「最近刪除」。"
+  cta: 閱讀完整隱私權政策
+
+pricing:
+  title: 價格
+  subtitle: "Alike 免費下載。Alike Pro 解除限制。"
+  free:
+    name: Alike Free
+    price: 免費
+    period: ""
+    features:
+      - "每月 3 次掃描"
+      - "有最佳照片引導的檢視流程"
+      - "排序與清理歷史記錄"
+      - "一次清理一張照片"
+  pro:
+    name: Alike Pro
+    badge: 推薦
+    price_note: "年繳與月繳方案，以你的當地貨幣計價。"
+    trial: 年繳方案 7 天免費試用
+    features:
+      - "無限次掃描"
+      - "一次清理整批選取的照片"
+      - "螢幕快照清理"
+      - "模糊照片清理"
+      - "進階篩選"
+      - "自訂清理提醒"
+  # 與 Docs/legal/subscription-disclosure.md 的付費牆文案逐字相同。
+  # PurchasesUITests/SubscriptionDisclosureTests 在那裡固定了 App 端的字串；
+  # 這一頁不可以變成第三個、與前兩者不同的版本。
+  disclosure_renewal: "除非在目前週期結束前至少 24 小時取消，訂閱項目將自動續訂。款項將向你的 Apple 帳戶收取。"
+  disclosure_trial: "年繳方案為符合資格的新訂閱者提供 7 天免費試用。除非你在試用結束前至少 24 小時取消，否則試用結束時即開始計費。你可以隨時在 iOS「設定」中管理或取消訂閱項目。"
+
+faq:
+  title: 常見問題
+  items:
+    - q: Alike 會把我的照片上傳到什麼地方嗎？
+      a: "不會。所有比對都以 Apple 的 Vision 框架在你的裝置上執行，App 也不會自行發出網路請求。唯一的對外行為由 Apple 處理，也就是你購買或回復訂閱項目的時候。"
+    - q: Alike 會不問就刪除照片嗎？
+      a: "絕對不會。要移除什麼由你選擇，Alike 會請你確認，iOS 在刪除前還會顯示自己的確認。刪除的照片會進入「最近刪除」，iOS 會在那裡保留約 30 天。"
+    - q: 我需要帳戶嗎？
+      a: "不需要。Alike 沒有帳戶、不需登入，也沒有伺服器。打開 App 就能開始。"
+    - q: Alike 到底會取用什麼？
+      a: "你的照片圖庫，一開始詢問一次。你可以授予完整取用權，也可以授予有限取用權並自行選擇 Alike 看得到哪些照片；隨時都能在 iOS「設定」中更改。只有在你開啟每週清理提醒時，才會詢問通知權限。"
+    - q: Alike 怎麼判斷哪些照片相似？
+      a: "Vision 框架會為每張照片產生一組數值特徵指紋。系統只比對拍攝時間與地點相近的照片，而且一張照片必須與該組中所有照片都相似，才會被歸入該組。敏感度決定「多相似才算夠相似」。"
+    - q: 什麼是最佳照片？
+      a: "以可理解的方式挑出每一組中最好的一張，讓你永遠有一個合理的保留預設值。你隨時可以自行改選。"
+    - q: 我要怎麼取消訂閱？
+      a: "在 iOS「設定」中點一下你的名字，再點「訂閱項目」。取消後不再自動續訂，已付費的期間內仍可繼續使用。訂閱與退款由 Apple 處理，不是由我們處理。"
+    - q: 我可以刪掉 Alike 儲存的所有東西嗎？
+      a: "可以。「設定」→「資料與隱私權」→「刪除 Alike 資料」。這會清除掃描結果、清理記錄與偏好設定，而你的照片、照片取用權與訂閱項目都不受影響。"
+
+support:
+  title: 支援
+  subtitle: "沒有帳戶，也沒有工單系統。寄一封電子郵件，就會收到回覆。"
+  contact_title: 與我們聯絡
+  contact_body: "電子郵件是最快的方式。請附上你的 iOS 版本、裝置型號，以及你原本預期會發生什麼。"
+  response: "通常幾天內就會收到回覆。"
+  before_title: 寄信之前
+  before_body: "App 內建的使用說明涵蓋了大部分常見問題。打開 Alike，前往「設定」，再點「使用說明」。"
+  bug_title: 回報問題
+  bug_body: "請描述你做了什麼、預期會發生什麼，以及實際發生了什麼。請不要寄來你圖庫中的照片——我們不需要，也希望不要收到。"
+  details_title: "有幫助的資訊："
+  details:
+    - "你的 iPhone 型號與 iOS 版本"
+    - "Alike 的版本，顯示在「設定」最下方"
+    - "你做了什麼、預期會發生什麼，以及實際發生了什麼"
+    - "照片圖庫權限是完整取用權還是有限取用權"
+  privacy_title: 隱私相關問題
+  privacy_body: "Alike 沒有伺服器，也不收集任何東西，因此沒有可供匯出或刪除的帳戶資料。隱私權政策有完整說明，而「設定」中的「刪除 Alike 資料」會移除所有儲存在你裝置上的內容。"
+  subs_title: 訂閱與退款
+  subs_body: "Alike Pro 由 Apple 銷售。訂閱、取消與退款完全透過你的 Apple 帳戶處理，我們無法代你取消或退款。"
+  subs_manage: "管理或取消：iOS「設定」→ 你的名字 →「訂閱項目」"
+  subs_refund_prefix: "申請退款："
+  subs_refund_link: "Apple 的退款流程"
+  subs_restore: "在新裝置上回復購買項目：Alike「設定」→「回復購買項目」"
+
+footer:
+  tagline: "找出視覺上相似的照片。留下最好的。清理其餘的。"
+  privacy: 隱私權政策
+  terms: 使用條款
+  support: 支援
+  contact: 聯絡我們
+  built: "以 Swift 與 SwiftUI 打造。"
