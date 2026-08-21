@@ -12,6 +12,9 @@ contact_email: oleksandr.solokha@gmail.com
 # the hero badge and the JSON-LD offer cannot drift apart.
 app_store_url: "https://apps.apple.com/app/id6798399598"
 
+# The public source repository, linked from the footer.
+source_url: "https://github.com/solokha-o/Alike"
+
 # Year of first publication, which is what a copyright line states — not the
 # current year. Kept fixed so it stays aligned with COPYRIGHT in the app repo's
 # tools/prepare_app_store_upload_bundle.py, which App Store Connect shows as
