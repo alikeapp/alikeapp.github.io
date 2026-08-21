@@ -5,7 +5,7 @@
 #
 #   ./scripts/check-site.sh [_site]
 #
-# Five assertions, in order of how expensive the failure is:
+# Six assertions, in order of how expensive the failure is:
 #
 #   1. Locale matrix     — every locale publishes all four pages.
 #   2. Internal links    — every site-relative href resolves to a real file.
@@ -13,6 +13,8 @@
 #   4. Terms guardrails  — every Terms page still names Apple's Standard EULA
 #                          and carries both subscription disclosures.
 #   5. Third-party hosts — nothing external is referenced at all.
+#   6. Link preview     — every page's og:image resolves, is the size it says
+#                          it is, and asks for the large card.
 #
 # (5) used to live inline in .github/workflows/pages.yml. It is here so one
 # script is the whole gate and so a pull request can run the same checks the
@@ -312,6 +314,117 @@ if [ -n "$external" ]; then
 else
   pass "no third-party hosts referenced"
 fi
+
+echo "==> 6. Link preview"
+# What a messenger draws when someone pastes a link from this site. It is
+# checked here because nothing else can: assertion 2 reads href, src, srcset and
+# url(), and og:image is none of those — a card pointing at a file that does not
+# exist would deploy green and simply show no preview.
+#
+# The three things asserted are the three that were wrong before the cards
+# existed. The image has to resolve; it has to actually be 1200x630, because the
+# declared width and height are what Facebook and WhatsApp trust instead of
+# downloading the file; and twitter:card has to ask for the large card, since
+# "summary" is a request for the small square one that started all this.
+site_url=$(grep -E '^url:' "$CONFIG" | head -1 \
+             | sed -E 's/^url:[[:space:]]*//; s/[[:space:]]*(#.*)?$//; s/^["'"'"']//; s/["'"'"']$//; s|/$||')
+if [ -z "$site_url" ]; then
+  fail "_config.yml defines no url:, so og:image cannot be resolved."
+fi
+
+# The content of one <meta>, by property= or name=.
+meta_content() {
+  grep -ohE "<meta (property|name)=\"$2\" content=\"[^\"]*\"" "$1" \
+    | sed -E 's/.*content="//; s/"$//' | head -1
+}
+
+# The dimensions a decoder would read out of a JPEG, from its SOF segment —
+# walking the markers rather than trusting the filename, because the whole point
+# of this assertion is that the declared size and the real one agree. Prints
+# "<width> <height>", or nothing if the file is not a JPEG this can read.
+jpeg_dimensions() {
+  od -An -v -tu1 "$1" 2>/dev/null | awk '
+    { for (i = 1; i <= NF; i++) b[++n] = $i + 0 }
+    END {
+      # Decimal bytes, not hex: strtonum() is a gawk extension and the awk on
+      # macOS does not have it.
+      if (b[1] != 255 || b[2] != 216) exit           # not a JPEG (no SOI)
+      i = 3
+      while (i < n) {
+        if (b[i] != 255) exit                        # lost the marker stream
+        while (b[i + 1] == 255) i++                  # fill bytes are legal
+        marker = b[i + 1]
+        i += 2
+        # Start Of Frame in every flavour that carries dimensions: 0xC0-0xCF
+        # except the Huffman table (0xC4), the arithmetic-coding table (0xCC)
+        # and the JPEG extension (0xC8), which are not frames.
+        if (marker >= 192 && marker <= 207 && marker != 196 && marker != 200 && marker != 204) {
+          print b[i + 5] * 256 + b[i + 6], b[i + 3] * 256 + b[i + 4]
+          exit
+        }
+        # Standalone markers carry no length field.
+        if (marker == 216 || marker == 217 || marker == 1 || (marker >= 208 && marker <= 215)) continue
+        i += b[i] * 256 + b[i + 1]
+      }
+    }'
+}
+
+preview_ok=1
+cards=""
+while IFS= read -r html; do
+  rel="${html#$SITE}"
+  card=$(meta_content "$html" 'og:image')
+  twitter_image=$(meta_content "$html" 'twitter:image')
+  twitter_card=$(meta_content "$html" 'twitter:card')
+  declared_w=$(meta_content "$html" 'og:image:width')
+  declared_h=$(meta_content "$html" 'og:image:height')
+  alt=$(meta_content "$html" 'og:image:alt')
+
+  if [ -z "$card" ]; then
+    fail "$rel has no og:image, so it unfurls as text only"
+    preview_ok=0
+    continue
+  fi
+
+  case "$card" in
+    "$site_url"/*) card_path="${card#$site_url}" ;;
+    *) fail "$rel points og:image at '$card', which is not on this site"; preview_ok=0; continue ;;
+  esac
+
+  if [ ! -f "$SITE$card_path" ]; then
+    fail "$rel points og:image at '$card_path', which is not in the build"
+    preview_ok=0
+    continue
+  fi
+
+  [ "$twitter_image" = "$card" ] || { fail "$rel: twitter:image is '$twitter_image', not the og:image card"; preview_ok=0; }
+  [ "$twitter_card" = "summary_large_image" ] || { fail "$rel: twitter:card is '$twitter_card'; 'summary_large_image' is what asks for the large preview"; preview_ok=0; }
+  [ -n "$alt" ] || { fail "$rel: og:image has no alt text"; preview_ok=0; }
+  if [ -z "$declared_w" ] || [ -z "$declared_h" ]; then
+    fail "$rel declares no og:image:width/height; Facebook and WhatsApp skip an image whose size they would have to fetch the file to learn"
+    preview_ok=0
+    continue
+  fi
+
+  cards="$cards$card_path $declared_w $declared_h"$'\n'
+done < <(find "$SITE" -name 'index.html')
+
+# One decode per distinct card rather than one per page.
+while IFS= read -r entry; do
+  [ -z "$entry" ] && continue
+  set -- $entry
+  real=$(jpeg_dimensions "$SITE$1")
+  if [ -z "$real" ]; then
+    fail "could not read the dimensions of $1; is it a JPEG?"
+    preview_ok=0
+  elif [ "$real" != "$2 $3" ]; then
+    fail "$1 is ${real// /x} but the pages declare $2x$3 — every unfurler will lay the card out wrong"
+    preview_ok=0
+  fi
+done < <(printf '%s' "$cards" | sort -u)
+
+[ "$preview_ok" -eq 1 ] && pass "every og:image resolves, measures what it declares, and asks for the large card"
+
 
 echo
 if [ "$status" -eq 0 ]; then

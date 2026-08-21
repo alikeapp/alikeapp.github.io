@@ -235,6 +235,40 @@ expect_pass "a real Apple subdomain link still passes (support.apple.com)"
 expect_pass_mutated "the source link still passes with a trailing slash" \
   'perl -0pi -e "s{href=\"https://github.com/solokha-o/Alike\"}{href=\"https://github.com/solokha-o/Alike/\"}" "$S/index.html"'
 
+echo "==> 6. link preview"
+# Assertion 2 reads href, src, srcset and url(), and og:image is none of those:
+# before assertion 6 existed, a card pointing at nothing deployed green.
+expect_fail "an og:image pointing at a missing file fails" \
+  "og:image at '/assets/img/og/nope.jpg', which is not in the build" \
+  'perl -0pi -e "s{/assets/img/og/en\.jpg}{/assets/img/og/nope.jpg}g" "$S/index.html"'
+
+# The small square card is what the site used to ask for, and what made Slack
+# and iMessage unfurl text with no image at all.
+expect_fail "asking for the small summary card fails" \
+  "twitter:card is 'summary'" \
+  'perl -0pi -e "s{content=\"summary_large_image\"}{content=\"summary\"}" "$S/uk/index.html"'
+
+# The declared size is what Facebook and WhatsApp lay the card out from, instead
+# of downloading the image to measure it — so a card regenerated at another size
+# breaks the preview while every link still resolves.
+expect_fail "declared dimensions that do not match the file fail" \
+  "but the pages declare 1201x630" \
+  'perl -0pi -e "s{og:image:width\" content=\"1200\"}{og:image:width\" content=\"1201\"}" "$S/index.html"'
+expect_fail "dropping og:image:width fails" \
+  "declares no og:image:width/height" \
+  'perl -0pi -e "s{<meta property=\"og:image:width\"[^>]*>\n}{}" "$S/de/index.html"'
+
+# A card served from somewhere else would also be the site's first third-party
+# fetch; both assertions have something to say about it, and this pins that the
+# preview check is one of them.
+expect_fail "an og:image on another host fails" \
+  "which is not on this site" \
+  'perl -0pi -e "s{https://alikeapp\.github\.io/assets/img/og/en\.jpg}{https://cdn.example.com/card.jpg}g" "$S/index.html"'
+
+expect_fail "an og:image with no alt text fails" \
+  "og:image has no alt text" \
+  'perl -0pi -e "s{<meta property=\"og:image:alt\"[^>]*>\n}{}" "$S/pl/index.html"'
+
 echo
 if [ "$status" -eq 0 ]; then
   echo "All $ran check-site regression tests passed."
