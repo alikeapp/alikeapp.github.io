@@ -269,13 +269,23 @@ echo "==> 5. Third-party hosts"
 #
 # alikeapp.github.io is this site's own host: sitemap.xml and robots.txt emit
 # absolute URLs, so omitting it fails the build on the site's own links.
-# github.com is the header nav's source-repository link. It is a link the reader
-# may follow, not an asset the page loads, so it costs no request and leaves the
-# privacy claim intact. The App Store badge is the same story in reverse: it is
-# Apple's artwork, but it is served from this site (assets/img/app-store-badge/)
-# precisely so the page never fetches anything from apple.com.
-hosts='alikeapp\.github\.io|apple\.com|github\.com|w3\.org|schema\.org|sitemaps\.org'
+# The App Store badge is Apple's artwork but is served from this site
+# (assets/img/app-store-badge/) precisely so the page never fetches anything from
+# apple.com.
+#
+# github.com is deliberately *not* in this list. The header nav links to the
+# source repository, and a whole-host exception would have allowed every other
+# GitHub URL too — including <script src="https://github.com/anything.js">, since
+# this scan reads URLs and cannot tell a link the reader may follow from a
+# subresource the browser fetches. Instead the one URL that is allowed is the
+# exact source_url from _config.yml, matched whole and literally below.
+hosts='alikeapp\.github\.io|apple\.com|w3\.org|schema\.org|sitemaps\.org'
 allowed="([a-z0-9-]+\.)*($hosts)"
+source_url=$(grep -E '^source_url:' "$CONFIG" | head -1 \
+               | sed -E 's/^source_url:[[:space:]]*//; s/[[:space:]]*(#.*)?$//; s/^["'"'"']//; s/["'"'"']$//')
+if [ -z "$source_url" ]; then
+  fail "_config.yml defines no source_url, but the header nav links to it."
+fi
 #
 # The trailing (:port)? and delimiter are load-bearing, not tidiness. Matching
 # the allow-list as a bare prefix accepts any host that merely *starts* with an
@@ -290,6 +300,12 @@ boundary='(:[0-9]+)?([/?#]|$)'
 external=$(grep -rhoIE 'https?://[^"'"'"' )<>]+' "$SITE" \
              | sort -u \
              | grep -vE "^https?://($allowed)$boundary" || true)
+# The source link is filtered whole (-x) and literally (-F), so only that exact
+# URL survives: https://github.com/solokha-o/Alike/track.js, or any other path on
+# the host, still reads as an external host and fails the build.
+if [ -n "$source_url" ] && [ -n "$external" ]; then
+  external=$(printf '%s\n' "$external" | grep -vxF -e "$source_url" -e "$source_url/" || true)
+fi
 if [ -n "$external" ]; then
   fail "External hosts found in the built site:"
   printf '%s\n' "$external" >&2

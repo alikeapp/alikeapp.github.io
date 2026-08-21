@@ -42,15 +42,49 @@ LOCALES=(
 
 status=0
 
+# Every download lands in a temporary file, is checked for being a whole SVG, and
+# only then replaces the tracked badge. curl -f rejects an HTTP error status but
+# not an HTML courtesy page served as 200, and a transfer cut halfway still
+# leaves whatever arrived behind — writing straight to the tracked file would
+# turn either into a committed, broken badge that the build cannot tell from a
+# good one, because check-site.sh only asserts that the path resolves.
+valid_svg() {
+  local f="$1"
+  [ -s "$f" ] || return 1
+  head -c 512 "$f" | grep -qi '<svg' || return 1
+  tail -c 512 "$f" | grep -qi '</svg>' || return 1
+}
+
+install_badge() {
+  local url="$1" dest="$2" tmp
+  tmp="$(mktemp)"
+  if ! curl -fsSL --max-time 30 -o "$tmp" "$url"; then
+    rm -f "$tmp"
+    return 1
+  fi
+  if ! valid_svg "$tmp"; then
+    rm -f "$tmp"
+    return 2
+  fi
+  # mktemp creates 0600 and mv keeps the mode, which would hand the site a badge
+  # only its owner can read.
+  chmod 644 "$tmp"
+  if ! mv "$tmp" "$dest"; then
+    rm -f "$tmp"
+    return 3
+  fi
+}
+
 # The English badge is served straight from developer.apple.com, which is where
 # Apple has published it for years; the rest come from the marketing toolbox,
 # which is the only source of the localized artwork.
 echo "==> en (developer.apple.com)"
-if curl -fsSL --max-time 30 -o "$OUT/en.svg" \
-     "https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"; then
+if install_badge "https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" "$OUT/en.svg"; then
   echo "  ok  $OUT/en.svg"
 else
-  echo "::error::Could not download the English badge; $OUT/en.svg left as it was." >&2
+  # en.svg is every locale's fallback, so a failure here is the one that must be
+  # loud: the previous file is still in place, unchanged and still valid.
+  echo "::error::Could not install the English badge; $OUT/en.svg left as it was." >&2
   status=1
 fi
 
@@ -59,16 +93,27 @@ for entry in "${LOCALES[@]}"; do
   apple="${entry##*:}"
   url="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/$apple"
   echo "==> $lang ($apple)"
-  tmp="$(mktemp)"
-  if curl -fsSL --max-time 30 -o "$tmp" "$url" && head -c 200 "$tmp" | grep -qi '<svg'; then
-    mv "$tmp" "$OUT/$lang.svg"
-    echo "  ok  $OUT/$lang.svg"
-  else
-    rm -f "$tmp"
-    # Not fatal: the layout falls back to en.svg, which is still Apple's own
-    # unmodified badge and so still within the guidelines.
-    echo "  --  no badge for $apple; /$lang/ keeps the English fallback" >&2
-  fi
+  install_badge "$url" "$OUT/$lang.svg"
+  case $? in
+    0)
+      echo "  ok  $OUT/$lang.svg"
+      ;;
+    1|2)
+      # Not fatal: the layout falls back to en.svg, which is still Apple's own
+      # unmodified badge and so still within the guidelines. Apple not publishing
+      # a badge for a locale is a normal outcome of this script, not a failure of
+      # it, and it is not worth a nonzero exit that a caller has to special-case.
+      echo "  --  no usable badge for $apple; /$lang/ keeps the English fallback" >&2
+      ;;
+    *)
+      # A move that failed is different in kind: the download worked, so the
+      # badge exists and something about this working tree stopped it landing —
+      # a read-only file, a full disk. Silently reporting the fallback would hide
+      # that from anyone reading the log or the exit status.
+      echo "::error::Downloaded the $apple badge but could not write $OUT/$lang.svg." >&2
+      status=1
+      ;;
+  esac
 done
 
 exit "$status"

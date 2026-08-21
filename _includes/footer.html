@@ -32,5 +32,21 @@
       © {{ site.copyright_year }} Oleksandr Solokha.
       <span class="site-footer__built">{{ t.footer.built }}</span>
     </p>
+
+    {%- comment -%}
+    Required by Apple's marketing guidelines: a site that shows the App Store
+    badge must credit Apple and the Apple logo once, wherever it gives legal
+    notice. That is this footer, which every page carries — the badge is only on
+    the home page, but the credit belongs with the rest of the legal line.
+
+    Left in English on purpose and kept out of _data: this is Apple's own
+    trademark wording, and a translated paraphrase would not be the credit they
+    ask for.
+    {%- endcomment -%}
+    <p class="site-footer__trademarks">
+      Apple and the Apple logo are trademarks of Apple Inc., registered in the
+      U.S. and other countries and regions. App Store is a service mark of
+      Apple Inc.
+    </p>
   </div>
 </footer>

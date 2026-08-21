@@ -217,8 +217,23 @@ expect_fail "a host that only prefixes our own fails (alikeapp.github.io.*)" \
   "alikeapp.github.io.evil" \
   'perl -0pi -e "s{href=\"/assets/css/main.css\"}{href=\"https://alikeapp.github.io.evil/x.css\"}" "$S/index.html"'
 
-# The boundary must not reject the legitimate cases it sits next to.
+# github.com is allowed as one exact URL, not as a host: the source link is
+# something the reader may click, while any other GitHub URL in the built site
+# would be a subresource the browser fetches — which is what the privacy claim
+# forbids, and which a host-wide exception used to wave through.
+expect_fail "a GitHub-hosted subresource fails" \
+  "github.com/track.js" \
+  'perl -0pi -e "s{href=\"/assets/css/main.css\"}{href=\"https://github.com/track.js\"}" "$S/index.html"'
+expect_fail "another path on the source repository fails" \
+  "solokha-o/Alike/raw/main/evil.js" \
+  'perl -0pi -e "s{href=\"/assets/css/main.css\"}{href=\"https://github.com/solokha-o/Alike/raw/main/evil.js\"}" "$S/index.html"'
+
+# The boundary must not reject the legitimate cases it sits next to. The source
+# link is in the real rendered site, so the baseline covers it passing; this adds
+# the trailing-slash spelling of the same URL, which is equally legitimate.
 expect_pass "a real Apple subdomain link still passes (support.apple.com)"
+expect_pass_mutated "the source link still passes with a trailing slash" \
+  'perl -0pi -e "s{href=\"https://github.com/solokha-o/Alike\"}{href=\"https://github.com/solokha-o/Alike/\"}" "$S/index.html"'
 
 echo
 if [ "$status" -eq 0 ]; then
