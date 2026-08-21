@@ -59,6 +59,7 @@ seventh would need no change here. x-default points at the default language.
   "operatingSystem": "iOS 17.0 or later",
   "description": {{ t.meta.description | jsonify }},
   "url": {{ canonical | jsonify }},
+  "installUrl": {{ site.app_store_url | jsonify }},
   "image": {{ '/assets/img/og-image.jpg' | absolute_url | jsonify }},
   "inLanguage": {{ site.languages | jsonify }},
   "author": {
@@ -69,6 +70,8 @@ seventh would need no change here. x-default points at the default language.
     "@type": "Offer",
     "price": "0",
     "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": {{ site.app_store_url | jsonify }},
     "description": "Free to download with an optional Alike Pro subscription."
   }
 }

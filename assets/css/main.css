@@ -289,6 +289,10 @@ a:hover { color: var(--accent); }
   color: var(--text-muted);
 }
 
+/* The paragraph only carries the badge; the hero's own spacing below it comes
+   from .hero__badge-note, so the browser's default <p> margins would double it. */
+.hero__badge { margin: 0; }
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -298,11 +302,15 @@ a:hover { color: var(--accent); }
   border-radius: var(--r-md);
   font-family: var(--font-display);
   font-weight: 600;
+  text-decoration: none;
 }
-.badge--pending {
+.badge--store {
   background: var(--text);
   color: var(--bg);
-  opacity: 0.92;
+}
+.badge--store:hover,
+.badge--store:focus-visible {
+  background: color-mix(in srgb, var(--text) 85%, var(--bg));
 }
 .badge__glyph { width: 22px; height: 22px; fill: currentColor; }
 
