@@ -30,6 +30,23 @@ The privacy policy claims Alike collects nothing and makes no network requests o
 own; an analytics script, a CDN asset or a remote web font would make that claim false.
 Add a host to the allow-list in that workflow only if it is genuinely first-party.
 
+## Link previews
+
+`assets/img/og/<lang>.jpg` are the 1200×630 cards messengers show when someone pastes a
+link. They are committed, not built: CI runs on Ubuntu, and the renderer needs
+CoreGraphics and the macOS system fonts. Regenerate them on a Mac after changing the app
+icon or a hero headline:
+
+```
+./scripts/make-og-images.sh
+```
+
+The script takes the locale list from `_config.yml` and each card's line of copy from
+that locale's `hero.headline`, so nothing about it is hand-kept. Assertion 6 of
+`scripts/check-site.sh` fails the build if a card goes missing, stops being the size the
+pages declare, or if a page drops back to the small `summary` card — which is what made
+Slack and iMessage unfurl these links with no image at all.
+
 ## Editing copy
 
 The source copy is maintained in the app repository under `Docs/legal/`; see

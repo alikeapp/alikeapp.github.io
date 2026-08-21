@@ -34,17 +34,44 @@ seventh would need no change here. x-default points at the default language.
 <link rel="alternate" hreflang="x-default" href="{{ site.data[site.default_lang][url_key] | absolute_url }}">
 {%- endif %}
 
+{%- comment -%}
+The link preview a messenger draws when someone pastes a URL from this site.
+
+og:image is a 1200x630 card, not the square app artwork it used to be. Slack,
+iMessage, Telegram and WhatsApp only render the large preview for a roughly
+1.91:1 image; handed a 1:1 one they drop the image and unfurl text alone, which
+is what this site did until the card existed.
+
+The dimensions are declared rather than left to be discovered. Facebook and
+WhatsApp will skip an image whose size they would have to download the file to
+learn — so "the preview looks fine in Slack" is not evidence these tags are
+complete, and the width/height pair is not decoration.
+
+One card per locale, drawn from that locale's own hero headline by
+scripts/make-og-images.sh. The filename is page.lang, the same contract the App
+Store badge follows in _layouts/home.html, and the alt text restates the words
+printed on the card in the language the card is in.
+{%- endcomment -%}
+{%- assign og_card = '/assets/img/og/' | append: page.lang | append: '.jpg' | absolute_url -%}
+{%- assign og_card_alt = site.title | append: ": " | append: t.hero.headline -%}
+
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:locale" content="{{ t.og_locale }}">
 <meta property="og:title" content="{{ page_title }}">
 <meta property="og:description" content="{{ page_description | strip_html | normalize_whitespace }}">
 <meta property="og:url" content="{{ canonical }}">
-<meta property="og:image" content="{{ '/assets/img/og-image.jpg' | absolute_url }}">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="{{ og_card }}">
+<meta property="og:image:secure_url" content="{{ og_card }}">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ og_card_alt }}">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ page_title }}">
 <meta name="twitter:description" content="{{ page_description | strip_html | normalize_whitespace }}">
-<meta name="twitter:image" content="{{ '/assets/img/og-image.jpg' | absolute_url }}">
+<meta name="twitter:image" content="{{ og_card }}">
+<meta name="twitter:image:alt" content="{{ og_card_alt }}">
 
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32.png' | relative_url }}">
 <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
@@ -60,6 +87,10 @@ seventh would need no change here. x-default points at the default language.
   "description": {{ t.meta.description | jsonify }},
   "url": {{ canonical | jsonify }},
   "installUrl": {{ site.app_store_url | jsonify }},
+  {% comment %}
+  Deliberately the square artwork and not the 1200x630 share card: this field
+  depicts the application itself, and search engines show it at icon size.
+  {%- endcomment -%}
   "image": {{ '/assets/img/og-image.jpg' | absolute_url | jsonify }},
   "inLanguage": {{ site.languages | jsonify }},
   "author": {
