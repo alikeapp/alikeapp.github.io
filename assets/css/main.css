@@ -192,8 +192,9 @@ a:hover { color: var(--accent); }
 }
 .nav__list a:hover { color: var(--text); }
 
-/* The source link is a glyph with no text, so it needs its own box: the nav's
-   font-size would otherwise size an empty line, and hover has no text to tint. */
+/* The source link is a glyph with no text: the flex box drops the line box the
+   nav's font-size would otherwise reserve around it. The glyph inherits the
+   link colour, so the nav's hover rule tints it like any other item. */
 .nav__icon { display: flex; }
 .nav__icon svg { width: 18px; height: 18px; fill: currentColor; }
 
@@ -254,8 +255,8 @@ a:hover { color: var(--accent); }
 .lang__list a:hover { background: var(--bg-tint); color: var(--text); }
 
 /* Narrow screens drop the in-page anchors: those sections are directly below
-   the fold and the footer repeats every link, so Support and the language
-   switch are all that need to stay reachable from the header. */
+   the fold and the footer repeats every link, so Support, the source link and
+   the language switch are all that need to stay reachable from the header. */
 @media (max-width: 719px) {
   .nav__anchor { display: none; }
   .nav__list { gap: var(--s-md); }
@@ -294,30 +295,28 @@ a:hover { color: var(--accent); }
   color: var(--text-muted);
 }
 
-/* The paragraph only carries the badge; the hero's own spacing below it comes
-   from .hero__badge-note, so the browser's default <p> margins would double it. */
+/* App Store badge. Apple's Identity Guidelines own how this looks, so the rules
+   here only place it: the artwork is their SVG and is never restyled — no
+   recolouring, no border-radius of ours, no hover tint on the image itself.
+   The paragraph carries no margin because the spacing below the badge comes
+   from .hero__badge-note; default <p> margins would double it. */
 .hero__badge { margin: 0; }
-
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--s-xs);
-  margin: 0;
-  padding: var(--s-sm) var(--s-lg);
-  border-radius: var(--r-md);
-  font-family: var(--font-display);
-  font-weight: 600;
-  text-decoration: none;
+.hero__badge-link {
+  display: inline-block;
+  /* Apple asks for clear space of at least 10% of the badge's height on every
+     side. At 48px tall that is 4.8px, so 8px keeps a margin over the minimum
+     even against the headline's optical edge. */
+  padding: var(--s-xs);
+  margin: calc(var(--s-xs) * -1);
 }
-.badge--store {
-  background: var(--text);
-  color: var(--bg);
+.hero__badge-link img {
+  display: block;
+  /* Comfortably over the 40px minimum height the guidelines set for the badge,
+     and `width: auto` keeps Apple's aspect ratio whatever locale's artwork it
+     is — the localized badges are wider than the English one. */
+  height: 48px;
+  width: auto;
 }
-.badge--store:hover,
-.badge--store:focus-visible {
-  background: color-mix(in srgb, var(--text) 85%, var(--bg));
-}
-.badge__glyph { width: 22px; height: 22px; fill: currentColor; }
 
 .hero__badge-note {
   margin: var(--s-xs) 0 var(--s-lg);

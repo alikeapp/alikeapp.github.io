@@ -269,9 +269,11 @@ echo "==> 5. Third-party hosts"
 #
 # alikeapp.github.io is this site's own host: sitemap.xml and robots.txt emit
 # absolute URLs, so omitting it fails the build on the site's own links.
-# github.com is the footer's source-repository link. It is a link the reader may
-# follow, not an asset the page loads, so it costs no request and leaves the
-# privacy claim intact.
+# github.com is the header nav's source-repository link. It is a link the reader
+# may follow, not an asset the page loads, so it costs no request and leaves the
+# privacy claim intact. The App Store badge is the same story in reverse: it is
+# Apple's artwork, but it is served from this site (assets/img/app-store-badge/)
+# precisely so the page never fetches anything from apple.com.
 hosts='alikeapp\.github\.io|apple\.com|github\.com|w3\.org|schema\.org|sitemaps\.org'
 allowed="([a-z0-9-]+\.)*($hosts)"
 #
