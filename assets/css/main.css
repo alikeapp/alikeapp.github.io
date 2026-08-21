@@ -265,8 +265,21 @@ a:hover { color: var(--accent); }
    the fold and the footer repeats every link, so Support, the source link and
    the language switch are all that need to stay reachable from the header. */
 @media (max-width: 719px) {
+  /* Keep the brand and the three destinations that remain useful on a small
+     screen on separate rows. The nav row then has the full content width, so
+     even the longest translated Support/language labels cannot force the
+     header wider than its 320px viewport. */
+  .site-header__inner {
+    flex-wrap: wrap;
+    row-gap: var(--s-xs);
+  }
+  .nav { flex: 1 0 100%; }
   .nav__anchor { display: none; }
-  .nav__list { gap: var(--s-md); }
+  .nav__list {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: var(--s-md);
+  }
 }
 
 /* ---------- hero ---------- */

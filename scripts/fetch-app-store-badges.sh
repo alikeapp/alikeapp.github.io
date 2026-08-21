@@ -51,9 +51,41 @@ status=0
 valid_svg() {
   local f="$1"
   [ -s "$f" ] || return 1
-  head -c 512 "$f" | grep -qi '<svg' || return 1
-  tail -c 512 "$f" | grep -qi '</svg>' || return 1
+
+  # xmllint checks both well-formedness (including a complete closing tree) and
+  # the actual document element. Looking for '<svg' anywhere in the response
+  # would accept an HTML error page that happened to embed an inline SVG.
+  if command -v xmllint >/dev/null 2>&1; then
+    xmllint --noout "$f" >/dev/null 2>&1 || return 1
+    [ "$(xmllint --xpath 'local-name(/*)' "$f" 2>/dev/null)" = "svg" ]
+    return $?
+  fi
+
+  # macOS and the hosted CI images provide xmllint. Keep a conservative fallback
+  # for minimal environments: it still requires the first document element to
+  # be <svg> and the document to end with its closing tag, while allowing XML
+  # declarations, comments and whitespace around the root.
+  perl -0777 -e '
+    my $s = <>;
+    $s =~ s/^\x{FEFF}//;
+    $s =~ s/\A(?:\s|<!--.*?-->|<\?.*?\?>)*//s;
+    exit 1 unless $s =~ /\A<svg(?:\s[^>]*)?>/i;
+    exit 1 unless $s =~ /<\/svg>\s*(?:<!--.*?-->|<\?.*?\?>|\s)*\z/is;
+    exit 0;
+  ' "$f"
 }
+
+# A small read-only entry point keeps the validator regression-testable without
+# downloading badges. The normal no-argument path below remains unchanged.
+if [ "${1:-}" = "--validate-svg" ]; then
+  shift
+  [ "$#" -gt 0 ] || exit 2
+  status=0
+  for f in "$@"; do
+    valid_svg "$f" || status=1
+  done
+  exit "$status"
+fi
 
 install_badge() {
   local url="$1" dest="$2" tmp
