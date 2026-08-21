@@ -192,6 +192,11 @@ a:hover { color: var(--accent); }
 }
 .nav__list a:hover { color: var(--text); }
 
+/* The source link is a glyph with no text, so it needs its own box: the nav's
+   font-size would otherwise size an empty line, and hover has no text to tint. */
+.nav__icon { display: flex; }
+.nav__icon svg { width: 18px; height: 18px; fill: currentColor; }
+
 /* Language switcher. Six locales are too many for the single pill-shaped link
    this replaced, and the site ships no JavaScript, so it is a <details>
    disclosure — the same mechanism the FAQ uses. The summary keeps the old pill
@@ -720,10 +725,6 @@ a:hover { color: var(--accent); }
 }
 .site-footer__links a { color: var(--text-muted); text-decoration: none; font-size: 15px; }
 .site-footer__links a:hover { color: var(--accent-strong); text-decoration: underline; }
-/* The icon carries no text, so hover cannot underline: it changes colour instead. */
-.site-footer__icon { display: inline-flex; color: var(--text-muted); }
-.site-footer__icon svg { width: 18px; height: 18px; fill: currentColor; }
-.site-footer__icon:hover { color: var(--accent-strong); }
 
 /* All six languages, flat. This is the bottom of the page, there is room, and a
    reader who scrolled here looking for their language should not have to open a

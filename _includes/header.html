@@ -22,8 +22,8 @@ that document's URL under <page_key>_url.
     {%- comment -%}
     A plain nav, no disclosure widget and no script. On narrow screens the
     in-page anchors are hidden — the sections sit directly below the fold and
-    the footer repeats every link — leaving Support and the language switch,
-    which are the only two destinations you cannot reach by scrolling.
+    the footer repeats every link — leaving Support, the source link and the
+    language switch, which are the destinations you cannot reach by scrolling.
     {%- endcomment -%}
     <nav class="nav" aria-label="{{ t.nav.menu }}">
       <ul class="nav__list">
@@ -38,6 +38,17 @@ that document's URL under <page_key>_url.
         <li class="nav__anchor"><a href="{{ home }}#pricing">{{ t.nav.pricing }}</a></li>
         {%- endif %}
         <li><a href="{{ t.support_url | relative_url }}">{{ t.nav.support }}</a></li>
+        {%- comment -%}
+        Icon only: "GitHub" is a proper noun, so the accessible name is the same
+        in every locale and there is no _data key to keep in sync across eleven
+        files. It survives the narrow breakpoint because a glyph costs almost no
+        width, unlike the in-page anchors that are hidden there.
+        {%- endcomment -%}
+        <li><a class="nav__icon" href="{{ site.source_url }}" aria-label="GitHub">
+          <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a></li>
         {%- comment -%}
         Six locales do not fit the one-link toggle this replaced, and the site
         ships no JavaScript, so the switcher is a <details> disclosure — the same
