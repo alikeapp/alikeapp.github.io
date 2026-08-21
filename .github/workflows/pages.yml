@@ -38,6 +38,9 @@ jobs:
       - name: Test the checker
         run: ./scripts/test-check-site.sh ./_site
 
+      - name: Test App Store badge validation
+        run: ./scripts/test-fetch-app-store-badges.sh
+
       # The locale matrix, internal links, hreflang, the Terms guardrails and the
       # third-party-host assertion all live in one script so this job and the
       # pull-request job in ci.yml gate on exactly the same thing.

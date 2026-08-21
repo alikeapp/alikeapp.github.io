@@ -192,6 +192,19 @@ a:hover { color: var(--accent); }
 }
 .nav__list a:hover { color: var(--text); }
 
+/* The source link is a glyph with no text: the flex box drops the line box the
+   nav's font-size would otherwise reserve around it. The glyph inherits the
+   link colour, so the nav's hover rule tints it like any other item.
+
+   flex: none on both the item and the glyph is load-bearing. A flex item's
+   default is to shrink, and text items can shrink by wrapping, so at 320px the
+   header balanced itself by squeezing the one item that cannot wrap: the icon
+   rendered under a pixel wide, invisible and with no hit target, while the row
+   still reported no overflow. */
+.nav__list > li { flex: none; }
+.nav__icon { display: flex; flex: none; }
+.nav__icon svg { flex: none; width: 18px; height: 18px; fill: currentColor; }
+
 /* Language switcher. Six locales are too many for the single pill-shaped link
    this replaced, and the site ships no JavaScript, so it is a <details>
    disclosure — the same mechanism the FAQ uses. The summary keeps the old pill
@@ -249,11 +262,24 @@ a:hover { color: var(--accent); }
 .lang__list a:hover { background: var(--bg-tint); color: var(--text); }
 
 /* Narrow screens drop the in-page anchors: those sections are directly below
-   the fold and the footer repeats every link, so Support and the language
-   switch are all that need to stay reachable from the header. */
+   the fold and the footer repeats every link, so Support, the source link and
+   the language switch are all that need to stay reachable from the header. */
 @media (max-width: 719px) {
+  /* Keep the brand and the three destinations that remain useful on a small
+     screen on separate rows. The nav row then has the full content width, so
+     even the longest translated Support/language labels cannot force the
+     header wider than its 320px viewport. */
+  .site-header__inner {
+    flex-wrap: wrap;
+    row-gap: var(--s-xs);
+  }
+  .nav { flex: 1 0 100%; }
   .nav__anchor { display: none; }
-  .nav__list { gap: var(--s-md); }
+  .nav__list {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: var(--s-md);
+  }
 }
 
 /* ---------- hero ---------- */
@@ -289,22 +315,28 @@ a:hover { color: var(--accent); }
   color: var(--text-muted);
 }
 
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--s-xs);
-  margin: 0;
-  padding: var(--s-sm) var(--s-lg);
-  border-radius: var(--r-md);
-  font-family: var(--font-display);
-  font-weight: 600;
+/* App Store badge. Apple's Identity Guidelines own how this looks, so the rules
+   here only place it: the artwork is their SVG and is never restyled — no
+   recolouring, no border-radius of ours, no hover tint on the image itself.
+   The paragraph carries no margin because the spacing below the badge comes
+   from .hero__badge-note; default <p> margins would double it. */
+.hero__badge { margin: 0; }
+.hero__badge-link {
+  display: inline-block;
+  /* Apple asks for clear space of at least 10% of the badge's height on every
+     side. At 48px tall that is 4.8px, so 8px keeps a margin over the minimum
+     even against the headline's optical edge. */
+  padding: var(--s-xs);
+  margin: calc(var(--s-xs) * -1);
 }
-.badge--pending {
-  background: var(--text);
-  color: var(--bg);
-  opacity: 0.92;
+.hero__badge-link img {
+  display: block;
+  /* Comfortably over the 40px minimum height the guidelines set for the badge,
+     and `width: auto` keeps Apple's aspect ratio whatever locale's artwork it
+     is — the localized badges are wider than the English one. */
+  height: 48px;
+  width: auto;
 }
-.badge__glyph { width: 22px; height: 22px; fill: currentColor; }
 
 .hero__badge-note {
   margin: var(--s-xs) 0 var(--s-lg);
@@ -725,6 +757,15 @@ a:hover { color: var(--accent); }
 .site-footer__lang { color: var(--text-muted); text-decoration: none; font-size: 14px; }
 a.site-footer__lang:hover { color: var(--accent-strong); text-decoration: underline; }
 .site-footer__lang--current { color: var(--text); font-weight: 600; }
+
+/* Apple's trademark credit. Smaller and quieter than the copyright line: it is a
+   required notice, not something a reader came here to read. */
+.site-footer__trademarks {
+  margin: var(--s-xs) 0 0;
+  max-width: 60ch;
+  font-size: 12px;
+  color: var(--text-muted);
+}
 
 .site-footer__legal { margin: 0; color: var(--text-muted); font-size: 13px; }
 .site-footer__built { display: block; }

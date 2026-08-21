@@ -34,5 +34,8 @@ jobs:
       - name: Test the checker
         run: ./scripts/test-check-site.sh ./_site
 
+      - name: Test App Store badge validation
+        run: ./scripts/test-fetch-app-store-badges.sh
+
       - name: Check the rendered site
         run: ./scripts/check-site.sh ./_site
