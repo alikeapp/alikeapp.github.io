@@ -134,7 +134,11 @@ a:hover { color: var(--accent); }
 
 .skip-link {
   position: absolute;
-  left: var(--s-md);
+  /* Logical, so the skip link lands at the reading edge in ar as it does in en.
+     Everything else in this sheet already uses margin-inline/padding-inline and
+     text-align: start, which is why adding a right-to-left locale needed one
+     property changed rather than a stylesheet pass. */
+  inset-inline-start: var(--s-md);
   top: -100px;
   z-index: 20;
   padding: var(--s-xs) var(--s-md);

@@ -38,6 +38,7 @@ LOCALES=(
   "pl:pl-pl"
   "tr:tr-tr"
   "zh-Hant:zh-tw"
+  "ar:ar-sa"
 )
 
 status=0

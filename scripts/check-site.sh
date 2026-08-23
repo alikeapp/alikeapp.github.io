@@ -260,6 +260,10 @@ check_terms "tr"    "Standart Son Kullanıcı Lisans Sözleşmesi"              
 # zh-Hant has no case to be insensitive about, and no spaces: the fragments are
 # short strings of Han characters that appear verbatim in the prose.
 check_terms "zh-hant" "標準使用者授權合約"                                          "自動續訂"                     "7 天免費試用"
+# Arabic inflects around the phrase and attaches prepositions to the following
+# word, so the sentinels are the parts that survive that: the noun phrase without
+# its leading preposition, and the two verbs that carry the disclosure.
+check_terms "ar"    "ترخيص المستخدم النهائي القياسية من Apple"                    "يتجدد الاشتراك تلقائيًا"      "7 أيام مجانًا"
 
 echo "==> 5. Third-party hosts"
 # The privacy policy states that Alike collects nothing and makes no network
