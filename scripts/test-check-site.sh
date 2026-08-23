@@ -122,10 +122,31 @@ expect_fail "a missing locale page fails" \
 echo "the locale list is derived, not hardcoded"
 derived=$("$CHECK" "$SITE" 2>&1 | sed -n '1p')
 ran=$((ran + 1))
-if printf '%s' "$derived" | grep -qF "(11): / /uk /de /fr /es /pt-br /it /nl /pl /tr /zh-hant"; then
+# The expectation is derived here too, by a parse written separately from the
+# checker's. Spelling the locales out was the same drift this case exists to
+# catch, one level up: the twelfth locale failed this test rather than the
+# checker, and the literal would have gone stale again on the thirteenth.
+expected_count=0
+expected_dirs=""
+while IFS= read -r lang || [ -n "$lang" ]; do
+  [ -z "$lang" ] && continue
+  expected_count=$((expected_count + 1))
+  if [ "$lang" = "en" ]; then
+    expected_dirs="$expected_dirs /"
+  else
+    expected_dirs="$expected_dirs /$(printf '%s' "$lang" | tr '[:upper:]' '[:lower:]')"
+  fi
+done < <(grep -E '^languages:[[:space:]]*\[' "$HERE/../_config.yml" \
+           | head -1 \
+           | sed -E 's/^languages:[[:space:]]*\[//; s/\][[:space:]]*(#.*)?$//' \
+           | tr ',' '\n' \
+           | sed -E 's/^[[:space:]]*//; s/[[:space:]]*$//; s/^["'"'"']//; s/["'"'"']$//')
+expected="Locales from _config.yml ($expected_count):$expected_dirs"
+if [ "$derived" = "$expected" ]; then
   printf 'ok    every locale in _config.yml reaches the matrix\n'
 else
-  printf 'FAIL  derived locale list is wrong: %s\n' "$derived" >&2
+  printf 'FAIL  derived locale list is wrong\n      got:      %s\n      expected: %s\n' \
+    "$derived" "$expected" >&2
   status=1
 fi
 
