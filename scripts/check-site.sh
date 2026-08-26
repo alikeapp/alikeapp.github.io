@@ -16,7 +16,8 @@
 #   6. Link preview     — every page's og:image resolves, is the size it says
 #                          it is, and asks for the large card.
 #   7. Screenshots      — every device frame renders a visible caption and a
-#                          non-empty alt, in every locale.
+#                          non-empty alt, and frames its own locale's capture in
+#                          both renditions, in every locale.
 #   8. Right-to-left    — an rtl locale gets dir="rtl", and every rotation in
 #                          the stylesheet is a token that rtl redefines.
 #
@@ -63,11 +64,16 @@ if [ -z "$languages_line" ] || [ -z "$default_lang" ]; then
 fi
 
 LOCALE_DIRS=()
+# The lang as _config.yml spells it, kept alongside the URL path because the two
+# diverge for pt-BR and zh-Hant, and asset directories keyed by lang — the og
+# cards, the App Store badge, the device frames — are named for the lang.
+LOCALE_LANGS=()
 # `|| [ -n "$lang" ]` catches the last item: the stream has no trailing newline,
 # and a bare `read` discards an unterminated final line — which silently dropped
 # pt-BR, the last locale in the list, and still reported green.
 while IFS= read -r lang || [ -n "$lang" ]; do
   [ -z "$lang" ] && continue
+  LOCALE_LANGS+=("$lang")
   if [ "$lang" = "$default_lang" ]; then
     LOCALE_DIRS+=("")
   else
@@ -465,6 +471,37 @@ while IFS= read -r html; do
   fi
 done < <(find "$SITE" -name 'index.html')
 [ "$shots_ok" -eq 1 ] && pass "every device frame carries a caption and alt text, in every locale"
+
+# The captures are per locale now: every rendition of every frame comes from
+# assets/img/screens/<lang>/. Section 2 already fails on a src that does not
+# resolve, so a missing directory cannot ship — but a path that resolves to the
+# *wrong* locale resolves just fine, and that is precisely the bug this replaced:
+# every language showing the English build.
+#
+# Both renditions are checked, and the <picture> fallback is the one that
+# matters most here. It is what browsers without AVIF actually download, and a
+# fallback left pointing at English would be invisible in every browser anyone
+# is likely to test in — a locale regression that only the minority sees.
+frames_ok=1
+for index in "${!LOCALE_DIRS[@]}"; do
+  dir="${LOCALE_DIRS[$index]}"
+  lang="${LOCALE_LANGS[$index]}"
+  home="$SITE${dir:+/$dir}/index.html"
+  [ -f "$home" ] || continue
+
+  for rendition in avif jpg; do
+    frames=$(grep -o "img/screens/[^\"]*\.$rendition" "$home" | wc -l | tr -d ' ')
+    own=$(grep -o "img/screens/$lang/[^\"]*\.$rendition" "$home" | wc -l | tr -d ' ')
+    if [ "$frames" -eq 0 ]; then
+      fail "/${dir:+$dir/} frames no .$rendition capture at all; the home layout renders one per shot"
+      frames_ok=0
+    elif [ "$own" -ne "$frames" ]; then
+      fail "/${dir:+$dir/} takes $((frames - own)) of its $frames .$rendition captures from another locale's directory; they belong in assets/img/screens/$lang/"
+      frames_ok=0
+    fi
+  done
+done
+[ "$frames_ok" -eq 1 ] && pass "every locale frames its own captures — fallback included — not another language's screen"
 
 
 echo "==> 8. Right-to-left"

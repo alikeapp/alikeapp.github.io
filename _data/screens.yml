@@ -2,21 +2,23 @@
 #
 # Each entry renders a phone frame. While `image:` is absent the frame shows a
 # neutral pending placeholder. To drop a real screenshot in, capture it per the
-# spec in Docs/screenshot-shot-list.md, put the PNG at
-# site/assets/img/screens/<name>.png, and add `image: <name>` to the entry.
-# No layout or CSS changes are needed.
+# spec in Docs/screenshot-shot-list.md, render it with the app repository's
+# tools/build_site_screenshots.py, and add `image: <name>` to the entry. No
+# layout or CSS changes are needed.
 #
 # `shot` refers to the numbered row in Docs/screenshot-shot-list.md.
 #
-# Captions are keyed by locale *inside* each entry, because the frame and its
-# screenshot are shared and only the words change. Every locale in _config.yml
-# `languages` needs a block in every entry; scripts/check-site.sh fails the build
-# on a caption that renders empty.
+# Captions are keyed by locale *inside* each entry, because the frame is shared
+# and only the words change. Every locale in _config.yml `languages` needs a
+# block in every entry; scripts/check-site.sh fails the build on a caption that
+# renders empty.
 #
-# The screenshots themselves are the English captures in all locales. The app UI
-# in them is English; that is a known gap, not an oversight. Replacing them with
-# per-locale captures is a screenshot-pipeline job (tools/import_device_screenshots.py),
-# not a site change.
+# `image:` names the file, not the path and not the format: the layout reads
+# both renditions from assets/img/screens/<page.lang>/, so every locale shows its
+# own capture of the app in its own language. A locale added to _config.yml
+# without that directory fails the build on the unresolvable src, which is the
+# loud failure we want — render the missing set with the app repository's
+# tools/build_site_screenshots.py.
 
 site:
   - shot: 1
