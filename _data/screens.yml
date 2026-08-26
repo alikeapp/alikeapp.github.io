@@ -13,11 +13,12 @@
 # block in every entry; scripts/check-site.sh fails the build on a caption that
 # renders empty.
 #
-# `image:` names the file, not the path: the layout reads it from
-# assets/img/screens/<page.lang>/, so every locale shows its own capture of the
-# app in its own language. A locale added to _config.yml without that directory
-# fails the build on the unresolvable src, which is the loud failure we want —
-# render the missing set with the app repository's tools/build_site_screenshots.py.
+# `image:` names the file, not the path and not the format: the layout reads
+# both renditions from assets/img/screens/<page.lang>/, so every locale shows its
+# own capture of the app in its own language. A locale added to _config.yml
+# without that directory fails the build on the unresolvable src, which is the
+# loud failure we want — render the missing set with the app repository's
+# tools/build_site_screenshots.py.
 
 site:
   - shot: 1

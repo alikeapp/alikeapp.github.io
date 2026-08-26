@@ -301,7 +301,7 @@ expect_fail "an empty screenshot caption fails" \
 
 expect_fail "a screenshot image with empty alt text fails" \
   "empty alt text" \
-  'perl -0pi -e "s{(img/screens/en/scanner-idle\.png\"[^>]*alt=)\"[^\"]+\"}{\$1\"\"}" "$S/zh-hant/index.html"'
+  'perl -0pi -e "s{(img/screens/zh-Hant/scanner-idle\.jpg\"[^>]*alt=)\"[^\"]+\"}{\$1\"\"}" "$S/zh-hant/index.html"'
 
 # The bug the per-locale captures replaced: every language framed the English
 # build. Pointing a locale back at English resolves, renders and looks fine to
@@ -309,6 +309,14 @@ expect_fail "a screenshot image with empty alt text fails" \
 expect_fail "a locale framing another language's captures fails" \
   "from another locale's directory" \
   'perl -0pi -e "s{img/screens/ar/}{img/screens/en/}g" "$S/ar/index.html"'
+
+# The half a browser with AVIF never exercises: the <picture> fallback. An
+# English fallback under a localized page is what the first version of this
+# shipped, and no other assertion here — nor any spot check in a modern
+# browser — would show it.
+expect_fail "a fallback pointing at another language fails" \
+  "from another locale's directory" \
+  'perl -0pi -e "s{img/screens/uk/([a-z-]+)\.jpg}{img/screens/en/\$1.jpg}g" "$S/uk/index.html"'
 
 
 echo "==> 8. right-to-left"

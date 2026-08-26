@@ -49,20 +49,24 @@ Slack and iMessage unfurl these links with no image at all.
 
 ## Device frames
 
-`assets/img/screens/<lang>/<name>.avif` are the screenshots the landing page frames, one
-set per published language, so an Arabic reader sees the Arabic build laid out right to
-left rather than an English screen. They are committed, and they are rendered from the
+`assets/img/screens/<lang>/` holds the screenshots the landing page frames, one set per
+published language, so an Arabic reader sees the Arabic build laid out right to left
+rather than an English screen. They are committed, and they are rendered from the
 captures in the app repository:
 
 ```
 python3 tools/build_site_screenshots.py --site-repo ../alikeapp.github.io
 ```
 
-AVIF is the only per-locale rendition. The same matrix as PNG would be roughly 17MB of
-image in a repository whose whole history is a third of that; `assets/img/screens/en/`
-keeps a PNG set as the `<picture>` fallback for browsers without AVIF. Assertion 7 of
-`scripts/check-site.sh` fails the build if a locale frames another language's captures —
-a wrong-locale path resolves like any other, so nothing else would notice.
+Two renditions per shot: `<name>.avif` at 520px, and the 1x `<name>.jpg` the `<picture>`
+falls back to on browsers without AVIF. Both are per locale — a shared fallback would put
+exactly those browsers back on the English screens — and the fallback is JPEG because PNG
+would make the matrix ~17MB of image in a repository whose whole history is 5MB.
+
+Assertion 7 of `scripts/check-site.sh` fails the build if a locale frames another
+language's captures, in either rendition. A wrong-locale path resolves like any other, so
+nothing else would notice — least of all on the fallback, which no browser with AVIF
+support ever requests.
 
 ## Editing copy
 
