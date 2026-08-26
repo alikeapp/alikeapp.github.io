@@ -304,6 +304,23 @@ expect_fail "a screenshot image with empty alt text fails" \
   'perl -0pi -e "s{(img/screens/scanner-idle\.png\"[^>]*alt=)\"[^\"]+\"}{\$1\"\"}" "$S/zh-hant/index.html"'
 
 
+echo "==> 8. right-to-left"
+expect_fail "an rtl page that does not declare its direction fails" \
+  'does not carry dir="rtl"' \
+  'perl -0pi -e "s{<html lang=\"ar\" dir=\"rtl\">}{<html lang=\"ar\">}" "$S/ar/index.html"'
+
+# The regression itself: a rotation written as a literal angle keeps pointing the
+# LTR way after the logical borders around it have flipped.
+expect_fail "a hard-coded rotation in the stylesheet fails" \
+  "Hard-coded rotation" \
+  'perl -0pi -e "s{rotate\(var\(--turn-check\)\)}{rotate(-45deg)}" "$S/assets/css/main.css"'
+
+# Half-written is the state the checkmark was actually in: a token existed, and
+# rtl never redefined it.
+expect_fail "a rotation token the rtl block never redefines fails" \
+  "never redefines it" \
+  'perl -0pi -e "s{[ ]*--turn-check: 45deg;\n}{}" "$S/assets/css/main.css"'
+
 echo
 if [ "$status" -eq 0 ]; then
   echo "All $ran check-site regression tests passed."

@@ -56,6 +56,15 @@
   --r-lg: 16px;
   --r-xl: 24px;
 
+  /* The chevrons and the checkmark are drawn, not glyphs: two borders on a
+     square, turned. The borders are logical (border-inline-*), so they follow the
+     reading direction on their own — but a rotation is a plain angle and does
+     not, which left the chevrons lying on their side and the checkmark reading as
+     a chevron in ar. The angles live here so the direction is decided once. */
+  --turn-chevron: 45deg;
+  --turn-chevron-open: -135deg;
+  --turn-check: -45deg;
+
   --shadow-card: 0 4px 10px rgba(0, 0, 0, 0.05);
   --shadow-raised: 0 4px 10px rgba(0, 0, 0, 0.10);
 
@@ -89,6 +98,17 @@
     --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.4);
     --shadow-raised: 0 6px 16px rgba(0, 0, 0, 0.5);
   }
+}
+
+/* The one place direction is decided. `dir` is set on <html> from `dir:` in
+   _data/<lang>.yml, so this block is what an rtl locale flips — and it is where
+   the next direction-dependent value belongs, rather than in the rule that uses
+   it. scripts/check-site.sh asserts that every rotate() in this sheet reads a
+   token defined here. */
+:root[dir="rtl"] {
+  --turn-chevron: -45deg;
+  --turn-chevron-open: 135deg;
+  --turn-check: 45deg;
 }
 
 /* ---------- base ---------- */
@@ -237,10 +257,10 @@ a:hover { color: var(--accent); }
   height: 6px;
   border-inline-end: 2px solid currentColor;
   border-bottom: 2px solid currentColor;
-  transform: rotate(45deg);
+  transform: rotate(var(--turn-chevron));
   transition: transform 0.18s ease;
 }
-.lang[open] .lang__current::after { transform: rotate(-135deg); }
+.lang[open] .lang__current::after { transform: rotate(var(--turn-chevron-open)); }
 
 .lang__list {
   position: absolute;
@@ -629,7 +649,7 @@ a:hover { color: var(--accent); }
   height: 7px;
   border-inline-start: 2px solid var(--accent);
   border-bottom: 2px solid var(--accent);
-  transform: rotate(-45deg);
+  transform: rotate(var(--turn-check));
 }
 
 .disclosure {
@@ -674,10 +694,10 @@ a:hover { color: var(--accent); }
   height: 9px;
   border-inline-end: 2px solid var(--text-muted);
   border-bottom: 2px solid var(--text-muted);
-  transform: rotate(45deg);
+  transform: rotate(var(--turn-chevron));
   transition: transform 0.18s ease;
 }
-.faq__item[open] .faq__q::after { transform: rotate(-135deg); }
+.faq__item[open] .faq__q::after { transform: rotate(var(--turn-chevron-open)); }
 .faq__q:hover { color: var(--accent-strong); }
 
 .faq__a { padding: 0 var(--s-lg) var(--s-md); color: var(--text-muted); }
