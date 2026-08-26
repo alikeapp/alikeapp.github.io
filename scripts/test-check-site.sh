@@ -290,6 +290,20 @@ expect_fail "an og:image with no alt text fails" \
   "og:image has no alt text" \
   'perl -0pi -e "s{<meta property=\"og:image:alt\"[^>]*>\n}{}" "$S/pl/index.html"'
 
+echo "==> 7. screenshots"
+# The failure this assertion exists for: _data/screens.yml gained a locale block
+# for every published locale, and nothing stopped the next locale from shipping
+# without one. A blank caption is a gap on the page; a blank alt is a WCAG
+# failure that a diff of the data file cannot show.
+expect_fail "an empty screenshot caption fails" \
+  "empty screenshot caption" \
+  'perl -0pi -e "s{(class=\"shot__caption\">)[^<]+}{\$1}" "$S/ar/index.html"'
+
+expect_fail "a screenshot image with empty alt text fails" \
+  "empty alt text" \
+  'perl -0pi -e "s{(img/screens/scanner-idle\.png\"[^>]*alt=)\"[^\"]+\"}{\$1\"\"}" "$S/zh-hant/index.html"'
+
+
 echo
 if [ "$status" -eq 0 ]; then
   echo "All $ran check-site regression tests passed."

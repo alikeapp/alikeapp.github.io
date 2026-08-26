@@ -5,7 +5,7 @@
 #
 #   ./scripts/check-site.sh [_site]
 #
-# Six assertions, in order of how expensive the failure is:
+# Seven assertions, in order of how expensive the failure is:
 #
 #   1. Locale matrix     — every locale publishes all four pages.
 #   2. Internal links    — every site-relative href resolves to a real file.
@@ -15,6 +15,8 @@
 #   5. Third-party hosts — nothing external is referenced at all.
 #   6. Link preview     — every page's og:image resolves, is the size it says
 #                          it is, and asks for the large card.
+#   7. Screenshots      — every device frame renders a visible caption and a
+#                          non-empty alt, in every locale.
 #
 # (5) used to live inline in .github/workflows/pages.yml. It is here so one
 # script is the whole gate and so a pull request can run the same checks the
@@ -428,6 +430,39 @@ while IFS= read -r entry; do
 done < <(printf '%s' "$cards" | sort -u)
 
 [ "$preview_ok" -eq 1 ] && pass "every og:image resolves, measures what it declares, and asks for the large card"
+
+
+echo "==> 7. Screenshots"
+# _data/screens.yml keys every caption and alt by locale, and the home layout
+# reads shot[page.lang]. A locale with no block renders an empty <p> and an
+# alt="" — visible as a gap, invisible to a diff, and a WCAG failure on five
+# images per page. The data file's own comment already promised this check;
+# six locales were shipping blank captions before it existed.
+shots_ok=1
+while IFS= read -r html; do
+  rel="${html#$SITE}"
+  # Only the home layout renders device frames; every other page has none.
+  grep -q 'class="shot__caption"' "$html" || continue
+
+  captions=$(grep -o 'class="shot__caption">[^<]*<' "$html" | wc -l | tr -d ' ')
+  blank_captions=$(grep -o 'class="shot__caption">[[:space:]]*<' "$html" | wc -l | tr -d ' ')
+  images=$(grep -o 'img/screens/[^"]*"[^>]*alt="[^"]*"' "$html" | wc -l | tr -d ' ')
+  blank_alts=$(grep -o 'img/screens/[^"]*"[^>]*alt=""' "$html" | wc -l | tr -d ' ')
+
+  if [ "$blank_captions" -ne 0 ]; then
+    fail "$rel renders $blank_captions empty screenshot caption(s); _data/screens.yml has no block for this locale"
+    shots_ok=0
+  fi
+  if [ "$blank_alts" -ne 0 ]; then
+    fail "$rel renders $blank_alts screenshot image(s) with empty alt text"
+    shots_ok=0
+  fi
+  if [ "$captions" -ne "$images" ]; then
+    fail "$rel renders $captions caption(s) but $images framed screenshot(s)"
+    shots_ok=0
+  fi
+done < <(find "$SITE" -name 'index.html')
+[ "$shots_ok" -eq 1 ] && pass "every device frame carries a caption and alt text, in every locale"
 
 
 echo

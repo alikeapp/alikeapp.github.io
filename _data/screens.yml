@@ -39,6 +39,24 @@ site:
     pt-BR:
       caption: Começar uma análise
       alt: "A aba de análise do Alike, pronta para começar."
+    it:
+      caption: Avvia una scansione
+      alt: "La scheda Scanner di Alike, pronta ad avviare una scansione."
+    nl:
+      caption: Start een scan
+      alt: "Het Scanner-tabblad van Alike, klaar om te scannen."
+    pl:
+      caption: Rozpocznij skanowanie
+      alt: "Karta skanera Alike gotowa do rozpoczęcia skanowania."
+    tr:
+      caption: Bir tarama başlat
+      alt: "Alike'ın tarama sekmesi, taramaya hazır."
+    zh-Hant:
+      caption: 開始掃描
+      alt: "Alike 的掃描頁面，隨時可以開始掃描。"
+    ar:
+      caption: ابدأ فحصًا
+      alt: "تبويب الفحص في Alike، جاهز لبدء فحص جديد."
 
   - shot: 3
     image: cleanup-queue
@@ -60,6 +78,24 @@ site:
     pt-BR:
       caption: Percorrer a fila
       alt: "A aba de limpeza listando grupos de fotos parecidas com selos de revisão."
+    it:
+      caption: Scorri la coda
+      alt: "La scheda Pulizia con gruppi di foto simili e i relativi contrassegni di revisione."
+    nl:
+      caption: Werk de rij af
+      alt: "Het Opruimen-tabblad met groepen vergelijkbare foto's en beoordelingslabels."
+    pl:
+      caption: Przejrzyj kolejkę
+      alt: "Karta porządkowania z grupami podobnych zdjęć i oznaczeniami przeglądu."
+    tr:
+      caption: Sırayı adım adım geç
+      alt: "Benzer fotoğraf gruplarını ve inceleme rozetlerini listeleyen temizlik sekmesi."
+    zh-Hant:
+      caption: 逐一處理清單
+      alt: "整理頁面列出一組組相似照片，並標示檢視狀態。"
+    ar:
+      caption: امضِ في قائمة المراجعة
+      alt: "تبويب التنظيف يعرض مجموعات من الصور المتشابهة مع علامات المراجعة."
 
   - shot: 4
     image: cluster-details
@@ -81,6 +117,24 @@ site:
     pt-BR:
       caption: A melhor foto, já escolhida
       alt: "Um grupo de fotos parecidas com a melhor em destaque e as outras selecionadas."
+    it:
+      caption: Lo scatto migliore, già scelto
+      alt: "Un gruppo di foto simili con lo scatto migliore in evidenza e gli altri selezionati."
+    nl:
+      caption: Beste foto, al gekozen
+      alt: "Een groep vergelijkbare foto's met de beste opname uitgelicht en de rest geselecteerd."
+    pl:
+      caption: Najlepsze ujęcie już wybrane
+      alt: "Grupa podobnych zdjęć z wyróżnionym najlepszym ujęciem i zaznaczonymi pozostałymi."
+    tr:
+      caption: En iyi kare, çoktan seçildi
+      alt: "Benzer fotoğraflardan oluşan bir grup; en iyi kare öne çıkarılmış, diğerleri seçili."
+    zh-Hant:
+      caption: 最佳照片，已為你選好
+      alt: "一組相似照片，最佳的一張已標示，其餘皆已選取。"
+    ar:
+      caption: أفضل لقطة، مختارة سلفًا
+      alt: "مجموعة صور متشابهة، أفضل لقطة فيها مميّزة والبقية محددة."
 
   - shot: 5
     image: comparison-review
@@ -102,6 +156,24 @@ site:
     pt-BR:
       caption: Comparar lado a lado
       alt: "Duas fotos visualmente parecidas comparadas lado a lado."
+    it:
+      caption: Confronta fianco a fianco
+      alt: "Due foto visivamente simili messe a confronto fianco a fianco."
+    nl:
+      caption: Vergelijk naast elkaar
+      alt: "Twee visueel vergelijkbare foto's naast elkaar vergeleken."
+    pl:
+      caption: Porównaj obok siebie
+      alt: "Dwa wizualnie podobne zdjęcia zestawione obok siebie."
+    tr:
+      caption: Yan yana karşılaştır
+      alt: "Görsel olarak benzer iki fotoğraf yan yana karşılaştırılıyor."
+    zh-Hant:
+      caption: 並排比較
+      alt: "兩張視覺上相似的照片並排比較。"
+    ar:
+      caption: قارن جنبًا إلى جنب
+      alt: "صورتان متشابهتان بصريًا معروضتان جنبًا إلى جنب للمقارنة."
 
   - shot: 7
     image: cleanup-progress
@@ -123,3 +195,21 @@ site:
     pt-BR:
       caption: Veja quanto você liberou
       alt: "Uma tela de limpeza concluída mostrando o espaço de armazenamento liberado."
+    it:
+      caption: Guarda quanto hai liberato
+      alt: "Una schermata di pulizia completata con lo spazio di archiviazione liberato."
+    nl:
+      caption: Zie wat je hebt vrijgemaakt
+      alt: "Een scherm na het opruimen met de vrijgemaakte opslagruimte."
+    pl:
+      caption: Zobacz odzyskane miejsce
+      alt: "Ekran zakończonego porządkowania z ilością zwolnionego miejsca."
+    tr:
+      caption: Ne kadar yer açtığını gör
+      alt: "Boşaltılan depolama alanını gösteren tamamlanmış temizlik ekranı."
+    zh-Hant:
+      caption: 看看釋出了多少空間
+      alt: "整理完成畫面，顯示釋出的儲存空間。"
+    ar:
+      caption: انظر ما الذي تحرّر
+      alt: "شاشة تنظيف مكتمل تعرض حجم المساحة التي تحررت."
