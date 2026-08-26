@@ -5,7 +5,7 @@
 #
 #   ./scripts/check-site.sh [_site]
 #
-# Six assertions, in order of how expensive the failure is:
+# Eight assertions, in order of how expensive the failure is:
 #
 #   1. Locale matrix     — every locale publishes all four pages.
 #   2. Internal links    — every site-relative href resolves to a real file.
@@ -15,6 +15,10 @@
 #   5. Third-party hosts — nothing external is referenced at all.
 #   6. Link preview     — every page's og:image resolves, is the size it says
 #                          it is, and asks for the large card.
+#   7. Screenshots      — every device frame renders a visible caption and a
+#                          non-empty alt, in every locale.
+#   8. Right-to-left    — an rtl locale gets dir="rtl", and every rotation in
+#                          the stylesheet is a token that rtl redefines.
 #
 # (5) used to live inline in .github/workflows/pages.yml. It is here so one
 # script is the whole gate and so a pull request can run the same checks the
@@ -260,6 +264,10 @@ check_terms "tr"    "Standart Son Kullanıcı Lisans Sözleşmesi"              
 # zh-Hant has no case to be insensitive about, and no spaces: the fragments are
 # short strings of Han characters that appear verbatim in the prose.
 check_terms "zh-hant" "標準使用者授權合約"                                          "自動續訂"                     "7 天免費試用"
+# Arabic inflects around the phrase and attaches prepositions to the following
+# word, so the sentinels are the parts that survive that: the noun phrase without
+# its leading preposition, and the two verbs that carry the disclosure.
+check_terms "ar"    "ترخيص المستخدم النهائي القياسية من Apple"                    "يتجدد الاشتراك تلقائيًا"      "7 أيام مجانًا"
 
 echo "==> 5. Third-party hosts"
 # The privacy policy states that Alike collects nothing and makes no network
@@ -425,6 +433,100 @@ done < <(printf '%s' "$cards" | sort -u)
 
 [ "$preview_ok" -eq 1 ] && pass "every og:image resolves, measures what it declares, and asks for the large card"
 
+
+echo "==> 7. Screenshots"
+# _data/screens.yml keys every caption and alt by locale, and the home layout
+# reads shot[page.lang]. A locale with no block renders an empty <p> and an
+# alt="" — visible as a gap, invisible to a diff, and a WCAG failure on five
+# images per page. The data file's own comment already promised this check;
+# six locales were shipping blank captions before it existed.
+shots_ok=1
+while IFS= read -r html; do
+  rel="${html#$SITE}"
+  # Only the home layout renders device frames; every other page has none.
+  grep -q 'class="shot__caption"' "$html" || continue
+
+  captions=$(grep -o 'class="shot__caption">[^<]*<' "$html" | wc -l | tr -d ' ')
+  blank_captions=$(grep -o 'class="shot__caption">[[:space:]]*<' "$html" | wc -l | tr -d ' ')
+  images=$(grep -o 'img/screens/[^"]*"[^>]*alt="[^"]*"' "$html" | wc -l | tr -d ' ')
+  blank_alts=$(grep -o 'img/screens/[^"]*"[^>]*alt=""' "$html" | wc -l | tr -d ' ')
+
+  if [ "$blank_captions" -ne 0 ]; then
+    fail "$rel renders $blank_captions empty screenshot caption(s); _data/screens.yml has no block for this locale"
+    shots_ok=0
+  fi
+  if [ "$blank_alts" -ne 0 ]; then
+    fail "$rel renders $blank_alts screenshot image(s) with empty alt text"
+    shots_ok=0
+  fi
+  if [ "$captions" -ne "$images" ]; then
+    fail "$rel renders $captions caption(s) but $images framed screenshot(s)"
+    shots_ok=0
+  fi
+done < <(find "$SITE" -name 'index.html')
+[ "$shots_ok" -eq 1 ] && pass "every device frame carries a caption and alt text, in every locale"
+
+
+echo "==> 8. Right-to-left"
+# Two halves of the same promise. The page has to declare its direction, and the
+# stylesheet has to stop hard-coding it.
+#
+# Logical properties (border-inline-*, inset-inline-*) flip on their own, but a
+# transform is a plain angle and does not: the chevrons and the plan checkmark
+# are drawn from two borders on a rotated square, so under rtl the borders moved
+# and the rotation did not, leaving sideways chevrons and checkmarks that read as
+# chevrons. The angles now live in tokens that :root[dir="rtl"] redefines, and
+# this asserts that no rule goes back to a literal.
+rtl_ok=1
+CSS="$SITE/assets/css/main.css"
+if [ ! -f "$CSS" ]; then
+  fail "No stylesheet at ${CSS#$SITE}, so the direction tokens cannot be checked"
+  rtl_ok=0
+else
+  literal=$(grep -noE 'transform:[[:space:]]*rotate\([^)]*\)' "$CSS" | grep -v 'var(--' || true)
+  if [ -n "$literal" ]; then
+    fail "Hard-coded rotation(s) in main.css; a rotation does not flip with direction the way a logical property does:"
+    printf '%s\n' "$literal" >&2
+    rtl_ok=0
+  fi
+  # Every token a rotation reads has to be redefined for rtl, or the flip is
+  # only half-written — which is exactly how the checkmark was missed.
+  rtl_block=$(sed -n '/:root\[dir="rtl"\][[:space:]]*{/,/}/p' "$CSS")
+  if [ -z "$rtl_block" ]; then
+    fail "main.css defines no :root[dir=\"rtl\"] block, so nothing flips the drawn chevrons and checkmark"
+    rtl_ok=0
+  else
+    while IFS= read -r token; do
+      [ -z "$token" ] && continue
+      printf '%s' "$rtl_block" | grep -qF -e "$token:" \
+        || { fail "main.css rotates on $token but :root[dir=\"rtl\"] never redefines it"; rtl_ok=0; }
+    done < <(grep -ohE 'rotate\(var\(--[a-z-]+\)\)' "$CSS" \
+               | sed -E 's/^rotate\(var\(//; s/\)\)$//' | sort -u)
+  fi
+fi
+
+# The locales that claim to be right-to-left, read from _data/<lang>.yml rather
+# than restated, for the same reason the locale list is derived.
+DATA_DIR="$(dirname "$CONFIG")/_data"
+rtl_langs=$(grep -lE '^dir:[[:space:]]*rtl[[:space:]]*$' "$DATA_DIR"/*.yml 2>/dev/null \
+              | sed -E 's|.*/||; s|\.yml$||' || true)
+if [ -z "$rtl_langs" ]; then
+  fail "No locale in _data/ sets 'dir: rtl'; this assertion would pass vacuously"
+  rtl_ok=0
+else
+  while IFS= read -r lang; do
+    [ -z "$lang" ] && continue
+    dir=$(printf '%s' "$lang" | tr '[:upper:]' '[:lower:]')
+    for page in "${PAGES[@]}"; do
+      f="$SITE/$dir${page:+/$page}/index.html"
+      [ -f "$f" ] || continue
+      grep -q '<html[^>]*dir="rtl"' "$f" \
+        || { fail "/$dir/${page:+$page/} does not carry dir=\"rtl\" on <html>, so the browser lays it out left-to-right"; rtl_ok=0; }
+    done
+  done < <(printf '%s\n' "$rtl_langs")
+fi
+
+[ "$rtl_ok" -eq 1 ] && pass "rtl locales declare their direction and every drawn rotation flips with it"
 
 echo
 if [ "$status" -eq 0 ]; then

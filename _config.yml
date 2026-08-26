@@ -36,7 +36,9 @@ plugins: []
 # The legal copy does not need the regional vocabulary split, so /es/ carries the
 # Spain wording and also advertises hreflang="es-419" for the Latin American
 # storefront. See _data/es.yml.
-languages: [en, uk, de, fr, es, pt-BR, it, nl, pl, tr, zh-Hant]
+# `ar` is the first right-to-left locale. Its `_data/ar.yml` carries `dir: rtl`,
+# which is what puts the direction on <html>; every other locale falls back to ltr.
+languages: [en, uk, de, fr, es, pt-BR, it, nl, pl, tr, zh-Hant, ar]
 default_lang: en
 
 exclude:
@@ -102,3 +104,7 @@ defaults:
       path: "zh-hant"
     values:
       lang: zh-Hant
+  - scope:
+      path: "ar"
+    values:
+      lang: ar

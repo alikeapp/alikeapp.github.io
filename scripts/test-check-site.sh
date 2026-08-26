@@ -122,10 +122,31 @@ expect_fail "a missing locale page fails" \
 echo "the locale list is derived, not hardcoded"
 derived=$("$CHECK" "$SITE" 2>&1 | sed -n '1p')
 ran=$((ran + 1))
-if printf '%s' "$derived" | grep -qF "(11): / /uk /de /fr /es /pt-br /it /nl /pl /tr /zh-hant"; then
+# The expectation is derived here too, by a parse written separately from the
+# checker's. Spelling the locales out was the same drift this case exists to
+# catch, one level up: the twelfth locale failed this test rather than the
+# checker, and the literal would have gone stale again on the thirteenth.
+expected_count=0
+expected_dirs=""
+while IFS= read -r lang || [ -n "$lang" ]; do
+  [ -z "$lang" ] && continue
+  expected_count=$((expected_count + 1))
+  if [ "$lang" = "en" ]; then
+    expected_dirs="$expected_dirs /"
+  else
+    expected_dirs="$expected_dirs /$(printf '%s' "$lang" | tr '[:upper:]' '[:lower:]')"
+  fi
+done < <(grep -E '^languages:[[:space:]]*\[' "$HERE/../_config.yml" \
+           | head -1 \
+           | sed -E 's/^languages:[[:space:]]*\[//; s/\][[:space:]]*(#.*)?$//' \
+           | tr ',' '\n' \
+           | sed -E 's/^[[:space:]]*//; s/[[:space:]]*$//; s/^["'"'"']//; s/["'"'"']$//')
+expected="Locales from _config.yml ($expected_count):$expected_dirs"
+if [ "$derived" = "$expected" ]; then
   printf 'ok    every locale in _config.yml reaches the matrix\n'
 else
-  printf 'FAIL  derived locale list is wrong: %s\n' "$derived" >&2
+  printf 'FAIL  derived locale list is wrong\n      got:      %s\n      expected: %s\n' \
+    "$derived" "$expected" >&2
   status=1
 fi
 
@@ -268,6 +289,37 @@ expect_fail "an og:image on another host fails" \
 expect_fail "an og:image with no alt text fails" \
   "og:image has no alt text" \
   'perl -0pi -e "s{<meta property=\"og:image:alt\"[^>]*>\n}{}" "$S/pl/index.html"'
+
+echo "==> 7. screenshots"
+# The failure this assertion exists for: _data/screens.yml gained a locale block
+# for every published locale, and nothing stopped the next locale from shipping
+# without one. A blank caption is a gap on the page; a blank alt is a WCAG
+# failure that a diff of the data file cannot show.
+expect_fail "an empty screenshot caption fails" \
+  "empty screenshot caption" \
+  'perl -0pi -e "s{(class=\"shot__caption\">)[^<]+}{\$1}" "$S/ar/index.html"'
+
+expect_fail "a screenshot image with empty alt text fails" \
+  "empty alt text" \
+  'perl -0pi -e "s{(img/screens/scanner-idle\.png\"[^>]*alt=)\"[^\"]+\"}{\$1\"\"}" "$S/zh-hant/index.html"'
+
+
+echo "==> 8. right-to-left"
+expect_fail "an rtl page that does not declare its direction fails" \
+  'does not carry dir="rtl"' \
+  'perl -0pi -e "s{<html lang=\"ar\" dir=\"rtl\">}{<html lang=\"ar\">}" "$S/ar/index.html"'
+
+# The regression itself: a rotation written as a literal angle keeps pointing the
+# LTR way after the logical borders around it have flipped.
+expect_fail "a hard-coded rotation in the stylesheet fails" \
+  "Hard-coded rotation" \
+  'perl -0pi -e "s{rotate\(var\(--turn-check\)\)}{rotate(-45deg)}" "$S/assets/css/main.css"'
+
+# Half-written is the state the checkmark was actually in: a token existed, and
+# rtl never redefined it.
+expect_fail "a rotation token the rtl block never redefines fails" \
+  "never redefines it" \
+  'perl -0pi -e "s{[ ]*--turn-check: 45deg;\n}{}" "$S/assets/css/main.css"'
 
 echo
 if [ "$status" -eq 0 ]; then

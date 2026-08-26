@@ -56,6 +56,15 @@
   --r-lg: 16px;
   --r-xl: 24px;
 
+  /* The chevrons and the checkmark are drawn, not glyphs: two borders on a
+     square, turned. The borders are logical (border-inline-*), so they follow the
+     reading direction on their own — but a rotation is a plain angle and does
+     not, which left the chevrons lying on their side and the checkmark reading as
+     a chevron in ar. The angles live here so the direction is decided once. */
+  --turn-chevron: 45deg;
+  --turn-chevron-open: -135deg;
+  --turn-check: -45deg;
+
   --shadow-card: 0 4px 10px rgba(0, 0, 0, 0.05);
   --shadow-raised: 0 4px 10px rgba(0, 0, 0, 0.10);
 
@@ -89,6 +98,17 @@
     --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.4);
     --shadow-raised: 0 6px 16px rgba(0, 0, 0, 0.5);
   }
+}
+
+/* The one place direction is decided. `dir` is set on <html> from `dir:` in
+   _data/<lang>.yml, so this block is what an rtl locale flips — and it is where
+   the next direction-dependent value belongs, rather than in the rule that uses
+   it. scripts/check-site.sh asserts that every rotate() in this sheet reads a
+   token defined here. */
+:root[dir="rtl"] {
+  --turn-chevron: -45deg;
+  --turn-chevron-open: 135deg;
+  --turn-check: 45deg;
 }
 
 /* ---------- base ---------- */
@@ -134,7 +154,11 @@ a:hover { color: var(--accent); }
 
 .skip-link {
   position: absolute;
-  left: var(--s-md);
+  /* Logical, so the skip link lands at the reading edge in ar as it does in en.
+     Everything else in this sheet already uses margin-inline/padding-inline and
+     text-align: start, which is why adding a right-to-left locale needed one
+     property changed rather than a stylesheet pass. */
+  inset-inline-start: var(--s-md);
   top: -100px;
   z-index: 20;
   padding: var(--s-xs) var(--s-md);
@@ -233,10 +257,10 @@ a:hover { color: var(--accent); }
   height: 6px;
   border-inline-end: 2px solid currentColor;
   border-bottom: 2px solid currentColor;
-  transform: rotate(45deg);
+  transform: rotate(var(--turn-chevron));
   transition: transform 0.18s ease;
 }
-.lang[open] .lang__current::after { transform: rotate(-135deg); }
+.lang[open] .lang__current::after { transform: rotate(var(--turn-chevron-open)); }
 
 .lang__list {
   position: absolute;
@@ -625,7 +649,7 @@ a:hover { color: var(--accent); }
   height: 7px;
   border-inline-start: 2px solid var(--accent);
   border-bottom: 2px solid var(--accent);
-  transform: rotate(-45deg);
+  transform: rotate(var(--turn-check));
 }
 
 .disclosure {
@@ -670,10 +694,10 @@ a:hover { color: var(--accent); }
   height: 9px;
   border-inline-end: 2px solid var(--text-muted);
   border-bottom: 2px solid var(--text-muted);
-  transform: rotate(45deg);
+  transform: rotate(var(--turn-chevron));
   transition: transform 0.18s ease;
 }
-.faq__item[open] .faq__q::after { transform: rotate(-135deg); }
+.faq__item[open] .faq__q::after { transform: rotate(var(--turn-chevron-open)); }
 .faq__q:hover { color: var(--accent-strong); }
 
 .faq__a { padding: 0 var(--s-lg) var(--s-md); color: var(--text-muted); }
@@ -694,7 +718,11 @@ a:hover { color: var(--accent); }
   padding: var(--s-md) var(--s-lg);
   border-inline-start: 3px solid var(--accent);
   background: var(--bg-tint);
-  border-radius: 0 var(--r-md) var(--r-md) 0;
+  /* Logical, so the square corners stay on the side the accent bar is on.
+     The physical four-value form put them opposite the border in ar. */
+  border-radius: var(--r-md);
+  border-start-start-radius: 0;
+  border-end-start-radius: 0;
   color: var(--text-muted);
 }
 .prose blockquote p:first-child { margin-top: 0; }
