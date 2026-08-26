@@ -47,6 +47,23 @@ that locale's `hero.headline`, so nothing about it is hand-kept. Assertion 6 of
 pages declare, or if a page drops back to the small `summary` card — which is what made
 Slack and iMessage unfurl these links with no image at all.
 
+## Device frames
+
+`assets/img/screens/<lang>/<name>.avif` are the screenshots the landing page frames, one
+set per published language, so an Arabic reader sees the Arabic build laid out right to
+left rather than an English screen. They are committed, and they are rendered from the
+captures in the app repository:
+
+```
+python3 tools/build_site_screenshots.py --site-repo ../alikeapp.github.io
+```
+
+AVIF is the only per-locale rendition. The same matrix as PNG would be roughly 17MB of
+image in a repository whose whole history is a third of that; `assets/img/screens/en/`
+keeps a PNG set as the `<picture>` fallback for browsers without AVIF. Assertion 7 of
+`scripts/check-site.sh` fails the build if a locale frames another language's captures —
+a wrong-locale path resolves like any other, so nothing else would notice.
+
 ## Editing copy
 
 The source copy is maintained in the app repository under `Docs/legal/`; see

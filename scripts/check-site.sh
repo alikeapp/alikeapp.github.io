@@ -63,11 +63,16 @@ if [ -z "$languages_line" ] || [ -z "$default_lang" ]; then
 fi
 
 LOCALE_DIRS=()
+# The lang as _config.yml spells it, kept alongside the URL path because the two
+# diverge for pt-BR and zh-Hant, and asset directories keyed by lang — the og
+# cards, the App Store badge, the device frames — are named for the lang.
+LOCALE_LANGS=()
 # `|| [ -n "$lang" ]` catches the last item: the stream has no trailing newline,
 # and a bare `read` discards an unterminated final line — which silently dropped
 # pt-BR, the last locale in the list, and still reported green.
 while IFS= read -r lang || [ -n "$lang" ]; do
   [ -z "$lang" ] && continue
+  LOCALE_LANGS+=("$lang")
   if [ "$lang" = "$default_lang" ]; then
     LOCALE_DIRS+=("")
   else
@@ -465,6 +470,31 @@ while IFS= read -r html; do
   fi
 done < <(find "$SITE" -name 'index.html')
 [ "$shots_ok" -eq 1 ] && pass "every device frame carries a caption and alt text, in every locale"
+
+# The captures are per locale now: each frame's AVIF comes from
+# assets/img/screens/<lang>/. Section 2 already fails on a src that does not
+# resolve, so a missing directory cannot ship — but a path that resolves to the
+# *wrong* locale resolves just fine, and that is precisely the bug this replaced:
+# every language showing the English build. The English PNG is the deliberate
+# exception, the <picture> fallback for browsers without AVIF.
+frames_ok=1
+for index in "${!LOCALE_DIRS[@]}"; do
+  dir="${LOCALE_DIRS[$index]}"
+  lang="${LOCALE_LANGS[$index]}"
+  home="$SITE${dir:+/$dir}/index.html"
+  [ -f "$home" ] || continue
+
+  frames=$(grep -o 'img/screens/[^"]*\.avif' "$home" | wc -l | tr -d ' ')
+  own=$(grep -o "img/screens/$lang/[^\"]*\.avif" "$home" | wc -l | tr -d ' ')
+  if [ "$frames" -eq 0 ]; then
+    fail "/${dir:+$dir/} frames no AVIF capture at all; the home layout should render one per shot"
+    frames_ok=0
+  elif [ "$own" -ne "$frames" ]; then
+    fail "/${dir:+$dir/} takes $((frames - own)) of its $frames captures from another locale's directory; they belong in assets/img/screens/$lang/"
+    frames_ok=0
+  fi
+done
+[ "$frames_ok" -eq 1 ] && pass "every locale frames its own captures, not another language's screen"
 
 
 echo "==> 8. Right-to-left"

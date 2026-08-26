@@ -99,6 +99,13 @@ layout: default
     straight in: add `image: <basename>` to an entry in _data/screens.yml and
     the frame swaps from the pending placeholder to the screenshot with no
     layout change. Shot list lives in Docs/legal/../screenshot-shot-list.md.
+
+    The capture itself is per locale — assets/img/screens/<lang>/, the same
+    contract as the og cards and the App Store badge — so an Arabic reader sees
+    the Arabic build, right to left, instead of an English screen. AVIF is the
+    only per-locale rendition: twelve locales of PNG would outweigh the rest of
+    the repository, and the English PNG carries the handful of browsers without
+    AVIF. tools/build_site_screenshots.py in the app repository writes both.
     {%- endcomment -%}
     <ul class="shots">
       {%- for shot in site.data.screens.site %}
@@ -106,7 +113,12 @@ layout: default
         <div class="phone">
           <div class="phone__screen">
             {%- if shot.image %}
-            <img src="{{ '/assets/img/screens/' | append: shot.image | append: '.png' | relative_url }}" width="330" height="717" alt="{{ shot[page.lang].alt }}" loading="lazy" decoding="async">
+            {%- assign shot_avif = '/assets/img/screens/' | append: page.lang | append: '/' | append: shot.image | append: '.avif' -%}
+            {%- assign shot_png = '/assets/img/screens/' | append: site.default_lang | append: '/' | append: shot.image | append: '.png' -%}
+            <picture>
+              <source type="image/avif" srcset="{{ shot_avif | relative_url }}">
+              <img src="{{ shot_png | relative_url }}" width="330" height="717" alt="{{ shot[page.lang].alt }}" loading="lazy" decoding="async">
+            </picture>
             {%- else %}
             <div class="phone__pending" role="img" aria-label="{{ t.screenshots.pending }}">
               <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">

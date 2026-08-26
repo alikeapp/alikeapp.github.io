@@ -301,7 +301,14 @@ expect_fail "an empty screenshot caption fails" \
 
 expect_fail "a screenshot image with empty alt text fails" \
   "empty alt text" \
-  'perl -0pi -e "s{(img/screens/scanner-idle\.png\"[^>]*alt=)\"[^\"]+\"}{\$1\"\"}" "$S/zh-hant/index.html"'
+  'perl -0pi -e "s{(img/screens/en/scanner-idle\.png\"[^>]*alt=)\"[^\"]+\"}{\$1\"\"}" "$S/zh-hant/index.html"'
+
+# The bug the per-locale captures replaced: every language framed the English
+# build. Pointing a locale back at English resolves, renders and looks fine to
+# every other check here — only this one can tell the two apart.
+expect_fail "a locale framing another language's captures fails" \
+  "from another locale's directory" \
+  'perl -0pi -e "s{img/screens/ar/}{img/screens/en/}g" "$S/ar/index.html"'
 
 
 echo "==> 8. right-to-left"
