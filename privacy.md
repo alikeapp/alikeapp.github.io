@@ -7,7 +7,7 @@ page_key: privacy
 description: "How Alike handles your photos: on-device analysis, nothing uploaded, no analytics, and deletion only ever with your confirmation."
 ---
 
-Last updated: August 5, 2026
+Last updated: September 6, 2026
 
 Alike is an iOS app that finds and groups visually similar photos in your photo library so you can review them and free up space. Alike is operated by Oleksandr Solokha, an individual developer based in Ukraine.
 
@@ -25,7 +25,7 @@ For support, bug reports, privacy questions, or purchase issues:
 
 ### Your photo library
 
-Alike asks for photo library access once, at the start. This access is required for the app's only purpose: comparing photos to find visually similar ones.
+Alike asks for photo library access once, at the start. This access is required for two things: comparing photos to find visually similar ones, and — only when you ask for it — saving an enhanced version of a photo you chose to keep.
 
 You can grant full access, or grant limited access and choose which photos Alike may see. You can change or revoke this at any time in iOS Settings, under Privacy & Security → Photos → Alike.
 
@@ -47,9 +47,17 @@ Alike compares photos using Apple's Vision framework, which runs locally on your
 
 ### Results are stored locally
 
-Alike caches its results on your device using Core Data and local files, so you do not have to rescan every time you open the app. This local storage includes photo identifiers, feature prints, group membership, estimated sizes, your review progress and selections, cleanup history, and your app preferences.
+Alike caches its results on your device using Core Data and local files, so you do not have to rescan every time you open the app. This local storage includes photo identifiers, feature prints, group membership, estimated sizes, your review progress and selections, cleanup history, the weights Alike has learned from the best shots you picked, and your app preferences.
 
 All of it lives in Alike's own sandboxed storage on your device and is included in your device backups if you back up your device.
+
+### Enhancing a photo you keep
+
+Alike can improve the best shot in a group. It never does this on its own: the result is shown to you as a preview and saved only after you apply it, one photo at a time. The processing happens on your device and nothing is uploaded. iOS keeps the original — the change is stored as a non-destructive edit marked as Alike's, so it appears in Apple Photos and can be undone from either app. No duplicate is created. Enhancement is not offered for video, in Limited Access, or for photos the system marks as non-editable, and a photo that already carries another app's edit is changed only after you agree.
+
+### Learning which photos you prefer
+
+When you pick a different best shot than the one Alike suggested, the app stores the difference between the two photos' quality measurements and uses it to rank later groups closer to your taste. It learns only from choices you make inside the app. The values are derived numbers, not photos, they stay on your device, and nothing is sent anywhere. Settings has a button that resets the learning.
 
 ## What Alike Does Not Collect
 
@@ -86,12 +94,14 @@ Apple's handling of your purchase information is governed by [Apple's Privacy Po
 | --- | --- |
 | Change or limit photo access | iOS Settings → Privacy & Security → Photos → Alike |
 | Stop notifications | Turn off the weekly cleanup reminder in Alike Settings, or use iOS Settings → Notifications |
+| Put an enhanced photo back to the original | Alike: Revert to original in the group details; or Apple Photos: Edit → Revert |
+| Reset what Best Shot has learned | Alike Settings → Reset Best Shot Learning |
 | Erase everything Alike stores | Alike Settings → Data & Privacy → Delete Alike Data |
 | Remove all data completely | Delete the Alike app from your device |
 
 ### Delete Alike Data
 
-Settings → Data & Privacy → **Delete Alike Data** erases everything Alike has stored on your device: scan results and analysis caches, cleanup progress and history, and your Alike preferences. This action cannot be undone.
+Settings → Data & Privacy → **Delete Alike Data** erases everything Alike has stored on your device: scan results and analysis caches, cleanup progress and history, the weights Alike has learned from the best shots you picked, and your Alike preferences. This action cannot be undone.
 
 It does **not** touch your photos, your Recently Deleted album, your photo access permission, or your Alike Pro subscription. After deletion, Alike shows its introduction again without asking for photo access a second time.
 

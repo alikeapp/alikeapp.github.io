@@ -7,7 +7,7 @@ page_key: terms
 description: "Gebruiksvoorwaarden voor Alike, met het Alike Pro-abonnement, facturering, verlenging, proefperiode en opzeggen."
 ---
 
-Laatst bijgewerkt: 5 augustus 2026
+Laatst bijgewerkt: 6 september 2026
 
 Deze voorwaarden gelden voor je gebruik van de iOS-app Alike. Alike wordt beheerd door Oleksandr Solokha, een individuele ontwikkelaar gevestigd in Oekraïne ('wij', 'ons').
 
@@ -17,7 +17,7 @@ Door Alike te downloaden of te gebruiken ga je akkoord met deze voorwaarden. Ga 
 
 ## Wat Alike doet
 
-Alike doorloopt de foto's in je fotobibliotheek, vergelijkt ze met Apples Vision-framework op het apparaat en groepeert visueel vergelijkbare foto's, zodat je elke groep kunt bekijken en kunt kiezen welke foto's worden verwijderd.
+Alike doorloopt de foto's in je fotobibliotheek, vergelijkt ze met Apples Vision-framework op het apparaat en groepeert visueel vergelijkbare foto's, zodat je elke groep kunt bekijken en kunt kiezen welke foto's worden verwijderd — en past, wanneer je dat wilt, een omkeerbare verbetering toe op een foto die je houdt.
 
 Alle analyse draait op je apparaat. Details staan in ons [privacybeleid](../privacy/).
 
@@ -34,6 +34,8 @@ Je mag de app niet reverse-engineeren, decompileren of disassembleren, behalve v
 Alike helpt je beslissen welke foto's weg mogen. Het beslist niet voor jou, en het kan zich vergissen: twee foto's die er voor een computer vergelijkbaar uitzien, zijn voor jou misschien niet uitwisselbaar.
 
 Jij alleen bent verantwoordelijk voor het bekijken van elke groep en voor de beslissing wat je verwijdert. Elke verwijdering vraagt je uitdrukkelijke bevestiging, en iOS toont zijn eigen bevestiging voordat er iets verdwijnt. Verwijderde foto's gaan naar je album 'Recent verwijderd', waar iOS ze ongeveer 30 dagen bewaart.
+
+Een verbetering wordt pas toegepast nadat je haar bevestigt, en iOS bewaart het origineel zodat je het kunt terugzetten. De enige uitzondering is een foto die al de bewerking van een andere app draagt: die bewerking vervangen kan niet ongedaan worden gemaakt, en daarom vraagt Alike het eerst.
 
 **Maak een reservekopie van je fotobibliotheek voordat je groot opruimt.** Wij zijn niet verantwoordelijk voor foto's die je zelf kiest te verwijderen, ook niet voor foto's die je later liever had gehouden.
 
@@ -82,7 +84,7 @@ Alike vereist een ondersteunde iOS-versie. We zijn niet verantwoordelijk voor st
 
 Voor zover wettelijk toegestaan wordt Alike geleverd **'zoals het is' en 'zoals beschikbaar'**, zonder garanties van welke aard dan ook, uitdrukkelijk of stilzwijgend, met inbegrip van stilzwijgende garanties van verkoopbaarheid, geschiktheid voor een bepaald doel, juistheid of niet-inbreuk.
 
-We garanderen niet dat Alike foutloos of ononderbroken werkt, dat de gelijkenisherkenning juist of volledig is, of dat elke dubbele foto wordt gevonden en er geen foto's worden gegroepeerd die jij als verschillend beschouwt.
+We garanderen niet dat Alike foutloos of ononderbroken werkt, dat de gelijkenisherkenning juist of volledig is, dat elke dubbele foto wordt gevonden en er geen foto's worden gegroepeerd die jij als verschillend beschouwt, en evenmin dat een verbeterde versie jou beter zal bevallen dan het origineel.
 
 ## Beperking van aansprakelijkheid
 

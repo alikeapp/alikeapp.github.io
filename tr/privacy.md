@@ -7,7 +7,7 @@ page_key: privacy
 description: "Alike fotoğraflarınla nasıl çalışır: cihaz üzerinde analiz, hiçbir şey yüklenmez, analitik yok ve silme yalnızca senin onayınla olur."
 ---
 
-Son güncelleme: 5 Ağustos 2026
+Son güncelleme: 6 Eylül 2026
 
 Alike, fotoğraf kitaplığındaki görsel olarak benzer fotoğrafları bulup gruplayan ve böylece onları gözden geçirip yer açmanı sağlayan bir iOS uygulamasıdır. Alike'ı, Ukrayna merkezli bağımsız bir geliştirici olan Oleksandr Solokha yürütür.
 
@@ -25,7 +25,7 @@ Destek, hata bildirimi, gizlilik soruları ya da satın alma sorunları için:
 
 ### Fotoğraf kitaplığın
 
-Alike, fotoğraf kitaplığına erişimi başlangıçta bir kez ister. Bu erişim, uygulamanın tek amacı için gereklidir: görsel olarak benzer olanları bulmak üzere fotoğrafları karşılaştırmak.
+Alike, fotoğraf kitaplığına erişimi başlangıçta bir kez ister. Bu erişim iki şey için gereklidir: görsel olarak benzer olanları bulmak üzere fotoğrafları karşılaştırmak ve — yalnızca sen istediğinde — saklamayı seçtiğin bir fotoğrafın iyileştirilmiş sürümünü kaydetmek.
 
 Tam erişim verebilirsin ya da sınırlı erişim verip Alike'ın hangi fotoğrafları göreceğini kendin seçebilirsin. Bunu istediğin zaman iOS Ayarları'nda «Gizlilik ve Güvenlik» → «Fotoğraflar» → «Alike» yolundan değiştirebilir veya geri alabilirsin.
 
@@ -47,9 +47,17 @@ Alike, fotoğrafları iPhone'unda yerel olarak çalışan Apple'ın Vision çer�
 
 ### Sonuçlar yerel olarak saklanır
 
-Alike, uygulamayı her açtığında yeniden taramak zorunda kalmayasın diye sonuçlarını cihazında Core Data ve yerel dosyalarla saklar. Bu yerel depolamaya fotoğraf tanımlayıcıları, öznitelik izleri, grup üyelikleri, tahmini boyutlar, gözden geçirme ilerlemen ve seçimlerin, temizlik geçmişi ve uygulama tercihlerin dahildir.
+Alike, uygulamayı her açtığında yeniden taramak zorunda kalmayasın diye sonuçlarını cihazında Core Data ve yerel dosyalarla saklar. Bu yerel depolamaya fotoğraf tanımlayıcıları, öznitelik izleri, grup üyelikleri, tahmini boyutlar, gözden geçirme ilerlemen ve seçimlerin, temizlik geçmişi, Alike'ın senin seçtiğin en iyi karelerden öğrendiği ağırlıklar ve uygulama tercihlerin dahildir.
 
 Bunların hepsi cihazında Alike'ın kendi yalıtılmış deposunda durur ve cihazını yedekliyorsan yedeklerine dahil olur.
+
+### Sakladığın fotoğrafı iyileştirmek
+
+Alike, bir gruptaki en iyi kareyi iyileştirebilir. Bunu asla kendiliğinden yapmaz: sonuç sana önizleme olarak gösterilir ve ancak sen uyguladıktan sonra, her seferinde tek bir fotoğraf için kaydedilir. İşlem cihazında yapılır ve hiçbir şey yüklenmez. iOS aslı saklar — değişiklik, Alike'a ait olarak işaretlenmiş, aslı bozmayan bir düzenleme olarak kaydedilir; böylece Apple Fotoğraflar'da görünür ve her iki uygulamadan da geri alınabilir. Hiçbir kopya oluşturulmaz. İyileştirme; video için, Sınırlı Erişim'de ve sistemin düzenlenemez olarak işaretlediği fotoğraflar için sunulmaz, üzerinde başka bir uygulamanın düzenlemesi bulunan bir fotoğraf ise ancak sen kabul ettikten sonra değiştirilir.
+
+### Hangi fotoğrafları yeğlediğini öğrenmek
+
+Alike'ın önerdiğinden farklı bir en iyi kare seçtiğinde uygulama, iki fotoğrafın kalite ölçümleri arasındaki farkı saklar ve sonraki grupları senin beğenine daha yakın sıralamak için kullanır. Yalnızca uygulama içinde yaptığın seçimlerden öğrenir. Bu değerler fotoğraf değil, türetilmiş sayılardır; cihazında kalır ve hiçbir yere gönderilmez. Ayarlar'da öğrenilenleri sıfırlayan bir düğme vardır.
 
 ## Alike neyi toplamaz
 
@@ -86,12 +94,14 @@ Apple'ın satın alma bilgilerini nasıl işlediği [Apple'ın gizlilik politika
 | --- | --- |
 | Fotoğraf erişimini değiştirmek ya da sınırlamak | iOS Ayarları → Gizlilik ve Güvenlik → Fotoğraflar → Alike |
 | Bildirimleri durdurmak | Alike ayarlarında haftalık temizlik anımsatıcısını kapat ya da iOS Ayarları → Bildirimler |
+| İyileştirilmiş bir fotoğrafı aslına döndürmek | Alike: grup ayrıntılarında «Orijinale dön»; ya da Apple Fotoğraflar: Düzenle → Geri Al |
+| En İyi Kare'nin öğrendiklerini sıfırlamak | Alike Ayarları → «En İyi Kare Öğrenimini Sıfırla» |
 | Alike'ın sakladığı her şeyi silmek | Alike Ayarları → Veriler ve Gizlilik → Alike Verilerini Sil |
 | Tüm verileri tamamen kaldırmak | Alike uygulamasını cihazdan sil |
 
 ### Alike Verilerini Sil
 
-Ayarlar → Veriler ve Gizlilik → **Alike Verilerini Sil**, Alike'ın cihazında sakladığı her şeyi kaldırır: tarama sonuçları ve analiz önbellekleri, temizlik ilerlemesi ve geçmişi ile Alike tercihlerin. Bu işlem geri alınamaz.
+Ayarlar → Veriler ve Gizlilik → **Alike Verilerini Sil**, Alike'ın cihazında sakladığı her şeyi kaldırır: tarama sonuçları ve analiz önbellekleri, temizlik ilerlemesi ve geçmişi, Alike'ın senin seçtiğin en iyi karelerden öğrendiği ağırlıklar ile Alike tercihlerin. Bu işlem geri alınamaz.
 
 Fotoğraflarına, «Son Silinenler» albümüne, fotoğraf erişimi iznine ya da Alike Pro aboneliğine **dokunmaz**. Silme sonrasında Alike, fotoğraf erişimini ikinci kez sormadan tanıtımını yeniden gösterir.
 

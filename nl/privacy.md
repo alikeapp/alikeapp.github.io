@@ -7,7 +7,7 @@ page_key: privacy
 description: "Hoe Alike met je foto's omgaat: analyse op het apparaat, er wordt niets geüpload, geen analytics, en verwijderen gebeurt alleen met jouw bevestiging."
 ---
 
-Laatst bijgewerkt: 5 augustus 2026
+Laatst bijgewerkt: 6 september 2026
 
 Alike is een iOS-app die visueel vergelijkbare foto's in je fotobibliotheek vindt en groepeert, zodat je ze kunt bekijken en opslagruimte kunt vrijmaken. Alike wordt beheerd door Oleksandr Solokha, een individuele ontwikkelaar gevestigd in Oekraïne.
 
@@ -25,7 +25,7 @@ Voor ondersteuning, foutmeldingen, privacyvragen of problemen met een aankoop:
 
 ### Je fotobibliotheek
 
-Alike vraagt één keer, aan het begin, toegang tot je fotobibliotheek. Die toegang is nodig voor het enige doel van de app: foto's vergelijken om visueel vergelijkbare exemplaren te vinden.
+Alike vraagt één keer, aan het begin, toegang tot je fotobibliotheek. Die toegang is nodig voor twee dingen: foto's vergelijken om visueel vergelijkbare exemplaren te vinden en, alleen als je erom vraagt, een verbeterde versie bewaren van een foto die je wilde houden.
 
 Je kunt volledige toegang geven of beperkte toegang en zelf kiezen welke foto's Alike mag zien. Je kunt dat altijd wijzigen of intrekken in de iOS-instellingen onder 'Privacy en beveiliging' → 'Foto's' → 'Alike'.
 
@@ -47,9 +47,17 @@ Alike vergelijkt foto's met Apples Vision-framework, dat lokaal op je iPhone dra
 
 ### Resultaten worden lokaal bewaard
 
-Alike bewaart zijn resultaten op je apparaat met Core Data en lokale bestanden, zodat je niet opnieuw hoeft te scannen elke keer dat je de app opent. Onder die lokale opslag vallen foto-identificatoren, kenmerkafdrukken, groepsindeling, geschatte groottes, je voortgang en selecties, de opruimgeschiedenis en je app-voorkeuren.
+Alike bewaart zijn resultaten op je apparaat met Core Data en lokale bestanden, zodat je niet opnieuw hoeft te scannen elke keer dat je de app opent. Onder die lokale opslag vallen foto-identificatoren, kenmerkafdrukken, groepsindeling, geschatte groottes, je voortgang en selecties, de opruimgeschiedenis, de gewichten die Alike heeft geleerd van de beste opnamen die jij koos, en je app-voorkeuren.
 
 Dat alles staat in Alikes eigen, afgeschermde opslag op je apparaat en zit in je apparaatreservekopieën, als je die maakt.
+
+### Een foto verbeteren die je houdt
+
+Alike kan de beste opname van een groep verbeteren. Het doet dat nooit uit zichzelf: het resultaat wordt je als voorbeeld getoond en pas bewaard nadat je het toepast, één foto per keer. De verwerking gebeurt op je apparaat en er wordt niets geüpload. iOS bewaart het origineel — de wijziging wordt opgeslagen als een niet-destructieve bewerking die als die van Alike is gemarkeerd, dus ze verschijnt in Apple Foto's en kan vanuit beide apps ongedaan worden gemaakt. Er wordt geen kopie gemaakt. Verbeteren wordt niet aangeboden voor video, bij beperkte toegang of voor foto's die het systeem als niet-bewerkbaar markeert, en een foto die al de bewerking van een andere app draagt, wordt pas gewijzigd nadat je akkoord gaat.
+
+### Leren welke foto's jij mooier vindt
+
+Wanneer je een andere beste opname kiest dan die Alike voorstelde, bewaart de app het verschil tussen de kwaliteitsmetingen van de twee foto's en gebruikt dat om latere groepen dichter bij jouw smaak te rangschikken. Het leert alleen van keuzes die je binnen de app maakt. De waarden zijn afgeleide getallen, geen foto's, ze blijven op je apparaat en er wordt niets ergens naartoe gestuurd. In de instellingen zit een knop die het geleerde wist.
 
 ## Wat Alike niet verzamelt
 
@@ -86,12 +94,14 @@ Hoe Apple met je aankoopgegevens omgaat, valt onder [Apples privacybeleid](https
 | --- | --- |
 | Fototoegang wijzigen of beperken | iOS-instellingen → Privacy en beveiliging → Foto's → Alike |
 | Berichtgevingen stoppen | De wekelijkse opruimherinnering uitzetten in de Alike-instellingen, of iOS-instellingen → Berichtgeving |
+| Een verbeterde foto terugzetten naar het origineel | Alike: 'Origineel herstellen' in de groepsdetails; of Apple Foto's: Wijzig → Zet terug |
+| Wissen wat Beste opname heeft geleerd | Alike-instellingen → 'Leren voor Beste Opname resetten' |
 | Alles verwijderen wat Alike bewaart | Alike-instellingen → Gegevens en privacy → Verwijder Alike-gegevens |
 | Alle gegevens volledig weghalen | De Alike-app van je apparaat verwijderen |
 
 ### Verwijder Alike-gegevens
 
-Instellingen → Gegevens en privacy → **Verwijder Alike-gegevens** haalt alles weg wat Alike op je apparaat heeft bewaard: scanresultaten en analysecaches, opruimvoortgang en -geschiedenis, en je Alike-voorkeuren. Dit kan niet ongedaan worden gemaakt.
+Instellingen → Gegevens en privacy → **Verwijder Alike-gegevens** haalt alles weg wat Alike op je apparaat heeft bewaard: scanresultaten en analysecaches, opruimvoortgang en -geschiedenis, de gewichten die Alike heeft geleerd van de beste opnamen die jij koos, en je Alike-voorkeuren. Dit kan niet ongedaan worden gemaakt.
 
 Het raakt je foto's, je album 'Recent verwijderd', je toestemming voor fototoegang en je Alike Pro-abonnement **niet** aan. Na het verwijderen toont Alike zijn introductie opnieuw, zonder een tweede keer om fototoegang te vragen.
 

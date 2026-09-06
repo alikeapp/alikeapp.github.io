@@ -7,7 +7,7 @@ page_key: terms
 description: "Terms of Use for Alike, including the Alike Pro subscription, billing, renewal, trial, and cancellation."
 ---
 
-Last updated: August 5, 2026
+Last updated: September 6, 2026
 
 These Terms of Use govern your use of the Alike iOS app. Alike is operated by Oleksandr Solokha, an individual developer based in Ukraine ("we", "us").
 
@@ -17,7 +17,7 @@ By downloading or using Alike, you agree to these Terms. If you do not agree, do
 
 ## What Alike Does
 
-Alike scans the photos in your photo library, compares them using Apple's on-device Vision framework, and groups visually similar photos so you can review each group and choose which photos to delete.
+Alike scans the photos in your photo library, compares them using Apple's on-device Vision framework, and groups visually similar photos so you can review each group and choose which photos to delete — and, when you choose to, applies a reversible enhancement to a photo you keep.
 
 All analysis runs on your device. See our [Privacy Policy](../privacy/) for details.
 
@@ -34,6 +34,8 @@ You may not reverse engineer, decompile, or disassemble the app except to the ex
 Alike helps you decide which photos to delete. It does not decide for you, and it can be wrong: two photos that look similar to a computer may not be interchangeable to you.
 
 You are solely responsible for reviewing each group and for what you choose to delete. Every deletion requires your explicit confirmation, and iOS shows its own confirmation before removing anything. Deleted photos go to your Recently Deleted album, where iOS keeps them for approximately 30 days.
+
+An enhancement is applied only after you confirm it, and iOS keeps the original so you can put it back. The one exception is a photo that already carries another app's edit: replacing that edit cannot be undone, which is why Alike asks first.
 
 **Back up your photo library before doing a large cleanup.** We are not responsible for photos you choose to delete, including photos you later wish you had kept.
 
@@ -82,7 +84,7 @@ Alike requires a supported version of iOS. We are not responsible for the app fa
 
 To the fullest extent permitted by law, Alike is provided **"as is" and "as available"**, without warranties of any kind, whether express or implied, including any implied warranties of merchantability, fitness for a particular purpose, accuracy, or non-infringement.
 
-We do not warrant that Alike will be error-free or uninterrupted, that its similarity detection will be accurate or complete, or that it will identify every duplicate or avoid grouping photos you consider different.
+We do not warrant that Alike will be error-free or uninterrupted, that its similarity detection will be accurate or complete, that it will identify every duplicate or avoid grouping photos you consider different, nor that an enhanced version will look better to you than the original.
 
 ## Limitation of Liability
 

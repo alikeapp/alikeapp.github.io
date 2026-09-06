@@ -275,7 +275,40 @@ check_terms "zh-hant" "標準使用者授權合約"                             
 # its leading preposition, and the two verbs that carry the disclosure.
 check_terms "ar"    "ترخيص المستخدم النهائي القياسية من Apple"                    "يتجدد الاشتراك تلقائيًا"      "7 أيام مجانًا"
 
-echo "==> 5. Third-party hosts"
+echo "==> 5. Privacy guardrails"
+# The same idea as the Terms table above, for the two things the 1.3.0 privacy
+# pages promise: that Alike can write a reversible edit into the library, and
+# that Best Shot learns on the device. Nothing else in this script looks at
+# privacy.md content at all, so before this table a translation pass that
+# dropped a whole subsection in one locale would render, link, pass every other
+# assertion and deploy. The fragments are short on purpose — a reworded sentence
+# should not fail the build, a missing section should.
+check_privacy() {
+  local dir="$1" enhance="$2" learning="$3" revert="$4"
+  local f="$SITE${dir:+/$dir}/privacy/index.html"
+  local label="/${dir:+$dir/}privacy/"
+  local ok=1
+  [ -f "$f" ] || { fail "$label missing, cannot check guardrails"; return; }
+  grep -qiF "$enhance" "$f"  || { fail "$label lost the enhancement section (looked for '$enhance')"; ok=0; }
+  grep -qiF "$learning" "$f" || { fail "$label lost the Best Shot learning section (looked for '$learning')"; ok=0; }
+  grep -qiF "$revert" "$f"   || { fail "$label lost the revert row in Your Controls (looked for '$revert')"; ok=0; }
+  [ "$ok" -eq 1 ] && pass "$label enhancement + learning + revert control present"
+}
+
+check_privacy ""      "Enhancing a photo you keep"       "Learning which photos you prefer" "Revert to original"
+check_privacy "uk"    "Покращення фотографії"            "Навчання на ваших уподобаннях"    "Повернути оригінал"
+check_privacy "de"    "Ein Foto verbessern"              "Lernen, welche Fotos"             "Original wiederherstellen"
+check_privacy "fr"    "Améliorer une photo"              "Apprendre quelles photos"         "Rétablir"
+check_privacy "es"    "Mejorar una foto"                 "Aprender qué fotos"               "Volver al original"
+check_privacy "pt-br" "Aprimorar uma foto"               "Aprender de quais fotos"          "Voltar ao original"
+check_privacy "it"    "Migliorare una foto"              "Imparare quali foto"              "Ripristina"
+check_privacy "nl"    "Een foto verbeteren"              "Leren welke foto"                 "Origineel herstellen"
+check_privacy "pl"    "Poprawianie zdjęcia"              "Uczenie się, które zdjęcia"       "Przywróć oryginał"
+check_privacy "tr"    "fotoğrafı iyileştirmek"           "yeğlediğini öğrenmek"             "Orijinale dön"
+check_privacy "zh-hant" "優化你要留下的照片"                "學習你偏好哪些照片"                "還原為原始照片"
+check_privacy "ar"    "تحسين الصورة التي تحتفظ بها"        "تعلّم الصور التي تفضّلها"            "العودة إلى الأصل"
+
+echo "==> 6. Third-party hosts"
 # The privacy policy states that Alike collects nothing and makes no network
 # requests of its own. A page that loaded an analytics script, a CDN asset, or a
 # web font would make that claim false, so any external host is a build failure
@@ -329,7 +362,7 @@ else
   pass "no third-party hosts referenced"
 fi
 
-echo "==> 6. Link preview"
+echo "==> 7. Link preview"
 # What a messenger draws when someone pastes a link from this site. It is
 # checked here because nothing else can: assertion 2 reads href, src, srcset and
 # url(), and og:image is none of those — a card pointing at a file that does not
@@ -440,7 +473,7 @@ done < <(printf '%s' "$cards" | sort -u)
 [ "$preview_ok" -eq 1 ] && pass "every og:image resolves, measures what it declares, and asks for the large card"
 
 
-echo "==> 7. Screenshots"
+echo "==> 8. Screenshots"
 # _data/screens.yml keys every caption and alt by locale, and the home layout
 # reads shot[page.lang]. A locale with no block renders an empty <p> and an
 # alt="" — visible as a gap, invisible to a diff, and a WCAG failure on five
@@ -504,7 +537,7 @@ done
 [ "$frames_ok" -eq 1 ] && pass "every locale frames its own captures — fallback included — not another language's screen"
 
 
-echo "==> 8. Right-to-left"
+echo "==> 9. Right-to-left"
 # Two halves of the same promise. The page has to declare its direction, and the
 # stylesheet has to stop hard-coding it.
 #
