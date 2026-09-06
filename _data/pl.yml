@@ -58,7 +58,7 @@ features:
     - title: Trzy poziomy czułości
       body: "Niska, średnia albo wysoka. Ciaśniej, gdy chcesz tylko niemal identyczne ujęcia, szerzej, żeby złapać więcej."
     - title: Wykrywanie najlepszego ujęcia
-      body: "Zrozumiały wybór najmocniejszego zdjęcia w grupie, żeby zawsze był sensowny domyślny kandydat do zachowania."
+      body: "Wybrane na podstawie samych zdjęć — ostrości, ekspozycji, twarzy i szumu — żeby zawsze był sensowny domyślny kandydat do zachowania. Uczy się też z ujęć, które wybierasz sam."
     - title: Prowadzony przegląd
       body: "Pracuj grupa po grupie z opcjami „Zostaw tylko najlepsze”, „Zaznacz wszystkie oprócz najlepszego” i „Odznacz”."
     - title: Znaczniki stanu
@@ -69,6 +69,8 @@ features:
       body: "Elastyczna siatka, która przełącza się między przestronną jedną kolumną a gęstszym widokiem i zapamiętuje wybór między uruchomieniami."
     - title: Trzynaście języków, tryb ciemny
       body: "Angielski, ukraiński, niemiecki, francuski, hiszpański, hiszpański latynoamerykański, portugalski brazylijski, włoski, niderlandzki, polski, turecki, chiński tradycyjny i arabski, wszędzie, z pełnym trybem ciemnym."
+    - title: Ulepsz i cofnij
+      body: "Ulepsz zdjęcie, które zachowujesz, jednym dotknięciem. Oryginał zostaje w bibliotece, a jeden krok go przywraca."
 
 screenshots:
   title: Rzut oka do środka
@@ -100,6 +102,8 @@ pricing:
     features:
       - "3 skanowania miesięcznie"
       - "Prowadzony przegląd z najlepszym ujęciem"
+      - "Ulepszanie jednym dotknięciem, zawsze odwracalne"
+      - "Najlepsze ujęcie, które uczy się z Twoich wyborów"
       - "Sortowanie i historia porządków"
       - "Porządki po jednym zdjęciu"
   pro:
@@ -135,11 +139,15 @@ faq:
     - q: Jak Alike decyduje, które zdjęcia są podobne?
       a: "Framework Vision nadaje każdemu zdjęciu numeryczny odcisk cech. Porównywane są zdjęcia zrobione blisko siebie w czasie i miejscu, a zdjęcie trafia do grupy tylko wtedy, gdy jest podobne do wszystkich już w niej obecnych. Poziom czułości ustala, jak podobne znaczy wystarczająco podobne."
     - q: Czym jest najlepsze ujęcie?
-      a: "Zrozumiałym wyborem najmocniejszego zdjęcia w grupie, żeby zawsze był sensowny domyślny kandydat do zachowania. Zawsze możesz go zmienić."
+      a: "Zdjęcie, które Alike proponuje zachować w każdej grupie, wybrane na podstawie samych zdjęć — ostrości, ekspozycji, twarzy i szumu — a nie ulubionych czy rozmiaru pliku. Zawsze możesz je zmienić, a im częściej to robisz, tym bliżej Twojego gustu są propozycje."
+    - q: Czy Alike może zmieniać moje zdjęcia?
+      a: "Tylko jeśli go o to poprosisz. Możesz ulepszyć najlepsze ujęcie w grupie: Alike najpierw pokazuje wynik i zapisuje go dopiero wtedy, gdy go zastosujesz. Oryginał zachowuje iOS, więc jeden krok go przywraca, a Zdjęcia Apple też cofną tę zmianę."
+    - q: Czy Alike uczy się z moich wyborów?
+      a: "Tak, wyłącznie z Twoich własnych wyborów. Kiedy wybierzesz inne najlepsze ujęcie, Alike zapamiętuje, co wolałeś, i układa kolejne grupy bliżej tego. Wszystko zostaje na Twoim urządzeniu, a ustawienia mogą to wyzerować."
     - q: Jak anulować subskrypcję?
       a: "W Ustawieniach iOS dotknij swojego imienia, a potem „Subskrypcje”. Anulowanie zatrzymuje przyszłe odnowienia, a dostęp zostaje do końca opłaconego okresu. Subskrypcje i zwroty obsługuje Apple, nie my."
     - q: Czy mogę usunąć wszystko, co Alike zapisał?
-      a: "Tak. Ustawienia, potem „Dane i prywatność”, potem „Usuń dane Alike”. To kasuje wyniki skanowania, historię porządków i ustawienia, a zostawia nietknięte Twoje zdjęcia, dostęp do zdjęć i subskrypcję."
+      a: "Tak. Ustawienia, potem „Dane i prywatność”, potem „Usuń dane Alike”. Kasuje to wyniki skanowania, historię porządków i ustawienia, nie rusza Twoich zdjęć, dostępu do zdjęć ani subskrypcji, a także czyści to, czego nauczyło się najlepsze ujęcie. Ulepszone zdjęcie zostaje takie, jakie jest: przywrócenie oryginału to osobny krok."
 
 support:
   title: Pomoc
@@ -157,6 +165,7 @@ support:
     - "Wersja Alike, na dole Ustawień"
     - "Co robiłeś, czego się spodziewałeś i co stało się zamiast tego"
     - "Czy uprawnienie do biblioteki zdjęć jest ustawione na pełny czy ograniczony dostęp"
+    - "W sprawie ulepszonego zdjęcia — czy próbowałeś już „Przywróć oryginał” w Alike albo Edytuj → Przywróć w Zdjęciach Apple i czy wyzerowałeś naukę Najlepszego ujęcia w ustawieniach Alike"
   privacy_title: Pytania o prywatność
   privacy_body: "Alike nie ma serwera i niczego nie zbiera, więc nie istnieją żadne dane konta do wyeksportowania ani usunięcia. Polityka prywatności wyjaśnia to w całości, a „Usuń dane Alike” w Ustawieniach kasuje wszystko, co zapisano na Twoim urządzeniu."
   subs_title: Subskrypcje i zwroty

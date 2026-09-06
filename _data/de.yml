@@ -58,7 +58,7 @@ features:
     - title: Drei Empfindlichkeitsstufen
       body: "Niedrig, mittel oder hoch. Enger, wenn du nur nahezu identische Aufnahmen willst, weiter, um mehr zu erfassen."
     - title: Beste Aufnahme erkennen
-      body: "Eine nachvollziehbare Wahl des stärksten Fotos jeder Gruppe, damit es immer eine sinnvolle Voreinstellung zum Behalten gibt."
+      body: "Ausgewählt anhand der Fotos selbst — Schärfe, Belichtung, Gesichter und Rauschen —, damit es immer eine sinnvolle Voreinstellung zum Behalten gibt. Sie lernt außerdem aus den Aufnahmen, die du selbst wählst."
     - title: Geführtes Durchsehen
       body: "Arbeite Gruppe für Gruppe mit „Nur beste behalten“, „Alle außer der besten auswählen“ und „Auswahl aufheben“."
     - title: Status-Markierungen
@@ -69,6 +69,8 @@ features:
       body: "Ein adaptives Raster, das zwischen einer großzügigen einspaltigen und einer dichteren Ansicht wechselt und sich zwischen Starts merkt."
     - title: Dreizehn Sprachen, Dunkelmodus
       body: "Englisch, Ukrainisch, Deutsch, Französisch, Spanisch, lateinamerikanisches Spanisch, brasilianisches Portugiesisch, Italienisch, Niederländisch, Polnisch, Türkisch, traditionelles Chinesisch und Arabisch durchgehend, dazu vollständiger Dunkelmodus."
+    - title: Verbessern und zurücknehmen
+      body: "Verbessere das Foto, das du behältst, mit einem Tippen. Das Original bleibt in deiner Mediathek, und ein Schritt holt es zurück."
 
 screenshots:
   title: Ein Blick hinein
@@ -100,6 +102,8 @@ pricing:
     features:
       - "3 Scans pro Monat"
       - "Geführtes Durchsehen mit bester Aufnahme"
+      - "Verbesserung mit einem Tippen, immer umkehrbar"
+      - "Beste Aufnahme, die aus deinen Wahlen lernt"
       - "Sortierung und Aufräumverlauf"
       - "Fotos einzeln aufräumen"
   pro:
@@ -134,11 +138,15 @@ faq:
     - q: Wie entscheidet Alike, welche Fotos ähnlich sind?
       a: "Jedes Foto erhält vom Vision-Framework einen numerischen Merkmalsabdruck. Verglichen werden Fotos, die zeitlich und örtlich nah beieinander liegen, und ein Foto kommt nur dann in eine Gruppe, wenn es allen bereits enthaltenen Fotos ähnelt. Die Empfindlichkeitsstufe legt fest, wie ähnlich ähnlich genug ist."
     - q: Was ist die beste Aufnahme?
-      a: "Eine nachvollziehbare Wahl des stärksten Fotos jeder Gruppe, damit es immer eine sinnvolle Voreinstellung zum Behalten gibt. Du kannst sie jederzeit überstimmen."
+      a: "Das Foto, das Alike in jeder Gruppe zum Behalten vorschlägt, ausgewählt anhand der Fotos selbst — Schärfe, Belichtung, Gesichter und Rauschen — statt anhand von Favoriten oder Dateigröße. Du kannst es jederzeit überstimmen, und je öfter du das tust, desto näher kommen die Vorschläge deinem Geschmack."
+    - q: Kann Alike meine Fotos verändern?
+      a: "Nur wenn du es verlangst. Du kannst die beste Aufnahme einer Gruppe verbessern; Alike zeigt dir das Ergebnis zuerst und sichert es erst, wenn du es anwendest. iOS behält das Original, ein Schritt holt es also zurück, und auch Apple Fotos kann die Änderung rückgängig machen."
+    - q: Lernt Alike aus dem, was ich wähle?
+      a: "Ja, aus deinen eigenen Wahlen und aus nichts sonst. Wenn du eine andere beste Aufnahme wählst, merkt sich Alike, was du bevorzugt hast, und sortiert spätere Gruppen näher daran. Alles bleibt auf deinem Gerät, und die Einstellungen können es zurücksetzen."
     - q: Wie kündige ich ein Abo?
       a: "In den iOS-Einstellungen auf deinen Namen tippen, dann „Abos“. Eine Kündigung stoppt künftige Verlängerungen, und der Zugriff bleibt bis zum Ende des bezahlten Zeitraums bestehen. Abos und Rückerstattungen wickelt Apple ab, nicht wir."
     - q: Kann ich alles löschen, was Alike gespeichert hat?
-      a: "Ja. Einstellungen, dann „Daten & Datenschutz“, dann „Alike-Daten löschen“. Das löscht Scan-Ergebnisse, Aufräumverlauf und Einstellungen und lässt deine Fotos, den Fotozugriff und das Abo unberührt."
+      a: "Ja. Einstellungen, dann „Daten & Datenschutz“, dann „Alike-Daten löschen“. Das löscht Scan-Ergebnisse, Aufräumverlauf und Einstellungen, lässt deine Fotos, den Fotozugriff und das Abo unberührt und löscht außerdem, was die beste Aufnahme gelernt hat. Ein verbessertes Foto bleibt, wie es ist: das Original zurückzuholen ist ein eigener Schritt."
 
 support:
   title: Support
@@ -156,6 +164,7 @@ support:
     - "Die Alike-Version, unten in den Einstellungen zu sehen"
     - "Was du getan hast, was du erwartet hast und was stattdessen passiert ist"
     - "Ob die Berechtigung für die Fotomediathek auf vollen oder eingeschränkten Zugriff steht"
+    - "Bei einem verbesserten Foto, ob du „Auf Original zurücksetzen“ in Alike oder Bearbeiten → Zurücksetzen in Apple Fotos schon versucht hast, und ob du das Gelernte für Beste Aufnahme in den Alike-Einstellungen zurückgesetzt hast"
   privacy_title: Fragen zum Datenschutz
   privacy_body: "Alike hat keinen Server und erhebt nichts, es gibt also keine Accountdaten zum Exportieren oder Löschen. Die Datenschutzrichtlinie erklärt das vollständig, und „Alike-Daten löschen“ in den Einstellungen entfernt alles, was auf deinem Gerät gespeichert ist."
   subs_title: Abos und Rückerstattungen

@@ -58,7 +58,7 @@ features:
     - title: Tre livelli di sensibilità
       body: "Bassa, media o alta. Più stretta se vuoi solo gli scatti quasi identici, più ampia per prendere di più."
     - title: Riconoscimento dello scatto migliore
-      body: "Una scelta comprensibile della foto più riuscita di ogni gruppo, così c'è sempre un'opzione sensata da tenere."
+      body: "Scelta dalle foto stesse — nitidezza, esposizione, volti e rumore —, così c'è sempre un'opzione sensata da tenere. Impara anche dagli scatti che scegli tu."
     - title: Controllo guidato
       body: "Procedi gruppo per gruppo con «Tieni solo la migliore», «Seleziona tutte tranne la migliore» e «Deseleziona»."
     - title: Indicatori di stato
@@ -69,6 +69,8 @@ features:
       body: "Una griglia adattiva che passa da una colonna ampia a una vista più fitta e ricorda la tua scelta tra un avvio e l'altro."
     - title: Tredici lingue, modalità scura
       body: "Inglese, ucraino, tedesco, francese, spagnolo, spagnolo latinoamericano, portoghese brasiliano, italiano, olandese, polacco, turco, cinese tradizionale e arabo, ovunque, con modalità scura completa."
+    - title: Migliora, e torna indietro
+      body: "Migliora la foto che tieni con un tocco. L'originale resta nella tua libreria, e un passaggio lo rimette com'era."
 
 screenshots:
   title: Uno sguardo dentro
@@ -100,6 +102,8 @@ pricing:
     features:
       - "3 scansioni al mese"
       - "Controllo guidato con lo scatto migliore"
+      - "Miglioramento con un tocco, sempre reversibile"
+      - "Scatto migliore che impara dalle tue scelte"
       - "Ordinamento e cronologia pulizia"
       - "Pulizia di una foto alla volta"
   pro:
@@ -135,11 +139,15 @@ faq:
     - q: Come decide Alike quali foto sono simili?
       a: "Il framework Vision assegna a ogni foto un'impronta numerica. Vengono confrontate le foto vicine nel tempo e nel luogo, e una foto entra in un gruppo solo se somiglia a tutte quelle già presenti. Il livello di sensibilità stabilisce quanto simile sia abbastanza simile."
     - q: Cos'è lo scatto migliore?
-      a: "Una scelta comprensibile della foto più riuscita di ogni gruppo, così c'è sempre un'opzione sensata da tenere. Puoi sempre sovrascriverla."
+      a: "La foto che Alike propone di tenere in ogni gruppo, scelta dalle foto stesse — nitidezza, esposizione, volti e rumore — e non dai preferiti o dalle dimensioni del file. Puoi sempre sovrascriverla, e più lo fai, più i suggerimenti si avvicinano al tuo gusto."
+    - q: Alike può modificare le mie foto?
+      a: "Solo se glielo chiedi. Puoi migliorare lo scatto migliore di un gruppo: Alike ti mostra prima il risultato e lo salva soltanto quando lo applichi. L'originale lo conserva iOS, quindi un passaggio lo rimette, e anche Foto di Apple può annullare la modifica."
+    - q: Alike impara da quello che scelgo?
+      a: "Sì, dalle tue scelte e da nient'altro. Quando scegli uno scatto migliore diverso, Alike ricorda che cosa hai preferito e ordina i gruppi successivi più vicino a quello. Resta tutto sul tuo dispositivo, e le impostazioni possono azzerarlo."
     - q: Come annullo un abbonamento?
       a: "In Impostazioni di iOS tocca il tuo nome, poi «Abbonamenti». L'annullamento ferma i rinnovi futuri, e l'accesso resta fino alla fine del periodo pagato. Abbonamenti e rimborsi li gestisce Apple, non noi."
     - q: Posso eliminare tutto quello che Alike ha salvato?
-      a: "Sì. Impostazioni, poi «Dati e privacy», poi «Elimina i dati di Alike». Cancella risultati delle scansioni, cronologia pulizia e preferenze, e lascia intatti le tue foto, l'accesso alle foto e l'abbonamento."
+      a: "Sì. Impostazioni, poi «Dati e privacy», poi «Elimina i dati di Alike». Rimuove risultati delle scansioni, cronologia della pulizia e preferenze, lascia intatte le tue foto, l'accesso alle foto e l'abbonamento, e azzera anche quello che lo scatto migliore ha imparato. Una foto che hai migliorato resta com'è: rimettere l'originale è un passaggio a parte."
 
 support:
   title: Assistenza
@@ -157,6 +165,7 @@ support:
     - "La versione di Alike, in fondo alle Impostazioni"
     - "Cosa hai fatto, cosa ti aspettavi e cosa è successo invece"
     - "Se il permesso per la libreria è su accesso completo o limitato"
+    - "Se riguarda una foto migliorata, se hai già provato «Ripristina originale» in Alike o Modifica → Ripristina in Foto di Apple, e se hai azzerato l'apprendimento di Scatto migliore nelle impostazioni di Alike"
   privacy_title: Domande sulla privacy
   privacy_body: "Alike non ha server e non raccoglie nulla, quindi non esistono dati di account da esportare o eliminare. L'informativa sulla privacy lo spiega per intero, e «Elimina i dati di Alike» nelle Impostazioni rimuove tutto ciò che è salvato sul tuo dispositivo."
   subs_title: Abbonamenti e rimborsi

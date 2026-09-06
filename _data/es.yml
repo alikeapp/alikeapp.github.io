@@ -64,7 +64,7 @@ features:
     - title: Tres niveles de sensibilidad
       body: "Bajo, medio o alto. Ajusta el umbral si solo quieres tomas casi idénticas, o ábrelo para detectar más."
     - title: Detección de la mejor toma
-      body: "Una elección determinista de la foto más lograda de cada grupo, para que siempre haya una opción razonable que conservar."
+      body: "Elegida a partir de las fotos mismas — nitidez, exposición, caras y ruido —, así que siempre hay una opción sensata que conservar. Además aprende de las tomas que eliges tú."
     - title: Revisión guiada
       body: "Avanza grupo a grupo con «Conservar solo la mejor», «Seleccionar todo excepto la mejor» y «Borrar selección»."
     - title: Marcas de revisión
@@ -75,6 +75,8 @@ features:
       body: "Una cuadrícula adaptable que alterna entre una columna amplia y una vista más densa, y que se recuerda entre sesiones."
     - title: Trece idiomas, modo oscuro
       body: "Inglés, ucraniano, alemán, francés, español, español de Latinoamérica, portugués de Brasil, italiano, neerlandés, polaco, turco, chino tradicional y árabe en toda la app, con modo oscuro completo."
+    - title: Mejorar, y deshacer
+      body: "Mejora la foto que conservas con un toque. El original se queda en tu fototeca, y un paso lo devuelve."
 
 screenshots:
   title: Un vistazo por dentro
@@ -106,6 +108,8 @@ pricing:
     features:
       - "3 análisis al mes"
       - "Revisión guiada con mejor toma"
+      - "Mejora en un toque, siempre reversible"
+      - "Mejor toma que aprende de tus elecciones"
       - "Ordenación e historial de limpieza"
       - "Limpiar una foto cada vez"
   pro:
@@ -141,11 +145,15 @@ faq:
     - q: ¿Cómo decide qué fotos son similares?
       a: "Cada foto recibe una huella numérica de características del framework Vision. Se comparan las fotos cercanas en fecha de captura y ubicación, y una foto solo entra en un grupo si se parece a todas las que ya están en él. El nivel de sensibilidad marca cuánto parecido es suficiente."
     - q: ¿Qué es la mejor toma?
-      a: "Una elección determinista de la foto más lograda de cada grupo, para que siempre haya una opción razonable que conservar. Siempre puedes cambiarla."
+      a: "La foto que Alike propone conservar en cada grupo, elegida a partir de las fotos mismas — nitidez, exposición, caras y ruido — y no de los favoritos o del tamaño del archivo. Siempre puedes cambiarla, y cuanto más lo hagas, más se acercarán las sugerencias a tu gusto."
+    - q: ¿Puede Alike modificar mis fotos?
+      a: "Solo si se lo pides. Puedes mejorar la mejor toma de un grupo: Alike te muestra primero el resultado y solo lo guarda cuando lo aplicas. El original lo conserva iOS, así que un paso lo devuelve, y Fotos de Apple también puede deshacer el cambio."
+    - q: ¿Alike aprende de lo que elijo?
+      a: "Sí, de tus propias elecciones y de nada más. Cuando eliges otra mejor toma, Alike recuerda lo que preferiste y ordena los grupos siguientes más cerca de eso. Todo se queda en tu dispositivo, y los ajustes pueden reiniciarlo."
     - q: ¿Cómo cancelo una suscripción?
       a: "En Ajustes de iOS, toca tu nombre y luego «Suscripciones». Cancelar detiene las renovaciones futuras y conservas el acceso hasta que termine el periodo pagado. Las suscripciones y los reembolsos los gestiona Apple, no nosotros."
     - q: ¿Puedo borrar todo lo que Alike ha guardado?
-      a: "Sí. Ajustes, luego «Datos y privacidad», luego «Eliminar datos de Alike». Borra los resultados de análisis, el historial de limpieza y las preferencias, y deja intactas tus fotos, el acceso a fotos y la suscripción."
+      a: "Sí. Ajustes, luego «Datos y privacidad», luego «Eliminar datos de Alike». Borra los resultados de análisis, el historial de limpieza y las preferencias, deja intactas tus fotos, el acceso a fotos y la suscripción, y también borra lo que ha aprendido Mejor toma. Una foto que mejoraste se queda como está: devolver el original es un paso aparte."
 
 support:
   title: Soporte
@@ -163,6 +171,7 @@ support:
     - "La versión de Alike, que aparece al final de Ajustes"
     - "Qué hiciste, qué esperabas y qué ocurrió en su lugar"
     - "Si el permiso de la fototeca está en acceso completo o acceso limitado"
+    - "Si se trata de una foto mejorada, si ya has probado «Volver al original» en Alike o Editar → Volver al original en Fotos de Apple, y si has reiniciado el aprendizaje de Mejor toma en los ajustes de Alike"
   privacy_title: Dudas sobre privacidad
   privacy_body: "Alike no tiene servidor y no recopila nada, así que no hay datos de cuenta que exportar o eliminar. La política de privacidad lo explica por completo, y «Eliminar datos de Alike» en Ajustes borra todo lo guardado en tu dispositivo."
   subs_title: Suscripciones y reembolsos

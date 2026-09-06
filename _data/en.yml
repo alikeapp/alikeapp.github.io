@@ -57,7 +57,7 @@ features:
     - title: Three sensitivity levels
       body: "Low, Medium, or High. Tighten the threshold when you only want near-identical shots, loosen it to catch more."
     - title: Best Shot detection
-      body: "A deterministic pick of the strongest photo in each group, so there is always a sensible default to keep."
+      body: "Picked from the photos themselves — sharpness, exposure, faces and noise — so there is always a sensible default to keep. It also learns from the shots you pick yourself."
     - title: Guided review
       body: "Work through one group at a time with Keep Best Only, Select All Except Best, and Clear Selection."
     - title: Review badges
@@ -70,6 +70,8 @@ features:
     # count in step with the catalogs, not with the languages this site is in.
     - title: Thirteen languages, Dark Mode
       body: "English, Ukrainian, German, French, Spanish, Latin American Spanish, Brazilian Portuguese, Italian, Dutch, Polish, Turkish, Traditional Chinese and Arabic throughout, and complete Dark Mode support."
+    - title: Enhance, and undo
+      body: "Improve the photo you keep with one tap. The original stays in your library, and one step puts it back."
 
 screenshots:
   title: A look inside
@@ -101,6 +103,8 @@ pricing:
     features:
       - "3 scans per month"
       - "Guided review with Best Shot"
+      - "One-tap enhancement, always reversible"
+      - "Best Shot that learns from your picks"
       - "Sorting and cleanup history"
       - "Clean up one photo at a time"
   pro:
@@ -133,11 +137,15 @@ faq:
     - q: How does it decide which photos are similar?
       a: "Each photo gets a numeric feature print from the Vision framework. Photos close in capture time and location are compared, and a photo only joins a group if it is similar to every photo already in it. The sensitivity level sets how close is close enough."
     - q: What is Best Shot?
-      a: "A deterministic pick of the strongest photo in each group, so there is always a sensible default to keep. You can always override it."
+      a: "The photo Alike suggests keeping in each group, picked from the photos themselves — sharpness, exposure, faces and noise — rather than from favourites or file size. You can always override it, and the more often you do, the closer the suggestions get to your taste."
+    - q: Can Alike change my photos?
+      a: "Only if you ask it to. You can enhance the best shot in a group; Alike shows you the result first and saves it only when you apply it. The original is kept by iOS, so one step puts it back, and Apple Photos can undo the change too."
+    - q: Does Alike learn from what I choose?
+      a: "Yes, from your own picks and nothing else. When you choose a different best shot, Alike remembers what you preferred and ranks later groups closer to it. It all stays on your device, and Settings can reset it."
     - q: How do I cancel a subscription?
       a: "In iOS Settings, tap your name, then Subscriptions. Cancelling stops future renewals and you keep access until the paid period ends. Subscriptions and refunds are handled by Apple, not by us."
     - q: Can I erase everything Alike has stored?
-      a: "Yes. Settings, then Data & Privacy, then Delete Alike Data. It erases scan results, cleanup history, and preferences, and leaves your photos, photo access, and subscription untouched."
+      a: "Yes. Settings, then Data & Privacy, then Delete Alike Data. It erases scan results, cleanup history, and preferences, and leaves your photos, photo access, and subscription untouched, and it also clears what Best Shot has learned. A photo you enhanced stays as it is; putting the original back is a separate step."
 
 support:
   title: Support
@@ -155,6 +163,7 @@ support:
     - "The Alike version, shown at the bottom of Settings"
     - "What you did, what you expected, and what happened instead"
     - "Whether the photo library permission is set to Full Access or Limited Access"
+    - "For an enhanced photo, whether you have tried Alike's Revert to original or Apple Photos' Edit → Revert, and whether you have reset Best Shot learning in Alike Settings"
   privacy_title: Privacy questions
   privacy_body: "Alike has no server and collects nothing, so there is no account data to export or delete. The Privacy Policy explains this in full, and Delete Alike Data in Settings erases everything stored on your device."
   subs_title: Subscriptions and refunds

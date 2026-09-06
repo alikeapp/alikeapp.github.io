@@ -59,7 +59,7 @@ features:
     - title: Üç duyarlılık düzeyi
       body: "Düşük, orta ya da yüksek. Yalnızca neredeyse aynı kareleri istiyorsan dar, daha fazlasını yakalamak istiyorsan geniş."
     - title: En İyi Kare algılama
-      body: "Her gruptaki en güçlü fotoğrafın izlenebilir bir seçimi; saklamak için her zaman makul bir varsayılan olur."
+      body: "Fotoğrafların kendisinden seçilir — keskinlik, pozlama, yüzler ve gürültü —, böylece saklamak için her zaman makul bir varsayılan olur. Ayrıca senin kendi seçtiğin karelerden öğrenir."
     - title: Yönlendirilmiş gözden geçirme
       body: "Grup grup ilerle: «Yalnızca en iyisini tut», «En iyisi hariç tümünü seç» ve «Seçimi kaldır»."
     - title: Durum rozetleri
@@ -70,6 +70,8 @@ features:
       body: "Ferah tek sütun ile daha sık bir görünüm arasında geçen, tercihini açılışlar arasında hatırlayan uyarlanabilir bir ızgara."
     - title: On üç dil, Koyu Mod
       body: "İngilizce, Ukraynaca, Almanca, Fransızca, İspanyolca, Latin Amerika İspanyolcası, Brezilya Portekizcesi, İtalyanca, Felemenkçe, Lehçe, Türkçe, Geleneksel Çince ve Arapça, baştan sona, tam Koyu Mod desteğiyle."
+    - title: İyileştir, geri al
+      body: "Sakladığın fotoğrafı tek dokunuşla iyileştir. Aslı kitaplığında kalır ve tek bir adım onu geri getirir."
 
 screenshots:
   title: İçeriden bir bakış
@@ -101,6 +103,8 @@ pricing:
     features:
       - "Ayda 3 tarama"
       - "En İyi Kare ile yönlendirilmiş gözden geçirme"
+      - "Tek dokunuşla iyileştirme, her zaman geri alınabilir"
+      - "Senin seçimlerinden öğrenen En İyi Kare"
       - "Sıralama ve temizlik geçmişi"
       - "Fotoğrafları teker teker temizleme"
   pro:
@@ -135,11 +139,15 @@ faq:
     - q: Alike hangi fotoğrafların benzer olduğuna nasıl karar veriyor?
       a: "Vision çerçevesi her fotoğrafa sayısal bir öznitelik izi verir. Zaman ve yer olarak birbirine yakın fotoğraflar karşılaştırılır ve bir fotoğraf, ancak gruptaki hepsine benziyorsa o gruba girer. Duyarlılık düzeyi, benzerin ne kadar benzer sayılacağını belirler."
     - q: En İyi Kare nedir?
-      a: "Her gruptaki en güçlü fotoğrafın izlenebilir bir seçimi; saklamak için her zaman makul bir varsayılan olur. İstediğin zaman değiştirebilirsin."
+      a: "Alike'ın her grupta saklamanı önerdiği fotoğraf; favorilere ya da dosya boyutuna değil, fotoğrafların kendisine — keskinlik, pozlama, yüzler ve gürültü — bakılarak seçilir. İstediğin zaman değiştirebilirsin ve bunu ne kadar sık yaparsan öneriler beğenine o kadar yaklaşır."
+    - q: Alike fotoğraflarımı değiştirebilir mi?
+      a: "Yalnızca sen istersen. Bir gruptaki en iyi kareyi iyileştirebilirsin: Alike sonucu önce sana gösterir ve ancak sen uyguladığında kaydeder. Aslı iOS saklar, yani tek bir adım onu geri getirir; Apple Fotoğraflar da bu değişikliği geri alabilir."
+    - q: Alike seçimlerimden öğreniyor mu?
+      a: "Evet, yalnızca senin kendi seçimlerinden. Farklı bir en iyi kare seçtiğinde Alike neyi yeğlediğini hatırlar ve sonraki grupları buna daha yakın sıralar. Hepsi cihazında kalır ve Ayarlar bunu sıfırlayabilir."
     - q: Aboneliği nasıl iptal ederim?
       a: "iOS Ayarları'nda adına, sonra «Abonelikler»e dokun. İptal, sonraki yenilemeleri durdurur; erişimin ödenmiş dönemin sonuna kadar sürer. Abonelikleri ve iadeleri biz değil Apple yürütür."
     - q: Alike'ın sakladığı her şeyi silebilir miyim?
-      a: "Evet. Ayarlar, sonra «Veriler ve Gizlilik», sonra «Alike Verilerini Sil». Bu; tarama sonuçlarını, temizlik geçmişini ve tercihleri siler, fotoğraflarına, fotoğraf erişimine ve aboneliğine dokunmaz."
+      a: "Evet. Ayarlar, sonra «Veriler ve Gizlilik», sonra «Alike Verilerini Sil». Bu; tarama sonuçlarını, temizlik geçmişini ve tercihleri siler, fotoğraflarına, fotoğraf erişimine ve aboneliğine dokunmaz, ayrıca En İyi Kare'nin öğrendiklerini de temizler. İyileştirdiğin bir fotoğraf olduğu gibi kalır: aslını geri koymak ayrı bir adımdır."
 
 support:
   title: Destek
@@ -157,6 +165,7 @@ support:
     - "Ayarlar'ın en altında yazan Alike sürümü"
     - "Ne yaptığın, ne beklediğin ve bunun yerine ne olduğu"
     - "Fotoğraf kitaplığı izninin tam erişimde mi sınırlı erişimde mi olduğu"
+    - "İyileştirilmiş bir fotoğraf söz konusuysa, Alike'ta «Aslına dön» ya da Apple Fotoğraflar'da Düzenle → Geri Al'ı denedin mi ve En İyi Kare öğrenmesini Alike Ayarları'ndan sıfırladın mı"
   privacy_title: Gizlilikle ilgili sorular
   privacy_body: "Alike'ın sunucusu yok ve hiçbir şey toplamıyor, dolayısıyla dışa aktarılacak ya da silinecek bir hesap verisi de yok. Gizlilik politikası bunu tam olarak anlatır; Ayarlar'daki «Alike Verilerini Sil» ise cihazında saklanan her şeyi kaldırır."
   subs_title: Abonelikler ve iadeler
