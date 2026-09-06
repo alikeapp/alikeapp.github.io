@@ -7,7 +7,7 @@ page_key: terms
 description: "Alike'ın kullanım koşulları: Alike Pro aboneliği, faturalandırma, yenileme, ücretsiz deneme ve iptal."
 ---
 
-Son güncelleme: 5 Ağustos 2026
+Son güncelleme: 6 Eylül 2026
 
 Bu koşullar, Alike iOS uygulamasını kullanımını düzenler. Alike'ı, Ukrayna merkezli bağımsız bir geliştirici olan Oleksandr Solokha yürütür («biz»).
 
@@ -17,7 +17,7 @@ Alike'ı indirerek ya da kullanarak bu koşulları kabul etmiş olursun. Kabul e
 
 ## Alike ne yapar
 
-Alike, fotoğraf kitaplığındaki fotoğrafları tarar, Apple'ın Vision çerçevesiyle cihaz üzerinde karşılaştırır ve görsel olarak benzer olanları gruplar; böylece her grubu gözden geçirip hangi fotoğrafların silineceğini seçebilirsin.
+Alike, fotoğraf kitaplığındaki fotoğrafları tarar, Apple'ın Vision çerçevesiyle cihaz üzerinde karşılaştırır ve görsel olarak benzer olanları gruplar; böylece her grubu gözden geçirip hangi fotoğrafların silineceğini seçebilirsin — ve sen istediğinde, sakladığın bir fotoğrafa geri alınabilir bir iyileştirme uygular.
 
 Tüm analiz cihazında çalışır. Ayrıntılar [gizlilik politikamızda](../privacy/).
 
@@ -34,6 +34,8 @@ Uygulamayı, yürürlükteki hukukun açıkça izin verdiği hâller dışında 
 Alike, hangi fotoğrafların silineceğine karar vermene yardım eder. Senin yerine karar vermez ve yanılabilir: bir bilgisayara benzer görünen iki fotoğraf, senin için birbirinin yerine geçmiyor olabilir.
 
 Her grubu gözden geçirmek ve neyi sileceğine karar vermek yalnızca senin sorumluluğundadır. Her silme senin açık onayını gerektirir ve bir şey kaldırılmadan önce iOS kendi onayını gösterir. Silinen fotoğraflar «Son Silinenler» albümüne gider; iOS onları yaklaşık 30 gün orada tutar.
+
+Bir iyileştirme ancak sen onayladıktan sonra uygulanır ve iOS aslı saklar, böylece geri koyabilirsin. Tek istisna, üzerinde başka bir uygulamanın düzenlemesi bulunan bir fotoğraftır: o düzenlemenin değiştirilmesi geri alınamaz, Alike bu yüzden önce sorar.
 
 **Büyük bir temizlikten önce fotoğraf kitaplığını yedekle.** Silmeyi kendi seçtiğin fotoğraflardan — sonradan keşke saklasaydım dediklerin de dahil — sorumlu değiliz.
 
@@ -82,7 +84,7 @@ Alike, desteklenen bir iOS sürümü gerektirir. Desteklenmeyen, değiştirilmi�
 
 Hukukun izin verdiği azami ölçüde Alike **«olduğu gibi» ve «mevcut hâliyle»** sunulur; satılabilirlik, belirli bir amaca uygunluk, doğruluk veya ihlal etmeme gibi zımni garantiler dahil, açık ya da zımni hiçbir garanti verilmez.
 
-Alike'ın hatasız ya da kesintisiz çalışacağını, benzerlik algılamasının doğru veya eksiksiz olacağını, her kopyanın bulunacağını ve senin farklı gördüğün fotoğrafların gruplanmayacağını garanti etmiyoruz.
+Alike'ın hatasız ya da kesintisiz çalışacağını, benzerlik algılamasının doğru veya eksiksiz olacağını, her kopyanın bulunacağını ve senin farklı gördüğün fotoğrafların gruplanmayacağını, iyileştirilmiş bir sürümün sana aslından daha iyi görüneceğini de garanti etmiyoruz.
 
 ## Sorumluluğun sınırlandırılması
 

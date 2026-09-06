@@ -7,7 +7,7 @@ page_key: terms
 description: "Nutzungsbedingungen für Alike, einschließlich des Alike-Pro-Abos, Abrechnung, Verlängerung, Testphase und Kündigung."
 ---
 
-Zuletzt aktualisiert: 5. August 2026
+Zuletzt aktualisiert: 6. September 2026
 
 Diese Nutzungsbedingungen regeln deine Nutzung der iOS-App Alike. Alike wird von Oleksandr Solokha betrieben, einem einzelnen Entwickler mit Sitz in der Ukraine („wir“, „uns“).
 
@@ -17,7 +17,7 @@ Mit dem Laden oder Nutzen von Alike stimmst du diesen Bedingungen zu. Wenn du ni
 
 ## Was Alike tut
 
-Alike durchsucht die Fotos in deiner Fotomediathek, vergleicht sie mit Apples Vision-Framework auf dem Gerät und gruppiert visuell ähnliche Fotos, damit du jede Gruppe durchsehen und auswählen kannst, welche Fotos gelöscht werden sollen.
+Alike durchsucht die Fotos in deiner Fotomediathek, vergleicht sie mit Apples Vision-Framework auf dem Gerät und gruppiert visuell ähnliche Fotos, damit du jede Gruppe durchsehen und auswählen kannst, welche Fotos gelöscht werden sollen – und wendet, wenn du es möchtest, eine umkehrbare Verbesserung auf ein Foto an, das du behältst.
 
 Die gesamte Analyse läuft auf deinem Gerät. Einzelheiten stehen in unserer [Datenschutzrichtlinie](../privacy/).
 
@@ -34,6 +34,8 @@ Du darfst die App nicht zurückentwickeln, dekompilieren oder disassemblieren, a
 Alike hilft dir bei der Entscheidung, welche Fotos gelöscht werden. Es entscheidet nicht für dich, und es kann sich irren: Zwei Fotos, die für einen Computer ähnlich aussehen, sind für dich möglicherweise nicht austauschbar.
 
 Du allein bist dafür verantwortlich, jede Gruppe durchzusehen und zu entscheiden, was du löschst. Jede Löschung erfordert deine ausdrückliche Bestätigung, und iOS zeigt seine eigene Bestätigung, bevor etwas entfernt wird. Gelöschte Fotos wandern in dein Album „Zuletzt gelöscht“, wo iOS sie etwa 30 Tage aufbewahrt.
+
+Eine Verbesserung wird erst angewendet, nachdem du sie bestätigt hast, und iOS behält das Original, sodass du es zurückholen kannst. Die einzige Ausnahme ist ein Foto, das bereits die Bearbeitung einer anderen App trägt: Diese Bearbeitung zu ersetzen lässt sich nicht rückgängig machen, weshalb Alike vorher fragt.
 
 **Sichere deine Fotomediathek, bevor du groß aufräumst.** Wir sind nicht verantwortlich für Fotos, die du zu löschen wählst, auch nicht für solche, die du später gern behalten hättest.
 
@@ -82,7 +84,7 @@ Alike setzt eine unterstützte iOS-Version voraus. Für Fehlfunktionen auf nicht
 
 Soweit gesetzlich zulässig, wird Alike **„wie besehen“ und „wie verfügbar“** bereitgestellt, ohne jegliche ausdrückliche oder stillschweigende Gewährleistung, einschließlich stillschweigender Gewährleistungen der Marktgängigkeit, der Eignung für einen bestimmten Zweck, der Richtigkeit oder der Nichtverletzung von Rechten.
 
-Wir gewährleisten nicht, dass Alike fehlerfrei oder unterbrechungsfrei arbeitet, dass die Ähnlichkeitserkennung zutreffend oder vollständig ist oder dass jede Dublette erkannt und keine Fotos gruppiert werden, die du für verschieden hältst.
+Wir gewährleisten nicht, dass Alike fehlerfrei oder unterbrechungsfrei arbeitet, dass die Ähnlichkeitserkennung zutreffend oder vollständig ist, dass jede Dublette erkannt und keine Fotos gruppiert werden, die du für verschieden hältst, noch dass dir eine verbesserte Version besser gefällt als das Original.
 
 ## Haftungsbeschränkung
 

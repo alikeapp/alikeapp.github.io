@@ -7,7 +7,7 @@ page_key: privacy
 description: "Jak Alike obchodzi się z Twoimi zdjęciami: analiza na urządzeniu, nic nie jest wysyłane, bez analityki, a usuwanie następuje tylko za Twoim potwierdzeniem."
 ---
 
-Ostatnia aktualizacja: 5 sierpnia 2026
+Ostatnia aktualizacja: 6 września 2026
 
 Alike to aplikacja na iOS, która znajduje i grupuje wizualnie podobne zdjęcia w Twojej bibliotece, żebyś mógł je przejrzeć i zwolnić miejsce. Alike prowadzi Oleksandr Solokha, niezależny deweloper z siedzibą w Ukrainie.
 
@@ -25,7 +25,7 @@ W sprawie pomocy, zgłoszeń błędów, pytań o prywatność lub problemów z z
 
 ### Twoja biblioteka zdjęć
 
-Alike prosi o dostęp do biblioteki zdjęć raz, na początku. Ten dostęp jest niezbędny do jedynego celu aplikacji: porównywania zdjęć w poszukiwaniu wizualnie podobnych.
+Alike prosi o dostęp do biblioteki zdjęć raz, na początku. Ten dostęp jest niezbędny do dwóch rzeczy: porównywania zdjęć w poszukiwaniu wizualnie podobnych oraz — tylko wtedy, gdy sam o to poprosisz — zapisania ulepszonej wersji zdjęcia, które postanowiłeś zachować.
 
 Możesz przyznać pełny dostęp albo dostęp ograniczony i sam wybrać, które zdjęcia Alike widzi. Możesz to zmienić lub cofnąć w dowolnym momencie w Ustawieniach iOS, w „Prywatność i ochrona” → „Zdjęcia” → „Alike”.
 
@@ -47,9 +47,17 @@ Alike porównuje zdjęcia za pomocą frameworka Vision od Apple, który działa 
 
 ### Wyniki są przechowywane lokalnie
 
-Alike przechowuje swoje wyniki na Twoim urządzeniu w Core Data i plikach lokalnych, żebyś nie musiał skanować od nowa po każdym otwarciu aplikacji. Do tej lokalnej pamięci należą identyfikatory zdjęć, odciski cech, przynależność do grup, szacowane rozmiary, Twój postęp i zaznaczenia, historia porządków oraz Twoje ustawienia aplikacji.
+Alike przechowuje swoje wyniki na Twoim urządzeniu w Core Data i plikach lokalnych, żebyś nie musiał skanować od nowa po każdym otwarciu aplikacji. Do tej lokalnej pamięci należą identyfikatory zdjęć, odciski cech, przynależność do grup, szacowane rozmiary, Twój postęp i zaznaczenia, historia porządków, wagi, których Alike nauczył się z wybranych przez Ciebie najlepszych ujęć, oraz Twoje ustawienia aplikacji.
 
 Wszystko to leży we własnym, odizolowanym magazynie Alike na Twoim urządzeniu i jest objęte kopiami zapasowymi urządzenia, jeśli je tworzysz.
+
+### Ulepszanie zdjęcia, które zachowujesz
+
+Alike potrafi ulepszyć najlepsze ujęcie w grupie. Nigdy nie robi tego sam: wynik pokazuje Ci się jako podgląd i zostaje zapisany dopiero po tym, jak go zastosujesz, po jednym zdjęciu naraz. Przetwarzanie odbywa się na Twoim urządzeniu i nic nie jest wysyłane. iOS zachowuje oryginał — zmiana zapisywana jest jako edycja nieniszcząca oznaczona jako pochodząca od Alike, więc pojawia się w Zdjęciach Apple i można ją cofnąć z obu aplikacji. Nie powstaje żadna kopia. Ulepszanie nie jest oferowane dla wideo, przy dostępie ograniczonym ani dla zdjęć, które system oznacza jako nieedytowalne, a zdjęcie noszące już edycję innej aplikacji zostaje zmienione dopiero po Twojej zgodzie.
+
+### Uczenie się, które zdjęcia wolisz
+
+Kiedy wybierzesz inne najlepsze ujęcie niż to zaproponowane przez Alike, aplikacja zapisuje różnicę między pomiarami jakości obu zdjęć i wykorzystuje ją, by kolejne grupy układać bliżej Twojego gustu. Uczy się wyłącznie z wyborów, których dokonujesz w aplikacji. Te wartości to liczby pochodne, a nie zdjęcia, zostają na Twoim urządzeniu i nic nigdzie nie jest wysyłane. W ustawieniach jest przycisk, który zeruje to, czego aplikacja się nauczyła.
 
 ## Czego Alike nie zbiera
 
@@ -86,12 +94,14 @@ Sposób, w jaki Apple obchodzi się z informacjami o Twoich zakupach, reguluje [
 | --- | --- |
 | Zmienić lub ograniczyć dostęp do zdjęć | Ustawienia iOS → Prywatność i ochrona → Zdjęcia → Alike |
 | Zatrzymać powiadomienia | Wyłączyć cotygodniowe przypomnienie o porządkach w ustawieniach Alike albo Ustawienia iOS → Powiadomienia |
+| Przywrócić ulepszone zdjęcie do oryginału | Alike: „Przywróć oryginał” w szczegółach grupy; albo Zdjęcia Apple: Edytuj → Przywróć |
+| Wyzerować to, czego nauczyło się Najlepsze ujęcie | Ustawienia Alike → „Wyzeruj naukę Najlepszego ujęcia” |
 | Usunąć wszystko, co Alike zapisał | Ustawienia Alike → Dane i prywatność → Usuń dane Alike |
 | Całkowicie usunąć wszystkie dane | Usunąć aplikację Alike z urządzenia |
 
 ### Usuń dane Alike
 
-Ustawienia → Dane i prywatność → **Usuń dane Alike** kasuje wszystko, co Alike zapisał na Twoim urządzeniu: wyniki skanowania i bufory analizy, postęp i historię porządków oraz Twoje ustawienia Alike. Tej operacji nie da się cofnąć.
+Ustawienia → Dane i prywatność → **Usuń dane Alike** kasuje wszystko, co Alike zapisał na Twoim urządzeniu: wyniki skanowania i bufory analizy, postęp i historię porządków, wagi, których Alike nauczył się z wybranych przez Ciebie najlepszych ujęć, oraz Twoje ustawienia Alike. Tej operacji nie da się cofnąć.
 
 **Nie** rusza to Twoich zdjęć, albumu „Ostatnio usunięte”, uprawnienia dostępu do zdjęć ani subskrypcji Alike Pro. Po usunięciu Alike pokazuje wprowadzenie od nowa, nie pytając ponownie o dostęp do zdjęć.
 

@@ -7,7 +7,7 @@ page_key: privacy
 description: "Wie Alike mit deinen Fotos umgeht: Analyse auf dem Gerät, nichts wird hochgeladen, keine Analyse-Tools, und gelöscht wird nur mit deiner Bestätigung."
 ---
 
-Zuletzt aktualisiert: 5. August 2026
+Zuletzt aktualisiert: 6. September 2026
 
 Alike ist eine iOS-App, die visuell ähnliche Fotos in deiner Fotomediathek findet und gruppiert, damit du sie durchsehen und Speicherplatz freigeben kannst. Alike wird von Oleksandr Solokha betrieben, einem einzelnen Entwickler mit Sitz in der Ukraine.
 
@@ -25,7 +25,7 @@ Für Support, Fehlerberichte, Datenschutzfragen oder Probleme beim Kauf:
 
 ### Deine Fotomediathek
 
-Alike fragt einmal zu Beginn den Zugriff auf die Fotomediathek an. Dieser Zugriff ist für den einzigen Zweck der App erforderlich: Fotos zu vergleichen, um visuell ähnliche zu finden.
+Alike fragt einmal zu Beginn den Zugriff auf die Fotomediathek an. Dieser Zugriff ist für zwei Dinge erforderlich: Fotos zu vergleichen, um visuell ähnliche zu finden, und – nur wenn du es verlangst – eine verbesserte Version eines Fotos zu sichern, das du behalten möchtest.
 
 Du kannst vollen Zugriff gewähren oder eingeschränkten Zugriff und selbst wählen, welche Fotos Alike sehen darf. Du kannst das jederzeit in den iOS-Einstellungen unter „Datenschutz & Sicherheit“ → „Fotos“ → „Alike“ ändern oder widerrufen.
 
@@ -47,9 +47,17 @@ Alike vergleicht Fotos mit Apples Vision-Framework, das lokal auf deinem iPhone 
 
 ### Ergebnisse werden lokal gespeichert
 
-Alike speichert seine Ergebnisse mit Core Data und lokalen Dateien auf deinem Gerät zwischen, damit du nicht bei jedem Öffnen der App neu scannen musst. Zu diesem lokalen Speicher gehören Foto-Identifikatoren, Merkmalsabdrücke, Gruppenzugehörigkeit, geschätzte Größen, dein Prüffortschritt und deine Auswahl, der Aufräumverlauf und deine App-Einstellungen.
+Alike speichert seine Ergebnisse mit Core Data und lokalen Dateien auf deinem Gerät zwischen, damit du nicht bei jedem Öffnen der App neu scannen musst. Zu diesem lokalen Speicher gehören Foto-Identifikatoren, Merkmalsabdrücke, Gruppenzugehörigkeit, geschätzte Größen, dein Prüffortschritt und deine Auswahl, der Aufräumverlauf, die Gewichte, die Alike aus den von dir gewählten besten Aufnahmen gelernt hat, und deine App-Einstellungen.
 
 All das liegt in Alikes eigenem, abgeschottetem Speicher auf deinem Gerät und ist in deinen Gerätesicherungen enthalten, sofern du dein Gerät sicherst.
+
+### Ein Foto verbessern, das du behältst
+
+Alike kann die beste Aufnahme einer Gruppe verbessern. Das geschieht nie von selbst: Das Ergebnis wird dir als Vorschau gezeigt und erst gesichert, nachdem du es angewendet hast, jeweils ein Foto. Die Verarbeitung läuft auf deinem Gerät, und nichts wird hochgeladen. iOS behält das Original – die Änderung wird als nicht-destruktive Bearbeitung gesichert, die als von Alike stammend gekennzeichnet ist, sodass sie in Apple Fotos erscheint und sich aus beiden Apps rückgängig machen lässt. Es entsteht kein Duplikat. Die Verbesserung wird nicht angeboten für Videos, im eingeschränkten Zugriff oder für Fotos, die das System als nicht bearbeitbar markiert, und ein Foto, das bereits die Bearbeitung einer anderen App trägt, wird erst nach deinem Einverständnis geändert.
+
+### Lernen, welche Fotos du bevorzugst
+
+Wenn du eine andere beste Aufnahme wählst als die von Alike vorgeschlagene, sichert die App den Unterschied zwischen den Qualitätsmessungen der beiden Fotos und nutzt ihn, um spätere Gruppen näher an deinem Geschmack zu sortieren. Sie lernt ausschließlich aus Entscheidungen, die du in der App triffst. Die Werte sind abgeleitete Zahlen, keine Fotos, sie bleiben auf deinem Gerät, und nichts wird irgendwohin gesendet. In den Einstellungen gibt es eine Taste, die das Gelernte zurücksetzt.
 
 ## Was Alike nicht erhebt
 
@@ -86,12 +94,14 @@ Apples Umgang mit deinen Kaufinformationen richtet sich nach [Apples Datenschutz
 | --- | --- |
 | Fotozugriff ändern oder einschränken | iOS-Einstellungen → Datenschutz & Sicherheit → Fotos → Alike |
 | Mitteilungen stoppen | Die wöchentliche Aufräum-Erinnerung in den Alike-Einstellungen ausschalten, oder iOS-Einstellungen → Mitteilungen |
+| Ein verbessertes Foto auf das Original zurücksetzen | Alike: „Auf Original zurücksetzen“ in den Gruppendetails; oder Apple Fotos: Bearbeiten → Zurücksetzen |
+| Zurücksetzen, was „Beste Aufnahme“ gelernt hat | Alike-Einstellungen → „Gelerntes für Beste Aufnahme zurücksetzen“ |
 | Alles löschen, was Alike speichert | Alike-Einstellungen → Daten & Datenschutz → Alike-Daten löschen |
 | Alle Daten vollständig entfernen | Die Alike-App vom Gerät löschen |
 
 ### Alike-Daten löschen
 
-Einstellungen → Daten & Datenschutz → **Alike-Daten löschen** entfernt alles, was Alike auf deinem Gerät gespeichert hat: Scan-Ergebnisse und Analyse-Caches, Aufräumfortschritt und -verlauf sowie deine Alike-Einstellungen. Dieser Schritt lässt sich nicht rückgängig machen.
+Einstellungen → Daten & Datenschutz → **Alike-Daten löschen** entfernt alles, was Alike auf deinem Gerät gespeichert hat: Scan-Ergebnisse und Analyse-Caches, Aufräumfortschritt und -verlauf, die Gewichte, die Alike aus den von dir gewählten besten Aufnahmen gelernt hat, sowie deine Alike-Einstellungen. Dieser Schritt lässt sich nicht rückgängig machen.
 
 Er berührt **nicht** deine Fotos, dein Album „Zuletzt gelöscht“, deine Berechtigung für den Fotozugriff oder dein Alike-Pro-Abo. Nach dem Löschen zeigt Alike seine Einführung erneut, ohne ein zweites Mal nach dem Fotozugriff zu fragen.
 

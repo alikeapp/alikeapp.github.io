@@ -7,7 +7,7 @@ page_key: terms
 description: "Termos de Uso do Alike, incluindo a assinatura Alike Pro, cobrança, renovação, teste grátis e cancelamento."
 ---
 
-Última atualização: 5 de agosto de 2026
+Última atualização: 6 de setembro de 2026
 
 Estes Termos de Uso regem o seu uso do app de iOS Alike. O Alike é operado por Oleksandr Solokha, desenvolvedor independente estabelecido na Ucrânia ("nós").
 
@@ -17,7 +17,7 @@ Ao baixar ou usar o Alike, você concorda com estes Termos. Se não concordar, n
 
 ## O que o Alike faz
 
-O Alike analisa as fotos da sua fototeca, compara-as usando o framework Vision da Apple no próprio aparelho e agrupa fotos visualmente parecidas para que você possa revisar cada grupo e escolher quais fotos apagar.
+O Alike analisa as fotos da sua fototeca, compara-as usando o framework Vision da Apple no próprio aparelho e agrupa fotos visualmente parecidas para que você possa revisar cada grupo e escolher quais fotos apagar — e, quando você quiser, aplica uma melhoria reversível a uma foto que você mantém.
 
 Toda a análise roda no seu aparelho. Veja nossa [Política de Privacidade](../privacy/) para os detalhes.
 
@@ -34,6 +34,8 @@ Você não pode fazer engenharia reversa, descompilar ou desmontar o app, exceto
 O Alike ajuda você a decidir quais fotos apagar. Ele não decide por você, e pode errar: duas fotos que parecem similares para um computador podem não ser intercambiáveis para você.
 
 Você é o único responsável por revisar cada grupo e pelo que escolher apagar. Toda exclusão exige sua confirmação explícita, e o iOS mostra a própria confirmação antes de remover qualquer coisa. As fotos apagadas vão para o seu álbum "Apagados recentemente", onde o iOS as guarda por cerca de 30 dias.
+
+Uma melhoria só é aplicada depois que você confirma, e o iOS mantém o original para que você possa voltar atrás. A única exceção é uma foto que já tem a edição de outro app: substituir essa edição não pode ser desfeito, e é por isso que o Alike pergunta antes.
 
 **Faça backup da sua fototeca antes de uma limpeza grande.** Não somos responsáveis pelas fotos que você escolher apagar, inclusive aquelas que depois gostaria de ter mantido.
 
@@ -82,7 +84,7 @@ O Alike exige uma versão compatível do iOS. Não somos responsáveis pelo app 
 
 Na máxima extensão permitida por lei, o Alike é fornecido **"no estado em que se encontra" e "conforme disponível"**, sem garantias de qualquer tipo, expressas ou implícitas, incluindo quaisquer garantias implícitas de comercialização, adequação a uma finalidade específica, exatidão ou não violação.
 
-Não garantimos que o Alike será livre de erros ou ininterrupto, que sua detecção de similaridade será exata ou completa, nem que identificará toda duplicata ou deixará de agrupar fotos que você considere diferentes.
+Não garantimos que o Alike será livre de erros ou ininterrupto, que sua detecção de similaridade será exata ou completa, que identificará toda duplicata ou deixará de agrupar fotos que você considere diferentes, nem que uma versão melhorada vá agradar você mais do que o original.
 
 ## Limitação de responsabilidade
 
