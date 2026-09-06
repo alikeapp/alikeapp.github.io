@@ -58,7 +58,7 @@ features:
     - title: Trois niveaux de sensibilité
       body: "Faible, moyen ou élevé. Resserrez le seuil pour ne viser que les prises quasi identiques, élargissez-le pour en attraper davantage."
     - title: Détection de la meilleure prise
-      body: "Un choix déterministe de la photo la plus réussie de chaque groupe, pour qu'il y ait toujours une option sensée à conserver."
+      body: "Choisie d'après les photos elles-mêmes — netteté, exposition, visages et bruit —, pour qu'il y ait toujours une option sensée à conserver. Elle apprend aussi des prises que vous choisissez vous-même."
     - title: Revue guidée
       body: "Avancez groupe par groupe avec « Ne garder que la meilleure », « Tout sélectionner sauf la meilleure » et « Effacer la sélection »."
     - title: Badges de suivi
@@ -69,6 +69,8 @@ features:
       body: "Une grille adaptative qui alterne entre une colonne aérée et un affichage plus dense, mémorisée d'un lancement à l'autre."
     - title: Treize langues, mode sombre
       body: "Anglais, ukrainien, allemand, français, espagnol, espagnol d'Amérique latine, portugais du Brésil, italien, néerlandais, polonais, turc, chinois traditionnel et arabe dans toute l'app, avec un mode sombre complet."
+    - title: Améliorer, et revenir en arrière
+      body: "Améliorez la photo que vous gardez d'une seule touche. L'original reste dans votre photothèque, et une étape le rétablit."
 
 screenshots:
   title: Un aperçu
@@ -100,6 +102,8 @@ pricing:
     features:
       - "3 analyses par mois"
       - "Revue guidée avec meilleure prise"
+      - "Amélioration en une touche, toujours réversible"
+      - "Meilleure prise qui apprend de vos choix"
       - "Tri et historique de nettoyage"
       - "Nettoyer une photo à la fois"
   pro:
@@ -134,11 +138,15 @@ faq:
     - q: Comment décide-t-elle que des photos se ressemblent ?
       a: "Chaque photo reçoit une empreinte numérique de caractéristiques du framework Vision. Les photos proches par la date de prise de vue et le lieu sont comparées, et une photo ne rejoint un groupe que si elle ressemble à toutes celles qu'il contient déjà. Le niveau de sensibilité définit ce que « proche » veut dire."
     - q: Qu'est-ce que la meilleure prise ?
-      a: "Un choix déterministe de la photo la plus réussie de chaque groupe, pour qu'il y ait toujours une option sensée à conserver. Vous pouvez toujours la remplacer."
+      a: "La photo qu'Alike propose de garder dans chaque groupe, choisie d'après les photos elles-mêmes — netteté, exposition, visages et bruit — plutôt que d'après les favoris ou la taille de fichier. Vous pouvez toujours la remplacer, et plus vous le faites, plus les suggestions se rapprochent de votre goût."
+    - q: Alike peut-elle modifier mes photos ?
+      a: "Seulement si vous le demandez. Vous pouvez améliorer la meilleure prise d'un groupe : Alike vous montre d'abord le résultat et ne l'enregistre que lorsque vous l'appliquez. iOS conserve l'original, donc une étape le rétablit, et Photos d'Apple peut aussi annuler la modification."
+    - q: Alike apprend-elle de mes choix ?
+      a: "Oui, de vos propres choix et de rien d'autre. Lorsque vous choisissez une autre meilleure prise, Alike retient ce que vous avez préféré et classe les groupes suivants au plus près. Tout reste sur votre appareil, et les réglages peuvent réinitialiser cet apprentissage."
     - q: Comment résilier un abonnement ?
       a: "Dans les Réglages iOS, touchez votre nom, puis « Abonnements ». La résiliation arrête les renouvellements futurs et vous conservez l'accès jusqu'à la fin de la période payée. Les abonnements et les remboursements sont gérés par Apple, pas par nous."
     - q: Puis-je effacer tout ce qu'Alike a enregistré ?
-      a: "Oui. Réglages, puis « Données et confidentialité », puis « Supprimer les données d'Alike ». Cela efface les résultats d'analyse, l'historique de nettoyage et les préférences, sans toucher à vos photos, à l'accès aux photos ni à votre abonnement."
+      a: "Oui. Réglages, puis « Données et confidentialité », puis « Supprimer les données d'Alike ». Cela efface les résultats d'analyse, l'historique de nettoyage, les préférences et ce que la meilleure prise a appris. Vos photos, l'accès aux photos et votre abonnement restent intacts — et une photo améliorée le reste, car rétablir l'original est une étape distincte."
 
 support:
   title: Assistance
@@ -156,6 +164,7 @@ support:
     - "La version d'Alike, affichée en bas des Réglages"
     - "Ce que vous avez fait, ce que vous attendiez et ce qui s'est passé à la place"
     - "Si l'autorisation d'accès à la photothèque est complète ou limitée"
+    - "Pour une photo améliorée, si vous avez déjà essayé « Rétablir l’original » dans Alike ou Modifier → Rétablir dans Photos d'Apple, et si vous avez réinitialisé l'apprentissage de Meilleure prise dans les réglages d'Alike"
   privacy_title: Questions de confidentialité
   privacy_body: "Alike n'a pas de serveur et ne collecte rien, il n'y a donc aucune donnée de compte à exporter ou à supprimer. La politique de confidentialité l'explique en détail, et « Supprimer les données d'Alike » dans les Réglages efface tout ce qui est stocké sur votre appareil."
   subs_title: Abonnements et remboursements

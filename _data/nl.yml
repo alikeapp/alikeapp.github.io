@@ -58,7 +58,7 @@ features:
     - title: Drie niveaus van gevoeligheid
       body: "Laag, gemiddeld of hoog. Strakker als je alleen bijna identieke opnamen wilt, ruimer om meer te vangen."
     - title: Beste opname herkennen
-      body: "Een navolgbare keuze van de sterkste foto in elke groep, zodat er altijd een verstandige standaardkeuze klaarstaat."
+      body: "Gekozen op de foto's zelf — scherpte, belichting, gezichten en ruis —, zodat er altijd een verstandige standaardkeuze klaarstaat. Hij leert ook van de opnamen die je zelf kiest."
     - title: Begeleid bekijken
       body: "Werk groep voor groep met 'Alleen de beste bewaren', 'Selecteer alles behalve de beste' en 'Deselecteer'."
     - title: Statuslabels
@@ -69,6 +69,8 @@ features:
       body: "Een meegroeiend raster dat wisselt tussen een ruime kolom en een dichtere weergave, en dat tussen sessies onthouden wordt."
     - title: Dertien talen, donkere modus
       body: "Engels, Oekraïens, Duits, Frans, Spaans, Latijns-Amerikaans Spaans, Braziliaans Portugees, Italiaans, Nederlands, Pools, Turks, traditioneel Chinees en Arabisch, overal, met een volledige donkere modus."
+    - title: Verbeteren, en terugdraaien
+      body: "Verbeter de foto die je houdt met één tik. Het origineel blijft in je bibliotheek, en één stap zet het terug."
 
 screenshots:
   title: Een blik naar binnen
@@ -100,6 +102,8 @@ pricing:
     features:
       - "3 scans per maand"
       - "Begeleid bekijken met de beste opname"
+      - "Verbeteren met één tik, altijd omkeerbaar"
+      - "Beste opname die van jouw keuzes leert"
       - "Sorteren en opruimgeschiedenis"
       - "Eén foto tegelijk opruimen"
   pro:
@@ -135,11 +139,15 @@ faq:
     - q: Hoe bepaalt Alike welke foto's op elkaar lijken?
       a: "Elke foto krijgt van het Vision-framework een numerieke kenmerkafdruk. Foto's die qua tijd en plaats dicht bij elkaar liggen worden vergeleken, en een foto komt alleen in een groep als hij op alle foto's daarin lijkt. Het gevoeligheidsniveau bepaalt hoe gelijkend gelijkend genoeg is."
     - q: Wat is de beste opname?
-      a: "Een navolgbare keuze van de sterkste foto in elke groep, zodat er altijd een verstandige standaardkeuze klaarstaat. Je kunt die altijd overrulen."
+      a: "De foto die Alike in elke groep voorstelt te houden, gekozen op de foto's zelf — scherpte, belichting, gezichten en ruis — en niet op favorieten of bestandsgrootte. Je kunt die altijd overrulen, en hoe vaker je dat doet, hoe dichter de voorstellen bij jouw smaak komen."
+    - q: Kan Alike mijn foto's wijzigen?
+      a: "Alleen als je erom vraagt. Je kunt de beste opname van een groep verbeteren: Alike toont je eerst het resultaat en bewaart het pas als je het toepast. iOS bewaart het origineel, dus één stap zet het terug, en ook Apple Foto's kan de wijziging ongedaan maken."
+    - q: Leert Alike van wat ik kies?
+      a: "Ja, van je eigen keuzes en van niets anders. Wanneer je een andere beste opname kiest, onthoudt Alike wat je liever had en rangschikt latere groepen dichter daarbij. Het blijft allemaal op je apparaat, en de instellingen kunnen het wissen."
     - q: Hoe zeg ik een abonnement op?
       a: "Tik in de iOS-instellingen op je naam en dan op 'Abonnementen'. Opzeggen stopt toekomstige verlengingen, en je houdt toegang tot het einde van de betaalde periode. Abonnementen en terugbetalingen regelt Apple, niet wij."
     - q: Kan ik alles verwijderen wat Alike heeft bewaard?
-      a: "Ja. Instellingen, dan 'Gegevens en privacy', dan 'Verwijder Alike-gegevens'. Dat wist scanresultaten, opruimgeschiedenis en voorkeuren en laat je foto's, de fototoegang en je abonnement onaangeroerd."
+      a: "Ja. Instellingen, dan 'Gegevens en privacy', dan 'Verwijder Alike-gegevens'. Dat wist scanresultaten, opruimgeschiedenis, voorkeuren en wat de beste opname heeft geleerd. Je foto's, je fototoegang en je abonnement blijven ongemoeid — en een foto die je verbeterde blijft verbeterd, want het origineel terugzetten is een aparte stap."
 
 support:
   title: Ondersteuning
@@ -157,6 +165,7 @@ support:
     - "De Alike-versie, onderaan in Instellingen"
     - "Wat je deed, wat je verwachtte en wat er in plaats daarvan gebeurde"
     - "Of de toestemming voor de fotobibliotheek op volledige of beperkte toegang staat"
+    - "Bij een verbeterde foto: of je 'Origineel herstellen' in Alike of Wijzig → Zet terug in Apple Foto's al hebt geprobeerd, en of je het geleerde van Beste opname in de Alike-instellingen hebt gewist"
   privacy_title: Vragen over privacy
   privacy_body: "Alike heeft geen server en verzamelt niets, dus er zijn geen accountgegevens om te exporteren of te verwijderen. Het privacybeleid legt dat volledig uit, en 'Verwijder Alike-gegevens' in Instellingen haalt alles weg wat op je apparaat is bewaard."
   subs_title: Abonnementen en terugbetalingen

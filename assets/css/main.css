@@ -452,9 +452,21 @@ a:hover { color: var(--accent); }
 
 /* ---------- features ---------- */
 
+/* Nine cards, three across, three full rows. `auto-fit` with a 250px floor lands
+   on four columns at desktop and two at tablet, and nine tiles into neither: it
+   left 4 + 4 + 1 and 2 + 2 + 2 + 2 + 1, orphaning the last card at both widths.
+   Three is the column count nine actually divides by, so the grid closes flush
+   and the newest card is an ordinary cell rather than a lone one drawing the eye
+   it was deliberately not given.
+
+   The trade is width: three columns at 800px gives ~245px cards where two gave
+   ~370px. That is a card narrower than the old floor and still wider than the
+   860px-and-below layout has ever been on a phone, and it buys a grid with no
+   ragged row at any size. Below 720px the cards stack one per row, where a third
+   column would genuinely be too narrow to read. */
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--s-md);
   margin: 0;
   padding: 0;
@@ -467,6 +479,13 @@ a:hover { color: var(--accent); }
   border: 1px solid var(--border);
   border-radius: var(--r-lg);
   box-shadow: var(--shadow-card);
+}
+
+/* Below 720px a third column is under 200px, which is not a card any more.
+   This has to sit *after* the base rule: the early max-width: 719px block near
+   the header has the same specificity and would lose the cascade to it. */
+@media (max-width: 719px) {
+  .features { grid-template-columns: 1fr; }
 }
 .feature__title { margin: 0 0 var(--s-xs); font-size: 1.0625rem; }
 .feature__body { margin: 0; color: var(--text-muted); font-size: 15px; }
