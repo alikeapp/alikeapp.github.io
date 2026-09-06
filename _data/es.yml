@@ -153,7 +153,7 @@ faq:
     - q: ¿Cómo cancelo una suscripción?
       a: "En Ajustes de iOS, toca tu nombre y luego «Suscripciones». Cancelar detiene las renovaciones futuras y conservas el acceso hasta que termine el periodo pagado. Las suscripciones y los reembolsos los gestiona Apple, no nosotros."
     - q: ¿Puedo borrar todo lo que Alike ha guardado?
-      a: "Sí. Ajustes, luego «Datos y privacidad», luego «Eliminar datos de Alike». Borra los resultados de análisis, el historial de limpieza y las preferencias, deja intactas tus fotos, el acceso a fotos y la suscripción, y también borra lo que ha aprendido Mejor toma. Una foto que mejoraste se queda como está: devolver el original es un paso aparte."
+      a: "Sí. Ajustes, luego «Datos y privacidad», luego «Eliminar datos de Alike». Borra los resultados de análisis, el historial de limpieza, las preferencias y lo que ha aprendido Mejor toma. Tus fotos, el acceso a fotos y la suscripción quedan intactos — y una foto que mejoraste sigue mejorada, porque devolver el original es un paso aparte."
 
 support:
   title: Soporte

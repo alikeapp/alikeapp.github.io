@@ -147,7 +147,7 @@ faq:
     - q: Come annullo un abbonamento?
       a: "In Impostazioni di iOS tocca il tuo nome, poi «Abbonamenti». L'annullamento ferma i rinnovi futuri, e l'accesso resta fino alla fine del periodo pagato. Abbonamenti e rimborsi li gestisce Apple, non noi."
     - q: Posso eliminare tutto quello che Alike ha salvato?
-      a: "Sì. Impostazioni, poi «Dati e privacy», poi «Elimina i dati di Alike». Rimuove risultati delle scansioni, cronologia della pulizia e preferenze, lascia intatte le tue foto, l'accesso alle foto e l'abbonamento, e azzera anche quello che lo scatto migliore ha imparato. Una foto che hai migliorato resta com'è: rimettere l'originale è un passaggio a parte."
+      a: "Sì. Impostazioni, poi «Dati e privacy», poi «Elimina i dati di Alike». Rimuove risultati delle scansioni, cronologia della pulizia, preferenze e quello che lo scatto migliore ha imparato. Restano intatte le tue foto, l'accesso alle foto e l'abbonamento — e una foto che hai migliorato resta migliorata, perché rimettere l'originale è un passaggio a parte."
 
 support:
   title: Assistenza

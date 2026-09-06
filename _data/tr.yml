@@ -147,7 +147,7 @@ faq:
     - q: Aboneliği nasıl iptal ederim?
       a: "iOS Ayarları'nda adına, sonra «Abonelikler»e dokun. İptal, sonraki yenilemeleri durdurur; erişimin ödenmiş dönemin sonuna kadar sürer. Abonelikleri ve iadeleri biz değil Apple yürütür."
     - q: Alike'ın sakladığı her şeyi silebilir miyim?
-      a: "Evet. Ayarlar, sonra «Veriler ve Gizlilik», sonra «Alike Verilerini Sil». Bu; tarama sonuçlarını, temizlik geçmişini ve tercihleri siler, fotoğraflarına, fotoğraf erişimine ve aboneliğine dokunmaz, ayrıca En İyi Kare'nin öğrendiklerini de temizler. İyileştirdiğin bir fotoğraf olduğu gibi kalır: aslını geri koymak ayrı bir adımdır."
+      a: "Evet. Ayarlar, sonra «Veriler ve Gizlilik», sonra «Alike Verilerini Sil». Bu; tarama sonuçlarını, temizlik geçmişini, tercihleri ve En İyi Kare'nin öğrendiklerini siler. Fotoğraflarına, fotoğraf erişimine ve aboneliğine dokunmaz — iyileştirdiğin bir fotoğraf da iyileştirilmiş kalır, çünkü aslını geri koymak ayrı bir adımdır."
 
 support:
   title: Destek

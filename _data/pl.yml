@@ -141,13 +141,13 @@ faq:
     - q: Czym jest najlepsze ujęcie?
       a: "Zdjęcie, które Alike proponuje zachować w każdej grupie, wybrane na podstawie samych zdjęć — ostrości, ekspozycji, twarzy i szumu — a nie ulubionych czy rozmiaru pliku. Zawsze możesz je zmienić, a im częściej to robisz, tym bliżej Twojego gustu są propozycje."
     - q: Czy Alike może zmieniać moje zdjęcia?
-      a: "Tylko jeśli go o to poprosisz. Możesz ulepszyć najlepsze ujęcie w grupie: Alike najpierw pokazuje wynik i zapisuje go dopiero wtedy, gdy go zastosujesz. Oryginał zachowuje iOS, więc jeden krok go przywraca, a Zdjęcia Apple też cofną tę zmianę."
+      a: "Tylko jeśli go o to poprosisz. Możesz poprawić najlepsze ujęcie w grupie: Alike najpierw pokazuje wynik i zapisuje go dopiero wtedy, gdy go zastosujesz. Oryginał zachowuje iOS, więc jeden krok go przywraca, a Zdjęcia Apple też cofną tę zmianę."
     - q: Czy Alike uczy się z moich wyborów?
       a: "Tak, wyłącznie z Twoich własnych wyborów. Kiedy wybierzesz inne najlepsze ujęcie, Alike zapamiętuje, co wolałeś, i układa kolejne grupy bliżej tego. Wszystko zostaje na Twoim urządzeniu, a ustawienia mogą to wyzerować."
     - q: Jak anulować subskrypcję?
       a: "W Ustawieniach iOS dotknij swojego imienia, a potem „Subskrypcje”. Anulowanie zatrzymuje przyszłe odnowienia, a dostęp zostaje do końca opłaconego okresu. Subskrypcje i zwroty obsługuje Apple, nie my."
     - q: Czy mogę usunąć wszystko, co Alike zapisał?
-      a: "Tak. Ustawienia, potem „Dane i prywatność”, potem „Usuń dane Alike”. Kasuje to wyniki skanowania, historię porządków i ustawienia, nie rusza Twoich zdjęć, dostępu do zdjęć ani subskrypcji, a także czyści to, czego nauczyło się najlepsze ujęcie. Ulepszone zdjęcie zostaje takie, jakie jest: przywrócenie oryginału to osobny krok."
+      a: "Tak. Ustawienia, potem „Dane i prywatność”, potem „Usuń dane Alike”. Kasuje to wyniki skanowania, historię porządków, ustawienia i to, czego nauczyło się najlepsze ujęcie. Twoich zdjęć, dostępu do zdjęć ani subskrypcji nie rusza — a poprawione zdjęcie zostaje poprawione, bo przywrócenie oryginału to osobny krok."
 
 support:
   title: Pomoc
@@ -165,7 +165,7 @@ support:
     - "Wersja Alike, na dole Ustawień"
     - "Co robiłeś, czego się spodziewałeś i co stało się zamiast tego"
     - "Czy uprawnienie do biblioteki zdjęć jest ustawione na pełny czy ograniczony dostęp"
-    - "W sprawie ulepszonego zdjęcia — czy próbowałeś już „Przywróć oryginał” w Alike albo Edytuj → Przywróć w Zdjęciach Apple i czy wyzerowałeś naukę Najlepszego ujęcia w ustawieniach Alike"
+    - "W sprawie poprawionego zdjęcia — czy próbowałeś już „Przywróć oryginał” w Alike albo Edytuj → Przywróć w Zdjęciach Apple i czy wyzerowałeś naukę Najlepszego ujęcia w ustawieniach Alike"
   privacy_title: Pytania o prywatność
   privacy_body: "Alike nie ma serwera i niczego nie zbiera, więc nie istnieją żadne dane konta do wyeksportowania ani usunięcia. Polityka prywatności wyjaśnia to w całości, a „Usuń dane Alike” w Ustawieniach kasuje wszystko, co zapisano na Twoim urządzeniu."
   subs_title: Subskrypcje i zwroty

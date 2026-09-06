@@ -145,7 +145,7 @@ faq:
     - q: How do I cancel a subscription?
       a: "In iOS Settings, tap your name, then Subscriptions. Cancelling stops future renewals and you keep access until the paid period ends. Subscriptions and refunds are handled by Apple, not by us."
     - q: Can I erase everything Alike has stored?
-      a: "Yes. Settings, then Data & Privacy, then Delete Alike Data. It erases scan results, cleanup history, and preferences, and leaves your photos, photo access, and subscription untouched, and it also clears what Best Shot has learned. A photo you enhanced stays as it is; putting the original back is a separate step."
+      a: "Yes. Settings, then Data & Privacy, then Delete Alike Data. It erases scan results, cleanup history, your preferences, and what Best Shot has learned. It leaves your photos, your photo access and your subscription untouched — and a photo you enhanced stays enhanced, because putting the original back is a separate step."
 
 support:
   title: Support

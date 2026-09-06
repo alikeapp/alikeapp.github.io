@@ -146,7 +146,7 @@ faq:
     - q: Comment résilier un abonnement ?
       a: "Dans les Réglages iOS, touchez votre nom, puis « Abonnements ». La résiliation arrête les renouvellements futurs et vous conservez l'accès jusqu'à la fin de la période payée. Les abonnements et les remboursements sont gérés par Apple, pas par nous."
     - q: Puis-je effacer tout ce qu'Alike a enregistré ?
-      a: "Oui. Réglages, puis « Données et confidentialité », puis « Supprimer les données d'Alike ». Cela efface les résultats d'analyse, l'historique de nettoyage et les préférences, sans toucher à vos photos, à l'accès aux photos ni à votre abonnement, et cela efface aussi ce que la meilleure prise a appris. Une photo améliorée reste telle quelle : rétablir l'original est une étape distincte."
+      a: "Oui. Réglages, puis « Données et confidentialité », puis « Supprimer les données d'Alike ». Cela efface les résultats d'analyse, l'historique de nettoyage, les préférences et ce que la meilleure prise a appris. Vos photos, l'accès aux photos et votre abonnement restent intacts — et une photo améliorée le reste, car rétablir l'original est une étape distincte."
 
 support:
   title: Assistance

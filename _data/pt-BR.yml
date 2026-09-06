@@ -143,13 +143,13 @@ faq:
     - q: O que é a melhor foto?
       a: "A foto que o Alike sugere manter em cada grupo, escolhida a partir das próprias fotos — nitidez, exposição, rostos e ruído — e não dos favoritos ou do tamanho do arquivo. Você sempre pode trocar, e quanto mais faz isso, mais as sugestões chegam perto do seu gosto."
     - q: O Alike pode alterar minhas fotos?
-      a: "Só se você pedir. Você pode melhorar a melhor foto de um grupo: o Alike mostra o resultado primeiro e só salva quando você aplica. O original é mantido pelo iOS, então um passo o traz de volta, e o Fotos da Apple também desfaz a mudança."
+      a: "Só se você pedir. Você pode aprimorar a melhor foto de um grupo: o Alike mostra o resultado primeiro e só salva quando você aplica. O original é mantido pelo iOS, então um passo o traz de volta, e o Fotos da Apple também desfaz a mudança."
     - q: O Alike aprende com o que eu escolho?
       a: "Sim, com as suas escolhas e nada mais. Quando você escolhe outra melhor foto, o Alike guarda o que você preferiu e classifica os grupos seguintes mais perto disso. Tudo fica no seu aparelho, e os ajustes podem redefinir."
     - q: Como cancelo uma assinatura?
       a: "Nos Ajustes do iOS, toque no seu nome e depois em \"Assinaturas\". Cancelar interrompe as renovações futuras e você mantém o acesso até o fim do período pago. Assinaturas e reembolsos são tratados pela Apple, não por nós."
     - q: Posso apagar tudo o que o Alike guardou?
-      a: "Sim. Ajustes, depois \"Dados e Privacidade\", depois \"Apagar dados do Alike\". Isso apaga resultados de análise, histórico de limpeza e preferências, deixa suas fotos, o acesso às fotos e a assinatura intactos, e também limpa o que a melhor foto aprendeu. Uma foto que você melhorou continua como está: voltar ao original é um passo à parte."
+      a: "Sim. Ajustes, depois \"Dados e Privacidade\", depois \"Apagar dados do Alike\". Isso apaga resultados de análise, histórico de limpeza, preferências e o que a melhor foto aprendeu. Suas fotos, o acesso às fotos e a assinatura ficam intactos — e uma foto que você aprimorou continua aprimorada, porque voltar ao original é um passo à parte."
 
 support:
   title: Suporte
@@ -167,7 +167,7 @@ support:
     - "A versão do Alike, mostrada no fim dos Ajustes"
     - "O que você fez, o que esperava e o que aconteceu no lugar"
     - "Se a permissão da fototeca está como acesso completo ou acesso limitado"
-    - "Se for sobre uma foto melhorada, se você já tentou \"Voltar ao original\" no Alike ou Editar → Reverter no Fotos da Apple, e se já redefiniu o aprendizado da Melhor Foto nos ajustes do Alike"
+    - "Se for sobre uma foto aprimorada, se você já tentou \"Voltar ao original\" no Alike ou Editar → Reverter no Fotos da Apple, e se já redefiniu o aprendizado da Melhor Foto nos ajustes do Alike"
   privacy_title: Dúvidas de privacidade
   privacy_body: "O Alike não tem servidor e não coleta nada, então não há dados de conta para exportar ou apagar. A política de privacidade explica isso por completo, e \"Apagar dados do Alike\" nos Ajustes apaga tudo o que está guardado no seu aparelho."
   subs_title: Assinaturas e reembolsos
