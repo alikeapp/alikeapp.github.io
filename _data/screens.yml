@@ -215,3 +215,42 @@ site:
     ar:
       caption: انظر ما الذي تحرّر
       alt: "شاشة تنظيف مكتمل تعرض حجم المساحة التي تحررت."
+
+  - shot: 14
+    image: best-shot-enhanced
+    en:
+      caption: Improved, and undoable
+      alt: "A group of similar photos with the best shot marked as enhanced."
+    uk:
+      caption: Покращено, і завжди оборотно
+      alt: "Група схожих фото, де найкращий знімок позначено як покращений."
+    de:
+      caption: Verbessert, jederzeit zurück
+      alt: "Eine Gruppe ähnlicher Fotos, die beste Aufnahme als verbessert markiert."
+    fr:
+      caption: Améliorée, et réversible
+      alt: "Un groupe de photos similaires, la meilleure prise marquée comme améliorée."
+    es:
+      caption: Mejorada, y reversible
+      alt: "Un grupo de fotos similares con la mejor toma marcada como mejorada."
+    pt-BR:
+      caption: Aprimorada, e reversível
+      alt: "Um grupo de fotos parecidas com a melhor marcada como aprimorada."
+    it:
+      caption: Migliorata, e reversibile
+      alt: "Un gruppo di foto simili con lo scatto migliore contrassegnato come migliorato."
+    nl:
+      caption: Verbeterd, en omkeerbaar
+      alt: "Een groep vergelijkbare foto's met de beste opname gemarkeerd als verbeterd."
+    pl:
+      caption: Poprawione i odwracalne
+      alt: "Grupa podobnych zdjęć z najlepszym ujęciem oznaczonym jako poprawione."
+    tr:
+      caption: İyileştirildi, geri alınabilir
+      alt: "Benzer fotoğraflardan oluşan bir grup; en iyi kare iyileştirilmiş olarak işaretli."
+    zh-Hant:
+      caption: 已優化，隨時還原
+      alt: "一組相似照片，最佳的一張標示為已優化。"
+    ar:
+      caption: مُحسّنة، ويمكن التراجع
+      alt: "مجموعة صور متشابهة، أفضل لقطة فيها مُعلّمة بأنها مُحسّنة."
