@@ -25,7 +25,7 @@ W sprawie pomocy, zgłoszeń błędów, pytań o prywatność lub problemów z z
 
 ### Twoja biblioteka zdjęć
 
-Alike prosi o dostęp do biblioteki zdjęć raz, na początku. Ten dostęp jest niezbędny do dwóch rzeczy: porównywania zdjęć w poszukiwaniu wizualnie podobnych oraz — tylko wtedy, gdy sam o to poprosisz — zapisania ulepszonej wersji zdjęcia, które postanowiłeś zachować.
+Alike prosi o dostęp do biblioteki zdjęć raz, na początku. Ten dostęp jest niezbędny do dwóch rzeczy: porównywania zdjęć w poszukiwaniu wizualnie podobnych oraz — tylko wtedy, gdy sam o to poprosisz — zapisania poprawionej wersji zdjęcia, które postanowiłeś zachować.
 
 Możesz przyznać pełny dostęp albo dostęp ograniczony i sam wybrać, które zdjęcia Alike widzi. Możesz to zmienić lub cofnąć w dowolnym momencie w Ustawieniach iOS, w „Prywatność i ochrona” → „Zdjęcia” → „Alike”.
 
@@ -51,9 +51,9 @@ Alike przechowuje swoje wyniki na Twoim urządzeniu w Core Data i plikach lokaln
 
 Wszystko to leży we własnym, odizolowanym magazynie Alike na Twoim urządzeniu i jest objęte kopiami zapasowymi urządzenia, jeśli je tworzysz.
 
-### Ulepszanie zdjęcia, które zachowujesz
+### Poprawianie zdjęcia, które zachowujesz
 
-Alike potrafi ulepszyć najlepsze ujęcie w grupie. Nigdy nie robi tego sam: wynik pokazuje Ci się jako podgląd i zostaje zapisany dopiero po tym, jak go zastosujesz, po jednym zdjęciu naraz. Przetwarzanie odbywa się na Twoim urządzeniu i nic nie jest wysyłane. iOS zachowuje oryginał — zmiana zapisywana jest jako edycja nieniszcząca oznaczona jako pochodząca od Alike, więc pojawia się w Zdjęciach Apple i można ją cofnąć z obu aplikacji. Nie powstaje żadna kopia. Ulepszanie nie jest oferowane dla wideo, przy dostępie ograniczonym ani dla zdjęć, które system oznacza jako nieedytowalne, a zdjęcie noszące już edycję innej aplikacji zostaje zmienione dopiero po Twojej zgodzie.
+Alike potrafi poprawić najlepsze ujęcie w grupie. Nigdy nie robi tego sam: wynik pokazuje Ci się jako podgląd i zostaje zapisany dopiero po tym, jak go zastosujesz, po jednym zdjęciu naraz. Przetwarzanie odbywa się na Twoim urządzeniu i nic nie jest wysyłane. iOS zachowuje oryginał — zmiana zapisywana jest jako edycja nieniszcząca oznaczona jako pochodząca od Alike, więc pojawia się w Zdjęciach Apple i można ją cofnąć z obu aplikacji. Nie powstaje żadna kopia. Poprawianie nie jest oferowane dla wideo, przy dostępie ograniczonym ani dla zdjęć, które system oznacza jako nieedytowalne, a zdjęcie noszące już edycję innej aplikacji zostaje zmienione dopiero po Twojej zgodzie.
 
 ### Uczenie się, które zdjęcia wolisz
 
@@ -94,7 +94,7 @@ Sposób, w jaki Apple obchodzi się z informacjami o Twoich zakupach, reguluje [
 | --- | --- |
 | Zmienić lub ograniczyć dostęp do zdjęć | Ustawienia iOS → Prywatność i ochrona → Zdjęcia → Alike |
 | Zatrzymać powiadomienia | Wyłączyć cotygodniowe przypomnienie o porządkach w ustawieniach Alike albo Ustawienia iOS → Powiadomienia |
-| Przywrócić ulepszone zdjęcie do oryginału | Alike: „Przywróć oryginał” w szczegółach grupy; albo Zdjęcia Apple: Edytuj → Przywróć |
+| Przywrócić poprawione zdjęcie do oryginału | Alike: „Przywróć oryginał” w szczegółach grupy; albo Zdjęcia Apple: Edytuj → Przywróć |
 | Wyzerować to, czego nauczyło się Najlepsze ujęcie | Ustawienia Alike → „Zresetuj naukę Najlepszego ujęcia” |
 | Usunąć wszystko, co Alike zapisał | Ustawienia Alike → Dane i prywatność → Usuń dane Alike |
 | Całkowicie usunąć wszystkie dane | Usunąć aplikację Alike z urządzenia |

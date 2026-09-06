@@ -25,7 +25,7 @@ Para suporte, relatos de problemas, dúvidas de privacidade ou questões de comp
 
 ### Sua fototeca
 
-O Alike pede acesso à fototeca uma única vez, no começo. Esse acesso é necessário para duas coisas: comparar fotos para encontrar as visualmente parecidas e, somente quando você pede, salvar uma versão melhorada de uma foto que você escolheu manter.
+O Alike pede acesso à fototeca uma única vez, no começo. Esse acesso é necessário para duas coisas: comparar fotos para encontrar as visualmente parecidas e, somente quando você pede, salvar uma versão aprimorada de uma foto que você escolheu manter.
 
 Você pode conceder acesso completo, ou conceder acesso limitado e escolher quais fotos o Alike pode ver. Você pode alterar ou revogar isso quando quiser nos Ajustes do iOS, em Privacidade e Segurança → Fotos → Alike.
 
@@ -51,9 +51,9 @@ O Alike guarda seus resultados no seu aparelho usando Core Data e arquivos locai
 
 Tudo isso fica no armazenamento isolado do próprio Alike no seu aparelho e é incluído nos backups, caso você faça backup do aparelho.
 
-### Melhorar uma foto que você mantém
+### Aprimorar uma foto que você mantém
 
-O Alike pode melhorar a melhor foto de um grupo. Ele nunca faz isso sozinho: o resultado é mostrado a você como prévia e só é salvo depois que você aplica, uma foto por vez. O processamento acontece no seu aparelho e nada é enviado. O iOS mantém o original — a mudança é guardada como uma edição não destrutiva marcada como do Alike, então ela aparece no Fotos da Apple e pode ser desfeita a partir de qualquer um dos dois apps. Nenhuma cópia é criada. A melhoria não é oferecida para vídeo, no acesso limitado, nem para fotos que o sistema marca como não editáveis, e uma foto que já tem a edição de outro app só é alterada depois que você concorda.
+O Alike pode aprimorar a melhor foto de um grupo. Ele nunca faz isso sozinho: o resultado é mostrado a você como prévia e só é salvo depois que você aplica, uma foto por vez. O processamento acontece no seu aparelho e nada é enviado. O iOS mantém o original — a mudança é guardada como uma edição não destrutiva marcada como do Alike, então ela aparece no Fotos da Apple e pode ser desfeita a partir de qualquer um dos dois apps. Nenhuma cópia é criada. A aprimoramento não é oferecida para vídeo, no acesso limitado, nem para fotos que o sistema marca como não editáveis, e uma foto que já tem a edição de outro app só é alterada depois que você concorda.
 
 ### Aprender de quais fotos você gosta
 
@@ -94,7 +94,7 @@ O tratamento das suas informações de compra pela Apple é regido pela [Políti
 | --- | --- |
 | Mudar ou limitar o acesso às fotos | Ajustes do iOS → Privacidade e Segurança → Fotos → Alike |
 | Parar as notificações | Desative o lembrete semanal de limpeza nos ajustes do Alike, ou Ajustes do iOS → Notificações |
-| Voltar uma foto melhorada ao original | Alike: "Voltar ao original" nos detalhes do grupo; ou Fotos da Apple: Editar → Reverter |
+| Voltar uma foto aprimorada ao original | Alike: "Voltar ao original" nos detalhes do grupo; ou Fotos da Apple: Editar → Reverter |
 | Redefinir o que a Melhor Foto aprendeu | Ajustes do Alike → "Redefinir aprendizado da Melhor Foto" |
 | Apagar tudo o que o Alike guarda | Ajustes do Alike → Dados e Privacidade → Apagar dados do Alike |
 | Remover todos os dados por completo | Exclua o app Alike do seu aparelho |

@@ -17,7 +17,7 @@ Ao baixar ou usar o Alike, você concorda com estes Termos. Se não concordar, n
 
 ## O que o Alike faz
 
-O Alike analisa as fotos da sua fototeca, compara-as usando o framework Vision da Apple no próprio aparelho e agrupa fotos visualmente parecidas para que você possa revisar cada grupo e escolher quais fotos apagar — e, quando você quiser, aplica uma melhoria reversível a uma foto que você mantém.
+O Alike analisa as fotos da sua fototeca, compara-as usando o framework Vision da Apple no próprio aparelho e agrupa fotos visualmente parecidas para que você possa revisar cada grupo e escolher quais fotos apagar — e, quando você quiser, aplica uma aprimoramento reversível a uma foto que você mantém.
 
 Toda a análise roda no seu aparelho. Veja nossa [Política de Privacidade](../privacy/) para os detalhes.
 
@@ -35,7 +35,7 @@ O Alike ajuda você a decidir quais fotos apagar. Ele não decide por você, e p
 
 Você é o único responsável por revisar cada grupo e pelo que escolher apagar. Toda exclusão exige sua confirmação explícita, e o iOS mostra a própria confirmação antes de remover qualquer coisa. As fotos apagadas vão para o seu álbum "Apagados recentemente", onde o iOS as guarda por cerca de 30 dias.
 
-Uma melhoria só é aplicada depois que você confirma, e o iOS mantém o original para que você possa voltar atrás. A única exceção é uma foto que já tem a edição de outro app: substituir essa edição não pode ser desfeito, e é por isso que o Alike pergunta antes.
+Uma aprimoramento só é aplicada depois que você confirma, e o iOS mantém o original para que você possa voltar atrás. A única exceção é uma foto que já tem a edição de outro app: substituir essa edição não pode ser desfeito, e é por isso que o Alike pergunta antes.
 
 **Faça backup da sua fototeca antes de uma limpeza grande.** Não somos responsáveis pelas fotos que você escolher apagar, inclusive aquelas que depois gostaria de ter mantido.
 
@@ -84,7 +84,7 @@ O Alike exige uma versão compatível do iOS. Não somos responsáveis pelo app 
 
 Na máxima extensão permitida por lei, o Alike é fornecido **"no estado em que se encontra" e "conforme disponível"**, sem garantias de qualquer tipo, expressas ou implícitas, incluindo quaisquer garantias implícitas de comercialização, adequação a uma finalidade específica, exatidão ou não violação.
 
-Não garantimos que o Alike será livre de erros ou ininterrupto, que sua detecção de similaridade será exata ou completa, que identificará toda duplicata ou deixará de agrupar fotos que você considere diferentes, nem que uma versão melhorada vá agradar você mais do que o original.
+Não garantimos que o Alike será livre de erros ou ininterrupto, que sua detecção de similaridade será exata ou completa, que identificará toda duplicata ou deixará de agrupar fotos que você considere diferentes, nem que uma versão aprimorada vá agradar você mais do que o original.
 
 ## Limitação de responsabilidade
 
