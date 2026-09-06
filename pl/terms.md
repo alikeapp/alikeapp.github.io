@@ -17,7 +17,7 @@ Pobierając Alike lub korzystając z niego, akceptujesz te warunki. Jeśli ich n
 
 ## Co robi Alike
 
-Alike przegląda zdjęcia w Twojej bibliotece, porównuje je na urządzeniu za pomocą frameworka Vision od Apple i grupuje wizualnie podobne zdjęcia, żebyś mógł przejrzeć każdą grupę i wybrać, które zdjęcia usunąć — a gdy sam tego zechcesz, nakłada odwracalne poprawa na zdjęcie, które zachowujesz.
+Alike przegląda zdjęcia w Twojej bibliotece, porównuje je na urządzeniu za pomocą frameworka Vision od Apple i grupuje wizualnie podobne zdjęcia, żebyś mógł przejrzeć każdą grupę i wybrać, które zdjęcia usunąć — a gdy sam tego zechcesz, nakłada odwracalną poprawę na zdjęcie, które zachowujesz.
 
 Cała analiza działa na Twoim urządzeniu. Szczegóły znajdziesz w naszej [polityce prywatności](../privacy/).
 
@@ -35,7 +35,7 @@ Alike pomaga Ci zdecydować, które zdjęcia usunąć. Nie decyduje za Ciebie i 
 
 Wyłącznie Ty odpowiadasz za przejrzenie każdej grupy i za decyzję, co usuwasz. Każde usunięcie wymaga Twojego wyraźnego potwierdzenia, a iOS pokazuje własne potwierdzenie, zanim cokolwiek zniknie. Usunięte zdjęcia trafiają do Twojego albumu „Ostatnio usunięte”, gdzie iOS trzyma je około 30 dni.
 
-Poprawa zostaje nałożone dopiero po Twoim potwierdzeniu, a iOS zachowuje oryginał, żebyś mógł go przywrócić. Jedyny wyjątek to zdjęcie noszące już edycję innej aplikacji: zastąpienia tamtej edycji nie da się cofnąć i dlatego Alike pyta wcześniej.
+Poprawa zostaje nałożona dopiero po Twoim potwierdzeniu, a iOS zachowuje oryginał, żebyś mógł go przywrócić. Jedyny wyjątek to zdjęcie noszące już edycję innej aplikacji: zastąpienia tamtej edycji nie da się cofnąć i dlatego Alike pyta wcześniej.
 
 **Zrób kopię zapasową biblioteki zdjęć, zanim zrobisz duże porządki.** Nie odpowiadamy za zdjęcia, które sam zdecydujesz się usunąć, również za te, które wolałbyś potem zachować.
 
