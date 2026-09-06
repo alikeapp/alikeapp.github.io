@@ -94,8 +94,8 @@ Il trattamento delle tue informazioni di acquisto da parte di Apple è regolato 
 | --- | --- |
 | Modificare o limitare l'accesso alle foto | Impostazioni di iOS → Privacy e sicurezza → Foto → Alike |
 | Fermare le notifiche | Disattivare il promemoria settimanale di pulizia nelle impostazioni di Alike, oppure Impostazioni di iOS → Notifiche |
-| Riportare all'originale una foto migliorata | Alike: «Ripristina originale» nei dettagli del gruppo; oppure Foto di Apple: Modifica → Ripristina |
-| Azzerare ciò che Scatto migliore ha imparato | Impostazioni di Alike → «Azzera l'apprendimento di Scatto migliore» |
+| Riportare all'originale una foto migliorata | Alike: «Ripristina l’originale» nei dettagli del gruppo; oppure Foto di Apple: Modifica → Ripristina |
+| Azzerare ciò che Scatto migliore ha imparato | Impostazioni di Alike → «Ripristina apprendimento Scatto Migliore» |
 | Eliminare tutto ciò che Alike salva | Impostazioni di Alike → Dati e privacy → Elimina i dati di Alike |
 | Rimuovere del tutto ogni dato | Eliminare l'app Alike dal dispositivo |
 

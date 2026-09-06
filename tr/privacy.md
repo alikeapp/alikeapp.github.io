@@ -94,8 +94,8 @@ Apple'ın satın alma bilgilerini nasıl işlediği [Apple'ın gizlilik politika
 | --- | --- |
 | Fotoğraf erişimini değiştirmek ya da sınırlamak | iOS Ayarları → Gizlilik ve Güvenlik → Fotoğraflar → Alike |
 | Bildirimleri durdurmak | Alike ayarlarında haftalık temizlik anımsatıcısını kapat ya da iOS Ayarları → Bildirimler |
-| İyileştirilmiş bir fotoğrafı aslına döndürmek | Alike: grup ayrıntılarında «Aslına dön»; ya da Apple Fotoğraflar: Düzenle → Geri Al |
-| En İyi Kare'nin öğrendiklerini sıfırlamak | Alike Ayarları → «En İyi Kare Öğrenmesini Sıfırla» |
+| İyileştirilmiş bir fotoğrafı aslına döndürmek | Alike: grup ayrıntılarında «Orijinale dön»; ya da Apple Fotoğraflar: Düzenle → Geri Al |
+| En İyi Kare'nin öğrendiklerini sıfırlamak | Alike Ayarları → «En İyi Kare Öğrenimini Sıfırla» |
 | Alike'ın sakladığı her şeyi silmek | Alike Ayarları → Veriler ve Gizlilik → Alike Verilerini Sil |
 | Tüm verileri tamamen kaldırmak | Alike uygulamasını cihazdan sil |
 

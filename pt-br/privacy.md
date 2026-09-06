@@ -95,7 +95,7 @@ O tratamento das suas informações de compra pela Apple é regido pela [Políti
 | Mudar ou limitar o acesso às fotos | Ajustes do iOS → Privacidade e Segurança → Fotos → Alike |
 | Parar as notificações | Desative o lembrete semanal de limpeza nos ajustes do Alike, ou Ajustes do iOS → Notificações |
 | Voltar uma foto melhorada ao original | Alike: "Voltar ao original" nos detalhes do grupo; ou Fotos da Apple: Editar → Reverter |
-| Redefinir o que a Melhor Foto aprendeu | Ajustes do Alike → "Redefinir o aprendizado da Melhor Foto" |
+| Redefinir o que a Melhor Foto aprendeu | Ajustes do Alike → "Redefinir aprendizado da Melhor Foto" |
 | Apagar tudo o que o Alike guarda | Ajustes do Alike → Dados e Privacidade → Apagar dados do Alike |
 | Remover todos os dados por completo | Exclua o app Alike do seu aparelho |
 

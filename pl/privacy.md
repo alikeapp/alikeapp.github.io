@@ -95,7 +95,7 @@ Sposób, w jaki Apple obchodzi się z informacjami o Twoich zakupach, reguluje [
 | Zmienić lub ograniczyć dostęp do zdjęć | Ustawienia iOS → Prywatność i ochrona → Zdjęcia → Alike |
 | Zatrzymać powiadomienia | Wyłączyć cotygodniowe przypomnienie o porządkach w ustawieniach Alike albo Ustawienia iOS → Powiadomienia |
 | Przywrócić ulepszone zdjęcie do oryginału | Alike: „Przywróć oryginał” w szczegółach grupy; albo Zdjęcia Apple: Edytuj → Przywróć |
-| Wyzerować to, czego nauczyło się Najlepsze ujęcie | Ustawienia Alike → „Wyzeruj naukę Najlepszego ujęcia” |
+| Wyzerować to, czego nauczyło się Najlepsze ujęcie | Ustawienia Alike → „Zresetuj naukę Najlepszego ujęcia” |
 | Usunąć wszystko, co Alike zapisał | Ustawienia Alike → Dane i prywatność → Usuń dane Alike |
 | Całkowicie usunąć wszystkie dane | Usunąć aplikację Alike z urządzenia |
 

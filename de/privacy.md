@@ -94,8 +94,8 @@ Apples Umgang mit deinen Kaufinformationen richtet sich nach [Apples Datenschutz
 | --- | --- |
 | Fotozugriff ändern oder einschränken | iOS-Einstellungen → Datenschutz & Sicherheit → Fotos → Alike |
 | Mitteilungen stoppen | Die wöchentliche Aufräum-Erinnerung in den Alike-Einstellungen ausschalten, oder iOS-Einstellungen → Mitteilungen |
-| Ein verbessertes Foto auf das Original zurücksetzen | Alike: „Auf Original zurücksetzen“ in den Gruppendetails; oder Apple Fotos: Bearbeiten → Zurücksetzen |
-| Zurücksetzen, was „Beste Aufnahme“ gelernt hat | Alike-Einstellungen → „Gelerntes für Beste Aufnahme zurücksetzen“ |
+| Ein verbessertes Foto auf das Original zurücksetzen | Alike: „Original wiederherstellen“ in den Gruppendetails; oder Apple Fotos: Bearbeiten → Zurücksetzen |
+| Zurücksetzen, was „Beste Aufnahme“ gelernt hat | Alike-Einstellungen → „Lernen für die beste Aufnahme zurücksetzen“ |
 | Alles löschen, was Alike speichert | Alike-Einstellungen → Daten & Datenschutz → Alike-Daten löschen |
 | Alle Daten vollständig entfernen | Die Alike-App vom Gerät löschen |
 

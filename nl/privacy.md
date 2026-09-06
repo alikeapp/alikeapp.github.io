@@ -94,8 +94,8 @@ Hoe Apple met je aankoopgegevens omgaat, valt onder [Apples privacybeleid](https
 | --- | --- |
 | Fototoegang wijzigen of beperken | iOS-instellingen → Privacy en beveiliging → Foto's → Alike |
 | Berichtgevingen stoppen | De wekelijkse opruimherinnering uitzetten in de Alike-instellingen, of iOS-instellingen → Berichtgeving |
-| Een verbeterde foto terugzetten naar het origineel | Alike: 'Zet terug naar origineel' in de groepsdetails; of Apple Foto's: Wijzig → Zet terug |
-| Wissen wat Beste opname heeft geleerd | Alike-instellingen → 'Wis wat Beste opname heeft geleerd' |
+| Een verbeterde foto terugzetten naar het origineel | Alike: 'Origineel herstellen' in de groepsdetails; of Apple Foto's: Wijzig → Zet terug |
+| Wissen wat Beste opname heeft geleerd | Alike-instellingen → 'Leren voor Beste Opname resetten' |
 | Alles verwijderen wat Alike bewaart | Alike-instellingen → Gegevens en privacy → Verwijder Alike-gegevens |
 | Alle gegevens volledig weghalen | De Alike-app van je apparaat verwijderen |
 
