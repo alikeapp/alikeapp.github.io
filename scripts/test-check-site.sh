@@ -224,7 +224,21 @@ expect_fail "dropping a subscription disclosure fails" \
   "lost the free-trial disclosure" \
   'perl -0pi -e "s/kostenlose Testphase/Gratiszeit/g" "$S/de/terms/index.html"'
 
-echo "==> 5. third-party hosts"
+echo "==> 5. privacy guardrails"
+# The failure this table exists to catch: a translation pass that drops a whole
+# subsection in one locale. Nothing else in the gate reads privacy.md content,
+# so before these tests that shipped silently.
+expect_fail "dropping the enhancement section in one locale fails" \
+  "lost the enhancement section" \
+  'perl -0pi -e "s/Ein Foto verbessern/Ein Foto bearbeiten/g" "$S/de/privacy/index.html"'
+expect_fail "dropping the Best Shot learning section in one locale fails" \
+  "lost the Best Shot learning section" \
+  'perl -0pi -e "s/Uczenie się, które zdjęcia/Nauka/g" "$S/pl/privacy/index.html"'
+expect_fail "dropping the revert row from Your Controls fails" \
+  "lost the revert row in Your Controls" \
+  'perl -0pi -e "s/Повернути оригінал/Скасувати/g" "$S/uk/privacy/index.html"'
+
+echo "==> 6. third-party hosts"
 expect_fail "a plain third-party asset fails" \
   "cdn.example.com" \
   'perl -0pi -e "s{href=\"/assets/css/main.css\"}{href=\"https://cdn.example.com/main.css\"}" "$S/index.html"'
@@ -256,7 +270,7 @@ expect_pass "a real Apple subdomain link still passes (support.apple.com)"
 expect_pass_mutated "the source link still passes with a trailing slash" \
   'perl -0pi -e "s{href=\"https://github.com/solokha-o/Alike\"}{href=\"https://github.com/solokha-o/Alike/\"}" "$S/index.html"'
 
-echo "==> 6. link preview"
+echo "==> 7. link preview"
 # Assertion 2 reads href, src, srcset and url(), and og:image is none of those:
 # before assertion 6 existed, a card pointing at nothing deployed green.
 expect_fail "an og:image pointing at a missing file fails" \
@@ -290,7 +304,7 @@ expect_fail "an og:image with no alt text fails" \
   "og:image has no alt text" \
   'perl -0pi -e "s{<meta property=\"og:image:alt\"[^>]*>\n}{}" "$S/pl/index.html"'
 
-echo "==> 7. screenshots"
+echo "==> 8. screenshots"
 # The failure this assertion exists for: _data/screens.yml gained a locale block
 # for every published locale, and nothing stopped the next locale from shipping
 # without one. A blank caption is a gap on the page; a blank alt is a WCAG
@@ -319,7 +333,7 @@ expect_fail "a fallback pointing at another language fails" \
   'perl -0pi -e "s{img/screens/uk/([a-z-]+)\.jpg}{img/screens/en/\$1.jpg}g" "$S/uk/index.html"'
 
 
-echo "==> 8. right-to-left"
+echo "==> 9. right-to-left"
 expect_fail "an rtl page that does not declare its direction fails" \
   'does not carry dir="rtl"' \
   'perl -0pi -e "s{<html lang=\"ar\" dir=\"rtl\">}{<html lang=\"ar\">}" "$S/ar/index.html"'
