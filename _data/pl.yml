@@ -71,6 +71,8 @@ features:
       body: "Angielski, ukraiński, niemiecki, francuski, hiszpański, hiszpański latynoamerykański, portugalski brazylijski, włoski, niderlandzki, polski, turecki, chiński tradycyjny i arabski, wszędzie, z pełnym trybem ciemnym."
     - title: Ulepsz i cofnij
       body: "Ulepsz zdjęcie, które zachowujesz, jednym dotknięciem. Oryginał zostaje w bibliotece, a jeden krok go przywraca."
+    - title: Widgety na ekranie początkowym
+      body: "Dwa widgety, oba bezpłatne. Jeden pokazuje, ile miejsca możesz odzyskać, i wraca do nieukończonego przeglądu; drugi wymienia grupy podobnych, zrzuty ekranu i rozmyte zdjęcia, a każdy wiersz otwiera własną listę."
 
 screenshots:
   title: Rzut oka do środka

@@ -77,6 +77,8 @@ features:
       body: "Inglés, ucraniano, alemán, francés, español, español de Latinoamérica, portugués de Brasil, italiano, neerlandés, polaco, turco, chino tradicional y árabe en toda la app, con modo oscuro completo."
     - title: Mejorar, y deshacer
       body: "Mejora la foto que conservas con un toque. El original se queda en tu fototeca, y un paso lo devuelve."
+    - title: Widgets en la pantalla de inicio
+      body: "Dos widgets, los dos gratis. Uno muestra el espacio que puedes recuperar y te devuelve a una revisión a medias; el otro enumera grupos de similares, capturas y fotos borrosas, y cada fila abre su propia lista."
 
 screenshots:
   title: Un vistazo por dentro

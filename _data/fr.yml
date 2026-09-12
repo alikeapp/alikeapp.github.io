@@ -71,6 +71,8 @@ features:
       body: "Anglais, ukrainien, allemand, français, espagnol, espagnol d'Amérique latine, portugais du Brésil, italien, néerlandais, polonais, turc, chinois traditionnel et arabe dans toute l'app, avec un mode sombre complet."
     - title: Améliorer, et revenir en arrière
       body: "Améliorez la photo que vous gardez d'une seule touche. L'original reste dans votre photothèque, et une étape le rétablit."
+    - title: Widgets sur l'écran d'accueil
+      body: "Deux widgets, gratuits tous les deux. L'un montre l'espace que vous pouvez récupérer et vous ramène dans un tri resté inachevé ; l'autre liste les groupes de photos similaires, les captures d'écran et les photos floues, chaque ligne ouvrant sa propre liste."
 
 screenshots:
   title: Un aperçu
