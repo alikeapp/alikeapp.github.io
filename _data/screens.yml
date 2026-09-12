@@ -254,3 +254,42 @@ site:
     ar:
       caption: مُحسّنة، ويمكن التراجع
       alt: "مجموعة صور متشابهة، أفضل لقطة فيها مُعلّمة بأنها مُحسّنة."
+
+  - shot: 15
+    image: widgets-home
+    en:
+      caption: Useful without opening
+      alt: "A home screen with both Alike widgets: reclaimable space, and the library overview."
+    uk:
+      caption: Корисно, навіть не відкриваючи
+      alt: "Домашній екран з обома віджетами Alike: вільне місце й огляд медіатеки."
+    de:
+      caption: Nützlich, ohne zu öffnen
+      alt: "Ein Home-Bildschirm mit beiden Alike-Widgets: freier Speicher und die Mediathek im Überblick."
+    fr:
+      caption: Utile sans même l'ouvrir
+      alt: "Un écran d'accueil avec les deux widgets Alike : l'espace récupérable et l'aperçu de la photothèque."
+    es:
+      caption: Útil sin abrir la app
+      alt: "Una pantalla de inicio con los dos widgets de Alike: el espacio recuperable y el resumen de la fototeca."
+    pt-BR:
+      caption: Útil sem abrir o app
+      alt: "Uma tela de início com os dois widgets do Alike: o espaço recuperável e o resumo da fototeca."
+    it:
+      caption: Utile senza aprirla
+      alt: "Una schermata home con entrambi i widget di Alike: lo spazio recuperabile e il riepilogo della libreria."
+    nl:
+      caption: Nuttig zonder te openen
+      alt: "Een beginscherm met beide Alike-widgets: de vrij te maken ruimte en het bibliotheekoverzicht."
+    pl:
+      caption: Przydatne bez otwierania
+      alt: "Ekran początkowy z obydwoma widgetami Alike: odzyskiwalne miejsce i przegląd biblioteki."
+    tr:
+      caption: Açmadan da işe yarar
+      alt: "Her iki Alike widget'ının bulunduğu bir ana ekran: kazanılabilir alan ve kitaplığa genel bakış."
+    zh-Hant:
+      caption: 不用打開也好用
+      alt: "主畫面上有兩個 Alike 小工具：可釋出的空間，以及圖庫總覽。"
+    ar:
+      caption: مفيد دون فتح التطبيق
+      alt: "شاشة رئيسية تضم أداتَي Alike: المساحة التي يمكن استعادتها، ونظرة عامة على المكتبة."
