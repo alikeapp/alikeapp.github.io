@@ -71,8 +71,8 @@ features:
       body: "Englisch, Ukrainisch, Deutsch, Französisch, Spanisch, lateinamerikanisches Spanisch, brasilianisches Portugiesisch, Italienisch, Niederländisch, Polnisch, Türkisch, traditionelles Chinesisch und Arabisch durchgehend, dazu vollständiger Dunkelmodus."
     - title: Verbessern und zurücknehmen
       body: "Verbessere das Foto, das du behältst, mit einem Tippen. Das Original bleibt in deiner Mediathek, und ein Schritt holt es zurück."
-    - title: Home-Bildschirm-Widgets
-      body: "Zwei Widgets, beide kostenlos. Eines zeigt, wie viel Speicher frei werden kann, und bringt dich in eine offen gebliebene Prüfung zurück; das andere listet ähnliche Gruppen, Screenshots und unscharfe Fotos, jede Zeile öffnet ihre eigene Liste."
+    - title: Widgets für Home- und Sperrbildschirm
+      body: "Zwei Widgets, beide kostenlos. Eines zeigt, wie viel Speicher frei werden kann, und bringt dich in eine offen gebliebene Prüfung zurück; das andere listet ähnliche Gruppen, Screenshots und unscharfe Fotos, jede Zeile öffnet ihre eigene Liste. Seit 1.5.0 gibt es das erste auch in drei Größen für den Sperrbildschirm: eine Zeile über der Uhr, eine Karte und ein Ring."
 
 screenshots:
   title: Ein Blick hinein

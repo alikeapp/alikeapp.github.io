@@ -72,8 +72,8 @@ features:
       body: "İngilizce, Ukraynaca, Almanca, Fransızca, İspanyolca, Latin Amerika İspanyolcası, Brezilya Portekizcesi, İtalyanca, Felemenkçe, Lehçe, Türkçe, Geleneksel Çince ve Arapça, baştan sona, tam Koyu Mod desteğiyle."
     - title: İyileştir, geri al
       body: "Sakladığın fotoğrafı tek dokunuşla iyileştir. Aslı kitaplığında kalır ve tek bir adım onu geri getirir."
-    - title: Ana ekran widget'ları
-      body: "İki widget, ikisi de ücretsiz. Biri kazanabileceğin alanı gösterir ve yarım kalan bir incelemeye geri götürür; diğeri benzer grupları, ekran görüntülerini ve bulanık fotoğrafları listeler, her satır kendi listesini açar."
+    - title: Ana ekran ve kilitli ekran widget'ları
+      body: "İki widget, ikisi de ücretsiz. Biri kazanabileceğin alanı gösterir ve yarım kalan bir incelemeye geri götürür; diğeri benzer grupları, ekran görüntülerini ve bulanık fotoğrafları listeler, her satır kendi listesini açar. 1.5.0'dan beri ilki kilitli ekran için üç boyutta da var: saatin üstünde bir satır, bir kart ve bir halka."
 
 screenshots:
   title: İçeriden bir bakış
