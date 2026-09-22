@@ -65,7 +65,7 @@ If Alike closes unexpectedly, iOS can later hand the app a diagnostic report abo
 
 At the next launch, once you are not in the middle of anything, Alike asks you once whether to send it. **Send Report** opens an email to the address under Contact with the report attached: you can read it first, and it goes only if you send it yourself, from your own mail account. If Mail is not set up, the share sheet opens instead and shows the address, so you choose where the report goes. **Not Now** sends nothing, and Alike never asks about that report again.
 
-A report contains the crash stack trace — which part of Alike's code was running — the app version, the iOS version, the device model, and technical details iOS attaches to it, such as the exception type, the processor architecture and your region format setting. It contains no photos, nothing about your photos, and nothing that identifies you. If you email it, the developer also receives what any email carries, such as your email address.
+A report contains the crash stack trace — which part of Alike's code was running — the app version, the iOS version, the device model, and technical details iOS attaches to it, such as the exception type, the processor architecture and your region format setting. For some crashes it also holds the error message Alike produced at that moment. iOS writes the report, and Alike sends it as it is, without adding to it or filtering it — so read the attachment before you send it. It contains no photos. If you email it, the developer also receives what any email carries, such as your email address.
 
 A report you send is used only to find and fix that crash, and is not shared with anyone.
 

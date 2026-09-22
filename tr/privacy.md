@@ -65,7 +65,7 @@ Alike beklenmedik şekilde kapanırsa iOS daha sonra, Apple'ın MetricKit çerç
 
 Bir sonraki açılışta, bir işin ortasında değilken, Alike raporu gönderip göndermeyeceğini yalnızca bir kez sorar. **Raporu Gönder**, raporun ekli olduğu ve "İletişim" bölümündeki adrese yazılmış bir e-posta açar: önce okuyabilirsin ve e-posta ancak sen kendi posta hesabından gönderirsen gider. Mail ayarlı değilse bunun yerine adresi gösteren paylaşım sayfası açılır; raporun nereye gideceğini sen seçersin. **Şimdi Değil** hiçbir şey göndermez ve Alike o raporu bir daha asla sormaz.
 
-Rapor; çökmenin yığın izini — Alike'ın kodunun hangi kısmının çalıştığını —, uygulama sürümünü, iOS sürümünü, cihaz modelini ve iOS'un eklediği istisna türü, işlemci mimarisi ve bölge biçimi ayarın gibi teknik ayrıntıları içerir. Fotoğraf, fotoğraflarınla ilgili herhangi bir bilgi ya da seni tanımlayan hiçbir şey içermez. E-postayla gönderirsen geliştirici, her e-postanın taşıdığı bilgileri de alır; örneğin e-posta adresini.
+Rapor; çökmenin yığın izini — Alike'ın kodunun hangi kısmının çalıştığını —, uygulama sürümünü, iOS sürümünü, cihaz modelini ve iOS'un eklediği istisna türü, işlemci mimarisi ve bölge biçimi ayarın gibi teknik ayrıntıları içerir. Bazı çökmelerde Alike'ın o anda ürettiği hata mesajını da içerir. Raporu iOS yazar; Alike onu hiçbir şey eklemeden ya da ayıklamadan olduğu gibi gönderir — bu yüzden göndermeden önce eki oku. Fotoğraf içermez. E-postayla gönderirsen geliştirici, her e-postanın taşıdığı bilgileri de alır; örneğin e-posta adresini.
 
 Gönderilen bir rapor yalnızca o çökmeyi bulmak ve düzeltmek için kullanılır ve kimseyle paylaşılmaz.
 
