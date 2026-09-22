@@ -72,8 +72,8 @@ features:
       body: "English, Ukrainian, German, French, Spanish, Latin American Spanish, Brazilian Portuguese, Italian, Dutch, Polish, Turkish, Traditional Chinese and Arabic throughout, and complete Dark Mode support."
     - title: Enhance, and undo
       body: "Improve the photo you keep with one tap. The original stays in your library, and one step puts it back."
-    - title: Home screen widgets
-      body: "Two widgets, both free. One shows the space you can reclaim and takes you back into a half-finished review; the other lists similar groups, screenshots and blurred photos, each row opening its own list."
+    - title: Widgets, home screen and Lock Screen
+      body: "Two widgets, both free. One shows the space you can reclaim and takes you back into a half-finished review; the other lists similar groups, screenshots and blurred photos, each row opening its own list. Since 1.5.0 the first one also comes in three Lock Screen sizes: a line above the clock, a card, and a ring."
 
 screenshots:
   title: A look inside
