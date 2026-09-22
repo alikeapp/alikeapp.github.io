@@ -7,7 +7,7 @@ page_key: privacy
 description: "Comment Alike traite vos photos : analyse sur l'appareil, aucun envoi, aucune analyse d'usage, et une suppression qui n'a jamais lieu sans votre confirmation."
 ---
 
-Dernière mise à jour : 6 septembre 2026
+Dernière mise à jour : 22 septembre 2026
 
 Alike est une app iOS qui trouve et regroupe les photos visuellement similaires de votre photothèque afin que vous puissiez les passer en revue et libérer de l'espace. Alike est exploitée par Oleksandr Solokha, développeur indépendant établi en Ukraine.
 
@@ -59,9 +59,19 @@ Alike peut améliorer la meilleure prise d'un groupe. Il ne le fait jamais de lu
 
 Lorsque vous choisissez une meilleure prise différente de celle proposée par Alike, l'app enregistre l'écart entre les mesures de qualité des deux photos et s'en sert pour classer les groupes suivants au plus près de votre goût. Elle n'apprend que des choix que vous faites dans l'app. Ces valeurs sont des nombres dérivés, pas des photos, elles restent sur votre appareil et rien n'est envoyé nulle part. Les réglages comportent un bouton qui réinitialise cet apprentissage.
 
+## Rapports de plantage
+
+Si Alike se ferme de façon inattendue, iOS peut ensuite remettre à l'app un rapport de diagnostic sur ce plantage, via le framework MetricKit d'Apple. Alike conserve ce rapport dans son propre stockage sur votre appareil — au plus les 20 plus récents — et n'en fait rien d'autre de lui-même.
+
+Au lancement suivant, une fois que vous n'êtes au milieu de rien, Alike vous demande une seule fois si vous souhaitez l'envoyer. **Envoyer le rapport** ouvre un e-mail à l'adresse indiquée dans « Contact », avec le rapport en pièce jointe : vous pouvez le lire d'abord, et il ne part que si vous l'envoyez vous-même, depuis votre propre compte de messagerie. Si Mail n'est pas configuré, c'est la feuille de partage qui s'ouvre, avec l'adresse affichée, et vous choisissez vous-même où le rapport part. **Plus tard** n'envoie rien, et Alike ne redemande jamais pour ce rapport.
+
+Un rapport contient la trace du plantage — quelle partie du code d'Alike s'exécutait —, la version de l'app, la version d'iOS, le modèle de l'appareil et des détails techniques ajoutés par iOS, comme le type d'exception, l'architecture du processeur et votre réglage de format régional. Pour certains plantages, il contient aussi le message d'erreur produit par Alike à ce moment-là. C'est iOS qui rédige le rapport, et Alike l'envoie tel quel, sans rien y ajouter ni filtrer — lisez donc la pièce jointe avant de l'envoyer. Il ne contient aucune photo. Si vous l'envoyez par e-mail, le développeur reçoit aussi ce que transporte tout e-mail, comme votre adresse e-mail.
+
+Un rapport envoyé sert uniquement à trouver et corriger ce plantage, et n'est communiqué à personne.
+
 ## Ce qu'Alike ne collecte pas
 
-Alike ne contient aucune analyse d'usage, aucun rapport de plantage, aucune publicité et aucun pistage d'aucune sorte. En particulier, Alike ne fait pas ce qui suit :
+Alike ne contient aucune analyse d'usage, aucun service tiers de rapport de plantage, aucune publicité et aucun pistage d'aucune sorte. En particulier, Alike ne fait pas ce qui suit :
 
 - envoyer vos photos ou des données qui en sont dérivées ;
 - collecter des statistiques ou des événements d'utilisation ;
@@ -96,12 +106,13 @@ Le traitement de vos informations d'achat par Apple est régi par [la politique 
 | Arrêter les notifications | Désactiver le rappel de nettoyage hebdomadaire dans les réglages d'Alike, ou Réglages iOS → Notifications |
 | Rétablir l'original d'une photo améliorée | Alike : « Rétablir l’original » dans les détails du groupe ; ou Photos d'Apple : Modifier → Rétablir |
 | Réinitialiser ce que Meilleure prise a appris | Réglages d'Alike → « Réinitialiser l'apprentissage de la Meilleure Photo » |
+| Refuser un rapport de plantage | Toucher « Plus tard » — Alike ne redemande jamais pour ce rapport |
 | Effacer tout ce qu'Alike stocke | Réglages d'Alike → Données et confidentialité → Supprimer les données d'Alike |
 | Supprimer complètement toutes les données | Supprimer l'app Alike de votre appareil |
 
 ### Supprimer les données d'Alike
 
-Réglages → Données et confidentialité → **Supprimer les données d'Alike** efface tout ce qu'Alike a stocké sur votre appareil : résultats d'analyse et caches, progression et historique de nettoyage, les pondérations qu'Alike a apprises des meilleures prises que vous avez choisies, et vos préférences Alike. Cette action est irréversible.
+Réglages → Données et confidentialité → **Supprimer les données d'Alike** efface tout ce qu'Alike a stocké sur votre appareil : résultats d'analyse et caches, progression et historique de nettoyage, les pondérations qu'Alike a apprises des meilleures prises que vous avez choisies, les rapports de plantage en attente sur l'appareil, et vos préférences Alike. Cette action est irréversible.
 
 Elle ne touche **pas** vos photos, votre album « Supprimés récemment », votre autorisation d'accès aux photos ni votre abonnement Alike Pro. Après la suppression, Alike affiche de nouveau son introduction sans redemander l'accès aux photos.
 
@@ -109,7 +120,7 @@ Supprimer l'app retire avec elle toutes les données locales d'Alike.
 
 ## Base légale et vos droits
 
-Comme Alike ne collecte ni ne transmet de données personnelles, le développeur ne détient aucune donnée personnelle à consulter, rectifier, exporter ou effacer, et aucune donnée n'est traitée sur une base légale telle que le consentement ou l'intérêt légitime.
+Alike lui-même ne collecte ni ne transmet de données personnelles : pour tout ce que décrit cette politique, le développeur ne détient donc aucune donnée personnelle à consulter, rectifier, exporter ou effacer. La seule exception est un rapport de plantage que vous choisissez d'envoyer par e-mail : le développeur détient alors cet e-mail et sa pièce jointe, traités sur la base de votre consentement — donné en l'envoyant — dans le seul but de corriger le plantage. Vous pouvez en demander la suppression à tout moment, à l'adresse ci-dessus.
 
 Tout le traitement a lieu localement sur votre appareil, sous votre contrôle, et vous pouvez l'effacer vous-même à tout moment via « Supprimer les données d'Alike » ou en supprimant l'app.
 

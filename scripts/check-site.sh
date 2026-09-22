@@ -276,15 +276,17 @@ check_terms "zh-hant" "標準使用者授權合約"                             
 check_terms "ar"    "ترخيص المستخدم النهائي القياسية من Apple"                    "يتجدد الاشتراك تلقائيًا"      "7 أيام مجانًا"
 
 echo "==> 5. Privacy guardrails"
-# The same idea as the Terms table above, for the two things the 1.3.0 privacy
-# pages promise: that Alike can write a reversible edit into the library, and
-# that Best Shot learns on the device. Nothing else in this script looks at
+# The same idea as the Terms table above, for what the privacy pages promise
+# beyond "nothing leaves the device": that Alike can write a reversible edit
+# into the library, that Best Shot learns on the device (both 1.3.0), and that a
+# crash report is kept on the device and leaves it only in a mail the user
+# sends (1.6.0). Nothing else in this script looks at
 # privacy.md content at all, so before this table a translation pass that
 # dropped a whole subsection in one locale would render, link, pass every other
 # assertion and deploy. The fragments are short on purpose — a reworded sentence
 # should not fail the build, a missing section should.
 check_privacy() {
-  local dir="$1" enhance="$2" learning="$3" revert="$4"
+  local dir="$1" enhance="$2" learning="$3" revert="$4" crash="$5"
   local f="$SITE${dir:+/$dir}/privacy/index.html"
   local label="/${dir:+$dir/}privacy/"
   local ok=1
@@ -292,21 +294,22 @@ check_privacy() {
   grep -qiF "$enhance" "$f"  || { fail "$label lost the enhancement section (looked for '$enhance')"; ok=0; }
   grep -qiF "$learning" "$f" || { fail "$label lost the Best Shot learning section (looked for '$learning')"; ok=0; }
   grep -qiF "$revert" "$f"   || { fail "$label lost the revert row in Your Controls (looked for '$revert')"; ok=0; }
-  [ "$ok" -eq 1 ] && pass "$label enhancement + learning + revert control present"
+  grep -qiF "$crash" "$f"    || { fail "$label lost the crash reports section (looked for '$crash')"; ok=0; }
+  [ "$ok" -eq 1 ] && pass "$label enhancement + learning + revert control + crash reports present"
 }
 
-check_privacy ""      "Enhancing a photo you keep"       "Learning which photos you prefer" "Revert to original"
-check_privacy "uk"    "Покращення фотографії"            "Навчання на ваших уподобаннях"    "Повернути оригінал"
-check_privacy "de"    "Ein Foto verbessern"              "Lernen, welche Fotos"             "Original wiederherstellen"
-check_privacy "fr"    "Améliorer une photo"              "Apprendre quelles photos"         "Rétablir"
-check_privacy "es"    "Mejorar una foto"                 "Aprender qué fotos"               "Volver al original"
-check_privacy "pt-br" "Aprimorar uma foto"               "Aprender de quais fotos"          "Voltar ao original"
-check_privacy "it"    "Migliorare una foto"              "Imparare quali foto"              "Ripristina"
-check_privacy "nl"    "Een foto verbeteren"              "Leren welke foto"                 "Origineel herstellen"
-check_privacy "pl"    "Poprawianie zdjęcia"              "Uczenie się, które zdjęcia"       "Przywróć oryginał"
-check_privacy "tr"    "fotoğrafı iyileştirmek"           "yeğlediğini öğrenmek"             "Orijinale dön"
-check_privacy "zh-hant" "優化你要留下的照片"                "學習你偏好哪些照片"                "還原為原始照片"
-check_privacy "ar"    "تحسين الصورة التي تحتفظ بها"        "تعلّم الصور التي تفضّلها"            "العودة إلى الأصل"
+check_privacy ""      "Enhancing a photo you keep"       "Learning which photos you prefer" "Revert to original" "Crash Reports"
+check_privacy "uk"    "Покращення фотографії"            "Навчання на ваших уподобаннях"    "Повернути оригінал" "Звіти про збої"
+check_privacy "de"    "Ein Foto verbessern"              "Lernen, welche Fotos"             "Original wiederherstellen" "Absturzberichte"
+check_privacy "fr"    "Améliorer une photo"              "Apprendre quelles photos"         "Rétablir" "Rapports de plantage"
+check_privacy "es"    "Mejorar una foto"                 "Aprender qué fotos"               "Volver al original" "Informes de fallos"
+check_privacy "pt-br" "Aprimorar uma foto"               "Aprender de quais fotos"          "Voltar ao original" "Relatórios de falhas"
+check_privacy "it"    "Migliorare una foto"              "Imparare quali foto"              "Ripristina" "Report di arresto"
+check_privacy "nl"    "Een foto verbeteren"              "Leren welke foto"                 "Origineel herstellen" "Crashrapporten"
+check_privacy "pl"    "Poprawianie zdjęcia"              "Uczenie się, które zdjęcia"       "Przywróć oryginał" "Raporty o awariach"
+check_privacy "tr"    "fotoğrafı iyileştirmek"           "yeğlediğini öğrenmek"             "Orijinale dön" "Çökme raporları"
+check_privacy "zh-hant" "優化你要留下的照片"                "學習你偏好哪些照片"                "還原為原始照片" "當機報告"
+check_privacy "ar"    "تحسين الصورة التي تحتفظ بها"        "تعلّم الصور التي تفضّلها"            "العودة إلى الأصل" "تقارير الأعطال"
 
 echo "==> 6. Third-party hosts"
 # The privacy policy states that Alike collects nothing and makes no network

@@ -7,7 +7,7 @@ page_key: privacy
 description: "Hoe Alike met je foto's omgaat: analyse op het apparaat, er wordt niets geüpload, geen analytics, en verwijderen gebeurt alleen met jouw bevestiging."
 ---
 
-Laatst bijgewerkt: 6 september 2026
+Laatst bijgewerkt: 22 september 2026
 
 Alike is een iOS-app die visueel vergelijkbare foto's in je fotobibliotheek vindt en groepeert, zodat je ze kunt bekijken en opslagruimte kunt vrijmaken. Alike wordt beheerd door Oleksandr Solokha, een individuele ontwikkelaar gevestigd in Oekraïne.
 
@@ -59,9 +59,19 @@ Alike kan de beste opname van een groep verbeteren. Het doet dat nooit uit zichz
 
 Wanneer je een andere beste opname kiest dan die Alike voorstelde, bewaart de app het verschil tussen de kwaliteitsmetingen van de twee foto's en gebruikt dat om latere groepen dichter bij jouw smaak te rangschikken. Het leert alleen van keuzes die je binnen de app maakt. De waarden zijn afgeleide getallen, geen foto's, ze blijven op je apparaat en er wordt niets ergens naartoe gestuurd. In de instellingen zit een knop die het geleerde wist.
 
+## Crashrapporten
+
+Als Alike onverwacht stopt, kan iOS de app later via Apples framework MetricKit een diagnoserapport over die crash geven. Alike bewaart dat rapport in zijn eigen opslag op je apparaat — hooguit de 20 meest recente — en doet er uit zichzelf verder niets mee.
+
+Bij de volgende start, zodra je niet midden in iets zit, vraagt Alike je één keer of je het wilt versturen. **Stuur rapport** opent een e-mail aan het adres onder 'Contact' met het rapport als bijlage: je kunt hem eerst lezen, en hij gaat alleen weg als je hem zelf verstuurt, vanuit je eigen mailaccount. Is Mail niet ingesteld, dan opent in plaats daarvan het deelvenster met het adres in beeld, zodat je zelf kiest waar het rapport heen gaat. **Niet nu** verstuurt niets, en Alike vraagt nooit meer naar dat rapport.
+
+Een rapport bevat de stacktrace van de crash — welk deel van de code van Alike draaide —, de appversie, de iOS-versie, het apparaatmodel en technische details die iOS toevoegt, zoals het type uitzondering, de processorarchitectuur en je instelling voor regio-opmaak. Bij sommige crashes bevat het ook de foutmelding die Alike op dat moment gaf. iOS stelt het rapport op en Alike verstuurt het zoals het is, zonder iets toe te voegen of weg te filteren — lees de bijlage dus voordat je hem verstuurt. Het bevat geen foto's. Verstuur je het per e-mail, dan ontvangt de ontwikkelaar ook wat elke e-mail meebrengt, zoals je e-mailadres.
+
+Een verstuurd rapport wordt alleen gebruikt om die crash te vinden en te verhelpen, en wordt met niemand gedeeld.
+
 ## Wat Alike niet verzamelt
 
-Alike bevat geen analytics, geen crashrapportage, geen advertenties en geen tracking van welke aard dan ook. Concreet doet Alike het volgende niet:
+Alike bevat geen analytics, geen crashrapportagedienst van derden, geen advertenties en geen tracking van welke aard dan ook. Concreet doet Alike het volgende niet:
 
 - je foto's of daaruit afgeleide gegevens uploaden;
 - analytische of gebruiksgebeurtenissen verzamelen;
@@ -96,12 +106,13 @@ Hoe Apple met je aankoopgegevens omgaat, valt onder [Apples privacybeleid](https
 | Berichtgevingen stoppen | De wekelijkse opruimherinnering uitzetten in de Alike-instellingen, of iOS-instellingen → Berichtgeving |
 | Een verbeterde foto terugzetten naar het origineel | Alike: 'Origineel herstellen' in de groepsdetails; of Apple Foto's: Wijzig → Zet terug |
 | Wissen wat Beste opname heeft geleerd | Alike-instellingen → 'Leren voor Beste Opname resetten' |
+| Een crashrapport weigeren | Tik op 'Niet nu' — Alike vraagt nooit meer naar dat rapport |
 | Alles verwijderen wat Alike bewaart | Alike-instellingen → Gegevens en privacy → Verwijder Alike-gegevens |
 | Alle gegevens volledig weghalen | De Alike-app van je apparaat verwijderen |
 
 ### Verwijder Alike-gegevens
 
-Instellingen → Gegevens en privacy → **Verwijder Alike-gegevens** haalt alles weg wat Alike op je apparaat heeft bewaard: scanresultaten en analysecaches, opruimvoortgang en -geschiedenis, de gewichten die Alike heeft geleerd van de beste opnamen die jij koos, en je Alike-voorkeuren. Dit kan niet ongedaan worden gemaakt.
+Instellingen → Gegevens en privacy → **Verwijder Alike-gegevens** haalt alles weg wat Alike op je apparaat heeft bewaard: scanresultaten en analysecaches, opruimvoortgang en -geschiedenis, de gewichten die Alike heeft geleerd van de beste opnamen die jij koos, crashrapporten die nog op je apparaat wachten, en je Alike-voorkeuren. Dit kan niet ongedaan worden gemaakt.
 
 Het raakt je foto's, je album 'Recent verwijderd', je toestemming voor fototoegang en je Alike Pro-abonnement **niet** aan. Na het verwijderen toont Alike zijn introductie opnieuw, zonder een tweede keer om fototoegang te vragen.
 
@@ -109,7 +120,7 @@ Verwijder je de app, dan verdwijnen alle lokale gegevens van Alike ermee.
 
 ## Rechtsgrond en je rechten
 
-Omdat Alike geen persoonsgegevens verzamelt of verstuurt, zijn er bij de ontwikkelaar geen persoonsgegevens die ingezien, gecorrigeerd, geëxporteerd of verwijderd kunnen worden, en geen gegevens die op een rechtsgrond als toestemming of gerechtvaardigd belang worden verwerkt.
+Alike zelf verzamelt of verstuurt geen persoonsgegevens, dus voor alles wat dit beleid beschrijft zijn er bij de ontwikkelaar geen persoonsgegevens die ingezien, gecorrigeerd, geëxporteerd of verwijderd kunnen worden. De enige uitzondering is een crashrapport dat je zelf per e-mail verstuurt: de ontwikkelaar heeft dan die e-mail en de bijlage, verwerkt op basis van je toestemming — gegeven door het versturen — uitsluitend om de crash te verhelpen. Je kunt op elk moment via het adres hierboven vragen om ze te verwijderen.
 
 Alle verwerking gebeurt lokaal op je apparaat, onder jouw controle, en je kunt die op elk moment zelf ongedaan maken met 'Verwijder Alike-gegevens' of door de app te verwijderen.
 

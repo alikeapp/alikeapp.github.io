@@ -7,7 +7,7 @@ page_key: privacy
 description: "Wie Alike mit deinen Fotos umgeht: Analyse auf dem Gerät, nichts wird hochgeladen, keine Analyse-Tools, und gelöscht wird nur mit deiner Bestätigung."
 ---
 
-Zuletzt aktualisiert: 6. September 2026
+Zuletzt aktualisiert: 22. September 2026
 
 Alike ist eine iOS-App, die visuell ähnliche Fotos in deiner Fotomediathek findet und gruppiert, damit du sie durchsehen und Speicherplatz freigeben kannst. Alike wird von Oleksandr Solokha betrieben, einem einzelnen Entwickler mit Sitz in der Ukraine.
 
@@ -59,9 +59,19 @@ Alike kann die beste Aufnahme einer Gruppe verbessern. Das geschieht nie von sel
 
 Wenn du eine andere beste Aufnahme wählst als die von Alike vorgeschlagene, sichert die App den Unterschied zwischen den Qualitätsmessungen der beiden Fotos und nutzt ihn, um spätere Gruppen näher an deinem Geschmack zu sortieren. Sie lernt ausschließlich aus Entscheidungen, die du in der App triffst. Die Werte sind abgeleitete Zahlen, keine Fotos, sie bleiben auf deinem Gerät, und nichts wird irgendwohin gesendet. In den Einstellungen gibt es eine Taste, die das Gelernte zurücksetzt.
 
+## Absturzberichte
+
+Wird Alike unerwartet beendet, kann iOS der App später über Apples Framework MetricKit einen Diagnosebericht zu diesem Absturz übergeben. Alike bewahrt den Bericht in seinem eigenen Speicher auf deinem Gerät auf — höchstens die 20 neuesten — und macht von sich aus nichts weiter damit.
+
+Beim nächsten Start, sobald du nicht mitten in etwas bist, fragt Alike dich ein einziges Mal, ob du ihn senden möchtest. **Bericht senden** öffnet eine E-Mail an die Adresse unter „Kontakt“ mit dem Bericht im Anhang: Du kannst sie vorher lesen, und sie geht nur, wenn du sie selbst sendest, von deinem eigenen Mail-Konto. Ist Mail nicht eingerichtet, öffnet sich stattdessen das Teilen-Menü und zeigt die Adresse, sodass du selbst wählst, wohin der Bericht geht. **Nicht jetzt** sendet nichts, und Alike fragt nie wieder nach diesem Bericht.
+
+Ein Bericht enthält den Stacktrace des Absturzes — welcher Teil von Alikes Code gerade lief —, die App-Version, die iOS-Version, das Gerätemodell und technische Angaben, die iOS beifügt, etwa den Ausnahmetyp, die Prozessorarchitektur und deine Einstellung für das Regionsformat. Bei manchen Abstürzen enthält er außerdem die Fehlermeldung, die Alike in dem Moment erzeugt hat. iOS erstellt den Bericht, und Alike sendet ihn unverändert, ohne etwas hinzuzufügen oder herauszufiltern — lies den Anhang also, bevor du ihn sendest. Fotos enthält er nicht. Sendest du ihn per E-Mail, erhält der Entwickler außerdem, was jede E-Mail mitbringt, etwa deine E-Mail-Adresse.
+
+Ein gesendeter Bericht wird ausschließlich genutzt, um diesen Absturz zu finden und zu beheben, und an niemanden weitergegeben.
+
 ## Was Alike nicht erhebt
 
-Alike enthält keine Analyse-Tools, kein Crash-Reporting, keine Werbung und kein Tracking jeglicher Art. Konkret tut Alike Folgendes nicht:
+Alike enthält keine Analyse-Tools, keinen Crash-Reporting-Dienst eines Drittanbieters, keine Werbung und kein Tracking jeglicher Art. Konkret tut Alike Folgendes nicht:
 
 - deine Fotos oder daraus abgeleitete Daten hochladen;
 - Analyse- oder Nutzungsereignisse erheben;
@@ -96,12 +106,13 @@ Apples Umgang mit deinen Kaufinformationen richtet sich nach [Apples Datenschutz
 | Mitteilungen stoppen | Die wöchentliche Aufräum-Erinnerung in den Alike-Einstellungen ausschalten, oder iOS-Einstellungen → Mitteilungen |
 | Ein verbessertes Foto auf das Original zurücksetzen | Alike: „Original wiederherstellen“ in den Gruppendetails; oder Apple Fotos: Bearbeiten → Zurücksetzen |
 | Zurücksetzen, was „Beste Aufnahme“ gelernt hat | Alike-Einstellungen → „Lernen für die beste Aufnahme zurücksetzen“ |
+| Einen Absturzbericht ablehnen | „Nicht jetzt“ tippen — Alike fragt nie wieder nach diesem Bericht |
 | Alles löschen, was Alike speichert | Alike-Einstellungen → Daten & Datenschutz → Alike-Daten löschen |
 | Alle Daten vollständig entfernen | Die Alike-App vom Gerät löschen |
 
 ### Alike-Daten löschen
 
-Einstellungen → Daten & Datenschutz → **Alike-Daten löschen** entfernt alles, was Alike auf deinem Gerät gespeichert hat: Scan-Ergebnisse und Analyse-Caches, Aufräumfortschritt und -verlauf, die Gewichte, die Alike aus den von dir gewählten besten Aufnahmen gelernt hat, sowie deine Alike-Einstellungen. Dieser Schritt lässt sich nicht rückgängig machen.
+Einstellungen → Daten & Datenschutz → **Alike-Daten löschen** entfernt alles, was Alike auf deinem Gerät gespeichert hat: Scan-Ergebnisse und Analyse-Caches, Aufräumfortschritt und -verlauf, die Gewichte, die Alike aus den von dir gewählten besten Aufnahmen gelernt hat, auf dem Gerät wartende Absturzberichte sowie deine Alike-Einstellungen. Dieser Schritt lässt sich nicht rückgängig machen.
 
 Er berührt **nicht** deine Fotos, dein Album „Zuletzt gelöscht“, deine Berechtigung für den Fotozugriff oder dein Alike-Pro-Abo. Nach dem Löschen zeigt Alike seine Einführung erneut, ohne ein zweites Mal nach dem Fotozugriff zu fragen.
 
@@ -109,7 +120,7 @@ Wenn du die App löschst, verschwinden alle lokalen Daten von Alike mit ihr.
 
 ## Rechtsgrundlage und deine Rechte
 
-Da Alike keine personenbezogenen Daten erhebt oder überträgt, gibt es beim Entwickler keine personenbezogenen Daten, auf die zugegriffen werden könnte und die sich berichtigen, exportieren oder löschen ließen, und keine Daten, die auf einer Rechtsgrundlage wie Einwilligung oder berechtigtem Interesse verarbeitet würden.
+Alike selbst erhebt oder überträgt keine personenbezogenen Daten, daher gibt es für alles, was diese Richtlinie beschreibt, beim Entwickler keine personenbezogenen Daten, auf die zugegriffen werden könnte und die sich berichtigen, exportieren oder löschen ließen. Die einzige Ausnahme ist ein Absturzbericht, den du per E-Mail sendest: Dann liegen dem Entwickler diese E-Mail und ihr Anhang vor, verarbeitet auf Grundlage deiner Einwilligung — die du durch das Senden gibst — und ausschließlich, um den Absturz zu beheben. Du kannst jederzeit unter der oben genannten Adresse verlangen, dass sie gelöscht werden.
 
 Die gesamte Verarbeitung findet lokal auf deinem Gerät unter deiner Kontrolle statt, und du kannst sie jederzeit selbst über „Alike-Daten löschen“ oder durch Löschen der App entfernen.
 

@@ -7,7 +7,7 @@ page_key: privacy
 description: "How Alike handles your photos: on-device analysis, nothing uploaded, no analytics, and deletion only ever with your confirmation."
 ---
 
-Last updated: September 6, 2026
+Last updated: September 22, 2026
 
 Alike is an iOS app that finds and groups visually similar photos in your photo library so you can review them and free up space. Alike is operated by Oleksandr Solokha, an individual developer based in Ukraine.
 
@@ -59,9 +59,19 @@ Alike can improve the best shot in a group. It never does this on its own: the r
 
 When you pick a different best shot than the one Alike suggested, the app stores the difference between the two photos' quality measurements and uses it to rank later groups closer to your taste. It learns only from choices you make inside the app. The values are derived numbers, not photos, they stay on your device, and nothing is sent anywhere. Settings has a button that resets the learning.
 
+## Crash Reports
+
+If Alike closes unexpectedly, iOS can later hand the app a diagnostic report about that crash through Apple's MetricKit framework. Alike keeps the report in its own storage on your device — the 20 most recent at most — and does nothing else with it on its own.
+
+At the next launch, once you are not in the middle of anything, Alike asks you once whether to send it. **Send Report** opens an email to the address under Contact with the report attached: you can read it first, and it goes only if you send it yourself, from your own mail account. If Mail is not set up, the share sheet opens instead and shows the address, so you choose where the report goes. **Not Now** sends nothing, and Alike never asks about that report again.
+
+A report contains the crash stack trace — which part of Alike's code was running — the app version, the iOS version, the device model, and technical details iOS attaches to it, such as the exception type, the processor architecture and your region format setting. For some crashes it also holds the error message Alike produced at that moment. iOS writes the report, and Alike sends it as it is, without adding to it or filtering it — so read the attachment before you send it. It contains no photos. If you email it, the developer also receives what any email carries, such as your email address.
+
+A report you send is used only to find and fix that crash, and is not shared with anyone.
+
 ## What Alike Does Not Collect
 
-Alike contains no analytics, no crash reporting, no advertising, and no tracking of any kind. Specifically, Alike does not:
+Alike contains no analytics, no third-party crash-reporting service, no advertising, and no tracking of any kind. Specifically, Alike does not:
 
 - upload your photos or any data derived from them;
 - collect analytics or usage events;
@@ -96,12 +106,13 @@ Apple's handling of your purchase information is governed by [Apple's Privacy Po
 | Stop notifications | Turn off the weekly cleanup reminder in Alike Settings, or use iOS Settings → Notifications |
 | Put an enhanced photo back to the original | Alike: Revert to original in the group details; or Apple Photos: Edit → Revert |
 | Reset what Best Shot has learned | Alike Settings → Reset Best Shot Learning |
+| Decline a crash report | Tap Not Now — Alike never asks about that report again |
 | Erase everything Alike stores | Alike Settings → Data & Privacy → Delete Alike Data |
 | Remove all data completely | Delete the Alike app from your device |
 
 ### Delete Alike Data
 
-Settings → Data & Privacy → **Delete Alike Data** erases everything Alike has stored on your device: scan results and analysis caches, cleanup progress and history, the weights Alike has learned from the best shots you picked, and your Alike preferences. This action cannot be undone.
+Settings → Data & Privacy → **Delete Alike Data** erases everything Alike has stored on your device: scan results and analysis caches, cleanup progress and history, the weights Alike has learned from the best shots you picked, crash reports waiting on your device, and your Alike preferences. This action cannot be undone.
 
 It does **not** touch your photos, your Recently Deleted album, your photo access permission, or your Alike Pro subscription. After deletion, Alike shows its introduction again without asking for photo access a second time.
 
@@ -109,7 +120,7 @@ Deleting the app removes all of Alike's local data along with it.
 
 ## Legal Basis and Your Rights
 
-Because Alike does not collect or transmit personal data, there is no personal data held by the developer to access, correct, export, or erase, and no data processed on any legal basis such as consent or legitimate interest.
+Alike itself does not collect or transmit personal data, so for everything this policy describes there is no personal data held by the developer to access, correct, export, or erase. The one exception is a crash report you choose to email: the developer then holds that email and its attachment, processed on the basis of your consent — given by sending it — for the sole purpose of fixing the crash. You can ask for it to be deleted at any time, at the address above.
 
 All processing happens locally on your device under your control, and you can erase it yourself at any time using Delete Alike Data or by deleting the app.
 

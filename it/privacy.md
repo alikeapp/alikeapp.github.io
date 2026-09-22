@@ -7,7 +7,7 @@ page_key: privacy
 description: "Come Alike tratta le tue foto: analisi sul dispositivo, niente viene caricato online, nessuna analisi statistica, e si elimina solo con la tua conferma."
 ---
 
-Ultimo aggiornamento: 6 settembre 2026
+Ultimo aggiornamento: 22 settembre 2026
 
 Alike è un'app per iOS che trova e raggruppa le foto visivamente simili nella tua libreria, così puoi controllarle e liberare spazio. Alike è gestita da Oleksandr Solokha, uno sviluppatore indipendente con sede in Ucraina.
 
@@ -59,9 +59,19 @@ Alike può migliorare lo scatto migliore di un gruppo. Non lo fa mai da solo: il
 
 Quando scegli uno scatto migliore diverso da quello suggerito da Alike, l'app salva la differenza fra le misure di qualità delle due foto e la usa per ordinare i gruppi successivi più vicino al tuo gusto. Impara solo dalle scelte che fai dentro l'app. I valori sono numeri derivati, non foto, restano sul tuo dispositivo e non viene inviato nulla da nessuna parte. Nelle impostazioni c'è un pulsante che azzera quanto è stato imparato.
 
+## Report di arresto
+
+Se Alike si chiude in modo imprevisto, iOS può in seguito consegnare all'app un report diagnostico su quell'arresto, tramite il framework MetricKit di Apple. Alike conserva il report nel proprio spazio sul tuo dispositivo — al massimo i 20 più recenti — e di sua iniziativa non ne fa nient'altro.
+
+All'avvio successivo, quando non sei nel mezzo di qualcosa, Alike ti chiede una sola volta se vuoi inviarlo. **Invia report** apre un'email all'indirizzo indicato in «Contatti» con il report in allegato: puoi leggerla prima, e parte solo se la invii tu, dal tuo account di posta. Se Mail non è configurata, si apre invece il pannello di condivisione con l'indirizzo in vista, così scegli tu dove va il report. **Non ora** non invia nulla, e Alike non chiede mai più di quel report.
+
+Un report contiene lo stack trace dell'arresto — quale parte del codice di Alike era in esecuzione —, la versione dell'app, la versione di iOS, il modello del dispositivo e dettagli tecnici aggiunti da iOS, come il tipo di eccezione, l'architettura del processore e la tua impostazione del formato regionale. Per alcuni arresti contiene anche il messaggio di errore generato da Alike in quel momento. Il report lo scrive iOS e Alike lo invia così com'è, senza aggiungere né filtrare nulla: leggi quindi l'allegato prima di inviarlo. Non contiene foto. Se lo invii via email, lo sviluppatore riceve anche ciò che porta con sé qualsiasi email, come il tuo indirizzo email.
+
+Un report inviato è usato solo per trovare e correggere quell'arresto, e non è condiviso con nessuno.
+
 ## Che cosa Alike non raccoglie
 
-Alike non contiene strumenti di analisi statistica, crash reporting, pubblicità o tracciamento di alcun tipo. In concreto, Alike non:
+Alike non contiene strumenti di analisi statistica, servizi di terze parti per il crash reporting, pubblicità o tracciamento di alcun tipo. In concreto, Alike non:
 
 - carica le tue foto o dati da esse derivati;
 - raccoglie eventi di analisi o d'uso;
@@ -96,12 +106,13 @@ Il trattamento delle tue informazioni di acquisto da parte di Apple è regolato 
 | Fermare le notifiche | Disattivare il promemoria settimanale di pulizia nelle impostazioni di Alike, oppure Impostazioni di iOS → Notifiche |
 | Riportare all'originale una foto migliorata | Alike: «Ripristina l’originale» nei dettagli del gruppo; oppure Foto di Apple: Modifica → Ripristina |
 | Azzerare ciò che Scatto migliore ha imparato | Impostazioni di Alike → «Ripristina apprendimento Scatto Migliore» |
+| Rifiutare un report di arresto | Tocca «Non ora» — Alike non chiede mai più di quel report |
 | Eliminare tutto ciò che Alike salva | Impostazioni di Alike → Dati e privacy → Elimina i dati di Alike |
 | Rimuovere del tutto ogni dato | Eliminare l'app Alike dal dispositivo |
 
 ### Elimina i dati di Alike
 
-Impostazioni → Dati e privacy → **Elimina i dati di Alike** rimuove tutto ciò che Alike ha salvato sul tuo dispositivo: risultati delle scansioni e cache dell'analisi, avanzamento e cronologia della pulizia, i pesi che Alike ha imparato dagli scatti migliori che hai scelto tu, e le tue preferenze di Alike. L'operazione non è reversibile.
+Impostazioni → Dati e privacy → **Elimina i dati di Alike** rimuove tutto ciò che Alike ha salvato sul tuo dispositivo: risultati delle scansioni e cache dell'analisi, avanzamento e cronologia della pulizia, i pesi che Alike ha imparato dagli scatti migliori che hai scelto tu, i report di arresto in attesa sul dispositivo, e le tue preferenze di Alike. L'operazione non è reversibile.
 
 **Non** tocca le tue foto, il tuo album «Eliminati di recente», il permesso di accesso alle foto o il tuo abbonamento ad Alike Pro. Dopo l'eliminazione Alike mostra di nuovo la sua introduzione, senza richiedere una seconda volta l'accesso alle foto.
 
@@ -109,7 +120,7 @@ Se elimini l'app, tutti i dati locali di Alike se ne vanno con lei.
 
 ## Base giuridica e i tuoi diritti
 
-Poiché Alike non raccoglie né trasmette dati personali, presso lo sviluppatore non esistono dati personali a cui accedere, da rettificare, esportare o cancellare, né dati trattati su una base giuridica come il consenso o il legittimo interesse.
+Alike di per sé non raccoglie né trasmette dati personali, quindi, per tutto ciò che questa informativa descrive, presso lo sviluppatore non esistono dati personali a cui accedere, da rettificare, esportare o cancellare. L'unica eccezione è un report di arresto che scegli di inviare via email: lo sviluppatore conserva allora quell'email e il suo allegato, trattati sulla base del tuo consenso — dato inviandola — al solo scopo di correggere l'arresto. Puoi chiederne la cancellazione in qualsiasi momento all'indirizzo indicato sopra.
 
 Tutto il trattamento avviene localmente sul tuo dispositivo, sotto il tuo controllo, e puoi rimuoverlo tu stesso in qualsiasi momento con «Elimina i dati di Alike» o eliminando l'app.
 

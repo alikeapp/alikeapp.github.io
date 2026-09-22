@@ -7,7 +7,7 @@ page_key: privacy
 description: "Jak Alike obchodzi się z Twoimi zdjęciami: analiza na urządzeniu, nic nie jest wysyłane, bez analityki, a usuwanie następuje tylko za Twoim potwierdzeniem."
 ---
 
-Ostatnia aktualizacja: 6 września 2026
+Ostatnia aktualizacja: 22 września 2026
 
 Alike to aplikacja na iOS, która znajduje i grupuje wizualnie podobne zdjęcia w Twojej bibliotece, żebyś mógł je przejrzeć i zwolnić miejsce. Alike prowadzi Oleksandr Solokha, niezależny deweloper z siedzibą w Ukrainie.
 
@@ -59,9 +59,19 @@ Alike potrafi poprawić najlepsze ujęcie w grupie. Nigdy nie robi tego sam: wyn
 
 Kiedy wybierzesz inne najlepsze ujęcie niż to zaproponowane przez Alike, aplikacja zapisuje różnicę między pomiarami jakości obu zdjęć i wykorzystuje ją, by kolejne grupy układać bliżej Twojego gustu. Uczy się wyłącznie z wyborów, których dokonujesz w aplikacji. Te wartości to liczby pochodne, a nie zdjęcia, zostają na Twoim urządzeniu i nic nigdzie nie jest wysyłane. W ustawieniach jest przycisk, który zeruje to, czego aplikacja się nauczyła.
 
+## Raporty o awariach
+
+Jeśli Alike nieoczekiwanie się zamknie, iOS może później przekazać aplikacji raport diagnostyczny o tej awarii, za pośrednictwem frameworka MetricKit firmy Apple. Alike przechowuje raport we własnej pamięci na Twoim urządzeniu — najwyżej 20 najnowszych — i sam nic więcej z nim nie robi.
+
+Przy następnym uruchomieniu, gdy nie jesteś w trakcie żadnej czynności, Alike zapyta jeden raz, czy chcesz go wysłać. **Wyślij raport** otwiera e-mail na adres podany w sekcji „Kontakt”, z raportem w załączniku: możesz go najpierw przeczytać, a wyjdzie tylko wtedy, gdy sam go wyślesz, ze swojego konta pocztowego. Jeśli Mail nie jest skonfigurowany, zamiast tego otwiera się arkusz udostępniania z widocznym adresem, więc sam wybierasz, dokąd trafi raport. **Nie teraz** niczego nie wysyła, a o ten raport Alike już nigdy nie zapyta.
+
+Raport zawiera ślad stosu awarii — która część kodu Alike była wykonywana — wersję aplikacji, wersję iOS, model urządzenia oraz szczegóły techniczne dodane przez iOS, takie jak typ wyjątku, architektura procesora i Twoje ustawienie formatu regionu. Przy niektórych awariach zawiera też komunikat o błędzie, który Alike wygenerował w tej chwili. Raport tworzy iOS, a Alike wysyła go bez zmian, niczego nie dodając ani nie filtrując — dlatego przeczytaj załącznik przed wysłaniem. Nie zawiera zdjęć. Jeśli wyślesz go e-mailem, deweloper otrzyma też to, co niesie każda wiadomość, na przykład Twój adres e-mail.
+
+Wysłany raport służy wyłącznie do znalezienia i naprawienia tej awarii i nie jest nikomu udostępniany.
+
 ## Czego Alike nie zbiera
 
-Alike nie zawiera analityki, raportowania awarii, reklam ani śledzenia jakiegokolwiek rodzaju. Konkretnie Alike nie:
+Alike nie zawiera analityki, zewnętrznej usługi raportowania awarii, reklam ani śledzenia jakiegokolwiek rodzaju. Konkretnie Alike nie:
 
 - wysyła Twoich zdjęć ani danych z nich wyprowadzonych;
 - zbiera zdarzeń analitycznych ani zdarzeń użycia;
@@ -96,12 +106,13 @@ Sposób, w jaki Apple obchodzi się z informacjami o Twoich zakupach, reguluje [
 | Zatrzymać powiadomienia | Wyłączyć cotygodniowe przypomnienie o porządkach w ustawieniach Alike albo Ustawienia iOS → Powiadomienia |
 | Przywrócić poprawione zdjęcie do oryginału | Alike: „Przywróć oryginał” w szczegółach grupy; albo Zdjęcia Apple: Edytuj → Przywróć |
 | Wyzerować to, czego nauczyło się Najlepsze ujęcie | Ustawienia Alike → „Zresetuj naukę Najlepszego ujęcia” |
+| Odrzucić raport o awarii | Stuknij „Nie teraz” — o ten raport Alike już nigdy nie zapyta |
 | Usunąć wszystko, co Alike zapisał | Ustawienia Alike → Dane i prywatność → Usuń dane Alike |
 | Całkowicie usunąć wszystkie dane | Usunąć aplikację Alike z urządzenia |
 
 ### Usuń dane Alike
 
-Ustawienia → Dane i prywatność → **Usuń dane Alike** kasuje wszystko, co Alike zapisał na Twoim urządzeniu: wyniki skanowania i bufory analizy, postęp i historię porządków, wagi, których Alike nauczył się z wybranych przez Ciebie najlepszych ujęć, oraz Twoje ustawienia Alike. Tej operacji nie da się cofnąć.
+Ustawienia → Dane i prywatność → **Usuń dane Alike** kasuje wszystko, co Alike zapisał na Twoim urządzeniu: wyniki skanowania i bufory analizy, postęp i historię porządków, wagi, których Alike nauczył się z wybranych przez Ciebie najlepszych ujęć, raporty o awariach czekające na urządzeniu oraz Twoje ustawienia Alike. Tej operacji nie da się cofnąć.
 
 **Nie** rusza to Twoich zdjęć, albumu „Ostatnio usunięte”, uprawnienia dostępu do zdjęć ani subskrypcji Alike Pro. Po usunięciu Alike pokazuje wprowadzenie od nowa, nie pytając ponownie o dostęp do zdjęć.
 
@@ -109,7 +120,7 @@ Jeśli usuniesz aplikację, wszystkie lokalne dane Alike znikną razem z nią.
 
 ## Podstawa prawna i Twoje prawa
 
-Ponieważ Alike nie zbiera ani nie przesyła danych osobowych, u dewelopera nie ma żadnych danych osobowych, do których można by uzyskać dostęp, które można by sprostować, wyeksportować lub usunąć, ani danych przetwarzanych na podstawie prawnej takiej jak zgoda czy prawnie uzasadniony interes.
+Samo Alike nie zbiera ani nie przesyła danych osobowych, więc w zakresie wszystkiego, co opisuje ta polityka, u dewelopera nie ma żadnych danych osobowych, do których można by uzyskać dostęp, które można by sprostować, wyeksportować lub usunąć. Jedynym wyjątkiem jest raport o awarii, który zdecydujesz się wysłać e-mailem: deweloper ma wtedy tę wiadomość i jej załącznik, przetwarzane na podstawie Twojej zgody — wyrażonej samym wysłaniem — wyłącznie w celu naprawienia awarii. W każdej chwili możesz poprosić o ich usunięcie pod adresem podanym powyżej.
 
 Całe przetwarzanie odbywa się lokalnie na Twoim urządzeniu, pod Twoją kontrolą, i możesz je w każdej chwili sam usunąć przez „Usuń dane Alike” albo przez usunięcie aplikacji.
 
