@@ -7,7 +7,7 @@ page_key: privacy
 description: "Alike fotoğraflarınla nasıl çalışır: cihaz üzerinde analiz, hiçbir şey yüklenmez, analitik yok ve silme yalnızca senin onayınla olur."
 ---
 
-Son güncelleme: 6 Eylül 2026
+Son güncelleme: 22 Eylül 2026
 
 Alike, fotoğraf kitaplığındaki görsel olarak benzer fotoğrafları bulup gruplayan ve böylece onları gözden geçirip yer açmanı sağlayan bir iOS uygulamasıdır. Alike'ı, Ukrayna merkezli bağımsız bir geliştirici olan Oleksandr Solokha yürütür.
 
@@ -59,9 +59,19 @@ Alike, bir gruptaki en iyi kareyi iyileştirebilir. Bunu asla kendiliğinden yap
 
 Alike'ın önerdiğinden farklı bir en iyi kare seçtiğinde uygulama, iki fotoğrafın kalite ölçümleri arasındaki farkı saklar ve sonraki grupları senin beğenine daha yakın sıralamak için kullanır. Yalnızca uygulama içinde yaptığın seçimlerden öğrenir. Bu değerler fotoğraf değil, türetilmiş sayılardır; cihazında kalır ve hiçbir yere gönderilmez. Ayarlar'da öğrenilenleri sıfırlayan bir düğme vardır.
 
+## Çökme raporları
+
+Alike beklenmedik şekilde kapanırsa iOS daha sonra, Apple'ın MetricKit çerçevesi aracılığıyla uygulamaya bu çökmeyle ilgili bir tanılama raporu verebilir. Alike bu raporu cihazındaki kendi depolama alanında saklar — en fazla en yeni 20 tanesini — ve kendiliğinden onunla başka hiçbir şey yapmaz.
+
+Bir sonraki açılışta, bir işin ortasında değilken, Alike raporu gönderip göndermeyeceğini yalnızca bir kez sorar. **Raporu Gönder**, raporun ekli olduğu ve "İletişim" bölümündeki adrese yazılmış bir e-posta açar: önce okuyabilirsin ve e-posta ancak sen kendi posta hesabından gönderirsen gider. Mail ayarlı değilse bunun yerine adresi gösteren paylaşım sayfası açılır; raporun nereye gideceğini sen seçersin. **Şimdi Değil** hiçbir şey göndermez ve Alike o raporu bir daha asla sormaz.
+
+Rapor; çökmenin yığın izini — Alike'ın kodunun hangi kısmının çalıştığını —, uygulama sürümünü, iOS sürümünü, cihaz modelini ve iOS'un eklediği istisna türü, işlemci mimarisi ve bölge biçimi ayarın gibi teknik ayrıntıları içerir. Fotoğraf, fotoğraflarınla ilgili herhangi bir bilgi ya da seni tanımlayan hiçbir şey içermez. E-postayla gönderirsen geliştirici, her e-postanın taşıdığı bilgileri de alır; örneğin e-posta adresini.
+
+Gönderilen bir rapor yalnızca o çökmeyi bulmak ve düzeltmek için kullanılır ve kimseyle paylaşılmaz.
+
 ## Alike neyi toplamaz
 
-Alike'ta analitik, çökme raporlama, reklam ya da herhangi bir türde izleme yoktur. Somut olarak Alike şunları yapmaz:
+Alike'ta analitik, üçüncü taraf çökme raporlama hizmeti, reklam ya da herhangi bir türde izleme yoktur. Somut olarak Alike şunları yapmaz:
 
 - fotoğraflarını ya da onlardan türetilen verileri yüklemek;
 - analitik ya da kullanım olayları toplamak;
@@ -96,12 +106,13 @@ Apple'ın satın alma bilgilerini nasıl işlediği [Apple'ın gizlilik politika
 | Bildirimleri durdurmak | Alike ayarlarında haftalık temizlik anımsatıcısını kapat ya da iOS Ayarları → Bildirimler |
 | İyileştirilmiş bir fotoğrafı aslına döndürmek | Alike: grup ayrıntılarında «Orijinale dön»; ya da Apple Fotoğraflar: Düzenle → Geri Al |
 | En İyi Kare'nin öğrendiklerini sıfırlamak | Alike Ayarları → «En İyi Kare Öğrenimini Sıfırla» |
+| Bir çökme raporunu reddetmek | Şimdi Değil'e dokun — Alike o raporu bir daha asla sormaz |
 | Alike'ın sakladığı her şeyi silmek | Alike Ayarları → Veriler ve Gizlilik → Alike Verilerini Sil |
 | Tüm verileri tamamen kaldırmak | Alike uygulamasını cihazdan sil |
 
 ### Alike Verilerini Sil
 
-Ayarlar → Veriler ve Gizlilik → **Alike Verilerini Sil**, Alike'ın cihazında sakladığı her şeyi kaldırır: tarama sonuçları ve analiz önbellekleri, temizlik ilerlemesi ve geçmişi, Alike'ın senin seçtiğin en iyi karelerden öğrendiği ağırlıklar ile Alike tercihlerin. Bu işlem geri alınamaz.
+Ayarlar → Veriler ve Gizlilik → **Alike Verilerini Sil**, Alike'ın cihazında sakladığı her şeyi kaldırır: tarama sonuçları ve analiz önbellekleri, temizlik ilerlemesi ve geçmişi, Alike'ın senin seçtiğin en iyi karelerden öğrendiği ağırlıklar, cihazda bekleyen çökme raporları ile Alike tercihlerin. Bu işlem geri alınamaz.
 
 Fotoğraflarına, «Son Silinenler» albümüne, fotoğraf erişimi iznine ya da Alike Pro aboneliğine **dokunmaz**. Silme sonrasında Alike, fotoğraf erişimini ikinci kez sormadan tanıtımını yeniden gösterir.
 
@@ -109,7 +120,7 @@ Uygulamayı silersen Alike'ın tüm yerel verileri de onunla birlikte gider.
 
 ## Hukuki dayanak ve haklarım
 
-Alike kişisel veri toplamadığı ya da aktarmadığı için geliştiricide erişilebilecek, düzeltilebilecek, dışa aktarılabilecek ya da silinebilecek hiçbir kişisel veri ve rıza veya meşru menfaat gibi bir hukuki dayanakla işlenen hiçbir veri yoktur.
+Alike'ın kendisi kişisel veri toplamaz ya da aktarmaz; bu nedenle bu politikanın anlattığı her şey için geliştiricide erişilebilecek, düzeltilebilecek, dışa aktarılabilecek ya da silinebilecek hiçbir kişisel veri yoktur. Tek istisna, e-postayla göndermeyi seçtiğin bir çökme raporudur: Bu durumda geliştiricide o e-posta ve eki bulunur; bunlar, göndererek verdiğin rızaya dayanılarak yalnızca çökmeyi düzeltmek amacıyla işlenir. Silinmelerini dilediğin zaman yukarıdaki adresten isteyebilirsin.
 
 Tüm işleme, senin denetiminde, cihazında yerel olarak gerçekleşir ve «Alike Verilerini Sil» ile ya da uygulamayı silerek istediğin zaman kendin kaldırabilirsin.
 
