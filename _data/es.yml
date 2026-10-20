@@ -16,9 +16,13 @@ support_url: /es/support/
 # Docs/legal/subscription-disclosure.md. El vocabulario del sistema sigue la
 # terminología de Apple en español — «Eliminados recientemente», «capturas de
 # pantalla», y «Ajustes» (variante de España, no «Configuración»).
+compare_url: /es/compare/
+guide_similar_url: /es/guides/delete-similar-photos/
+guide_storage_url: /es/guides/free-up-photo-storage/
+
 meta:
-  title: "Alike — encuentra fotos visualmente similares en tu iPhone"
-  description: "Alike encuentra y agrupa fotos visualmente similares de tu fototeca mediante análisis en el dispositivo, elige la mejor toma y te ayuda a eliminar el resto. Sin cuenta, sin servidor, nada sale de tu iPhone."
+  title: "Alike — elimina fotos similares y libera espacio en iPhone"
+  description: "Encuentra fotos duplicadas y similares en tu iPhone. Alike elige la mejor toma y te ayuda a liberar almacenamiento. Sin cuenta ni anuncios."
 
 nav:
   features: Funciones
@@ -184,6 +188,9 @@ support:
   subs_restore: "Restaurar una compra en un dispositivo nuevo: Ajustes de Alike → «Restaurar compras»"
 
 footer:
+  compare: "Comparar Alike"
+  guide_similar: "Eliminar fotos similares"
+  guide_storage: "Liberar espacio de fotos"
   tagline: "Encuentra fotos visualmente similares. Quédate con la mejor. Elimina el resto."
   privacy: Política de privacidad
   terms: Términos de uso

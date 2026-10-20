@@ -216,6 +216,33 @@ expect_fail "an x-default pointing at a translation fails" \
   "x-default is" \
   'perl -0pi -e "s{(hreflang=\"x-default\" href=\"https://alikeapp.github.io)/privacy/}{\$1/de/privacy/}" "$S/privacy/index.html"'
 
+echo "==> new localized documents and SEO"
+expect_fail "a missing translated comparison fails" \
+  "Missing page: /de/compare/" \
+  'rm -rf "$S/de/compare"'
+expect_fail "a missing translated guide fails" \
+  "Missing page: /ar/guides/free-up-photo-storage/" \
+  'rm -rf "$S/ar/guides/free-up-photo-storage"'
+expect_fail "a missing alternate fails even when its URL exists" \
+  "incorrect hreflang set" \
+  'perl -0pi -e "s{<link rel=\"alternate\" hreflang=\"de\"[^>]*>\n}{}" "$S/compare/index.html"'
+expect_fail "an alternate pointing at another document fails" \
+  "incorrect hreflang set" \
+  'perl -0pi -e "s{(hreflang=\"de\" href=\"https://alikeapp.github.io/de)/compare/}{\$1/support/}" "$S/compare/index.html"'
+expect_fail "a guide x-default pointing at another English document fails" \
+  "incorrect hreflang set" \
+  'perl -0pi -e "s{(hreflang=\"x-default\" href=\"https://alikeapp.github.io)/guides/delete-similar-photos/}{\$1/compare/}" "$S/ar/guides/delete-similar-photos/index.html"'
+expect_pass "both English guide x-default addresses pass"
+expect_fail "invalid structured data fails" \
+  "invalid JSON-LD" \
+  'perl -0pi -e "s/FAQPage/FAQPage\"broken/" "$S/index.html"'
+expect_fail "FAQ data that differs from visible content fails" \
+  "FAQ does not match visible content" \
+  'perl -0pi -e "s{(<summary class=\"faq__q\">)[^<]+}{\$1Changed question}" "$S/index.html"'
+expect_fail "a missing sitemap modification date fails" \
+  "missing or invalid lastmod" \
+  'perl -0pi -e "s{<lastmod>[^<]+</lastmod>}{}" "$S/sitemap.xml"'
+
 echo "==> 4. terms guardrails"
 expect_fail "dropping the EULA reference fails" \
   "no longer names Apple's Standard EULA" \
@@ -349,6 +376,61 @@ expect_fail "a hard-coded rotation in the stylesheet fails" \
 expect_fail "a rotation token the rtl block never redefines fails" \
   "never redefines it" \
   'perl -0pi -e "s{[ ]*--turn-check: 45deg;\n}{}" "$S/assets/css/main.css"'
+
+echo "==> 11. optional ownership verification"
+# CI builds with actions/jekyll-build-pages in Docker, without local Ruby gems.
+# Run these extra builds only where the local Jekyll toolchain is available.
+if (cd "$HERE/.." && command -v bundle >/dev/null && bundle exec jekyll --version >/dev/null 2>&1); then
+  TOKENS="$WORK/ownership.yml"
+  cat > "$TOKENS" <<'YAML'
+google_site_verification: ""
+bing_site_verification: ""
+YAML
+  ran=$((ran + 1))
+  if (cd "$HERE/.." && bundle exec jekyll build --quiet --config "$HERE/../_config.yml,$TOKENS" --destination "$WORK/empty-tokens"); then
+    if ! grep -rqE '<meta name="(google-site-verification|msvalidate.01)"' "$WORK/empty-tokens"; then
+      echo "ok    explicitly empty ownership tokens emit no tags"
+    else
+      echo "FAIL  empty ownership tokens emitted tags" >&2
+      status=1
+    fi
+  else
+    echo "FAIL  empty ownership verification build failed" >&2
+    status=1
+  fi
+  cat > "$TOKENS" <<'YAML'
+google_site_verification: "test-google<&"
+bing_site_verification: "test-bing<&"
+YAML
+  ran=$((ran + 1))
+  if (cd "$HERE/.." && bundle exec jekyll build --quiet --config "$HERE/../_config.yml,$TOKENS" --destination "$WORK/verified"); then
+    if python3 - "$WORK/verified" <<'PY'
+from html.parser import HTMLParser
+from pathlib import Path
+import sys
+class Tags(HTMLParser):
+    def __init__(self, source):
+        super().__init__(); self.tags={}; self.feed(source)
+    def handle_starttag(self, tag, attrs):
+        a=dict(attrs)
+        if tag=='meta': self.tags[a.get('name')]=a.get('content')
+pages=list(Path(sys.argv[1]).rglob('index.html'))
+assert pages
+for page in pages:
+    tags=Tags(page.read_text()).tags
+    assert tags.get('google-site-verification')=='test-google<&', page
+    assert tags.get('msvalidate.01')=='test-bing<&', page
+    assert 'test-google&lt;&amp;' in page.read_text(), page
+print('ok    configured ownership tokens render safely on every page')
+PY
+    then :; else status=1; fi
+  else
+    echo "FAIL  ownership verification build failed" >&2
+    status=1
+  fi
+else
+  echo "skip  ownership builds require local Jekyll; rendered-site checks still run"
+fi
 
 echo
 if [ "$status" -eq 0 ]; then

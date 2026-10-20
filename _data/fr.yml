@@ -10,9 +10,13 @@ support_url: /fr/support/
 # Registre : vouvoiement, comme la mention d'abonnement dans
 # Docs/legal/subscription-disclosure.md. Le vocabulaire système suit la
 # terminologie française d'Apple — « Supprimés récemment », « captures d'écran ».
+compare_url: /fr/compare/
+guide_similar_url: /fr/guides/delete-similar-photos/
+guide_storage_url: /fr/guides/free-up-photo-storage/
+
 meta:
-  title: "Alike — trouver les photos visuellement similaires sur iPhone"
-  description: "Alike trouve et regroupe les photos visuellement similaires de votre photothèque grâce à une analyse sur l'appareil, choisit la meilleure prise et vous aide à supprimer le reste. Sans compte, sans serveur, rien ne quitte votre iPhone."
+  title: "Alike — supprimer les photos similaires sur iPhone"
+  description: "Trouvez les doublons et les photos similaires sur iPhone. Alike choisit la meilleure prise pour libérer du stockage. Sans compte ni publicité."
 
 nav:
   features: Fonctionnalités
@@ -177,6 +181,9 @@ support:
   subs_restore: "Restaurer un achat sur un nouvel appareil : Réglages d'Alike → « Restaurer les achats »"
 
 footer:
+  compare: "Comparer Alike"
+  guide_similar: "Supprimer les photos similaires"
+  guide_storage: "Libérer le stockage photo"
   tagline: "Trouvez les photos visuellement similaires. Gardez la meilleure. Supprimez le reste."
   privacy: Politique de confidentialité
   terms: Conditions d’utilisation

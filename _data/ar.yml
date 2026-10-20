@@ -12,9 +12,13 @@ privacy_url: /ar/privacy/
 terms_url: /ar/terms/
 support_url: /ar/support/
 
+compare_url: /ar/compare/
+guide_similar_url: /ar/guides/delete-similar-photos/
+guide_storage_url: /ar/guides/free-up-photo-storage/
+
 meta:
-  title: "Alike — اعثر على الصور المتشابهة بصريًا على iPhone"
-  description: "يعثر Alike على الصور المتشابهة بصريًا في مكتبتك ويجمّعها بتحليل يجري على الجهاز، ويختار أفضل لقطة، ويساعدك على إزالة الباقي. بلا حساب، وبلا خادم، ولا يغادر شيء جهاز iPhone."
+  title: "Alike — حذف الصور المتشابهة وتوفير مساحة على iPhone"
+  description: "اعثر على الصور المكررة والمتشابهة على iPhone. يختار Alike أفضل لقطة ويساعدك على توفير مساحة التخزين. بلا حساب أو إعلانات أو رفع للصور."
 
 nav:
   features: المزايا
@@ -179,6 +183,9 @@ support:
   subs_restore: "لاستعادة عملية شراء على جهاز جديد: إعدادات Alike ← استعادة المشتريات"
 
 footer:
+  compare: "مقارنة Alike"
+  guide_similar: "حذف الصور المتشابهة"
+  guide_storage: "توفير مساحة الصور"
   tagline: "اعثر على الصور المتشابهة بصريًا. احتفظ بالأفضل. نظّف الباقي."
   privacy: سياسة الخصوصية
   terms: شروط الاستخدام

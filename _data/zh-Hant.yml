@@ -11,9 +11,13 @@ support_url: /zh-hant/support/
 # 文案一致。系統詞彙沿用 Apple 自己的繁中用語 —「最近刪除」、「螢幕快照」。
 # 螢幕快照一詞是 Apple 的台灣用字，日常較常見的是「螢幕截圖」；這是體例決定，
 # 記錄在 Docs/Localization/native-review.md。
+compare_url: /zh-hant/compare/
+guide_similar_url: /zh-hant/guides/delete-similar-photos/
+guide_storage_url: /zh-hant/guides/free-up-photo-storage/
+
 meta:
-  title: "Alike — 在 iPhone 上找出視覺上相似的照片"
-  description: "Alike 以裝置端分析找出並分組你照片圖庫中視覺上相似的照片，挑出最佳照片，並幫你清理其餘的。沒有帳戶、沒有伺服器，任何東西都不會離開你的 iPhone。"
+  title: "Alike — 刪除相似照片，釋放 iPhone 儲存空間"
+  description: "在 iPhone 上找出重複與相似照片。Alike 挑選最佳照片，協助整理圖庫並釋放儲存空間。不需帳戶，沒有廣告，不上傳照片。"
 
 nav:
   features: 功能
@@ -178,6 +182,9 @@ support:
   subs_restore: "在新裝置上回復購買項目：Alike「設定」→「回復購買項目」"
 
 footer:
+  compare: "比較 Alike"
+  guide_similar: "刪除相似照片"
+  guide_storage: "釋放照片儲存空間"
   tagline: "找出視覺上相似的照片。留下最好的。清理其餘的。"
   privacy: 隱私權政策
   terms: 使用條款

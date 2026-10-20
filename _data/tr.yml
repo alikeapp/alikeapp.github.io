@@ -11,9 +11,13 @@ support_url: /tr/support/
 # paywall metniyle aynı. Bir hukuk sayfasında çevirmenin eli "siz"e gider;
 # uygulama her yerde "sen" dediği için burada da öyle kalır. Sistem terimleri
 # Apple'ın kendi Türkçesini izler — "Son Silinenler", "Ekran Görüntüleri".
+compare_url: /tr/compare/
+guide_similar_url: /tr/guides/delete-similar-photos/
+guide_storage_url: /tr/guides/free-up-photo-storage/
+
 meta:
-  title: "Alike — iPhone'unda görsel olarak benzer fotoğrafları bul"
-  description: "Alike, kitaplığındaki görsel olarak benzer fotoğrafları cihaz üzerinde analizle bulup gruplar, en iyi kareyi seçer ve geri kalanını temizlemene yardım eder. Hesap yok, sunucu yok, hiçbir şey iPhone'undan çıkmaz."
+  title: "Alike — benzer fotoğrafları silin, iPhone’da yer açın"
+  description: "iPhone’da yinelenen ve benzer fotoğrafları bulun. Alike en iyi kareyi seçer, depolama alanı açmanıza yardım eder. Hesap, reklam ve yükleme yok."
 
 nav:
   features: Özellikler
@@ -178,6 +182,9 @@ support:
   subs_restore: "Yeni cihazda satın almayı geri yükleme: Alike Ayarları → «Satın Alımları Geri Yükle»"
 
 footer:
+  compare: "Alike’ı karşılaştırın"
+  guide_similar: "Benzer fotoğrafları silme"
+  guide_storage: "Fotoğraflar için yer açma"
   tagline: "Görsel olarak benzer fotoğrafları bul. En iyisini tut. Gerisini temizle."
   privacy: Gizlilik Politikası
   terms: Kullanım Koşulları

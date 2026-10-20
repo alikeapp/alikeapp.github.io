@@ -27,10 +27,14 @@ copyright_year: 2026
 # actions/jekyll-build-pages and avoids plugin drift.
 plugins: []
 
+# Optional search engine ownership tokens. Empty values emit no meta tag.
+google_site_verification: ""
+bing_site_verification: ""
+
 # The published locales, in the order the language switcher lists them. Every
 # entry needs a `_data/<lang>.yml`, a page directory, and a `defaults` scope
 # below; the build check in scripts/check-site.sh walks this list and fails on
-# a locale that is missing any of its four pages.
+# a locale that is missing any of its seven pages.
 #
 # `es` is deliberately one page serving two App Store listings, es-ES and es-MX.
 # The legal copy does not need the regional vocabulary split, so /es/ carries the

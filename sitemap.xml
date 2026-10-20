@@ -6,9 +6,10 @@ layout: null
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 {%- for page in site.pages -%}
-{%- if page.permalink and page.layout and page.layout != "null" %}
+{%- if page.permalink and page.page_key %}
   <url>
     <loc>{{ page.url | absolute_url }}</loc>
+    <lastmod>{{ page.last_modified_at | default: site.time | date_to_xmlschema }}</lastmod>
     {%- if page.page_key %}
     {%- assign url_key = page.page_key | append: "_url" %}
     {%- for lang in site.languages %}
