@@ -10,9 +10,13 @@ support_url: /nl/support/
 # Register: consequent "je", net als de paywalltekst in
 # Docs/legal/subscription-disclosure.md. Systeemtermen volgen Apples eigen
 # Nederlandse terminologie — 'Recent verwijderd', 'Schermafbeeldingen'.
+compare_url: /nl/compare/
+guide_similar_url: /nl/guides/delete-similar-photos/
+guide_storage_url: /nl/guides/free-up-photo-storage/
+
 meta:
-  title: "Alike — visueel vergelijkbare foto's vinden op je iPhone"
-  description: "Alike vindt en groepeert visueel vergelijkbare foto's in je bibliotheek met analyse op het apparaat zelf, kiest de beste opname en helpt je de rest op te ruimen. Geen account, geen server, niets verlaat je iPhone."
+  title: "Alike — vergelijkbare foto’s wissen en ruimte vrijmaken"
+  description: "Vind dubbele en vergelijkbare foto’s op je iPhone. Alike kiest de beste opname en helpt ruimte vrijmaken. Zonder account, reclame of uploads."
 
 nav:
   features: Functies
@@ -178,6 +182,9 @@ support:
   subs_restore: "Aankoop op een nieuw apparaat herstellen: Alike-instellingen → 'Herstel aankopen'"
 
 footer:
+  compare: "Alike vergelijken"
+  guide_similar: "Vergelijkbare foto’s wissen"
+  guide_storage: "Foto-opslag vrijmaken"
   tagline: "Vind visueel vergelijkbare foto's. Houd de beste. Ruim de rest op."
   privacy: Privacybeleid
   terms: Gebruiksvoorwaarden

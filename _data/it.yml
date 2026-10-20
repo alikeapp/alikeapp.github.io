@@ -10,9 +10,13 @@ support_url: /it/support/
 # Registro: sempre il "tu", come nella comunicazione della paywall in
 # Docs/legal/subscription-disclosure.md. I termini di sistema seguono la
 # terminologia italiana di Apple — «Eliminati di recente», «Screenshot».
+compare_url: /it/compare/
+guide_similar_url: /it/guides/delete-similar-photos/
+guide_storage_url: /it/guides/free-up-photo-storage/
+
 meta:
-  title: "Alike — trova le foto visivamente simili sul tuo iPhone"
-  description: "Alike trova e raggruppa le foto visivamente simili nella tua libreria con analisi direttamente sul dispositivo, sceglie lo scatto migliore e ti aiuta a eliminare il resto. Nessun account, nessun server, niente lascia il tuo iPhone."
+  title: "Alike — elimina foto simili e libera spazio su iPhone"
+  description: "Trova foto duplicate e simili su iPhone. Alike sceglie lo scatto migliore e ti aiuta a liberare spazio. Senza account, pubblicità o caricamenti."
 
 nav:
   features: Funzioni
@@ -178,6 +182,9 @@ support:
   subs_restore: "Ripristinare l'acquisto su un nuovo dispositivo: Impostazioni di Alike → «Ripristina acquisti»"
 
 footer:
+  compare: "Confronta Alike"
+  guide_similar: "Eliminare foto simili"
+  guide_storage: "Liberare spazio per le foto"
   tagline: "Trova le foto visivamente simili. Tieni la migliore. Elimina il resto."
   privacy: Informativa sulla privacy
   terms: Condizioni d'uso

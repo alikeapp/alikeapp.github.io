@@ -10,9 +10,13 @@ support_url: /de/support/
 # Register: durchgehend "du", passend zur Paywall-Offenlegung in
 # Docs/legal/subscription-disclosure.md. Plattformbegriffe folgen Apples eigener
 # deutscher Terminologie — "Zuletzt gelöscht", "Bildschirmfotos".
+compare_url: /de/compare/
+guide_similar_url: /de/guides/delete-similar-photos/
+guide_storage_url: /de/guides/free-up-photo-storage/
+
 meta:
-  title: "Alike — visuell ähnliche Fotos auf dem iPhone finden"
-  description: "Alike findet und gruppiert visuell ähnliche Fotos in deiner Mediathek mit Analyse direkt auf dem Gerät, wählt die beste Aufnahme und hilft dir, den Rest aufzuräumen. Kein Account, kein Server, nichts verlässt dein iPhone."
+  title: "Alike — ähnliche Fotos löschen und iPhone-Speicher sparen"
+  description: "Ähnliche und doppelte Fotos auf dem iPhone finden. Alike wählt die beste Aufnahme und hilft beim Aufräumen. Ohne Konto, Werbung oder Uploads."
 
 nav:
   features: Funktionen
@@ -177,6 +181,9 @@ support:
   subs_restore: "Kauf auf einem neuen Gerät wiederherstellen: Alike-Einstellungen → „Käufe wiederherstellen“"
 
 footer:
+  compare: "Alike vergleichen"
+  guide_similar: "Ähnliche Fotos löschen"
+  guide_storage: "Fotospeicher freigeben"
   tagline: "Visuell ähnliche Fotos finden. Die beste behalten. Den Rest aufräumen."
   privacy: Datenschutzrichtlinie
   terms: Nutzungsbedingungen

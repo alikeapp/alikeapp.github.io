@@ -5,23 +5,26 @@
 #
 #   ./scripts/check-site.sh [_site]
 #
-# Eight assertions, in order of how expensive the failure is:
+# Ten assertions, in order of how expensive the failure is:
 #
-#   1. Locale matrix     — every locale publishes all four pages.
+#   1. Locale matrix     — every locale publishes all seven pages.
 #   2. Internal links    — every site-relative href resolves to a real file.
 #   3. hreflang          — alternates resolve, exactly one x-default, English.
 #   4. Terms guardrails  — every Terms page still names Apple's Standard EULA
 #                          and carries both subscription disclosures.
-#   5. Third-party hosts — nothing external is referenced at all.
-#   6. Link preview     — every page's og:image resolves, is the size it says
+#   5. Privacy guardrails — privacy sections and controls remain present.
+#   6. Third-party hosts — nothing external is referenced at all.
+#   7. Link preview     — every page's og:image resolves, is the size it says
 #                          it is, and asks for the large card.
-#   7. Screenshots      — every device frame renders a visible caption and a
+#   8. Screenshots      — every device frame renders a visible caption and a
 #                          non-empty alt, and frames its own locale's capture in
 #                          both renditions, in every locale.
-#   8. Right-to-left    — an rtl locale gets dir="rtl", and every rotation in
+#   9. Right-to-left    — an rtl locale gets dir="rtl", and every rotation in
 #                          the stylesheet is a token that rtl redefines.
 #
-# (5) used to live inline in .github/workflows/pages.yml. It is here so one
+#  10. SEO metadata    — complete alternates, valid JSON-LD, visible FAQ and sitemap.
+#
+# (6) used to live inline in .github/workflows/pages.yml. It is here so one
 # script is the whole gate and so a pull request can run the same checks the
 # deploy runs.
 #
@@ -45,7 +48,7 @@ fi
 
 # Derived from `languages` in _config.yml, not restated here: a second hand-kept
 # list is exactly the drift this script exists to catch, and it would fail
-# open — add a seventh locale, forget to add it here, and CI keeps checking six
+# open — add another locale, forget to add it here, and CI checks the old set
 # and reports green on a missing page.
 #
 # The directory is the URL path, which is lowercase, so pt-BR becomes pt-br. The
@@ -92,7 +95,7 @@ printf 'Locales from _config.yml (%d):' "${#LOCALE_DIRS[@]}"
 for d in "${LOCALE_DIRS[@]}"; do printf ' /%s' "$d"; done
 printf '\n'
 
-PAGES=("" "privacy" "terms" "support")
+PAGES=("" "privacy" "terms" "support" "compare" "guides/delete-similar-photos" "guides/free-up-photo-storage")
 
 echo "==> 1. Locale matrix"
 for loc in "${LOCALE_DIRS[@]}"; do
@@ -222,7 +225,8 @@ while IFS= read -r html; do
   else
     default_href=$(grep -oE 'hreflang="x-default" href="[^"]*"' "$html" | sed -E 's/.*href="//; s/"$//')
     case "$default_href" in
-      https://alikeapp.github.io/|https://alikeapp.github.io/privacy/|https://alikeapp.github.io/terms/|https://alikeapp.github.io/support/)
+      # Every document names its English version as the x-default.
+      https://alikeapp.github.io/|https://alikeapp.github.io/privacy/|https://alikeapp.github.io/terms/|https://alikeapp.github.io/support/|https://alikeapp.github.io/compare/|https://alikeapp.github.io/guides/delete-similar-photos/|https://alikeapp.github.io/guides/free-up-photo-storage/)
         ;;
       *)
         fail "$rel x-default is '$default_href', which is not an English URL"
@@ -597,6 +601,9 @@ else
 fi
 
 [ "$rtl_ok" -eq 1 ] && pass "rtl locales declare their direction and every drawn rotation flips with it"
+
+echo "==> 10. SEO metadata and structured data"
+python3 "$(dirname "$0")/check-seo.py" "$SITE" "$CONFIG" || status=1
 
 echo
 if [ "$status" -eq 0 ]; then

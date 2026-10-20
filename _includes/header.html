@@ -40,7 +40,7 @@ that document's URL under <page_key>_url.
         <li><a href="{{ t.support_url | relative_url }}">{{ t.nav.support }}</a></li>
         {%- comment -%}
         Icon only: "GitHub" is a proper noun, so the accessible name is the same
-        in every locale and there is no _data key to keep in sync across eleven
+        in every locale and there is no _data key to keep in sync across the locale
         files. It survives the narrow breakpoint because a glyph costs almost no
         width, unlike the in-page anchors that are hidden there.
         {%- endcomment -%}
@@ -50,7 +50,7 @@ that document's URL under <page_key>_url.
           </svg>
         </a></li>
         {%- comment -%}
-        Six locales do not fit the one-link toggle this replaced, and the site
+        The configured locales do not fit the one-link toggle this replaced, and the site
         ships no JavaScript, so the switcher is a <details> disclosure — the same
         CSS-only pattern the FAQ uses. Each language is named in itself, which is
         the only label a reader who cannot read the current page can follow. No

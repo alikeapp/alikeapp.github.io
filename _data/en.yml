@@ -9,9 +9,13 @@ privacy_url: /privacy/
 terms_url: /terms/
 support_url: /support/
 
+compare_url: /compare/
+guide_similar_url: /guides/delete-similar-photos/
+guide_storage_url: /guides/free-up-photo-storage/
+
 meta:
-  title: "Alike — find visually similar photos on your iPhone"
-  description: "Alike finds and groups visually similar photos in your photo library using on-device analysis, picks the best shot, and helps you clear the rest. No account, no server, nothing leaves your iPhone."
+  title: "Alike — delete similar photos and free up iPhone storage"
+  description: "Find duplicate and similar photos on your iPhone. Alike picks a Best Shot and helps free up storage. No account, ads or photo uploads."
 
 nav:
   features: Features
@@ -176,6 +180,9 @@ support:
   subs_restore: "To restore a purchase on a new device: Alike Settings → Restore Purchases"
 
 footer:
+  compare: "Compare Alike"
+  guide_similar: "Delete similar photos"
+  guide_storage: "Free up photo storage"
   tagline: "Find visually similar photos. Keep the best. Clear the rest."
   privacy: Privacy Policy
   terms: Terms of Use

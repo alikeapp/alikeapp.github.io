@@ -7,9 +7,13 @@ privacy_url: /uk/privacy/
 terms_url: /uk/terms/
 support_url: /uk/support/
 
+compare_url: /uk/compare/
+guide_similar_url: /uk/guides/delete-similar-photos/
+guide_storage_url: /uk/guides/free-up-photo-storage/
+
 meta:
-  title: "Alike — пошук візуально схожих фото на iPhone"
-  description: "Alike знаходить і групує візуально схожі фотографії у вашій медіатеці за допомогою аналізу на пристрої, обирає найкращий знімок і допомагає прибрати решту. Без облікового запису, без сервера, нічого не залишає ваш iPhone."
+  title: "Alike — видаліть схожі фото та звільніть місце на iPhone"
+  description: "Знайдіть дублікати та схожі фото на iPhone. Alike обирає найкращий знімок і допомагає звільнити сховище. Без облікового запису та реклами."
 
 nav:
   features: Можливості
@@ -172,6 +176,9 @@ support:
   subs_restore: "Відновлення покупки на новому пристрої: Налаштування Alike → «Відновити покупки»"
 
 footer:
+  compare: "Порівняння Alike"
+  guide_similar: "Видалення схожих фото"
+  guide_storage: "Звільнення місця для фото"
   tagline: "Знаходьте візуально схожі фото. Залишайте найкраще. Прибирайте решту."
   privacy: Політика конфіденційності
   terms: Умови використання
