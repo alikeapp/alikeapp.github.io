@@ -28,7 +28,7 @@ Work through one event or one group at a time. Open the pictures at a useful siz
 
 Photos retains one item with the highest image quality and relevant data. The other copies enter Recently Deleted. Automatic detection takes time; an absent Duplicates collection does not prove that every picture is unique. See [Apple's duplicate and deletion instructions](https://support.apple.com/en-nz/guide/iphone/iph1978d9c23/ios).
 
-Use this built-in option before reviewing the remaining similar shots. You do not need an additional app to merge groups that Photos already identifies. Avoid claiming that Photos only finds byte-for-byte copies: the useful distinction is the groups it offers versus the repeated shots that still need your decision.
+Use this built-in option before reviewing the remaining similar shots. You do not need an additional app to merge groups that Photos already identifies. After merging those groups, review the remaining repeated shots and decide which photos you want to keep.
 
 ## Can you recover a photo after deleting it?
 
