@@ -129,7 +129,7 @@ pricing:
   # pilnuje tam strony aplikacji; ta strona nie może stać się trzecią, rozbieżną
   # wersją.
   disclosure_renewal: "Subskrypcje odnawiają się automatycznie, o ile nie zostaną anulowane co najmniej 24 godziny przed końcem bieżącego okresu. Płatność jest pobierana z Twojego konta Apple."
-  disclosure_trial: "Plan roczny obejmuje 7-dniowy bezpłatny okres próbny dla uprawnionych nowych subskrybentów. Naliczanie opłat zaczyna się po zakończeniu okresu próbnego, chyba że anulujesz subskrypcję co najmniej 24 godziny wcześniej. Subskrypcją możesz zarządzać lub anulować ją w dowolnym momencie w Ustawieniach iOS."
+  disclosure_trial: "Plan roczny obejmuje 7-dniowy bezpłatny okres próbny dla uprawnionych nowych subskrybentów. Naliczanie opłat zaczyna się po zakończeniu okresu próbnego, chyba że anulujesz subskrypcję co najmniej 24 godziny wcześniej. W Ustawieniach iOS możesz w dowolnym momencie zarządzać subskrypcją lub ją anulować."
 
 faq:
   title: Częste pytania
