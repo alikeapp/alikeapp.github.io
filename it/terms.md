@@ -7,7 +7,7 @@ page_key: terms
 description: "Condizioni d'uso di Alike, incluso l'abbonamento Alike Pro, la fatturazione, il rinnovo, la prova gratuita e l'annullamento."
 ---
 
-Ultimo aggiornamento: 6 settembre 2026
+Ultimo aggiornamento: 30 ottobre 2026
 
 Queste condizioni regolano il tuo uso dell'app per iOS Alike. Alike è gestita da Oleksandr Solokha, uno sviluppatore indipendente con sede in Ucraina («noi», «ci»).
 
@@ -35,13 +35,13 @@ Alike ti aiuta a decidere quali foto eliminare. Non decide al posto tuo e può s
 
 Sei tu, e solo tu, responsabile di controllare ogni gruppo e di decidere che cosa eliminare. Ogni eliminazione richiede la tua conferma esplicita, e iOS mostra la propria conferma prima che qualcosa venga rimosso. Le foto eliminate finiscono nel tuo album «Eliminati di recente», dove iOS le conserva per circa 30 giorni.
 
-Un miglioramento viene applicato solo dopo la tua conferma, e iOS conserva l'originale così puoi rimetterlo. L'unica eccezione è una foto che porta già la modifica di un'altra app: sostituire quella modifica non è reversibile, ed è per questo che Alike chiede prima.
+Un miglioramento viene applicato solo dopo la tua conferma, e iOS conserva l'originale così puoi ripristinarlo. L'unica eccezione è una foto che porta già la modifica di un'altra app: sostituire quella modifica non è reversibile, ed è per questo che Alike chiede prima.
 
 **Fai un backup della tua libreria prima di una pulizia importante.** Non siamo responsabili delle foto che scegli di eliminare, comprese quelle che in seguito avresti preferito tenere.
 
 ## Uso consentito
 
-Ti impegni a non usare Alike per trattare foto a cui non hai diritto di accedere, per violare la riservatezza o i diritti di altri, o per contravvenire a leggi a te applicabili.
+Ti impegni a non usare Alike per trattare foto a cui non hai diritto di accedere, per violare la riservatezza o i diritti di proprietà intellettuale di altri, o per contravvenire a leggi a te applicabili.
 
 ## Abbonamento Alike Pro
 
@@ -54,7 +54,7 @@ Alike si scarica gratis e comprende la scansione e la pulizia di base. **Alike P
 | Alike Pro annuale | 1 anno | Prova gratuita di 7 giorni per i nuovi abbonati idonei |
 | Alike Pro mensile | 1 mese | Nessuna |
 
-I prezzi sono mostrati nell'app nella tua valuta locale prima dell'acquisto e possono variare a seconda della storefront. Fa fede il prezzo mostrato al momento dell'acquisto.
+I prezzi sono mostrati nell'app nella tua valuta locale prima dell'acquisto e possono variare a seconda del paese o della regione dell'App Store. Fa fede il prezzo mostrato al momento dell'acquisto.
 
 ### Fatturazione e rinnovo
 
@@ -92,7 +92,7 @@ Nella misura massima consentita dalla legge, non siamo responsabili per danni in
 
 Ove la responsabilità non possa essere esclusa, la nostra responsabilità complessiva è limitata all'importo che hai pagato per Alike nei dodici mesi precedenti l'evento che ha dato origine alla pretesa.
 
-**Nulla in queste condizioni limita una responsabilità che la legge non consente di limitare**, compresa quella per morte o lesioni personali causate da negligenza, per dolo, o rispetto a diritti inderogabili dei consumatori a te spettanti.
+**Nulla in queste condizioni limita una responsabilità che la legge non consente di limitare**, compresa quella per morte o lesioni personali causate da negligenza, per frode, o rispetto a diritti inderogabili dei consumatori a te spettanti.
 
 ## Apple
 

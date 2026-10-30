@@ -7,13 +7,13 @@ page_key: privacy
 description: "Come Alike tratta le tue foto: analisi sul dispositivo, niente viene caricato online, nessuna analisi statistica, e si elimina solo con la tua conferma."
 ---
 
-Ultimo aggiornamento: 22 settembre 2026
+Ultimo aggiornamento: 30 ottobre 2026
 
 Alike è un'app per iOS che trova e raggruppa le foto visivamente simili nella tua libreria, così puoi controllarle e liberare spazio. Alike è gestita da Oleksandr Solokha, uno sviluppatore indipendente con sede in Ucraina.
 
-Questa informativa spiega che cosa Alike raccoglie e che cosa no, dove stanno i tuoi dati e quale controllo hai su di essi.
+Questa informativa spiega che cosa Alike raccoglie e che cosa no, dove sono conservati i tuoi dati e quale controllo hai su di essi.
 
-**In breve: Alike non ha account, non ha accesso e non ha server. Le tue foto e tutto ciò che Alike apprende su di esse restano sul tuo dispositivo.**
+**In breve: Alike non ha account, non richiede il login e non ha server. Le tue foto e tutto ciò che Alike apprende su di esse restano sul tuo dispositivo.**
 
 ## Contatti
 
@@ -47,7 +47,7 @@ Alike confronta le foto con il framework Vision di Apple, che gira in locale sul
 
 ### I risultati restano in locale
 
-Alike memorizza i propri risultati sul tuo dispositivo con Core Data e file locali, così non devi rifare la scansione ogni volta che apri l'app. In questa memoria locale rientrano identificatori delle foto, impronte caratteristiche, appartenenza ai gruppi, dimensioni stimate, il tuo avanzamento e le tue selezioni, la cronologia pulizia, i pesi che Alike ha imparato dagli scatti migliori che hai scelto tu e le tue preferenze.
+Alike memorizza i propri risultati sul tuo dispositivo con Core Data e file locali, così non devi rifare la scansione ogni volta che apri l'app. In questa memoria locale rientrano identificatori delle foto, impronte caratteristiche, appartenenza ai gruppi, dimensioni stimate, il tuo avanzamento e le tue selezioni, la cronologia della pulizia, i pesi che Alike ha imparato dagli scatti migliori che hai scelto tu e le tue preferenze.
 
 Tutto questo vive nello spazio isolato di Alike sul tuo dispositivo ed è incluso nei backup del dispositivo, se ne fai.
 
