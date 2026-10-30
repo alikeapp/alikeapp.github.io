@@ -49,11 +49,11 @@ steps:
       image: step-scan
       image_alt: "O mascote procurando entre fotos com uma lupa."
     - title: Revisar
-      body: "Cada grupo abre com a melhor foto já escolhida, então você decide em segundos. Manter só a melhor, selecionar tudo exceto a melhor, ou escolher na mão."
+      body: "Cada grupo abre com a melhor foto já escolhida, então você decide em segundos. Manter só a melhor, selecionar tudo exceto a melhor, ou escolher manualmente."
       image: step-review
       image_alt: "O mascote comemorando ao lado de uma melhor foto em destaque."
     - title: Limpar
-      body: "Você confirma e as fotos escolhidas vão para \"Apagados\", onde o iOS as guarda por cerca de 30 dias. Nada é removido sem você dizer."
+      body: "Você confirma e as fotos escolhidas vão para \"Apagados\", onde o iOS as guarda por cerca de 30 dias. Nada é removido sem a sua confirmação."
       image: step-clean
       image_alt: "O mascote comemorando ao lado de uma fototeca organizada."
 
@@ -65,7 +65,7 @@ features:
     - title: Três níveis de sensibilidade
       body: "Baixo, médio ou alto. Restrinja o limite para encontrar apenas fotos quase idênticas ou amplie-o para encontrar mais fotos parecidas."
     - title: Detecção da melhor foto
-      body: "Escolhida a partir das próprias fotos — nitidez, exposição, rostos e ruído —, então sempre há uma opção sensata a manter. Ela também aprende com as fotos que você mesmo escolhe."
+      body: "Escolhida a partir das próprias fotos — nitidez, exposição, rostos e ruído —, então sempre há uma opção sensata a manter. O Alike também aprende com as fotos que você escolhe."
     - title: Revisão guiada
       body: "Avance grupo a grupo com \"Manter só a melhor\", \"Selecionar tudo exceto a melhor\" e \"Limpar seleção\"."
     - title: Selos de revisão
@@ -73,7 +73,7 @@ features:
     - title: Progresso e espaço liberado
       body: "Revisadas, restantes, selecionadas e economia estimada, além de um histórico de limpeza agrupado por mês."
     - title: Um layout que combina com você
-      body: "Uma grade adaptável que alterna entre uma coluna espaçosa e uma visão mais densa, lembrada entre as aberturas."
+      body: "Uma grade adaptável que alterna entre uma coluna espaçosa e uma visualização mais compacta e mantém sua escolha quando você abre o app novamente."
     - title: 18 variantes de idioma e modo escuro
       body: "Inglês e suas variantes britânica, canadense e australiana, ucraniano, alemão, francês e francês canadense, espanhol e espanhol latino-americano, português do Brasil e de Portugal, italiano, neerlandês, polonês, turco, chinês tradicional e árabe em todo o app, com suporte completo ao modo escuro."
     - title: Melhorar, e desfazer
@@ -151,7 +151,7 @@ faq:
     - q: O Alike pode alterar minhas fotos?
       a: "Só se você pedir. Você pode aprimorar a melhor foto de um grupo: o Alike mostra o resultado primeiro e só salva quando você aplica. O original é mantido pelo iOS, então um passo o traz de volta, e o Fotos da Apple também desfaz a mudança."
     - q: O Alike aprende com o que eu escolho?
-      a: "Sim, com as suas escolhas e nada mais. Quando você escolhe outra melhor foto, o Alike guarda o que você preferiu e classifica os grupos seguintes mais perto disso. Tudo fica no seu aparelho, e os ajustes podem redefinir."
+      a: "Sim, com as suas escolhas e nada mais. Quando você escolhe outra melhor foto, o Alike guarda o que você preferiu e classifica os grupos seguintes mais perto disso. Tudo fica no seu aparelho. Você pode redefinir esse aprendizado nos ajustes."
     - q: Como cancelo uma assinatura?
       a: "Nos Ajustes do iOS, toque no seu nome e depois em \"Assinaturas\". Cancelar interrompe as renovações futuras e você mantém o acesso até o fim do período pago. Assinaturas e reembolsos são tratados pela Apple, não por nós."
     - q: Posso apagar tudo o que o Alike guardou?
