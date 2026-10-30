@@ -14,7 +14,7 @@ support_url: /es/support/
 
 # Registro: tuteo, igual que el aviso de suscripción de
 # Docs/legal/subscription-disclosure.md. El vocabulario del sistema sigue la
-# terminología de Apple en español — «Eliminados recientemente», «capturas de
+# terminología de Apple en español — «Eliminados», «capturas de
 # pantalla», y «Ajustes» (variante de España, no «Configuración»).
 compare_url: /es/compare/
 guide_similar_url: /es/guides/delete-similar-photos/
@@ -36,7 +36,7 @@ nav:
 
 hero:
   eyebrow: iPhone
-  headline: "Tu fototeca, sin los casi duplicados."
+  headline: "Tu fototeca, sin fotos casi idénticas."
   subhead: "Alike agrupa las fotos que se parecen, elige la mejor toma de cada grupo y te ayuda a eliminar el resto, sin que una sola foto salga de tu dispositivo."
   badge: Descargar en el App Store
   badge_note: "Descarga gratuita, con una suscripción Pro opcional."
@@ -56,7 +56,7 @@ steps:
       image: step-review
       image_alt: "La mascota celebra junto a la mejor foto destacada."
     - title: Limpiar
-      body: "Confirmas y las fotos que elegiste pasan a «Eliminados recientemente», donde iOS las guarda unos 30 días. Nunca se elimina nada sin que lo digas tú."
+      body: "Confirmas y las fotos que elegiste pasan a «Eliminados», donde iOS las guarda unos 30 días. Nunca se elimina nada sin que lo digas tú."
       image: step-clean
       image_alt: "La mascota festeja junto a una fototeca ordenada."
 
@@ -77,8 +77,8 @@ features:
       body: "Revisadas, restantes, seleccionadas y ahorro estimado, además de un historial de limpieza agrupado por meses."
     - title: Un diseño que se adapta a ti
       body: "Una cuadrícula adaptable que alterna entre una columna amplia y una vista más densa, y que se recuerda entre sesiones."
-    - title: Trece idiomas, modo oscuro
-      body: "Inglés, ucraniano, alemán, francés, español, español de Latinoamérica, portugués de Brasil, italiano, neerlandés, polaco, turco, chino tradicional y árabe en toda la app, con modo oscuro completo."
+    - title: 18 variantes de idioma y modo oscuro
+      body: "Inglés y sus variantes británica, canadiense y australiana, ucraniano, alemán, francés y francés de Canadá, español y español de Latinoamérica, portugués de Brasil y de Portugal, italiano, neerlandés, polaco, turco, chino tradicional y árabe en toda la app, con compatibilidad completa con el modo oscuro."
     - title: Mejorar, y deshacer
       body: "Mejora la foto que conservas con un toque. El original se queda en tu fototeca, y un paso lo devuelve."
     - title: Widgets en la pantalla de inicio y en la de bloqueo
@@ -90,7 +90,7 @@ screenshots:
   pending: "Las capturas se están preparando antes del lanzamiento."
 
 privacy:
-  title: La privacidad es todo el sentido
+  title: La privacidad es lo primero
   subtitle: "Limpiar fotos significa confiar a una app tu colección más personal. Alike está hecha para que nunca tenga que salir de tus manos."
   image_alt: "La mascota descansa junto a una fototeca ordenada y terminada."
   claims:
@@ -101,12 +101,12 @@ privacy:
     - title: Sin analítica, sin rastreo
       body: "Sin eventos de uso, sin identificadores publicitarios, sin SDK de informes de fallos, sin cookies. La app no hace ninguna petición de red por su cuenta."
     - title: Eliminar siempre lo decides tú
-      body: "Cada limpieza necesita tu confirmación, iOS pregunta una segunda vez, y las fotos acaban en «Eliminados recientemente»."
+      body: "Cada limpieza necesita tu confirmación, iOS pregunta una segunda vez, y las fotos acaban en «Eliminados»."
   cta: Leer la política de privacidad completa
 
 pricing:
   title: Precios
-  subtitle: "Alike es gratis de descargar. Alike Pro quita los límites."
+  subtitle: "Alike se descarga gratis. Alike Pro elimina los límites."
   free:
     name: Alike Free
     price: Gratis
@@ -122,7 +122,7 @@ pricing:
     name: Alike Pro
     badge: Recomendado
     price_note: "Planes anual y mensual, en tu moneda local."
-    trial: 7 días de prueba gratis en el plan anual
+    trial: 7 días de prueba gratis en el plan anual para nuevos suscriptores que cumplan los requisitos
     features:
       - "Análisis ilimitados"
       - "Limpiar selecciones enteras de una vez"
@@ -143,7 +143,7 @@ faq:
     - q: ¿Alike sube mis fotos a algún sitio?
       a: "No. Toda la comparación ocurre en tu dispositivo con el framework Vision de Apple, y la app no hace ninguna petición de red por su cuenta. La única actividad saliente la gestiona Apple cuando compras o restauras una suscripción."
     - q: ¿Alike elimina fotos sin preguntar?
-      a: "Nunca. Tú eliges qué quitar, Alike te pide confirmación, y iOS muestra su propia confirmación antes de eliminar nada. Las fotos eliminadas van a «Eliminados recientemente», donde iOS las guarda unos 30 días."
+      a: "Nunca. Tú eliges qué quitar, Alike te pide confirmación, y iOS muestra su propia confirmación antes de eliminar nada. Las fotos eliminadas van a «Eliminados», donde iOS las guarda unos 30 días."
     - q: ¿Necesito una cuenta?
       a: "No. Alike no tiene cuenta, ni inicio de sesión, ni servidor. Abres la app y empiezas a analizar."
     - q: ¿A qué accede Alike exactamente?
@@ -179,7 +179,7 @@ support:
     - "Si el permiso de la fototeca está en acceso completo o acceso limitado"
     - "Si se trata de una foto mejorada, si ya has probado «Volver al original» en Alike o Editar → Volver al original en Fotos de Apple, y si has reiniciado el aprendizaje de Mejor toma en los ajustes de Alike"
   privacy_title: Dudas sobre privacidad
-  privacy_body: "Alike no tiene servidor y no recopila nada, así que no hay datos de cuenta que exportar o eliminar. La política de privacidad lo explica por completo, y «Eliminar datos de Alike» en Ajustes borra todo lo guardado en tu dispositivo."
+  privacy_body: "Alike no tiene servidor y no recopila nada, así que no hay datos de cuenta que exportar o eliminar. La política de privacidad lo explica por completo, y «Eliminar datos de Alike» en Ajustes borra solo los datos locales de Alike. Tus fotos, el acceso a fotos y tu suscripción quedan intactos."
   subs_title: Suscripciones y reembolsos
   subs_body: "Alike Pro lo vende Apple. Las suscripciones, las cancelaciones y los reembolsos se gestionan por completo a través de tu cuenta de Apple, y no podemos cancelar ni reembolsar en tu nombre."
   subs_manage: "Gestionar o cancelar: Ajustes de iOS → tu nombre → «Suscripciones»"

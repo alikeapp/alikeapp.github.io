@@ -7,7 +7,7 @@ page_key: terms
 description: "Términos de uso de Alike, incluida la suscripción Alike Pro, la facturación, la renovación, la prueba gratuita y la cancelación."
 ---
 
-Última actualización: 6 de septiembre de 2026
+Última actualización: 30 de octubre de 2026
 
 Estos términos de uso rigen tu uso de la app de iOS Alike. Alike la opera Oleksandr Solokha, desarrollador independiente afincado en Ucrania («nosotros»).
 
@@ -33,7 +33,7 @@ No puedes aplicar ingeniería inversa, descompilar ni desensamblar la app salvo 
 
 Alike te ayuda a decidir qué fotos eliminar. No decide por ti, y puede equivocarse: dos fotos que a un ordenador le parecen similares pueden no ser intercambiables para ti.
 
-Eres el único responsable de revisar cada grupo y de lo que elijas eliminar. Cada eliminación requiere tu confirmación explícita, y iOS muestra su propia confirmación antes de retirar nada. Las fotos eliminadas van a tu álbum «Eliminados recientemente», donde iOS las conserva unos 30 días.
+Eres el único responsable de revisar cada grupo y de lo que elijas eliminar. Cada eliminación requiere tu confirmación explícita, y iOS muestra su propia confirmación antes de retirar nada. Las fotos eliminadas van a tu álbum «Eliminados», donde iOS las conserva unos 30 días.
 
 Una mejora solo se aplica después de que la confirmes, y iOS conserva el original para que puedas recuperarlo. La única excepción es una foto que ya lleva la edición de otra app: sustituir esa edición no se puede deshacer, y por eso Alike pregunta antes.
 
@@ -45,11 +45,11 @@ Te comprometes a no usar Alike para tratar fotos a las que no tengas derecho de 
 
 ## Suscripción Alike Pro
 
-Alike es gratuita de descargar e incluye el análisis y la limpieza básicos. **Alike Pro** es una suscripción de renovación automática que desbloquea el conjunto completo de funciones.
+Alike se puede descargar gratis e incluye el análisis y la limpieza básicos. **Alike Pro** es una suscripción de renovación automática que desbloquea el conjunto completo de funciones.
 
 ### Planes
 
-| Plan | Duración | Oferta de introducción |
+| Plan | Duración | Oferta inicial |
 | --- | --- | --- |
 | Alike Pro anual | 1 año | Prueba gratuita de 7 días para los nuevos suscriptores que cumplan los requisitos |
 | Alike Pro mensual | 1 mes | Ninguna |
@@ -76,7 +76,7 @@ Si cambiamos el precio de la suscripción, Apple te lo notificará y te pedirá 
 
 ## Disponibilidad y cambios
 
-Podemos actualizar, suspender o descontinuar Alike o cualquiera de sus funciones. Si Alike se descontinúa por completo, dejaremos de vender nuevas suscripciones y permitiremos que los periodos pagados en curso se agoten o se reembolsen a través de Apple.
+Podemos actualizar, suspender o dejar de ofrecer Alike o cualquiera de sus funciones. Si dejamos de ofrecer Alike por completo, dejaremos de vender nuevas suscripciones y permitiremos que los periodos pagados en curso se agoten o se reembolsen a través de Apple.
 
 Alike requiere una versión de iOS compatible. No somos responsables de que la app no funcione en dispositivos no compatibles, modificados o con jailbreak.
 
