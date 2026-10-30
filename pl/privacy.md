@@ -7,9 +7,9 @@ page_key: privacy
 description: "Jak Alike obchodzi się z Twoimi zdjęciami: analiza na urządzeniu, nic nie jest wysyłane, bez analityki, a usuwanie następuje tylko za Twoim potwierdzeniem."
 ---
 
-Ostatnia aktualizacja: 22 września 2026
+Ostatnia aktualizacja: 30 października 2026
 
-Alike to aplikacja na iOS, która znajduje i grupuje wizualnie podobne zdjęcia w Twojej bibliotece, żebyś mógł je przejrzeć i zwolnić miejsce. Alike prowadzi Oleksandr Solokha, niezależny deweloper z siedzibą w Ukrainie.
+Alike to aplikacja na iOS, która znajduje i grupuje wizualnie podobne zdjęcia w Twojej bibliotece, aby ułatwić Ci ich przeglądanie i zwalnianie miejsca. Alike prowadzi Oleksandr Solokha, niezależny deweloper z siedzibą w Ukrainie.
 
 Ta polityka wyjaśnia, co Alike zbiera, a czego nie, gdzie są Twoje dane i jaką masz nad nimi kontrolę.
 
@@ -98,7 +98,7 @@ Od Apple Alike otrzymuje tylko to, co jest potrzebne do odblokowania płatnych f
 
 Sposób, w jaki Apple obchodzi się z informacjami o Twoich zakupach, reguluje [polityka prywatności Apple](https://www.apple.com/legal/privacy/). Subskrypcje, anulowania i zwroty obsługuje Apple i App Store.
 
-## Twoje możliwości sterowania
+## Co możesz kontrolować
 
 | Czego chcesz | Jak to zrobić |
 | --- | --- |
@@ -128,7 +128,7 @@ Jeśli jesteś w UE, Wielkiej Brytanii, Ukrainie, Kalifornii albo w innym region
 
 ## Dzieci
 
-Alike nie jest kierowany do dzieci poniżej 13 roku życia i nie zbiera świadomie informacji od nich. Aplikacja nie ma systemu kont, treści tworzonych przez użytkowników ani funkcji komunikacyjnych.
+Alike nie jest przeznaczony dla dzieci poniżej 13. roku życia i nie zbiera świadomie informacji od nich. Aplikacja nie ma systemu kont, treści tworzonych przez użytkowników ani funkcji komunikacyjnych.
 
 ## Zmiany w tej polityce
 

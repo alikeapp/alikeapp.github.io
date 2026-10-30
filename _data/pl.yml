@@ -60,7 +60,7 @@ features:
     - title: Analiza na urządzeniu
       body: "Każde porównanie działa lokalnie, na frameworku Vision od Apple. Bez wysyłania, bez kolejki, bez przetwarzania w chmurze."
     - title: Trzy poziomy czułości
-      body: "Niska, średnia albo wysoka. Ciaśniej, gdy chcesz tylko niemal identyczne ujęcia, szerzej, żeby złapać więcej."
+      body: "Niska, średnia albo wysoka. Zawęź próg, aby znaleźć tylko niemal identyczne ujęcia, lub poszerz go, aby znaleźć więcej podobnych zdjęć."
     - title: Wykrywanie najlepszego ujęcia
       body: "Wybrane na podstawie samych zdjęć — ostrości, ekspozycji, twarzy i szumu — żeby zawsze był sensowny domyślny kandydat do zachowania. Uczy się też z ujęć, które wybierasz sam."
     - title: Prowadzony przegląd
@@ -71,8 +71,8 @@ features:
       body: "Przejrzane, pozostałe, wybrane i szacowana oszczędność, a do tego historia porządków pogrupowana według miesięcy."
     - title: Układ dopasowany do Ciebie
       body: "Elastyczna siatka, która przełącza się między przestronną jedną kolumną a gęstszym widokiem i zapamiętuje wybór między uruchomieniami."
-    - title: Trzynaście języków, tryb ciemny
-      body: "Angielski, ukraiński, niemiecki, francuski, hiszpański, hiszpański latynoamerykański, portugalski brazylijski, włoski, niderlandzki, polski, turecki, chiński tradycyjny i arabski, wszędzie, z pełnym trybem ciemnym."
+    - title: 18 wariantów językowych i tryb ciemny
+      body: "Angielski oraz jego warianty brytyjski, kanadyjski i australijski, ukraiński, niemiecki, francuski i francuski kanadyjski, hiszpański i hiszpański latynoamerykański, portugalski brazylijski i europejski, włoski, niderlandzki, polski, turecki, chiński tradycyjny i arabski w całej aplikacji, z pełną obsługą trybu ciemnego."
     - title: Ulepsz i cofnij
       body: "Ulepsz zdjęcie, które zachowujesz, jednym dotknięciem. Oryginał zostaje w bibliotece, a jeden krok go przywraca."
     - title: Widgety na ekranie początkowym i na ekranie blokady
@@ -84,7 +84,7 @@ screenshots:
   pending: "Zrzuty ekranu przygotowujemy przed premierą."
 
 privacy:
-  title: Prywatność to cały sens
+  title: Prywatność jest najważniejsza
   subtitle: "Porządkowanie zdjęć oznacza powierzenie aplikacji najbardziej osobistej kolekcji, jaką masz. Alike jest zbudowany tak, żeby nigdy nie musiała opuścić Twoich rąk."
   image_alt: "Maskotka odpoczywa obok uporządkowanej, gotowej biblioteki zdjęć."
   claims:
@@ -95,7 +95,7 @@ privacy:
     - title: Bez analityki, bez śledzenia
       body: "Bez zdarzeń użycia, bez identyfikatorów reklamowych, bez SDK do raportowania awarii, bez ciasteczek. Aplikacja sama z siebie nie wykonuje żadnych zapytań sieciowych."
     - title: O usuwaniu decydujesz Ty
-      body: "Każde porządki wymagają Twojego potwierdzenia, iOS pyta drugi raz, a zdjęcia trafiają do albumu „Ostatnio usunięte”."
+      body: "Każde porządkowanie wymaga Twojego potwierdzenia, iOS pyta drugi raz, a zdjęcia trafiają do albumu „Ostatnio usunięte”."
   cta: Przeczytaj pełną politykę prywatności
 
 pricing:
@@ -116,7 +116,7 @@ pricing:
     name: Alike Pro
     badge: Polecane
     price_note: "Plan roczny i miesięczny, w Twojej walucie."
-    trial: 7 dni bezpłatnego okresu próbnego w planie rocznym
+    trial: 7-dniowy bezpłatny okres próbny w planie rocznym dla uprawnionych nowych subskrybentów
     features:
       - "Nieograniczone skanowania"
       - "Porządki w całych zaznaczeniach naraz"
@@ -173,7 +173,7 @@ support:
     - "Czy uprawnienie do biblioteki zdjęć jest ustawione na pełny czy ograniczony dostęp"
     - "W sprawie poprawionego zdjęcia — czy próbowałeś już „Przywróć oryginał” w Alike albo Edytuj → Przywróć w Zdjęciach Apple i czy wyzerowałeś naukę Najlepszego ujęcia w ustawieniach Alike"
   privacy_title: Pytania o prywatność
-  privacy_body: "Alike nie ma serwera i niczego nie zbiera, więc nie istnieją żadne dane konta do wyeksportowania ani usunięcia. Polityka prywatności wyjaśnia to w całości, a „Usuń dane Alike” w Ustawieniach kasuje wszystko, co zapisano na Twoim urządzeniu."
+  privacy_body: "Alike nie ma serwera i niczego nie zbiera, więc nie istnieją żadne dane konta do wyeksportowania ani usunięcia. Polityka prywatności wyjaśnia to w całości, a „Usuń dane Alike” w Ustawieniach usuwa wyłącznie lokalne dane Alike. Twoje zdjęcia, dostęp do zdjęć i subskrypcja pozostają bez zmian."
   subs_title: Subskrypcje i zwroty
   subs_body: "Alike Pro sprzedaje Apple. Subskrypcje, anulowania i zwroty przechodzą w całości przez Twoje konto Apple, a my nie możemy anulować ani zwrócić pieniędzy za Ciebie."
   subs_manage: "Zarządzanie i anulowanie: Ustawienia iOS → Twoje imię → „Subskrypcje”"
