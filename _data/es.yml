@@ -66,9 +66,9 @@ features:
     - title: Análisis en el dispositivo
       body: "Cada comparación usa el framework Vision de Apple, en local. No hay subida, ni cola, ni procesamiento en la nube."
     - title: Tres niveles de sensibilidad
-      body: "Bajo, medio o alto. Ajusta el umbral si solo quieres tomas casi idénticas, o ábrelo para detectar más."
+      body: "Bajo, medio o alto. Restringe la comparación para encontrar solo tomas casi idénticas o amplíala para encontrar más fotos similares."
     - title: Detección de la mejor toma
-      body: "Elegida a partir de las fotos mismas — nitidez, exposición, caras y ruido —, así que siempre hay una opción sensata que conservar. Además aprende de las tomas que eliges tú."
+      body: "Elegida a partir de las fotos mismas — nitidez, exposición, caras y ruido —, así que siempre hay una opción sensata que conservar. Alike también aprende de las tomas que eliges tú."
     - title: Revisión guiada
       body: "Avanza grupo a grupo con «Conservar solo la mejor», «Seleccionar todo excepto la mejor» y «Borrar selección»."
     - title: Marcas de revisión
@@ -147,7 +147,7 @@ faq:
     - q: ¿Necesito una cuenta?
       a: "No. Alike no tiene cuenta, ni inicio de sesión, ni servidor. Abres la app y empiezas a analizar."
     - q: ¿A qué accede Alike exactamente?
-      a: "A tu fototeca, que se solicita una vez al principio. Puedes conceder acceso completo o acceso limitado y elegir qué fotos puede ver Alike, y cambiarlo cuando quieras en Ajustes de iOS. El permiso de notificaciones solo se pide si activas el recordatorio semanal de limpieza."
+      a: "A tu fototeca. Alike solicita acceso una vez al principio. Puedes conceder acceso completo o acceso limitado y elegir qué fotos puede ver Alike, y cambiarlo cuando quieras en Ajustes de iOS. El permiso de notificaciones solo se pide si activas el recordatorio semanal de limpieza."
     - q: ¿Cómo decide qué fotos son similares?
       a: "Cada foto recibe una huella numérica de características del framework Vision. Se comparan las fotos cercanas en fecha de captura y ubicación, y una foto solo entra en un grupo si se parece a todas las que ya están en él. El nivel de sensibilidad marca cuánto parecido es suficiente."
     - q: ¿Qué es la mejor toma?
@@ -155,7 +155,7 @@ faq:
     - q: ¿Puede Alike modificar mis fotos?
       a: "Solo si se lo pides. Puedes mejorar la mejor toma de un grupo: Alike te muestra primero el resultado y solo lo guarda cuando lo aplicas. El original lo conserva iOS, así que un paso lo devuelve, y Fotos de Apple también puede deshacer el cambio."
     - q: ¿Alike aprende de lo que elijo?
-      a: "Sí, de tus propias elecciones y de nada más. Cuando eliges otra mejor toma, Alike recuerda lo que preferiste y ordena los grupos siguientes más cerca de eso. Todo se queda en tu dispositivo, y los ajustes pueden reiniciarlo."
+      a: "Sí, de tus propias elecciones y de nada más. Cuando eliges otra mejor toma, Alike recuerda lo que preferiste y ordena los grupos siguientes más cerca de eso. Todo se queda en tu dispositivo. Puedes restablecer este aprendizaje en los ajustes."
     - q: ¿Cómo cancelo una suscripción?
       a: "En Ajustes de iOS, toca tu nombre y luego «Suscripciones». Cancelar detiene las renovaciones futuras y conservas el acceso hasta que termine el periodo pagado. Las suscripciones y los reembolsos los gestiona Apple, no nosotros."
     - q: ¿Puedo borrar todo lo que Alike ha guardado?
