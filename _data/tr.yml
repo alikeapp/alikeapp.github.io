@@ -16,8 +16,8 @@ guide_similar_url: /tr/guides/delete-similar-photos/
 guide_storage_url: /tr/guides/free-up-photo-storage/
 
 meta:
-  title: "Alike — benzer fotoğrafları silin, iPhone’da yer açın"
-  description: "iPhone’da yinelenen ve benzer fotoğrafları bulun. Alike en iyi kareyi seçer, depolama alanı açmanıza yardım eder. Hesap, reklam ve yükleme yok."
+  title: "Alike — benzer fotoğrafları sil, iPhone’da yer aç"
+  description: "iPhone’da yinelenen ve benzer fotoğrafları bul. Alike en iyi kareyi seçer, depolama alanı açmana yardım eder. Hesap, reklam ve yükleme yok."
 
 nav:
   features: Özellikler
@@ -31,9 +31,9 @@ nav:
 
 hero:
   eyebrow: iPhone
-  headline: "Kitaplığın, neredeyse aynı fotoğraflar olmadan."
+  headline: "Arşivin, neredeyse aynı fotoğraflar olmadan."
   subhead: "Alike birbirine benzeyen fotoğrafları gruplar, her grupta en iyi kareyi seçer ve geri kalanını temizlemene yardım eder — üstelik tek bir fotoğraf bile cihazından çıkmadan."
-  badge: "App Store'dan indirin"
+  badge: "App Store'dan indir"
   badge_note: "Ücretsiz indirilir, isteğe bağlı Pro aboneliğiyle."
   trust: "Hesap yok. Sunucu yok. Hiçbir şey yüklenmez."
   image_alt: "Alike'ın maskotu: iki fotoğrafın üzerinde büyüteç tutan mor bir karakter."
@@ -43,7 +43,7 @@ steps:
   subtitle: "Üç adım, ve her birinde kontrol sende."
   items:
     - title: Tara
-      body: "Alike, kitaplığını Apple'ın Vision çerçevesiyle tamamen cihazında karşılaştırır. Zaman ve yer olarak birbirine yakın çekilen fotoğraflar karşılaştırılır; ekran görüntüleri, sen özellikle istemedikçe sonuçlara girmez."
+      body: "Alike, arşivini Apple'ın Vision çerçevesiyle tamamen cihazında karşılaştırır. Zaman ve yer olarak birbirine yakın çekilen fotoğraflar karşılaştırılır; ekran görüntüleri, sen özellikle istemedikçe sonuçlara girmez."
       image: step-scan
       image_alt: "Maskot büyüteçle fotoğrafların arasında arama yapıyor."
     - title: Gözden geçir
@@ -53,7 +53,7 @@ steps:
     - title: Temizle
       body: "Onayla; seçtiğin fotoğraflar Son Silinenler'e gider, iOS onları yaklaşık 30 gün orada tutar. Sen demeden hiçbir şey kaldırılmaz."
       image: step-clean
-      image_alt: "Maskot, düzenlenmiş bir fotoğraf kitaplığının yanında kutluyor."
+      image_alt: "Maskot, düzenlenmiş bir fotoğraf arşivinin yanında kutluyor."
 
 features:
   title: Neler var
@@ -72,10 +72,10 @@ features:
       body: "Gözden geçirilen, kalan, seçilen ve tahmini kazanç, ayrıca aya göre gruplanmış temizlik geçmişi."
     - title: Sana uyan bir düzen
       body: "Ferah tek sütun ile daha sık bir görünüm arasında geçen, tercihini açılışlar arasında hatırlayan uyarlanabilir bir ızgara."
-    - title: On üç dil, Koyu Mod
-      body: "İngilizce, Ukraynaca, Almanca, Fransızca, İspanyolca, Latin Amerika İspanyolcası, Brezilya Portekizcesi, İtalyanca, Felemenkçe, Lehçe, Türkçe, Geleneksel Çince ve Arapça, baştan sona, tam Koyu Mod desteğiyle."
+    - title: 18 dil seçeneği, Koyu Mod
+      body: "İngilizce ile İngiliz, Kanada ve Avustralya İngilizcesi; Ukraynaca, Almanca, Fransızca ve Kanada Fransızcası; İspanyolca ve Latin Amerika İspanyolcası; Brezilya ve Avrupa Portekizcesi; İtalyanca, Felemenkçe, Lehçe, Türkçe, Geleneksel Çince ve Arapça. Uygulamanın tamamında, tam Koyu Mod desteğiyle."
     - title: İyileştir, geri al
-      body: "Sakladığın fotoğrafı tek dokunuşla iyileştir. Aslı kitaplığında kalır ve tek bir adım onu geri getirir."
+      body: "Sakladığın fotoğrafı tek dokunuşla iyileştir. Aslı arşivinde kalır ve tek bir adım onu geri getirir."
     - title: Ana ekran ve kilitli ekran widget'ları
       body: "İki widget, ikisi de ücretsiz. Biri kazanabileceğin alanı gösterir ve yarım kalan bir incelemeye geri götürür; diğeri benzer grupları, ekran görüntülerini ve bulanık fotoğrafları listeler, her satır kendi listesini açar. 1.5.0'dan beri ilki kilitli ekran için üç boyutta da var: saatin üstünde bir satır, bir kart ve bir halka."
 
@@ -85,9 +85,9 @@ screenshots:
   pending: "Ekran görüntüleri lansmandan önce hazırlanıyor."
 
 privacy:
-  title: Meselenin tamamı gizlilik
+  title: Gizlilik her şeyin merkezinde
   subtitle: "Fotoğrafları düzenlemek, en kişisel koleksiyonunu bir uygulamaya emanet etmek demektir. Alike, onun elinden hiç çıkmak zorunda kalmayacağı şekilde kuruldu."
-  image_alt: "Maskot, düzenlenmiş ve tamamlanmış bir fotoğraf kitaplığının yanında dinleniyor."
+  image_alt: "Maskot, düzenlenmiş ve tamamlanmış bir fotoğraf arşivinin yanında dinleniyor."
   claims:
     - title: Analiz cihazında çalışır
       body: "Apple'ın Vision çerçevesi fotoğraflarını yerel olarak karşılaştırır. Bir şey gönderilebilecek bir Alike sunucusu yok."
@@ -117,7 +117,7 @@ pricing:
     name: Alike Pro
     badge: Önerilen
     price_note: "Yıllık ve aylık planlar, kendi para biriminde."
-    trial: Yıllık planda 7 gün ücretsiz deneme
+    trial: Uygun yeni aboneler için yıllık planda 7 gün ücretsiz deneme
     features:
       - "Sınırsız tarama"
       - "Seçimlerin tamamını tek seferde temizleme"
@@ -141,7 +141,7 @@ faq:
     - q: Hesap gerekiyor mu?
       a: "Hayır. Alike'ın hesabı, oturum açması ve sunucusu yok. Uygulamayı açar, başlarsın."
     - q: Alike tam olarak neye erişiyor?
-      a: "Fotoğraf kitaplığına — başlangıçta bir kez istenir. Tam erişim ya da sınırlı erişim verip Alike'ın hangi fotoğrafları göreceğini kendin seçebilirsin; bunu istediğin zaman iOS Ayarları'ndan değiştirirsin. Bildirimler yalnızca haftalık temizlik anımsatıcısını açarsan istenir."
+      a: "Fotoğraf arşivine — başlangıçta bir kez istenir. Tam erişim ya da sınırlı erişim verip Alike'ın hangi fotoğrafları göreceğini kendin seçebilirsin; bunu istediğin zaman iOS Ayarları'ndan değiştirirsin. Bildirimler yalnızca haftalık temizlik anımsatıcısını açarsan istenir."
     - q: Alike hangi fotoğrafların benzer olduğuna nasıl karar veriyor?
       a: "Vision çerçevesi her fotoğrafa sayısal bir öznitelik izi verir. Zaman ve yer olarak birbirine yakın fotoğraflar karşılaştırılır ve bir fotoğraf, ancak gruptaki hepsine benziyorsa o gruba girer. Duyarlılık düzeyi, benzerin ne kadar benzer sayılacağını belirler."
     - q: En İyi Kare nedir?
@@ -164,16 +164,16 @@ support:
   before_title: Yazmadan önce
   before_body: "Uygulama içindeki kullanım kılavuzu, sorulanların çoğunu kapsıyor. Alike'ı aç, Ayarlar'a, sonra «Kullanım»a git."
   bug_title: Hata bildir
-  bug_body: "Ne yaptığını, ne beklediğini ve bunun yerine ne olduğunu yaz. Kitaplığından fotoğraf gönderme — onlara ihtiyacımız yok ve almamayı tercih ederiz."
+  bug_body: "Ne yaptığını, ne beklediğini ve bunun yerine ne olduğunu yaz. Arşivinden fotoğraf gönderme — onlara ihtiyacımız yok ve almamayı tercih ederiz."
   details_title: "İşe yarayan bilgiler:"
   details:
     - "iPhone modelin ve iOS sürümün"
     - "Ayarlar'ın en altında yazan Alike sürümü"
     - "Ne yaptığın, ne beklediğin ve bunun yerine ne olduğu"
-    - "Fotoğraf kitaplığı izninin tam erişimde mi sınırlı erişimde mi olduğu"
+    - "Fotoğraf arşivi izninin tam erişimde mi sınırlı erişimde mi olduğu"
     - "İyileştirilmiş bir fotoğraf söz konusuysa, Alike'ta «Orijinale dön» ya da Apple Fotoğraflar'da Düzenle → Geri Al'ı denedin mi ve En İyi Kare öğrenmesini Alike Ayarları'ndan sıfırladın mı"
   privacy_title: Gizlilikle ilgili sorular
-  privacy_body: "Alike'ın sunucusu yok ve hiçbir şey toplamıyor, dolayısıyla dışa aktarılacak ya da silinecek bir hesap verisi de yok. Gizlilik politikası bunu tam olarak anlatır; Ayarlar'daki «Alike Verilerini Sil» ise cihazında saklanan her şeyi kaldırır."
+  privacy_body: "Alike'ın sunucusu yok ve hiçbir şey toplamıyor, dolayısıyla dışa aktarılacak ya da silinecek bir hesap verisi de yok. Gizlilik politikası bunu tam olarak anlatır; Ayarlar'daki «Alike Verilerini Sil» ise yalnızca Alike’ın yerel verilerini siler. Fotoğrafların, fotoğraf erişimin ve aboneliğin değişmez."
   subs_title: Abonelikler ve iadeler
   subs_body: "Alike Pro'yu Apple satar. Abonelikler, iptaller ve iadeler tamamen Apple Hesabın üzerinden yürür; senin yerine iptal edemez ya da iade yapamayız."
   subs_manage: "Yönetme veya iptal: iOS Ayarları → adın → «Abonelikler»"
@@ -182,7 +182,7 @@ support:
   subs_restore: "Yeni cihazda satın almayı geri yükleme: Alike Ayarları → «Satın Alımları Geri Yükle»"
 
 footer:
-  compare: "Alike’ı karşılaştırın"
+  compare: "Alike’ı karşılaştır"
   guide_similar: "Benzer fotoğrafları silme"
   guide_storage: "Fotoğraflar için yer açma"
   tagline: "Görsel olarak benzer fotoğrafları bul. En iyisini tut. Gerisini temizle."
