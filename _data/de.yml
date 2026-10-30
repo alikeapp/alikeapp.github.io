@@ -60,9 +60,9 @@ features:
     - title: Analyse auf dem Gerät
       body: "Jeder Vergleich läuft lokal über Apples Vision-Framework. Kein Upload, keine Warteschlange, keine Verarbeitung in der Cloud."
     - title: Drei Empfindlichkeitsstufen
-      body: "Niedrig, mittel oder hoch. Enger, wenn du nur nahezu identische Aufnahmen willst, weiter, um mehr zu erfassen."
+      body: "Niedrig, mittel oder hoch. Schränke den Vergleich auf nahezu identische Aufnahmen ein oder erweitere ihn, um mehr ähnliche Fotos zu finden."
     - title: Beste Aufnahme erkennen
-      body: "Ausgewählt anhand der Fotos selbst — Schärfe, Belichtung, Gesichter und Rauschen —, damit es immer eine sinnvolle Voreinstellung zum Behalten gibt. Sie lernt außerdem aus den Aufnahmen, die du selbst wählst."
+      body: "Ausgewählt anhand der Fotos selbst — Schärfe, Belichtung, Gesichter und Rauschen —, damit es immer eine sinnvolle Voreinstellung zum Behalten gibt. Alike lernt außerdem aus den Aufnahmen, die du selbst wählst."
     - title: Geführtes Durchsehen
       body: "Arbeite Gruppe für Gruppe mit „Nur beste behalten“, „Alle außer der besten auswählen“ und „Auswahl aufheben“."
     - title: Status-Markierungen
@@ -85,7 +85,7 @@ screenshots:
 
 privacy:
   title: Datenschutz steht im Mittelpunkt
-  subtitle: "Fotos aufräumen heißt, einer App deine persönlichste Sammlung anzuvertrauen. Alike ist so gebaut, dass sie deine Hände nie verlassen muss."
+  subtitle: "Fotos aufzuräumen bedeutet, einer App deine persönlichste Sammlung anzuvertrauen. Mit Alike bleibt diese Sammlung unter deiner Kontrolle."
   image_alt: "Das Maskottchen ruht neben einer aufgeräumten, fertigen Fotomediathek."
   claims:
     - title: Die Analyse läuft auf deinem Gerät
@@ -100,7 +100,7 @@ privacy:
 
 pricing:
   title: Preise
-  subtitle: "Alike ist kostenlos ladbar. Alike Pro hebt die Grenzen auf."
+  subtitle: "Alike kann kostenlos geladen werden. Alike Pro hebt die Beschränkungen auf."
   free:
     name: Alike Free
     price: Kostenlos
@@ -148,7 +148,7 @@ faq:
     - q: Kann Alike meine Fotos verändern?
       a: "Nur wenn du es verlangst. Du kannst die beste Aufnahme einer Gruppe verbessern; Alike zeigt dir das Ergebnis zuerst und sichert es erst, wenn du es anwendest. iOS behält das Original, ein Schritt holt es also zurück, und auch Apple Fotos kann die Änderung rückgängig machen."
     - q: Lernt Alike aus dem, was ich wähle?
-      a: "Ja, aus deinen eigenen Entscheidungen und aus nichts sonst. Wenn du eine andere beste Aufnahme wählst, merkt sich Alike, was du bevorzugt hast, und sortiert spätere Gruppen näher daran. Alles bleibt auf deinem Gerät, und die Einstellungen können es zurücksetzen."
+      a: "Ja, aus deinen eigenen Entscheidungen und aus nichts sonst. Wenn du eine andere beste Aufnahme wählst, merkt sich Alike, was du bevorzugt hast, und sortiert spätere Gruppen näher daran. Alles bleibt auf deinem Gerät. Du kannst das Gelernte in den Einstellungen zurücksetzen."
     - q: Wie kündige ich ein Abo?
       a: "In den iOS-Einstellungen auf deinen Namen tippen, dann „Abos“. Eine Kündigung stoppt künftige Verlängerungen, und der Zugriff bleibt bis zum Ende des bezahlten Zeitraums bestehen. Abos und Rückerstattungen wickelt Apple ab, nicht wir."
     - q: Kann ich alles löschen, was Alike gespeichert hat?
