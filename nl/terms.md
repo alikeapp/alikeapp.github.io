@@ -7,7 +7,7 @@ page_key: terms
 description: "Gebruiksvoorwaarden voor Alike, met het Alike Pro-abonnement, facturering, verlenging, proefperiode en opzeggen."
 ---
 
-Laatst bijgewerkt: 6 september 2026
+Laatst bijgewerkt: 30 oktober 2026
 
 Deze voorwaarden gelden voor je gebruik van de iOS-app Alike. Alike wordt beheerd door Oleksandr Solokha, een individuele ontwikkelaar gevestigd in Oekraïne ('wij', 'ons').
 
@@ -41,11 +41,11 @@ Een verbetering wordt pas toegepast nadat je haar bevestigt, en iOS bewaart het 
 
 ## Toegestaan gebruik
 
-Je stemt ermee in Alike niet te gebruiken om foto's te verwerken waartoe je geen toegangsrecht hebt, om de privacy of rechten van anderen te schenden, of om in strijd te handelen met wetgeving die op jou van toepassing is.
+Je stemt ermee in Alike niet te gebruiken om foto's te verwerken waartoe je geen toegangsrecht hebt, om de privacy of intellectuele-eigendomsrechten van anderen te schenden, of om in strijd te handelen met wetgeving die op jou van toepassing is.
 
 ## Alike Pro-abonnement
 
-Alike is gratis te downloaden en bevat het basaal scannen en opruimen. **Alike Pro** is een abonnement met automatische verlenging dat het volledige functiebereik ontgrendelt.
+Alike is gratis te downloaden en biedt de basisfuncties voor scannen en opruimen. **Alike Pro** is een abonnement met automatische verlenging dat alle functies beschikbaar maakt.
 
 ### Plannen
 
@@ -96,7 +96,7 @@ Voor zover aansprakelijkheid niet kan worden uitgesloten, is onze totale aanspra
 
 ## Apple
 
-Apple is geen partij bij deze voorwaarden en heeft geen verplichting om ondersteuning voor Alike te bieden. Apple is derde-begunstigde bij deze voorwaarden en kan ze tegenover jou afdwingen. Voldoet de app niet aan een toepasselijke garantie, dan kun je Apple daarvan op de hoogte brengen en kan Apple de aankoopprijs terugbetalen; voor zover wettelijk toegestaan heeft Apple verder geen enkele garantieverplichting met betrekking tot de app.
+Apple is geen partij bij deze voorwaarden en heeft geen verplichting om ondersteuning voor Alike te bieden. Apple is derde begunstigde bij deze voorwaarden en kan ze tegenover jou afdwingen. Voldoet de app niet aan een toepasselijke garantie, dan kun je Apple daarvan op de hoogte brengen en kan Apple de aankoopprijs terugbetalen; voor zover wettelijk toegestaan heeft Apple verder geen enkele garantieverplichting met betrekking tot de app.
 
 ## Beëindiging
 
