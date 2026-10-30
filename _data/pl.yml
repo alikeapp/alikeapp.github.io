@@ -62,7 +62,7 @@ features:
     - title: Trzy poziomy czułości
       body: "Niska, średnia albo wysoka. Zawęź próg, aby znaleźć tylko niemal identyczne ujęcia, lub poszerz go, aby znaleźć więcej podobnych zdjęć."
     - title: Wykrywanie najlepszego ujęcia
-      body: "Wybrane na podstawie samych zdjęć — ostrości, ekspozycji, twarzy i szumu — żeby zawsze był sensowny domyślny kandydat do zachowania. Uczy się też z ujęć, które wybierasz sam."
+      body: "Wybrane na podstawie samych zdjęć — ostrości, ekspozycji, twarzy i szumu — żeby zawsze był sensowny domyślny kandydat do zachowania. Alike uczy się też na podstawie ujęć, które wybierasz sam."
     - title: Prowadzony przegląd
       body: "Pracuj grupa po grupie z opcjami „Zostaw tylko najlepsze”, „Zaznacz wszystkie oprócz najlepszego” i „Odznacz”."
     - title: Znaczniki stanu
@@ -76,7 +76,7 @@ features:
     - title: Ulepsz i cofnij
       body: "Ulepsz zdjęcie, które zachowujesz, jednym dotknięciem. Oryginał zostaje w bibliotece, a jeden krok go przywraca."
     - title: Widgety na ekranie początkowym i na ekranie blokady
-      body: "Dwa widgety, oba bezpłatne. Jeden pokazuje, ile miejsca możesz odzyskać, i wraca do nieukończonego przeglądu; drugi wymienia grupy podobnych, zrzuty ekranu i rozmyte zdjęcia, a każdy wiersz otwiera własną listę. Od 1.5.0 pierwszy występuje też w trzech rozmiarach na ekran blokady: wiersz nad zegarem, karta i pierścień."
+      body: "Dwa widgety, oba bezpłatne. Jeden pokazuje, ile miejsca możesz odzyskać, i pozwala wrócić do nieukończonego przeglądu; drugi wyświetla grupy podobnych zdjęć, zrzuty ekranu i rozmyte zdjęcia, a każdy wiersz otwiera własną listę. Od 1.5.0 pierwszy występuje też w trzech rozmiarach na ekran blokady: wiersz nad zegarem, karta i pierścień."
 
 screenshots:
   title: Rzut oka do środka
@@ -85,7 +85,7 @@ screenshots:
 
 privacy:
   title: Prywatność jest najważniejsza
-  subtitle: "Porządkowanie zdjęć oznacza powierzenie aplikacji najbardziej osobistej kolekcji, jaką masz. Alike jest zbudowany tak, żeby nigdy nie musiała opuścić Twoich rąk."
+  subtitle: "Porządkowanie zdjęć oznacza powierzenie aplikacji Twojej najbardziej osobistej kolekcji. Alike zaprojektowano tak, aby ta kolekcja pozostawała pod Twoją kontrolą."
   image_alt: "Maskotka odpoczywa obok uporządkowanej, gotowej biblioteki zdjęć."
   claims:
     - title: Analiza działa na Twoim urządzeniu
@@ -149,7 +149,7 @@ faq:
     - q: Czy Alike może zmieniać moje zdjęcia?
       a: "Tylko jeśli go o to poprosisz. Możesz poprawić najlepsze ujęcie w grupie: Alike najpierw pokazuje wynik i zapisuje go dopiero wtedy, gdy go zastosujesz. Oryginał zachowuje iOS, więc jeden krok go przywraca, a Zdjęcia Apple też cofną tę zmianę."
     - q: Czy Alike uczy się z moich wyborów?
-      a: "Tak, wyłącznie z Twoich własnych wyborów. Kiedy wybierzesz inne najlepsze ujęcie, Alike zapamiętuje, co wolałeś, i układa kolejne grupy bliżej tego. Wszystko zostaje na Twoim urządzeniu, a ustawienia mogą to wyzerować."
+      a: "Tak, wyłącznie z Twoich własnych wyborów. Kiedy wybierzesz inne najlepsze ujęcie, Alike zapamiętuje, co wolałeś, i układa kolejne grupy bliżej tego. Wszystko zostaje na Twoim urządzeniu. W ustawieniach możesz wyzerować to, czego Alike się nauczył."
     - q: Jak anulować subskrypcję?
       a: "W Ustawieniach iOS dotknij swojego imienia, a potem „Subskrypcje”. Anulowanie zatrzymuje przyszłe odnowienia, a dostęp zostaje do końca opłaconego okresu. Subskrypcje i zwroty obsługuje Apple, nie my."
     - q: Czy mogę usunąć wszystko, co Alike zapisał?

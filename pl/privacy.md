@@ -136,4 +136,4 @@ Jeśli ta polityka się zmieni, zaktualizowana wersja zostanie opublikowana na t
 
 ## Prawo właściwe
 
-Ta polityka prywatności podlega prawu Ukrainy, bez uszczerbku dla bezwzględnie obowiązujących praw do ochrony danych i praw konsumenta przysługujących Ci na mocy prawa kraju Twojego zamieszkania.
+Ta polityka prywatności podlega prawu Ukrainy, bez uszczerbku dla bezwzględnie obowiązujących praw do ochrony danych, które przysługują Ci jako konsumentowi na mocy prawa kraju Twojego zamieszkania.
