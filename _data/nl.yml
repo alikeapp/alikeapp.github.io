@@ -62,7 +62,7 @@ features:
     - title: Drie niveaus van gevoeligheid
       body: "Laag, gemiddeld of hoog. Stel de vergelijking strenger in voor bijna identieke opnamen of minder streng om meer vergelijkbare foto's te vinden."
     - title: Beste opname herkennen
-      body: "Gekozen op basis van de foto's zelf — scherpte, belichting, gezichten en ruis —, zodat er altijd een verstandige standaardkeuze klaarstaat. Hij leert ook van de opnamen die je zelf kiest."
+      body: "Gekozen op basis van de foto's zelf — scherpte, belichting, gezichten en ruis —, zodat er altijd een verstandige standaardkeuze klaarstaat. Alike leert ook van de opnamen die je zelf kiest."
     - title: Begeleid bekijken
       body: "Werk groep voor groep met 'Alleen de beste bewaren', 'Selecteer alles behalve de beste' en 'Deselecteer'."
     - title: Statuslabels
@@ -70,7 +70,7 @@ features:
     - title: Voortgang en besparing
       body: "Bekeken, resterend, geselecteerd en geschatte besparing, plus een opruimgeschiedenis per maand."
     - title: Een indeling die bij je past
-      body: "Een meegroeiend raster dat wisselt tussen een ruime kolom en een dichtere weergave, en dat tussen sessies onthouden wordt."
+      body: "Een aanpasbaar raster dat wisselt tussen een ruime kolom en een compactere weergave. Je keuze blijft bewaard als je de app opnieuw opent."
     - title: 18 taalvarianten en donkere modus
       body: "Engels en de Britse, Canadese en Australische varianten, Oekraïens, Duits, Frans en Canadees Frans, Spaans en Latijns-Amerikaans Spaans, Braziliaans en Europees Portugees, Italiaans, Nederlands, Pools, Turks, traditioneel Chinees en Arabisch in de hele app, met volledige ondersteuning voor de donkere modus."
     - title: Verbeteren, en terugdraaien
@@ -141,7 +141,7 @@ faq:
     - q: Heb ik een account nodig?
       a: "Nee. Alike heeft geen account, geen aanmeldfunctie en geen server. Je opent de app en begint."
     - q: Waar krijgt Alike eigenlijk toegang toe?
-      a: "Tot je fotobibliotheek, één keer aan het begin gevraagd. Je kunt volledige toegang geven of beperkte toegang en zelf kiezen welke foto's Alike mag zien; dat kun je altijd wijzigen in de iOS-instellingen. Om berichtgevingen wordt alleen gevraagd als je de wekelijkse opruimherinnering aanzet."
+      a: "Tot je fotobibliotheek. Alike vraagt hiervoor één keer aan het begin toegang. Je kunt volledige toegang geven of beperkte toegang en zelf kiezen welke foto's Alike mag zien; dat kun je altijd wijzigen in de iOS-instellingen. Om berichtgevingen wordt alleen gevraagd als je de wekelijkse opruimherinnering aanzet."
     - q: Hoe bepaalt Alike welke foto's op elkaar lijken?
       a: "Elke foto krijgt van het Vision-framework een numerieke kenmerkafdruk. Foto's die qua tijd en plaats dicht bij elkaar liggen worden vergeleken, en een foto komt alleen in een groep als hij op alle foto's daarin lijkt. Het gevoeligheidsniveau bepaalt hoe gelijkend gelijkend genoeg is."
     - q: Wat is de beste opname?
@@ -149,7 +149,7 @@ faq:
     - q: Kan Alike mijn foto's wijzigen?
       a: "Alleen als je erom vraagt. Je kunt de beste opname van een groep verbeteren: Alike toont je eerst het resultaat en bewaart het pas als je het toepast. iOS bewaart het origineel, dus één stap zet het terug, en ook Apple Foto's kan de wijziging ongedaan maken."
     - q: Leert Alike van wat ik kies?
-      a: "Ja, van je eigen keuzes en van niets anders. Wanneer je een andere beste opname kiest, onthoudt Alike wat je liever had en rangschikt latere groepen dichter daarbij. Het blijft allemaal op je apparaat, en de instellingen kunnen het wissen."
+      a: "Ja, van je eigen keuzes en van niets anders. Wanneer je een andere beste opname kiest, onthoudt Alike wat je liever had en rangschikt latere groepen dichter daarbij. Het blijft allemaal op je apparaat. Je kunt het geleerde in de instellingen wissen."
     - q: Hoe zeg ik een abonnement op?
       a: "Tik in de iOS-instellingen op je naam en dan op 'Abonnementen'. Opzeggen stopt toekomstige verlengingen, en je houdt toegang tot het einde van de betaalde periode. Abonnementen en terugbetalingen regelt Apple, niet wij."
     - q: Kan ik alles verwijderen wat Alike heeft bewaard?

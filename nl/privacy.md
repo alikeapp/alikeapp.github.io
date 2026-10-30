@@ -136,4 +136,4 @@ Verandert dit beleid, dan wordt de bijgewerkte versie op deze pagina gepubliceer
 
 ## Toepasselijk recht
 
-Op dit privacybeleid is het recht van Oekraïne van toepassing, onverminderd dwingende gegevensbeschermings- en consumentenrechten die je op grond van het recht van je eigen woonland toekomen.
+Op dit privacybeleid is het recht van Oekraïne van toepassing, onverminderd de dwingende rechten op gegevensbescherming die je als consument op grond van het recht van je woonland toekomen.
