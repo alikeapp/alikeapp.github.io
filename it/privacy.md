@@ -77,7 +77,7 @@ Alike non contiene strumenti di analisi statistica, servizi di terze parti per i
 - raccoglie eventi di analisi o d'uso;
 - usa identificativi pubblicitari (IDFA) né chiede il permesso di tracciamento;
 - costruisce un profilo su di te;
-- condivide, vende o cede dati personali, perché non ne raccoglie di condivisibili;
+- condivide, vende o affitta dati personali, perché non ne raccoglie di condivisibili;
 - usa cookie o web beacon.
 
 Alike non effettua richieste di rete di propria iniziativa. L'unica attività in uscita la gestisce Apple: gli acquisti in abbonamento tramite StoreKit e l'apertura di link all'App Store o all'email, quando li tocchi.
@@ -136,4 +136,4 @@ Se questa informativa cambia, la versione aggiornata verrà pubblicata su questa
 
 ## Legge applicabile
 
-Questa informativa sulla privacy è regolata dal diritto ucraino, fatti salvi i diritti inderogabili in materia di protezione dei dati e di tutela dei consumatori che ti spettano secondo la legge del tuo paese di residenza.
+Questa informativa sulla privacy è regolata dal diritto ucraino, fatti salvi i diritti inderogabili in materia di protezione dei dati che ti spettano in quanto consumatore secondo la legge del tuo paese di residenza.

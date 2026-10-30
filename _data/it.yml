@@ -62,13 +62,13 @@ features:
     - title: Tre livelli di sensibilità
       body: "Bassa, media o alta. Restringi la soglia per trovare solo scatti quasi identici o ampliala per trovare più foto simili."
     - title: Riconoscimento dello scatto migliore
-      body: "Scelta dalle foto stesse — nitidezza, esposizione, volti e rumore —, così c'è sempre un'opzione sensata da tenere. Impara anche dagli scatti che scegli tu."
+      body: "Alike sceglie lo scatto da conservare in base a nitidezza, esposizione, volti e rumore, così hai sempre una scelta consigliata. Impara anche dagli scatti che scegli tu."
     - title: Controllo guidato
       body: "Procedi gruppo per gruppo con «Tieni solo la migliore», «Seleziona tutte tranne la migliore» e «Deseleziona»."
     - title: Indicatori di stato
       body: "Nuovo, in controllo, controllato e da rivedere dopo una nuova scansione. Sai sempre dove eri rimasto."
     - title: Avanzamento e risparmio
-      body: "Controllate, rimanenti, selezionate e risparmio stimato, più una cronologia pulizia raggruppata per mese."
+      body: "Controllate, rimanenti, selezionate e risparmio stimato, più una cronologia della pulizia raggruppata per mese."
     - title: Un layout che ti somiglia
       body: "Una griglia adattiva che passa da una colonna ampia a una vista più fitta e ricorda la tua scelta tra un avvio e l'altro."
     - title: 18 varianti linguistiche e modalità scura
@@ -110,7 +110,7 @@ pricing:
       - "Controllo guidato con lo scatto migliore"
       - "Miglioramento con un tocco, sempre reversibile"
       - "Scatto migliore che impara dalle tue scelte"
-      - "Ordinamento e cronologia pulizia"
+      - "Ordinamento e cronologia della pulizia"
       - "Pulizia di una foto alla volta"
   pro:
     name: Alike Pro
@@ -141,7 +141,7 @@ faq:
     - q: Serve un account?
       a: "No. Alike non ha account, non richiede il login e non ha server. Apri l'app e inizi."
     - q: A cosa accede esattamente Alike?
-      a: "Alla tua libreria di foto, richiesta una sola volta all'inizio. Puoi concedere l'accesso completo oppure l'accesso limitato e scegliere tu quali foto Alike può vedere; puoi cambiare idea in qualsiasi momento in Impostazioni di iOS. Le notifiche vengono richieste solo se attivi il promemoria settimanale di pulizia."
+      a: "Alla tua libreria di foto. Alike richiede l'accesso una sola volta all'inizio. Puoi concedere l'accesso completo oppure l'accesso limitato e scegliere tu quali foto Alike può vedere; puoi cambiare idea in qualsiasi momento in Impostazioni di iOS. Le notifiche vengono richieste solo se attivi il promemoria settimanale di pulizia."
     - q: Come decide Alike quali foto sono simili?
       a: "Il framework Vision assegna a ogni foto un'impronta numerica. Vengono confrontate le foto vicine nel tempo e nel luogo, e una foto entra in un gruppo solo se somiglia a tutte quelle già presenti. Il livello di sensibilità stabilisce quanto simile sia abbastanza simile."
     - q: Cos'è lo scatto migliore?
@@ -149,7 +149,7 @@ faq:
     - q: Alike può modificare le mie foto?
       a: "Solo se glielo chiedi. Puoi migliorare lo scatto migliore di un gruppo: Alike ti mostra prima il risultato e lo salva soltanto quando lo applichi. L'originale lo conserva iOS, quindi un passaggio lo rimette, e anche Foto di Apple può annullare la modifica."
     - q: Alike impara da quello che scelgo?
-      a: "Sì, dalle tue scelte e da nient'altro. Quando scegli uno scatto migliore diverso, Alike ricorda che cosa hai preferito e ordina i gruppi successivi più vicino a quello. Resta tutto sul tuo dispositivo, e le impostazioni possono azzerarlo."
+      a: "Sì, dalle tue scelte e da nient'altro. Quando scegli uno scatto migliore diverso, Alike ricorda che cosa hai preferito e ordina i gruppi successivi più vicino a quello. Resta tutto sul tuo dispositivo. Puoi azzerare questo apprendimento nelle impostazioni."
     - q: Come annullo un abbonamento?
       a: "In Impostazioni di iOS tocca il tuo nome, poi «Abbonamenti». L'annullamento ferma i rinnovi futuri, e l'accesso resta fino alla fine del periodo pagato. Abbonamenti e rimborsi li gestisce Apple, non noi."
     - q: Posso eliminare tutto quello che Alike ha salvato?
