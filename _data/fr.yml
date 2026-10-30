@@ -46,7 +46,7 @@ steps:
       image: step-scan
       image_alt: "La mascotte examine des photos à la loupe."
     - title: Passer en revue
-      body: "Chaque groupe s'ouvre avec une meilleure prise déjà choisie, ce qui vous permet de décider en quelques secondes. Ne garder que la meilleure, tout sélectionner sauf la meilleure, ou choisir à la main."
+      body: "Chaque groupe s'ouvre avec la meilleure prise déjà sélectionnée, ce qui vous permet de décider en quelques secondes. Ne garder que la meilleure, tout sélectionner sauf la meilleure, ou choisir à la main."
       image: step-review
       image_alt: "La mascotte se réjouit à côté d'une meilleure photo mise en avant."
     - title: Nettoyer
@@ -62,7 +62,7 @@ features:
     - title: Trois niveaux de sensibilité
       body: "Faible, moyen ou élevé. Resserrez le seuil pour ne viser que les prises quasi identiques, élargissez-le pour repérer davantage de photos similaires."
     - title: Détection de la meilleure prise
-      body: "Choisie d'après les photos elles-mêmes — netteté, exposition, visages et bruit —, pour qu'il y ait toujours une option sensée à conserver. Elle apprend aussi des prises que vous choisissez vous-même."
+      body: "Choisie d'après les photos elles-mêmes — netteté, exposition, visages et bruit —, pour qu'il y ait toujours une option sensée à conserver. Alike apprend aussi des prises que vous choisissez vous-même."
     - title: Revue guidée
       body: "Avancez groupe par groupe avec « Ne garder que la meilleure », « Tout sélectionner sauf la meilleure » et « Effacer la sélection »."
     - title: Badges de suivi
@@ -140,7 +140,7 @@ faq:
     - q: Ai-je besoin d'un compte ?
       a: "Non. Alike n'a ni compte, ni connexion, ni serveur. Vous ouvrez l'app et vous lancez une analyse."
     - q: À quoi Alike accède-t-elle exactement ?
-      a: "À votre photothèque, demandée une seule fois au début. Vous pouvez accorder un accès complet ou un accès limité et choisir les photos qu'Alike peut voir, et le modifier à tout moment dans les Réglages iOS. L'autorisation de notification n'est demandée que si vous activez le rappel de nettoyage hebdomadaire."
+      a: "À votre photothèque, dont l'accès est demandé une seule fois au début. Vous pouvez accorder un accès complet ou un accès limité et choisir les photos qu'Alike peut voir, et le modifier à tout moment dans les Réglages iOS. L'autorisation de notification n'est demandée que si vous activez le rappel de nettoyage hebdomadaire."
     - q: Comment décide-t-elle que des photos se ressemblent ?
       a: "Chaque photo reçoit une empreinte numérique de caractéristiques du framework Vision. Les photos proches par la date de prise de vue et le lieu sont comparées, et une photo ne rejoint un groupe que si elle ressemble à toutes celles qu'il contient déjà. Le niveau de sensibilité définit ce que « proche » veut dire."
     - q: Qu'est-ce que la meilleure prise ?
@@ -148,7 +148,7 @@ faq:
     - q: Alike peut-elle modifier mes photos ?
       a: "Seulement si vous le demandez. Vous pouvez améliorer la meilleure prise d'un groupe : Alike vous montre d'abord le résultat et ne l'enregistre que lorsque vous l'appliquez. iOS conserve l'original, donc une étape le rétablit, et Photos d'Apple peut aussi annuler la modification."
     - q: Alike apprend-elle de mes choix ?
-      a: "Oui, de vos propres choix et de rien d'autre. Lorsque vous choisissez une autre meilleure prise, Alike retient ce que vous avez préféré et classe les groupes suivants au plus près. Tout reste sur votre appareil, et les réglages peuvent réinitialiser cet apprentissage."
+      a: "Oui, de vos propres choix et de rien d'autre. Lorsque vous choisissez une autre meilleure prise, Alike retient ce que vous avez préféré et classe les groupes suivants au plus près. Tout reste sur votre appareil. Vous pouvez réinitialiser cet apprentissage dans les réglages."
     - q: Comment résilier un abonnement ?
       a: "Dans les Réglages iOS, touchez votre nom, puis « Abonnements ». La résiliation arrête les renouvellements futurs et vous conservez l'accès jusqu'à la fin de la période payée. Les abonnements et les remboursements sont gérés par Apple, pas par nous."
     - q: Puis-je effacer tout ce qu'Alike a enregistré ?
