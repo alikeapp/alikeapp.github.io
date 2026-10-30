@@ -7,13 +7,13 @@ page_key: terms
 description: "Nutzungsbedingungen für Alike, einschließlich des Alike-Pro-Abos, Abrechnung, Verlängerung, Testphase und Kündigung."
 ---
 
-Zuletzt aktualisiert: 6. September 2026
+Zuletzt aktualisiert: 30. Oktober 2026
 
 Diese Nutzungsbedingungen regeln deine Nutzung der iOS-App Alike. Alike wird von Oleksandr Solokha betrieben, einem einzelnen Entwickler mit Sitz in der Ukraine („wir“, „uns“).
 
 Mit dem Laden oder Nutzen von Alike stimmst du diesen Bedingungen zu. Wenn du nicht zustimmst, nutze die App nicht.
 
-> **Hinweis zum App-Store-EULA.** Alike wird über den App Store unter Apples standardmäßigem Endbenutzer-Lizenzvertrag (Standard EULA) vertrieben, der die rechtlich maßgebliche Lizenz für deine Nutzung der App ist. Diese Bedingungen beschreiben, wie Alike funktioniert, was das Abo umfasst und was du von uns erwarten kannst. Soweit diese Bedingungen und Apples Standard EULA bei Lizenzfragen kollidieren, gilt Apples Standard EULA.
+> **Hinweis zur App-Store-EULA.** Alike wird über den App Store unter Apples Standard-Endbenutzer-Lizenzvertrag (Standard EULA) vertrieben, der die rechtlich maßgebliche Lizenz für deine Nutzung der App ist. Diese Bedingungen beschreiben, wie Alike funktioniert, was das Abo umfasst und was du von uns erwarten kannst. Soweit diese Bedingungen und Apples Standard EULA bei Lizenzfragen kollidieren, gilt Apples Standard EULA.
 
 ## Was Alike tut
 
@@ -45,7 +45,7 @@ Du verpflichtest dich, Alike nicht zu nutzen, um Fotos zu verarbeiten, auf die d
 
 ## Alike-Pro-Abo
 
-Alike ist kostenlos ladbar und enthält das grundlegende Scannen und Aufräumen. **Alike Pro** ist ein automatisch verlängerbares Abo, das den vollen Funktionsumfang freischaltet.
+Alike kann kostenlos geladen werden und enthält das grundlegende Scannen und Aufräumen. **Alike Pro** ist ein automatisch verlängerbares Abo, das den vollen Funktionsumfang freischaltet.
 
 ### Pläne
 
@@ -72,7 +72,7 @@ Du kannst dein Abo jederzeit unter **iOS-Einstellungen → dein Name → „Abos
 
 ### Änderungen bei Preisen oder Funktionen
 
-Wenn wir den Abopreis ändern, informiert dich Apple und holt deine Zustimmung ein, bevor ein erhöhter Preis für deine Verlängerung gilt, wie es die App-Store-Regeln verlangen. Wir können Funktionen im Lauf der Zeit hinzufügen, ändern oder entfernen; eine wesentlich beworbene Alike-Pro-Funktion entfernen wir nicht während eines bereits bezahlten Zeitraums, ohne einen vergleichbaren Ersatz anzubieten.
+Wenn wir den Abopreis ändern, informiert dich Apple und holt deine Zustimmung ein, bevor ein erhöhter Preis für deine Verlängerung gilt, wie es die App-Store-Regeln verlangen. Wir können Funktionen im Lauf der Zeit hinzufügen, ändern oder entfernen; eine als wesentlich beworbene Alike-Pro-Funktion entfernen wir nicht während eines bereits bezahlten Zeitraums, ohne einen vergleichbaren Ersatz anzubieten.
 
 ## Verfügbarkeit und Änderungen
 

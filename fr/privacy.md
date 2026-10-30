@@ -7,11 +7,11 @@ page_key: privacy
 description: "Comment Alike traite vos photos : analyse sur l'appareil, aucun envoi, aucune analyse d'usage, et une suppression qui n'a jamais lieu sans votre confirmation."
 ---
 
-Dernière mise à jour : 22 septembre 2026
+Dernière mise à jour : 30 octobre 2026
 
 Alike est une app iOS qui trouve et regroupe les photos visuellement similaires de votre photothèque afin que vous puissiez les passer en revue et libérer de l'espace. Alike est exploitée par Oleksandr Solokha, développeur indépendant établi en Ukraine.
 
-Cette politique de confidentialité explique ce qu'Alike collecte et ne collecte pas, où vivent vos données et quel contrôle vous avez dessus.
+Cette politique de confidentialité explique ce qu'Alike collecte et ne collecte pas, où sont stockées vos données et comment vous pouvez les gérer.
 
 **En résumé : Alike n'a ni compte, ni connexion, ni serveur. Vos photos et tout ce qu'Alike en apprend restent sur votre appareil.**
 
@@ -33,7 +33,7 @@ Alike lit les données d'image et les métadonnées qu'iOS fournit pour chaque �
 
 ### Notifications
 
-Alike ne demande l'autorisation de notification que si vous activez le rappel de nettoyage hebdomadaire dans les Réglages, et jamais autrement. Si vous n'activez jamais ce rappel, Alike ne demande jamais rien.
+Alike ne demande l'autorisation de notification que si vous activez le rappel de nettoyage hebdomadaire dans les Réglages, et jamais autrement. Si vous n'activez jamais ce rappel, Alike ne demande jamais cette autorisation.
 
 Si vous l'activez, le rappel est programmé localement sur votre appareil par iOS. Alike n'utilise pas de notifications push et ne s'enregistre ni ne reçoit aucun jeton de notification distante.
 
@@ -63,7 +63,7 @@ Lorsque vous choisissez une meilleure prise différente de celle proposée par A
 
 Si Alike se ferme de façon inattendue, iOS peut ensuite remettre à l'app un rapport de diagnostic sur ce plantage, via le framework MetricKit d'Apple. Alike conserve ce rapport dans son propre stockage sur votre appareil — au plus les 20 plus récents — et n'en fait rien d'autre de lui-même.
 
-Au lancement suivant, une fois que vous n'êtes au milieu de rien, Alike vous demande une seule fois si vous souhaitez l'envoyer. **Envoyer le rapport** ouvre un e-mail à l'adresse indiquée dans « Contact », avec le rapport en pièce jointe : vous pouvez le lire d'abord, et il ne part que si vous l'envoyez vous-même, depuis votre propre compte de messagerie. Si Mail n'est pas configuré, c'est la feuille de partage qui s'ouvre, avec l'adresse affichée, et vous choisissez vous-même où le rapport part. **Plus tard** n'envoie rien, et Alike ne redemande jamais pour ce rapport.
+Au lancement suivant, lorsque vous n'avez aucune opération en cours, Alike vous demande une seule fois si vous souhaitez l'envoyer. **Envoyer le rapport** ouvre un e-mail à l'adresse indiquée dans « Contact », avec le rapport en pièce jointe : vous pouvez le lire d'abord, et il ne part que si vous l'envoyez vous-même, depuis votre propre compte de messagerie. Si Mail n'est pas configuré, c'est la feuille de partage qui s'ouvre, avec l'adresse affichée, et vous choisissez vous-même où le rapport part. **Plus tard** n'envoie rien, et Alike ne redemande jamais pour ce rapport.
 
 Un rapport contient la trace du plantage — quelle partie du code d'Alike s'exécutait —, la version de l'app, la version d'iOS, le modèle de l'appareil et des détails techniques ajoutés par iOS, comme le type d'exception, l'architecture du processeur et votre réglage de format régional. Pour certains plantages, il contient aussi le message d'erreur produit par Alike à ce moment-là. C'est iOS qui rédige le rapport, et Alike l'envoie tel quel, sans rien y ajouter ni filtrer — lisez donc la pièce jointe avant de l'envoyer. Il ne contient aucune photo. Si vous l'envoyez par e-mail, le développeur reçoit aussi ce que transporte tout e-mail, comme votre adresse e-mail.
 
@@ -86,7 +86,7 @@ Alike n'effectue aucune requête réseau de son propre fait. La seule activité 
 
 La suppression est toujours votre décision et exige toujours une confirmation explicite.
 
-Lorsque vous confirmez un nettoyage, Alike demande à iOS de supprimer les photos que vous avez sélectionnées. iOS affiche sa propre confirmation système avant que quoi que ce soit ne soit retiré. Les photos supprimées vont dans votre album **« Supprimés récemment »**, où iOS les conserve environ 30 jours et où vous pouvez les restaurer.
+Lorsque vous confirmez un nettoyage, Alike demande à iOS de supprimer les photos que vous avez sélectionnées. iOS affiche sa propre confirmation système avant que quoi que ce soit ne soit retiré. Les photos supprimées vont dans votre album **« Supprimées récemment »**, où iOS les conserve environ 30 jours et où vous pouvez les restaurer.
 
 Alike ne supprime jamais de photos en silence, ne supprime jamais de photos que vous n'avez pas sélectionnées, et ne peut pas contourner la confirmation d'iOS.
 
@@ -114,7 +114,7 @@ Le traitement de vos informations d'achat par Apple est régi par [la politique 
 
 Réglages → Données et confidentialité → **Supprimer les données d'Alike** efface tout ce qu'Alike a stocké sur votre appareil : résultats d'analyse et caches, progression et historique de nettoyage, les pondérations qu'Alike a apprises des meilleures prises que vous avez choisies, les rapports de plantage en attente sur l'appareil, et vos préférences Alike. Cette action est irréversible.
 
-Elle ne touche **pas** vos photos, votre album « Supprimés récemment », votre autorisation d'accès aux photos ni votre abonnement Alike Pro. Après la suppression, Alike affiche de nouveau son introduction sans redemander l'accès aux photos.
+Elle ne touche **pas** vos photos, votre album « Supprimées récemment », votre autorisation d'accès aux photos ni votre abonnement Alike Pro. Après la suppression, Alike affiche de nouveau son introduction sans redemander l'accès aux photos.
 
 Supprimer l'app retire avec elle toutes les données locales d'Alike.
 

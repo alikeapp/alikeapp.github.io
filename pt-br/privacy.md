@@ -7,7 +7,7 @@ page_key: privacy
 description: "Como o Alike trata suas fotos: análise no aparelho, nada é enviado, sem análise de uso, e nada é apagado sem a sua confirmação."
 ---
 
-Última atualização: 22 de setembro de 2026
+Última atualização: 30 de outubro de 2026
 
 O Alike é um app de iOS que encontra e agrupa fotos visualmente parecidas na sua fototeca para que você possa revisá-las e liberar espaço. O Alike é operado por Oleksandr Solokha, desenvolvedor independente estabelecido na Ucrânia.
 
@@ -53,7 +53,7 @@ Tudo isso fica no armazenamento isolado do próprio Alike no seu aparelho e é i
 
 ### Aprimorar uma foto que você mantém
 
-O Alike pode aprimorar a melhor foto de um grupo. Ele nunca faz isso sozinho: o resultado é mostrado a você como prévia e só é salvo depois que você aplica, uma foto por vez. O processamento acontece no seu aparelho e nada é enviado. O iOS mantém o original — a mudança é guardada como uma edição não destrutiva marcada como do Alike, então ela aparece no Fotos da Apple e pode ser desfeita a partir de qualquer um dos dois apps. Nenhuma cópia é criada. A aprimoramento não é oferecida para vídeo, no acesso limitado, nem para fotos que o sistema marca como não editáveis, e uma foto que já tem a edição de outro app só é alterada depois que você concorda.
+O Alike pode aprimorar a melhor foto de um grupo. Ele nunca faz isso sozinho: o resultado é mostrado a você como prévia e só é salvo depois que você aplica, uma foto por vez. O processamento acontece no seu aparelho e nada é enviado. O iOS mantém o original — a mudança é guardada como uma edição não destrutiva marcada como do Alike, então ela aparece no Fotos da Apple e pode ser desfeita a partir de qualquer um dos dois apps. Nenhuma cópia é criada. O aprimoramento não é oferecido para vídeo, no acesso limitado, nem para fotos que o sistema marca como não editáveis, e uma foto que já tem a edição de outro app só é alterada depois que você concorda.
 
 ### Aprender de quais fotos você gosta
 
@@ -63,7 +63,7 @@ Quando você escolhe uma melhor foto diferente da que o Alike sugeriu, o app gua
 
 Se o Alike fechar inesperadamente, o iOS pode entregar depois ao app um relatório de diagnóstico sobre essa falha, pelo framework MetricKit da Apple. O Alike guarda o relatório no próprio armazenamento, no seu aparelho — no máximo os 20 mais recentes — e não faz mais nada com ele por conta própria.
 
-Na próxima abertura, quando você não estiver no meio de nada, o Alike pergunta uma única vez se você quer enviá-lo. **Enviar relatório** abre um e-mail para o endereço em «Contato» com o relatório anexado: você pode lê-lo antes, e ele só sai se você mesmo enviar, pela sua própria conta de e-mail. Se o Mail não estiver configurado, abre-se a folha de compartilhamento com o endereço à vista, e você escolhe para onde o relatório vai. **Agora não** não envia nada, e o Alike nunca mais pergunta sobre esse relatório.
+Na próxima abertura, quando você não estiver realizando outra ação, o Alike pergunta uma única vez se você quer enviá-lo. **Enviar relatório** abre um e-mail para o endereço em «Contato» com o relatório anexado: você pode lê-lo antes, e ele só sai se você mesmo enviar, pela sua própria conta de e-mail. Se o Mail não estiver configurado, abre-se o menu de compartilhamento com o endereço à vista, e você escolhe para onde o relatório vai. **Agora não** não envia nada, e o Alike nunca mais pergunta sobre esse relatório.
 
 Um relatório contém o rastreamento da falha — que parte do código do Alike estava rodando —, a versão do app, a versão do iOS, o modelo do aparelho e detalhes técnicos que o iOS acrescenta, como o tipo de exceção, a arquitetura do processador e o seu ajuste de formato regional. Em algumas falhas, ele também traz a mensagem de erro que o Alike gerou naquele momento. Quem escreve o relatório é o iOS, e o Alike o envia como está, sem acrescentar nem filtrar nada — por isso, leia o anexo antes de enviá-lo. Ele não contém fotos. Se você enviá-lo por e-mail, o desenvolvedor recebe também o que qualquer e-mail carrega, como o seu endereço de e-mail.
 
@@ -86,7 +86,7 @@ O Alike não faz nenhuma requisição de rede por conta própria. A única ativi
 
 Apagar é sempre decisão sua e sempre exige confirmação explícita.
 
-Quando você confirma uma limpeza, o Alike pede ao iOS que apague as fotos que você selecionou. O iOS mostra a própria confirmação do sistema antes de remover qualquer coisa. As fotos apagadas vão para o seu álbum **"Apagados recentemente"**, onde o iOS as guarda por cerca de 30 dias e de onde você pode recuperá-las.
+Quando você confirma uma limpeza, o Alike pede ao iOS que apague as fotos que você selecionou. O iOS mostra a própria confirmação do sistema antes de remover qualquer coisa. As fotos apagadas vão para o seu álbum **"Apagados"**, onde o iOS as guarda por cerca de 30 dias e de onde você pode recuperá-las.
 
 O Alike nunca apaga fotos em silêncio, nunca apaga fotos que você não selecionou, e não consegue contornar a confirmação do iOS.
 
@@ -114,7 +114,7 @@ O tratamento das suas informações de compra pela Apple é regido pela [Políti
 
 Ajustes → Dados e Privacidade → **Apagar dados do Alike** apaga tudo o que o Alike guardou no seu aparelho: resultados de análise e caches, progresso e histórico de limpeza, os pesos que o Alike aprendeu com as melhores fotos que você escolheu, os relatórios de falhas aguardando no aparelho, e suas preferências do Alike. Esta ação não pode ser desfeita.
 
-Ela **não** toca nas suas fotos, no seu álbum "Apagados recentemente", na sua permissão de acesso às fotos nem na sua assinatura do Alike Pro. Depois de apagar, o Alike mostra a introdução novamente sem pedir acesso às fotos uma segunda vez.
+Ela **não** toca nas suas fotos, no seu álbum "Apagados", na sua permissão de acesso às fotos nem na sua assinatura do Alike Pro. Depois de apagar, o Alike mostra a introdução novamente sem pedir acesso às fotos uma segunda vez.
 
 Excluir o app remove junto todos os dados locais do Alike.
 

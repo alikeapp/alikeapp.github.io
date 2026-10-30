@@ -7,11 +7,11 @@ page_key: privacy
 description: "Cómo trata Alike tus fotos: análisis en el dispositivo, nada se sube, sin analítica, y la eliminación solo ocurre con tu confirmación."
 ---
 
-Última actualización: 22 de septiembre de 2026
+Última actualización: 30 de octubre de 2026
 
 Alike es una app de iOS que encuentra y agrupa fotos visualmente similares de tu fototeca para que puedas revisarlas y liberar espacio. Alike la opera Oleksandr Solokha, desarrollador independiente afincado en Ucrania.
 
-Esta política de privacidad explica qué recopila Alike y qué no, dónde viven tus datos y qué control tienes sobre ellos.
+Esta política de privacidad explica qué recopila Alike y qué no, dónde se guardan tus datos y qué control tienes sobre ellos.
 
 **La versión corta: Alike no tiene cuenta, ni inicio de sesión, ni servidor. Tus fotos y todo lo que Alike aprende sobre ellas se quedan en tu dispositivo.**
 
@@ -49,11 +49,11 @@ Alike compara las fotos con el framework Vision de Apple, que se ejecuta localme
 
 Alike almacena sus resultados en tu dispositivo mediante Core Data y archivos locales, para que no tengas que volver a analizar cada vez que abres la app. Ese almacenamiento local incluye identificadores de fotos, huellas de características, pertenencia a grupos, tamaños estimados, tu progreso de revisión y tus selecciones, el historial de limpieza, los pesos que Alike ha aprendido de las mejores tomas que elegiste y tus preferencias.
 
-Todo ello vive en el almacenamiento aislado de la propia Alike en tu dispositivo y se incluye en las copias de seguridad si haces copia de tu dispositivo.
+Todo ello se guarda en el espacio de almacenamiento aislado de Alike en tu dispositivo y se incluye en las copias de seguridad si haces copia de tu dispositivo.
 
 ### Mejorar una foto que conservas
 
-Alike puede mejorar la mejor toma de un grupo. Nunca lo hace por su cuenta: el resultado se te muestra como vista previa y se guarda solo después de que lo apliques, de una foto en una foto. El procesamiento ocurre en tu dispositivo y no se sube nada. iOS conserva el original: el cambio se guarda como una edición no destructiva marcada como de Alike, así que aparece en Fotos de Apple y se puede deshacer desde cualquiera de las dos apps. No se crea ningún duplicado. La mejora no se ofrece para vídeo, con acceso limitado ni para fotos que el sistema marca como no editables, y una foto que ya lleva la edición de otra app solo se modifica después de que lo aceptes.
+Alike puede mejorar la mejor toma de un grupo. Nunca lo hace por su cuenta: el resultado se te muestra como vista previa y se guarda solo después de que lo apliques, una foto cada vez. El procesamiento ocurre en tu dispositivo y no se sube nada. iOS conserva el original: el cambio se guarda como una edición no destructiva marcada como de Alike, así que aparece en Fotos de Apple y se puede deshacer desde cualquiera de las dos apps. No se crea ningún duplicado. La mejora no se ofrece para vídeo, con acceso limitado ni para fotos que el sistema marca como no editables, y una foto que ya lleva la edición de otra app solo se modifica después de que lo aceptes.
 
 ### Aprender qué fotos prefieres
 
@@ -63,7 +63,7 @@ Cuando eliges una mejor toma distinta de la que Alike sugirió, la app guarda la
 
 Si Alike se cierra inesperadamente, iOS puede entregar más tarde a la app un informe de diagnóstico sobre ese fallo mediante el framework MetricKit de Apple. Alike guarda el informe en su propio almacenamiento de tu dispositivo —como mucho los 20 más recientes— y no hace nada más con él por su cuenta.
 
-En el siguiente arranque, cuando no estés en mitad de nada, Alike te pregunta una sola vez si quieres enviarlo. **Enviar informe** abre un correo a la dirección de «Contacto» con el informe adjunto: puedes leerlo antes, y solo sale si lo envías tú, desde tu propia cuenta de correo. Si Mail no está configurado, se abre la hoja para compartir con la dirección a la vista, así que tú eliges adónde va el informe. **Ahora no** no envía nada, y Alike no vuelve a preguntar por ese informe.
+En el siguiente arranque, cuando no tengas ninguna operación en curso, Alike te pregunta una sola vez si quieres enviarlo. **Enviar informe** abre un correo a la dirección de «Contacto» con el informe adjunto: puedes leerlo antes, y solo sale si lo envías tú, desde tu propia cuenta de correo. Si Mail no está configurado, se abre la hoja para compartir con la dirección a la vista, así que tú eliges adónde va el informe. **Ahora no** no envía nada, y Alike no vuelve a preguntar por ese informe.
 
 Un informe contiene la traza del fallo —qué parte del código de Alike se estaba ejecutando—, la versión de la app, la versión de iOS, el modelo del dispositivo y detalles técnicos que añade iOS, como el tipo de excepción, la arquitectura del procesador y tu ajuste de formato regional. En algunos fallos incluye también el mensaje de error que Alike generó en ese momento. iOS redacta el informe y Alike lo envía tal cual, sin modificarlo ni filtrarlo, así que lee el adjunto antes de enviarlo. No contiene fotos. Si lo envías por correo, el desarrollador recibe también lo que lleva cualquier correo, como tu dirección de correo electrónico.
 
@@ -86,7 +86,7 @@ Alike no hace ninguna petición de red por su cuenta. La única actividad salien
 
 Eliminar es siempre decisión tuya y siempre requiere confirmación explícita.
 
-Cuando confirmas una limpieza, Alike pide a iOS que elimine las fotos que seleccionaste. iOS muestra su propia confirmación del sistema antes de retirar nada. Las fotos eliminadas van a tu álbum **«Eliminados recientemente»**, donde iOS las conserva unos 30 días y desde donde puedes recuperarlas.
+Cuando confirmas una limpieza, Alike pide a iOS que elimine las fotos que seleccionaste. iOS muestra su propia confirmación del sistema antes de retirar nada. Las fotos eliminadas van a tu álbum **«Eliminados»**, donde iOS las conserva unos 30 días y desde donde puedes recuperarlas.
 
 Alike nunca elimina fotos en silencio, nunca elimina fotos que no hayas seleccionado, y no puede saltarse la confirmación de iOS.
 
@@ -114,7 +114,7 @@ El tratamiento que Apple hace de tu información de compra se rige por la [polí
 
 Ajustes → Datos y privacidad → **Eliminar datos de Alike** borra todo lo que Alike ha guardado en tu dispositivo: resultados de análisis y cachés, progreso e historial de limpieza, los pesos que Alike ha aprendido de las mejores tomas que elegiste, los informes de fallos pendientes en el dispositivo y tus preferencias de Alike. Esta acción no se puede deshacer.
 
-**No** toca tus fotos, tu álbum «Eliminados recientemente», tu permiso de acceso a fotos ni tu suscripción a Alike Pro. Tras el borrado, Alike vuelve a mostrar su introducción sin pedir acceso a fotos por segunda vez.
+**No** toca tus fotos, tu álbum «Eliminados», tu permiso de acceso a fotos ni tu suscripción a Alike Pro. Tras el borrado, Alike vuelve a mostrar su introducción sin pedir acceso a fotos por segunda vez.
 
 Eliminar la app retira con ella todos los datos locales de Alike.
 

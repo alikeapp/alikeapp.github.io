@@ -7,7 +7,7 @@ page_key: terms
 description: "Warunki korzystania z Alike, w tym subskrypcja Alike Pro, naliczanie opłat, odnowienie, okres próbny i anulowanie."
 ---
 
-Ostatnia aktualizacja: 6 września 2026
+Ostatnia aktualizacja: 30 października 2026
 
 Te warunki regulują korzystanie przez Ciebie z aplikacji Alike na iOS. Alike prowadzi Oleksandr Solokha, niezależny deweloper z siedzibą w Ukrainie („my”, „nas”).
 
@@ -17,7 +17,7 @@ Pobierając Alike lub korzystając z niego, akceptujesz te warunki. Jeśli ich n
 
 ## Co robi Alike
 
-Alike przegląda zdjęcia w Twojej bibliotece, porównuje je na urządzeniu za pomocą frameworka Vision od Apple i grupuje wizualnie podobne zdjęcia, żebyś mógł przejrzeć każdą grupę i wybrać, które zdjęcia usunąć — a gdy sam tego zechcesz, nakłada odwracalną poprawę na zdjęcie, które zachowujesz.
+Alike przegląda zdjęcia w Twojej bibliotece, porównuje je na urządzeniu za pomocą frameworka Vision od Apple i grupuje wizualnie podobne zdjęcia, żebyś mógł przejrzeć każdą grupę i wybrać, które zdjęcia usunąć — a gdy sam tego zechcesz, stosuje odwracalne ulepszenie zdjęcia, które zachowujesz.
 
 Cała analiza działa na Twoim urządzeniu. Szczegóły znajdziesz w naszej [polityce prywatności](../privacy/).
 
@@ -35,17 +35,17 @@ Alike pomaga Ci zdecydować, które zdjęcia usunąć. Nie decyduje za Ciebie i 
 
 Wyłącznie Ty odpowiadasz za przejrzenie każdej grupy i za decyzję, co usuwasz. Każde usunięcie wymaga Twojego wyraźnego potwierdzenia, a iOS pokazuje własne potwierdzenie, zanim cokolwiek zniknie. Usunięte zdjęcia trafiają do Twojego albumu „Ostatnio usunięte”, gdzie iOS trzyma je około 30 dni.
 
-Poprawa zostaje nałożona dopiero po Twoim potwierdzeniu, a iOS zachowuje oryginał, żebyś mógł go przywrócić. Jedyny wyjątek to zdjęcie noszące już edycję innej aplikacji: zastąpienia tamtej edycji nie da się cofnąć i dlatego Alike pyta wcześniej.
+Ulepszenie zostaje zastosowane dopiero po Twoim potwierdzeniu, a iOS zachowuje oryginał, żebyś mógł go przywrócić. Jedyny wyjątek to zdjęcie noszące już edycję innej aplikacji: zastąpienia tamtej edycji nie da się cofnąć i dlatego Alike pyta wcześniej.
 
 **Zrób kopię zapasową biblioteki zdjęć, zanim zrobisz duże porządki.** Nie odpowiadamy za zdjęcia, które sam zdecydujesz się usunąć, również za te, które wolałbyś potem zachować.
 
 ## Dozwolone korzystanie
 
-Zobowiązujesz się nie używać Alike do przetwarzania zdjęć, do których nie masz prawa dostępu, do naruszania prywatności lub praw innych osób ani do działania niezgodnego z prawem, które Cię obowiązuje.
+Zobowiązujesz się nie używać Alike do przetwarzania zdjęć, do których nie masz prawa dostępu, do naruszania prywatności lub praw własności intelektualnej innych osób ani do działania niezgodnego z prawem, które Cię obowiązuje.
 
 ## Subskrypcja Alike Pro
 
-Alike pobierzesz za darmo i obejmuje on podstawowe skanowanie i porządki. **Alike Pro** to subskrypcja odnawiana automatycznie, która odblokowuje pełen zakres funkcji.
+Alike pobierzesz za darmo. Aplikacja oferuje podstawowe skanowanie i porządkowanie zdjęć. **Alike Pro** to subskrypcja odnawiana automatycznie, która odblokowuje pełen zakres funkcji.
 
 ### Plany
 
@@ -96,7 +96,7 @@ W zakresie, w jakim odpowiedzialności nie można wyłączyć, nasza łączna od
 
 ## Apple
 
-Apple nie jest stroną tych warunków i nie ma obowiązku świadczenia pomocy technicznej dla Alike. Apple jest beneficjentem będącym osobą trzecią tych warunków i może je wobec Ciebie egzekwować. Jeśli aplikacja nie spełnia obowiązującej gwarancji, możesz powiadomić Apple, a Apple może zwrócić Ci cenę zakupu; w najszerszym zakresie dozwolonym prawem Apple nie ma żadnych innych obowiązków gwarancyjnych w odniesieniu do aplikacji.
+Apple nie jest stroną tych warunków i nie ma obowiązku świadczenia pomocy technicznej dla Alike. Apple jest osobą trzecią uprawnioną na mocy tych warunków i może je wobec Ciebie egzekwować. Jeśli aplikacja nie spełnia obowiązującej gwarancji, możesz powiadomić Apple, a Apple może zwrócić Ci cenę zakupu; w najszerszym zakresie dozwolonym prawem Apple nie ma żadnych innych obowiązków gwarancyjnych w odniesieniu do aplikacji.
 
 ## Rozwiązanie
 

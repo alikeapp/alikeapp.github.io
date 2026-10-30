@@ -7,13 +7,13 @@ page_key: privacy
 description: "Hoe Alike met je foto's omgaat: analyse op het apparaat, er wordt niets geüpload, geen analytics, en verwijderen gebeurt alleen met jouw bevestiging."
 ---
 
-Laatst bijgewerkt: 22 september 2026
+Laatst bijgewerkt: 30 oktober 2026
 
 Alike is een iOS-app die visueel vergelijkbare foto's in je fotobibliotheek vindt en groepeert, zodat je ze kunt bekijken en opslagruimte kunt vrijmaken. Alike wordt beheerd door Oleksandr Solokha, een individuele ontwikkelaar gevestigd in Oekraïne.
 
 Dit privacybeleid legt uit wat Alike wel en niet verzamelt, waar je gegevens staan en welke controle je erover hebt.
 
-**Kort gezegd: Alike heeft geen account, geen inlog en geen server. Je foto's en alles wat Alike erover te weten komt, blijven op je apparaat.**
+**Kort gezegd: Alike heeft geen account, geen aanmeldfunctie en geen server. Je foto's en alles wat Alike erover te weten komt, blijven op je apparaat.**
 
 ## Contact
 
@@ -63,7 +63,7 @@ Wanneer je een andere beste opname kiest dan die Alike voorstelde, bewaart de ap
 
 Als Alike onverwacht stopt, kan iOS de app later via Apples framework MetricKit een diagnoserapport over die crash geven. Alike bewaart dat rapport in zijn eigen opslag op je apparaat — hooguit de 20 meest recente — en doet er uit zichzelf verder niets mee.
 
-Bij de volgende start, zodra je niet midden in iets zit, vraagt Alike je één keer of je het wilt versturen. **Stuur rapport** opent een e-mail aan het adres onder 'Contact' met het rapport als bijlage: je kunt hem eerst lezen, en hij gaat alleen weg als je hem zelf verstuurt, vanuit je eigen mailaccount. Is Mail niet ingesteld, dan opent in plaats daarvan het deelvenster met het adres in beeld, zodat je zelf kiest waar het rapport heen gaat. **Niet nu** verstuurt niets, en Alike vraagt nooit meer naar dat rapport.
+Bij de volgende start, zodra je geen handeling meer uitvoert, vraagt Alike je één keer of je het wilt versturen. **Stuur rapport** opent een e-mail aan het adres onder 'Contact' met het rapport als bijlage: je kunt hem eerst lezen, en hij gaat alleen weg als je hem zelf verstuurt, vanuit je eigen mailaccount. Is Mail niet ingesteld, dan opent in plaats daarvan het deelvenster met het adres in beeld, zodat je zelf kiest waar het rapport heen gaat. **Niet nu** verstuurt niets, en Alike vraagt nooit meer naar dat rapport.
 
 Een rapport bevat de stacktrace van de crash — welk deel van de code van Alike draaide —, de appversie, de iOS-versie, het apparaatmodel en technische details die iOS toevoegt, zoals het type uitzondering, de processorarchitectuur en je instelling voor regio-opmaak. Bij sommige crashes bevat het ook de foutmelding die Alike op dat moment gaf. iOS stelt het rapport op en Alike verstuurt het zoals het is, zonder iets toe te voegen of weg te filteren — lees de bijlage dus voordat je hem verstuurt. Het bevat geen foto's. Verstuur je het per e-mail, dan ontvangt de ontwikkelaar ook wat elke e-mail meebrengt, zoals je e-mailadres.
 
@@ -122,7 +122,7 @@ Verwijder je de app, dan verdwijnen alle lokale gegevens van Alike ermee.
 
 Alike zelf verzamelt of verstuurt geen persoonsgegevens, dus voor alles wat dit beleid beschrijft zijn er bij de ontwikkelaar geen persoonsgegevens die ingezien, gecorrigeerd, geëxporteerd of verwijderd kunnen worden. De enige uitzondering is een crashrapport dat je zelf per e-mail verstuurt: de ontwikkelaar heeft dan die e-mail en de bijlage, verwerkt op basis van je toestemming — gegeven door het versturen — uitsluitend om de crash te verhelpen. Je kunt op elk moment via het adres hierboven vragen om ze te verwijderen.
 
-Alle verwerking gebeurt lokaal op je apparaat, onder jouw controle, en je kunt die op elk moment zelf ongedaan maken met 'Verwijder Alike-gegevens' of door de app te verwijderen.
+Alle verwerking gebeurt lokaal op je apparaat, onder jouw controle, en je kunt de opgeslagen gegevens op elk moment zelf verwijderen met 'Verwijder Alike-gegevens' of door de app te verwijderen.
 
 Bevind je je in de EU, het Verenigd Koninkrijk, Oekraïne, Californië of een andere regio met gegevensbeschermingsrechten, dan blijven die rechten gelden — er is alleen geen gegevensverzameling aan serverzijde waarop ze betrekking kunnen hebben. Denk je daar anders over, neem dan contact op via het adres hierboven, dan reageren we.
 
@@ -136,4 +136,4 @@ Verandert dit beleid, dan wordt de bijgewerkte versie op deze pagina gepubliceer
 
 ## Toepasselijk recht
 
-Op dit privacybeleid is het recht van Oekraïne van toepassing, onverminderd dwingende gegevensbeschermings- en consumentenrechten die je op grond van het recht van je eigen woonland toekomen.
+Op dit privacybeleid is het recht van Oekraïne van toepassing, onverminderd de dwingende rechten op gegevensbescherming die je als consument op grond van het recht van je woonland toekomen.

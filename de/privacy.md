@@ -7,7 +7,7 @@ page_key: privacy
 description: "Wie Alike mit deinen Fotos umgeht: Analyse auf dem Gerät, nichts wird hochgeladen, keine Analyse-Tools, und gelöscht wird nur mit deiner Bestätigung."
 ---
 
-Zuletzt aktualisiert: 22. September 2026
+Zuletzt aktualisiert: 30. Oktober 2026
 
 Alike ist eine iOS-App, die visuell ähnliche Fotos in deiner Fotomediathek findet und gruppiert, damit du sie durchsehen und Speicherplatz freigeben kannst. Alike wird von Oleksandr Solokha betrieben, einem einzelnen Entwickler mit Sitz in der Ukraine.
 
@@ -29,7 +29,7 @@ Alike fragt einmal zu Beginn den Zugriff auf die Fotomediathek an. Dieser Zugrif
 
 Du kannst vollen Zugriff gewähren oder eingeschränkten Zugriff und selbst wählen, welche Fotos Alike sehen darf. Du kannst das jederzeit in den iOS-Einstellungen unter „Datenschutz & Sicherheit“ → „Fotos“ → „Alike“ ändern oder widerrufen.
 
-Alike liest Bilddaten und die Metadaten, die iOS zu jedem Objekt bereitstellt, etwa Erstellungsdatum, ungefährer Aufnahmeort sofern vorhanden, Dateigröße und ob es sich um ein Bildschirmfoto oder einen Favoriten handelt. Diese Angaben dienen dazu, vorab zu filtern, welche Fotos einen Vergleich lohnen, und dir Gruppendetails anzuzeigen.
+Alike liest Bilddaten und die Metadaten, die iOS zu jedem Objekt bereitstellt, etwa Erstellungsdatum, ungefährer Aufnahmeort, sofern vorhanden, Dateigröße und ob es sich um ein Bildschirmfoto oder einen Favoriten handelt. Diese Angaben dienen dazu, vorab zu filtern, welche Fotos einen Vergleich lohnen, und dir Gruppendetails anzuzeigen.
 
 ### Mitteilungen
 
@@ -57,7 +57,7 @@ Alike kann die beste Aufnahme einer Gruppe verbessern. Das geschieht nie von sel
 
 ### Lernen, welche Fotos du bevorzugst
 
-Wenn du eine andere beste Aufnahme wählst als die von Alike vorgeschlagene, sichert die App den Unterschied zwischen den Qualitätsmessungen der beiden Fotos und nutzt ihn, um spätere Gruppen näher an deinem Geschmack zu sortieren. Sie lernt ausschließlich aus Entscheidungen, die du in der App triffst. Die Werte sind abgeleitete Zahlen, keine Fotos, sie bleiben auf deinem Gerät, und nichts wird irgendwohin gesendet. In den Einstellungen gibt es eine Taste, die das Gelernte zurücksetzt.
+Wenn du eine andere beste Aufnahme wählst als die von Alike vorgeschlagene, sichert die App den Unterschied zwischen den Qualitätsmessungen der beiden Fotos und nutzt ihn, um spätere Gruppen näher an deinem Geschmack zu sortieren. Sie lernt ausschließlich aus Entscheidungen, die du in der App triffst. Die Werte sind abgeleitete Zahlen, keine Fotos, sie bleiben auf deinem Gerät, und nichts wird irgendwohin gesendet. In den Einstellungen gibt es eine Schaltfläche, die das Gelernte zurücksetzt.
 
 ## Absturzberichte
 
@@ -136,4 +136,4 @@ Wenn sich diese Richtlinie ändert, wird die aktualisierte Fassung auf dieser Se
 
 ## Anwendbares Recht
 
-Diese Datenschutzrichtlinie unterliegt dem Recht der Ukraine, unbeschadet zwingender verbraucherschutzrechtlicher Datenschutzrechte, die dir nach dem Recht deines eigenen Wohnsitzlandes zustehen.
+Diese Datenschutzrichtlinie unterliegt dem Recht der Ukraine. Zwingende Datenschutzrechte, die dir als Verbraucher nach dem Recht deines Wohnsitzlandes zustehen, bleiben unberührt.

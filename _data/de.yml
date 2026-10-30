@@ -30,7 +30,7 @@ nav:
 
 hero:
   eyebrow: iPhone
-  headline: "Deine Mediathek, ohne die Fast-Dubletten."
+  headline: "Deine Mediathek. Ohne fast identische Fotos."
   subhead: "Alike gruppiert Fotos, die sich ähnlich sehen, wählt in jeder Gruppe die beste Aufnahme und hilft dir, den Rest aufzuräumen — ohne dass ein einziges Foto dein Gerät verlässt."
   badge: Im App Store laden
   badge_note: "Kostenloser Download, mit optionalem Pro-Abo."
@@ -50,7 +50,7 @@ steps:
       image: step-review
       image_alt: "Das Maskottchen freut sich neben einem hervorgehobenen besten Foto."
     - title: Aufräumen
-      body: "Bestätige, und die ausgewählten Fotos wandern nach „Zuletzt gelöscht“, wo iOS sie etwa 30 Tage aufbewahrt. Nichts wird jemals ohne dein Wort entfernt."
+      body: "Bestätige, und die ausgewählten Fotos wandern nach „Zuletzt gelöscht“, wo iOS sie etwa 30 Tage aufbewahrt. Ohne deine Zustimmung wird nichts entfernt."
       image: step-clean
       image_alt: "Das Maskottchen jubelt neben einer aufgeräumten Fotomediathek."
 
@@ -60,9 +60,9 @@ features:
     - title: Analyse auf dem Gerät
       body: "Jeder Vergleich läuft lokal über Apples Vision-Framework. Kein Upload, keine Warteschlange, keine Verarbeitung in der Cloud."
     - title: Drei Empfindlichkeitsstufen
-      body: "Niedrig, mittel oder hoch. Enger, wenn du nur nahezu identische Aufnahmen willst, weiter, um mehr zu erfassen."
+      body: "Niedrig, mittel oder hoch. Schränke den Vergleich auf nahezu identische Aufnahmen ein oder erweitere ihn, um mehr ähnliche Fotos zu finden."
     - title: Beste Aufnahme erkennen
-      body: "Ausgewählt anhand der Fotos selbst — Schärfe, Belichtung, Gesichter und Rauschen —, damit es immer eine sinnvolle Voreinstellung zum Behalten gibt. Sie lernt außerdem aus den Aufnahmen, die du selbst wählst."
+      body: "Ausgewählt anhand der Fotos selbst — Schärfe, Belichtung, Gesichter und Rauschen —, damit es immer eine sinnvolle Voreinstellung zum Behalten gibt. Alike lernt außerdem aus den Aufnahmen, die du selbst wählst."
     - title: Geführtes Durchsehen
       body: "Arbeite Gruppe für Gruppe mit „Nur beste behalten“, „Alle außer der besten auswählen“ und „Auswahl aufheben“."
     - title: Status-Markierungen
@@ -70,13 +70,13 @@ features:
     - title: Fortschritt und Ersparnis
       body: "Geprüft, verbleibend, ausgewählt und geschätzte Ersparnis, dazu ein nach Monaten gruppierter Aufräumverlauf."
     - title: Ein Layout, das zu dir passt
-      body: "Ein adaptives Raster, das zwischen einer großzügigen einspaltigen und einer dichteren Ansicht wechselt und sich zwischen Starts merkt."
-    - title: Dreizehn Sprachen, Dunkelmodus
-      body: "Englisch, Ukrainisch, Deutsch, Französisch, Spanisch, lateinamerikanisches Spanisch, brasilianisches Portugiesisch, Italienisch, Niederländisch, Polnisch, Türkisch, traditionelles Chinesisch und Arabisch durchgehend, dazu vollständiger Dunkelmodus."
+      body: "Ein adaptives Raster, das zwischen einer großzügigen einspaltigen und einer dichteren Ansicht wechselt und deine Auswahl bis zum nächsten Start speichert."
+    - title: 18 Sprachvarianten, Dunkelmodus
+      body: "Englisch sowie britisches, kanadisches und australisches Englisch, Ukrainisch, Deutsch, Französisch und kanadisches Französisch, Spanisch und lateinamerikanisches Spanisch, brasilianisches und europäisches Portugiesisch, Italienisch, Niederländisch, Polnisch, Türkisch, traditionelles Chinesisch und Arabisch in der gesamten App. Mit vollständiger Unterstützung für den Dunkelmodus."
     - title: Verbessern und zurücknehmen
       body: "Verbessere das Foto, das du behältst, mit einem Tippen. Das Original bleibt in deiner Mediathek, und ein Schritt holt es zurück."
     - title: Widgets für Home- und Sperrbildschirm
-      body: "Zwei Widgets, beide kostenlos. Eines zeigt, wie viel Speicher frei werden kann, und bringt dich in eine offen gebliebene Prüfung zurück; das andere listet ähnliche Gruppen, Screenshots und unscharfe Fotos, jede Zeile öffnet ihre eigene Liste. Seit 1.5.0 gibt es das erste auch in drei Größen für den Sperrbildschirm: eine Zeile über der Uhr, eine Karte und ein Ring."
+      body: "Zwei Widgets, beide kostenlos. Eines zeigt, wie viel Speicher frei werden kann, und bringt dich in eine offen gebliebene Prüfung zurück; das andere listet ähnliche Gruppen, Bildschirmfotos und unscharfe Fotos, jede Zeile öffnet ihre eigene Liste. Seit 1.5.0 gibt es das erste auch in drei Größen für den Sperrbildschirm: eine Zeile über der Uhr, eine Karte und ein Ring."
 
 screenshots:
   title: Ein Blick hinein
@@ -84,8 +84,8 @@ screenshots:
   pending: "Die Screenshots werden vor dem Start vorbereitet."
 
 privacy:
-  title: Datenschutz ist der ganze Punkt
-  subtitle: "Fotos aufräumen heißt, einer App deine persönlichste Sammlung anzuvertrauen. Alike ist so gebaut, dass sie deine Hände nie verlassen muss."
+  title: Datenschutz steht im Mittelpunkt
+  subtitle: "Fotos aufzuräumen bedeutet, einer App deine persönlichste Sammlung anzuvertrauen. Mit Alike bleibt diese Sammlung unter deiner Kontrolle."
   image_alt: "Das Maskottchen ruht neben einer aufgeräumten, fertigen Fotomediathek."
   claims:
     - title: Die Analyse läuft auf deinem Gerät
@@ -100,7 +100,7 @@ privacy:
 
 pricing:
   title: Preise
-  subtitle: "Alike ist kostenlos ladbar. Alike Pro hebt die Grenzen auf."
+  subtitle: "Alike kann kostenlos geladen werden. Alike Pro hebt die Beschränkungen auf."
   free:
     name: Alike Free
     price: Kostenlos
@@ -109,14 +109,14 @@ pricing:
       - "3 Scans pro Monat"
       - "Geführtes Durchsehen mit bester Aufnahme"
       - "Verbesserung mit einem Tippen, immer umkehrbar"
-      - "Beste Aufnahme, die aus deinen Wahlen lernt"
+      - "Beste Aufnahme, die aus deiner Auswahl lernt"
       - "Sortierung und Aufräumverlauf"
       - "Fotos einzeln aufräumen"
   pro:
     name: Alike Pro
     badge: Empfohlen
     price_note: "Jahres- und Monatspläne, in deiner Landeswährung."
-    trial: 7 Tage kostenlos testen im Jahresplan
+    trial: 7 Tage kostenlos testen im Jahresplan für berechtigte neue Abonnentinnen und Abonnenten
     features:
       - "Unbegrenzte Scans"
       - "Ganze Auswahlen auf einmal aufräumen"
@@ -148,7 +148,7 @@ faq:
     - q: Kann Alike meine Fotos verändern?
       a: "Nur wenn du es verlangst. Du kannst die beste Aufnahme einer Gruppe verbessern; Alike zeigt dir das Ergebnis zuerst und sichert es erst, wenn du es anwendest. iOS behält das Original, ein Schritt holt es also zurück, und auch Apple Fotos kann die Änderung rückgängig machen."
     - q: Lernt Alike aus dem, was ich wähle?
-      a: "Ja, aus deinen eigenen Wahlen und aus nichts sonst. Wenn du eine andere beste Aufnahme wählst, merkt sich Alike, was du bevorzugt hast, und sortiert spätere Gruppen näher daran. Alles bleibt auf deinem Gerät, und die Einstellungen können es zurücksetzen."
+      a: "Ja, aus deinen eigenen Entscheidungen und aus nichts sonst. Wenn du eine andere beste Aufnahme wählst, merkt sich Alike, was du bevorzugt hast, und sortiert spätere Gruppen näher daran. Alles bleibt auf deinem Gerät. Du kannst das Gelernte in den Einstellungen zurücksetzen."
     - q: Wie kündige ich ein Abo?
       a: "In den iOS-Einstellungen auf deinen Namen tippen, dann „Abos“. Eine Kündigung stoppt künftige Verlängerungen, und der Zugriff bleibt bis zum Ende des bezahlten Zeitraums bestehen. Abos und Rückerstattungen wickelt Apple ab, nicht wir."
     - q: Kann ich alles löschen, was Alike gespeichert hat?
@@ -172,7 +172,7 @@ support:
     - "Ob die Berechtigung für die Fotomediathek auf vollen oder eingeschränkten Zugriff steht"
     - "Bei einem verbesserten Foto, ob du „Original wiederherstellen“ in Alike oder Bearbeiten → Zurücksetzen in Apple Fotos schon versucht hast, und ob du das Gelernte für Beste Aufnahme in den Alike-Einstellungen zurückgesetzt hast"
   privacy_title: Fragen zum Datenschutz
-  privacy_body: "Alike hat keinen Server und erhebt nichts, es gibt also keine Accountdaten zum Exportieren oder Löschen. Die Datenschutzrichtlinie erklärt das vollständig, und „Alike-Daten löschen“ in den Einstellungen entfernt alles, was auf deinem Gerät gespeichert ist."
+  privacy_body: "Alike hat keinen Server und erhebt nichts, es gibt also keine Accountdaten zum Exportieren oder Löschen. Die Datenschutzrichtlinie erklärt das vollständig, und „Alike-Daten löschen“ in den Einstellungen entfernt nur die lokal gespeicherten Alike-Daten. Deine Fotos, dein Fotozugriff und dein Abo bleiben erhalten."
   subs_title: Abos und Rückerstattungen
   subs_body: "Alike Pro wird von Apple verkauft. Abos, Kündigungen und Rückerstattungen laufen vollständig über deinen Apple-Account, und wir können weder für dich kündigen noch erstatten."
   subs_manage: "Verwalten oder kündigen: iOS-Einstellungen → dein Name → „Abos“"

@@ -7,13 +7,13 @@ page_key: terms
 description: "Conditions d'utilisation d'Alike, y compris l'abonnement Alike Pro, la facturation, le renouvellement, l'essai gratuit et la résiliation."
 ---
 
-Dernière mise à jour : 6 septembre 2026
+Dernière mise à jour : 30 octobre 2026
 
 Les présentes conditions d'utilisation régissent votre utilisation de l'app iOS Alike. Alike est exploitée par Oleksandr Solokha, développeur indépendant établi en Ukraine (« nous »).
 
 En téléchargeant ou en utilisant Alike, vous acceptez ces conditions. Si vous ne les acceptez pas, n'utilisez pas l'app.
 
-> **Remarque sur le CLUF de l'App Store.** Alike est distribuée via l'App Store dans le cadre du contrat de licence utilisateur final standard d'Apple (Standard EULA), qui est la licence régissant juridiquement votre utilisation de l'app. Les présentes conditions décrivent le fonctionnement d'Alike, le contenu de l'abonnement et ce que vous pouvez attendre de nous. En cas de contradiction entre les présentes conditions et le contrat de licence standard d'Apple sur les termes de licence, le contrat de licence standard d'Apple prévaut.
+> **Remarque sur le CLUF de l'App Store.** Alike est distribuée via l'App Store dans le cadre du contrat de licence utilisateur final standard d'Apple (Standard EULA), qui est la licence régissant juridiquement votre utilisation de l'app. Les présentes conditions décrivent le fonctionnement d'Alike, le contenu de l'abonnement et ce que vous pouvez attendre de nous. En cas de contradiction entre les présentes conditions et le contrat de licence standard d'Apple sur les conditions de licence, le contrat de licence standard d'Apple prévaut.
 
 ## Ce que fait Alike
 
@@ -33,7 +33,7 @@ Vous ne pouvez pas faire de l'ingénierie inverse, décompiler ou désassembler 
 
 Alike vous aide à décider quelles photos supprimer. Elle ne décide pas à votre place, et elle peut se tromper : deux photos qui se ressemblent pour un ordinateur ne sont pas forcément interchangeables pour vous.
 
-Vous êtes seul responsable de l'examen de chaque groupe et de ce que vous choisissez de supprimer. Chaque suppression exige votre confirmation explicite, et iOS affiche sa propre confirmation avant tout retrait. Les photos supprimées vont dans votre album « Supprimés récemment », où iOS les conserve environ 30 jours.
+Vous êtes seul responsable de l'examen de chaque groupe et de ce que vous choisissez de supprimer. Chaque suppression exige votre confirmation explicite, et iOS affiche sa propre confirmation avant tout retrait. Les photos supprimées vont dans votre album « Supprimées récemment », où iOS les conserve environ 30 jours.
 
 Une amélioration n'est appliquée qu'après votre confirmation, et iOS conserve l'original pour que vous puissiez le rétablir. La seule exception est une photo qui porte déjà la retouche d'une autre app : remplacer cette retouche est irréversible, et c'est pourquoi Alike demande d'abord.
 
@@ -49,7 +49,7 @@ Alike est gratuite au téléchargement et comprend l'analyse et le nettoyage de 
 
 ### Formules
 
-| Formule | Durée | Offre de lancement |
+| Formule | Durée | Offre de bienvenue |
 | --- | --- | --- |
 | Alike Pro annuel | 1 an | Essai gratuit de 7 jours pour les nouveaux abonnés éligibles |
 | Alike Pro mensuel | 1 mois | Aucune |
@@ -72,7 +72,7 @@ Vous pouvez gérer ou résilier votre abonnement à tout moment dans **Réglages
 
 ### Changements de prix ou de fonctionnalités
 
-Si nous modifions le prix de l'abonnement, Apple vous en informera et vous demandera votre accord avant qu'un prix majoré ne s'applique à votre renouvellement, conformément aux règles de l'App Store. Nous pouvons ajouter, modifier ou retirer des fonctionnalités au fil du temps ; nous ne retirerons pas une fonctionnalité d'Alike Pro substantiellement mise en avant pendant une période que vous avez déjà payée sans proposer un équivalent.
+Si nous modifions le prix de l'abonnement, Apple vous en informera et vous demandera votre accord avant qu'un prix majoré ne s'applique à votre renouvellement, conformément aux règles de l'App Store. Nous pouvons ajouter, modifier ou retirer des fonctionnalités au fil du temps ; nous ne retirerons pas une fonctionnalité essentielle mise en avant dans la présentation d'Alike Pro pendant une période que vous avez déjà payée sans proposer un équivalent.
 
 ## Disponibilité et évolutions
 

@@ -9,7 +9,7 @@ support_url: /fr/support/
 
 # Registre : vouvoiement, comme la mention d'abonnement dans
 # Docs/legal/subscription-disclosure.md. Le vocabulaire système suit la
-# terminologie française d'Apple — « Supprimés récemment », « captures d'écran ».
+# terminologie française d'Apple — « Supprimées récemment », « captures d'écran ».
 compare_url: /fr/compare/
 guide_similar_url: /fr/guides/delete-similar-photos/
 guide_storage_url: /fr/guides/free-up-photo-storage/
@@ -46,11 +46,11 @@ steps:
       image: step-scan
       image_alt: "La mascotte examine des photos à la loupe."
     - title: Passer en revue
-      body: "Chaque groupe s'ouvre avec une meilleure prise déjà choisie, ce qui vous permet de décider en quelques secondes. Ne garder que la meilleure, tout sélectionner sauf la meilleure, ou choisir à la main."
+      body: "Chaque groupe s'ouvre avec la meilleure prise déjà sélectionnée, ce qui vous permet de décider en quelques secondes. Ne garder que la meilleure, tout sélectionner sauf la meilleure, ou choisir à la main."
       image: step-review
       image_alt: "La mascotte se réjouit à côté d'une meilleure photo mise en avant."
     - title: Nettoyer
-      body: "Vous confirmez, et les photos choisies partent dans « Supprimés récemment », où iOS les conserve environ 30 jours. Rien n'est jamais supprimé sans votre accord."
+      body: "Vous confirmez, et les photos choisies partent dans « Supprimées récemment », où iOS les conserve environ 30 jours. Rien n'est jamais supprimé sans votre accord."
       image: step-clean
       image_alt: "La mascotte exulte près d'une photothèque bien rangée."
 
@@ -60,9 +60,9 @@ features:
     - title: Analyse sur l'appareil
       body: "Chaque comparaison utilise le framework Vision d'Apple, en local. Aucun envoi, aucune file d'attente, aucun traitement dans le cloud."
     - title: Trois niveaux de sensibilité
-      body: "Faible, moyen ou élevé. Resserrez le seuil pour ne viser que les prises quasi identiques, élargissez-le pour en attraper davantage."
+      body: "Faible, moyen ou élevé. Resserrez le seuil pour ne viser que les prises quasi identiques, élargissez-le pour repérer davantage de photos similaires."
     - title: Détection de la meilleure prise
-      body: "Choisie d'après les photos elles-mêmes — netteté, exposition, visages et bruit —, pour qu'il y ait toujours une option sensée à conserver. Elle apprend aussi des prises que vous choisissez vous-même."
+      body: "Choisie d'après les photos elles-mêmes — netteté, exposition, visages et bruit —, pour qu'il y ait toujours une option sensée à conserver. Alike apprend aussi des prises que vous choisissez vous-même."
     - title: Revue guidée
       body: "Avancez groupe par groupe avec « Ne garder que la meilleure », « Tout sélectionner sauf la meilleure » et « Effacer la sélection »."
     - title: Badges de suivi
@@ -71,8 +71,8 @@ features:
       body: "Examinées, restantes, sélectionnées et espace estimé, ainsi qu'un historique de nettoyage groupé par mois."
     - title: Une mise en page qui vous convient
       body: "Une grille adaptative qui alterne entre une colonne aérée et un affichage plus dense, mémorisée d'un lancement à l'autre."
-    - title: Treize langues, mode sombre
-      body: "Anglais, ukrainien, allemand, français, espagnol, espagnol d'Amérique latine, portugais du Brésil, italien, néerlandais, polonais, turc, chinois traditionnel et arabe dans toute l'app, avec un mode sombre complet."
+    - title: 18 variantes linguistiques, mode sombre
+      body: "Anglais et ses variantes britannique, canadienne et australienne, ukrainien, allemand, français et français canadien, espagnol et espagnol d'Amérique latine, portugais du Brésil et du Portugal, italien, néerlandais, polonais, turc, chinois traditionnel et arabe dans toute l'app, avec une prise en charge complète du mode sombre."
     - title: Améliorer, et revenir en arrière
       body: "Améliorez la photo que vous gardez d'une seule touche. L'original reste dans votre photothèque, et une étape le rétablit."
     - title: Widgets sur l'écran d'accueil et l'écran verrouillé
@@ -95,7 +95,7 @@ privacy:
     - title: Aucune analyse d'usage, aucun pistage
       body: "Aucun événement d'utilisation, aucun identifiant publicitaire, aucun SDK de rapport de plantage, aucun cookie. L'app n'effectue aucune requête réseau de son propre fait."
     - title: La suppression reste votre décision
-      body: "Chaque nettoyage exige votre confirmation, iOS demande une seconde fois, et les photos atterrissent dans « Supprimés récemment »."
+      body: "Chaque nettoyage exige votre confirmation, iOS demande une seconde fois, et les photos atterrissent dans « Supprimées récemment »."
   cta: Lire la politique de confidentialité complète
 
 pricing:
@@ -116,7 +116,7 @@ pricing:
     name: Alike Pro
     badge: Recommandé
     price_note: "Formules annuelle et mensuelle, dans votre devise locale."
-    trial: 7 jours d'essai gratuit sur la formule annuelle
+    trial: 7 jours d'essai gratuit sur la formule annuelle pour les nouveaux abonnés éligibles
     features:
       - "Analyses illimitées"
       - "Nettoyer des sélections entières d'un coup"
@@ -136,11 +136,11 @@ faq:
     - q: Alike envoie-t-elle mes photos quelque part ?
       a: "Non. Toute la comparaison se fait sur votre appareil avec le framework Vision d'Apple, et l'app n'effectue aucune requête réseau de son propre fait. La seule activité sortante est gérée par Apple lorsque vous achetez ou restaurez un abonnement."
     - q: Alike peut-elle supprimer des photos sans demander ?
-      a: "Jamais. Vous choisissez ce qui doit être supprimé, Alike vous demande de confirmer, et iOS affiche sa propre confirmation avant toute suppression. Les photos supprimées vont dans « Supprimés récemment », où iOS les conserve environ 30 jours."
+      a: "Jamais. Vous choisissez ce qui doit être supprimé, Alike vous demande de confirmer, et iOS affiche sa propre confirmation avant toute suppression. Les photos supprimées vont dans « Supprimées récemment », où iOS les conserve environ 30 jours."
     - q: Ai-je besoin d'un compte ?
       a: "Non. Alike n'a ni compte, ni connexion, ni serveur. Vous ouvrez l'app et vous lancez une analyse."
     - q: À quoi Alike accède-t-elle exactement ?
-      a: "À votre photothèque, demandée une seule fois au début. Vous pouvez accorder un accès complet ou un accès limité et choisir les photos qu'Alike peut voir, et le modifier à tout moment dans les Réglages iOS. L'autorisation de notification n'est demandée que si vous activez le rappel de nettoyage hebdomadaire."
+      a: "À votre photothèque, dont l'accès est demandé une seule fois au début. Vous pouvez accorder un accès complet ou un accès limité et choisir les photos qu'Alike peut voir, et le modifier à tout moment dans les Réglages iOS. L'autorisation de notification n'est demandée que si vous activez le rappel de nettoyage hebdomadaire."
     - q: Comment décide-t-elle que des photos se ressemblent ?
       a: "Chaque photo reçoit une empreinte numérique de caractéristiques du framework Vision. Les photos proches par la date de prise de vue et le lieu sont comparées, et une photo ne rejoint un groupe que si elle ressemble à toutes celles qu'il contient déjà. Le niveau de sensibilité définit ce que « proche » veut dire."
     - q: Qu'est-ce que la meilleure prise ?
@@ -148,7 +148,7 @@ faq:
     - q: Alike peut-elle modifier mes photos ?
       a: "Seulement si vous le demandez. Vous pouvez améliorer la meilleure prise d'un groupe : Alike vous montre d'abord le résultat et ne l'enregistre que lorsque vous l'appliquez. iOS conserve l'original, donc une étape le rétablit, et Photos d'Apple peut aussi annuler la modification."
     - q: Alike apprend-elle de mes choix ?
-      a: "Oui, de vos propres choix et de rien d'autre. Lorsque vous choisissez une autre meilleure prise, Alike retient ce que vous avez préféré et classe les groupes suivants au plus près. Tout reste sur votre appareil, et les réglages peuvent réinitialiser cet apprentissage."
+      a: "Oui, de vos propres choix et de rien d'autre. Lorsque vous choisissez une autre meilleure prise, Alike retient ce que vous avez préféré et classe les groupes suivants au plus près. Tout reste sur votre appareil. Vous pouvez réinitialiser cet apprentissage dans les réglages."
     - q: Comment résilier un abonnement ?
       a: "Dans les Réglages iOS, touchez votre nom, puis « Abonnements ». La résiliation arrête les renouvellements futurs et vous conservez l'accès jusqu'à la fin de la période payée. Les abonnements et les remboursements sont gérés par Apple, pas par nous."
     - q: Puis-je effacer tout ce qu'Alike a enregistré ?
@@ -172,7 +172,7 @@ support:
     - "Si l'autorisation d'accès à la photothèque est complète ou limitée"
     - "Pour une photo améliorée, si vous avez déjà essayé « Rétablir l’original » dans Alike ou Modifier → Rétablir dans Photos d'Apple, et si vous avez réinitialisé l'apprentissage de Meilleure prise dans les réglages d'Alike"
   privacy_title: Questions de confidentialité
-  privacy_body: "Alike n'a pas de serveur et ne collecte rien, il n'y a donc aucune donnée de compte à exporter ou à supprimer. La politique de confidentialité l'explique en détail, et « Supprimer les données d'Alike » dans les Réglages efface tout ce qui est stocké sur votre appareil."
+  privacy_body: "Alike n'a pas de serveur et ne collecte rien, il n'y a donc aucune donnée de compte à exporter ou à supprimer. La politique de confidentialité l'explique en détail, et « Supprimer les données d'Alike » dans les Réglages efface uniquement les données locales d'Alike. Vos photos, votre accès aux photos et votre abonnement restent intacts."
   subs_title: Abonnements et remboursements
   subs_body: "Alike Pro est vendu par Apple. Les abonnements, les résiliations et les remboursements passent entièrement par votre compte Apple, et nous ne pouvons ni résilier ni rembourser à votre place."
   subs_manage: "Gérer ou résilier : Réglages iOS → votre nom → « Abonnements »"

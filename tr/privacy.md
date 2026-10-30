@@ -7,9 +7,9 @@ page_key: privacy
 description: "Alike fotoğraflarınla nasıl çalışır: cihaz üzerinde analiz, hiçbir şey yüklenmez, analitik yok ve silme yalnızca senin onayınla olur."
 ---
 
-Son güncelleme: 22 Eylül 2026
+Son güncelleme: 30 Ekim 2026
 
-Alike, fotoğraf kitaplığındaki görsel olarak benzer fotoğrafları bulup gruplayan ve böylece onları gözden geçirip yer açmanı sağlayan bir iOS uygulamasıdır. Alike'ı, Ukrayna merkezli bağımsız bir geliştirici olan Oleksandr Solokha yürütür.
+Alike, fotoğraf arşivindeki görsel olarak benzer fotoğrafları bulup gruplayan ve böylece onları gözden geçirip yer açmanı sağlayan bir iOS uygulamasıdır. Alike'ı, Ukrayna merkezli bağımsız bir geliştirici olan Oleksandr Solokha yürütür.
 
 Bu gizlilik politikası, Alike'ın neyi topladığını ve neyi toplamadığını, verilerinin nerede durduğunu ve bunlar üzerinde nasıl bir denetimin olduğunu anlatır.
 
@@ -23,9 +23,9 @@ Destek, hata bildirimi, gizlilik soruları ya da satın alma sorunları için:
 
 ## Alike neye erişir
 
-### Fotoğraf kitaplığın
+### Fotoğraf arşivin
 
-Alike, fotoğraf kitaplığına erişimi başlangıçta bir kez ister. Bu erişim iki şey için gereklidir: görsel olarak benzer olanları bulmak üzere fotoğrafları karşılaştırmak ve — yalnızca sen istediğinde — saklamayı seçtiğin bir fotoğrafın iyileştirilmiş sürümünü kaydetmek.
+Alike, fotoğraf arşivine erişimi başlangıçta bir kez ister. Bu erişim iki şey için gereklidir: görsel olarak benzer olanları bulmak üzere fotoğrafları karşılaştırmak ve — yalnızca sen istediğinde — saklamayı seçtiğin bir fotoğrafın iyileştirilmiş sürümünü kaydetmek.
 
 Tam erişim verebilirsin ya da sınırlı erişim verip Alike'ın hangi fotoğrafları göreceğini kendin seçebilirsin. Bunu istediğin zaman iOS Ayarları'nda «Gizlilik ve Güvenlik» → «Fotoğraflar» → «Alike» yolundan değiştirebilir veya geri alabilirsin.
 
@@ -53,7 +53,7 @@ Bunların hepsi cihazında Alike'ın kendi yalıtılmış deposunda durur ve cih
 
 ### Sakladığın fotoğrafı iyileştirmek
 
-Alike, bir gruptaki en iyi kareyi iyileştirebilir. Bunu asla kendiliğinden yapmaz: sonuç sana önizleme olarak gösterilir ve ancak sen uyguladıktan sonra, her seferinde tek bir fotoğraf için kaydedilir. İşlem cihazında yapılır ve hiçbir şey yüklenmez. iOS aslı saklar — değişiklik, Alike'a ait olarak işaretlenmiş, aslı bozmayan bir düzenleme olarak kaydedilir; böylece Apple Fotoğraflar'da görünür ve her iki uygulamadan da geri alınabilir. Hiçbir kopya oluşturulmaz. İyileştirme; video için, Sınırlı Erişim'de ve sistemin düzenlenemez olarak işaretlediği fotoğraflar için sunulmaz, üzerinde başka bir uygulamanın düzenlemesi bulunan bir fotoğraf ise ancak sen kabul ettikten sonra değiştirilir.
+Alike, bir gruptaki en iyi kareyi iyileştirebilir. Bunu asla kendiliğinden yapmaz: sonuç sana önizleme olarak gösterilir ve ancak sen uyguladıktan sonra, her seferinde tek bir fotoğraf için kaydedilir. İşlem cihazında yapılır ve hiçbir şey yüklenmez. iOS aslını saklar — değişiklik, Alike'a ait olarak işaretlenmiş, aslı bozmayan bir düzenleme olarak kaydedilir; böylece Apple Fotoğraflar'da görünür ve her iki uygulamadan da geri alınabilir. Hiçbir kopya oluşturulmaz. İyileştirme; video için, Sınırlı Erişim'de ve sistemin düzenlenemez olarak işaretlediği fotoğraflar için sunulmaz, üzerinde başka bir uygulamanın düzenlemesi bulunan bir fotoğraf ise ancak sen kabul ettikten sonra değiştirilir.
 
 ### Hangi fotoğrafları yeğlediğini öğrenmek
 
@@ -118,7 +118,7 @@ Fotoğraflarına, «Son Silinenler» albümüne, fotoğraf erişimi iznine ya da
 
 Uygulamayı silersen Alike'ın tüm yerel verileri de onunla birlikte gider.
 
-## Hukuki dayanak ve haklarım
+## Hukuki dayanak ve hakların
 
 Alike'ın kendisi kişisel veri toplamaz ya da aktarmaz; bu nedenle bu politikanın anlattığı her şey için geliştiricide erişilebilecek, düzeltilebilecek, dışa aktarılabilecek ya da silinebilecek hiçbir kişisel veri yoktur. Tek istisna, e-postayla göndermeyi seçtiğin bir çökme raporudur: Bu durumda geliştiricide o e-posta ve eki bulunur; bunlar, göndererek verdiğin rızaya dayanılarak yalnızca çökmeyi düzeltmek amacıyla işlenir. Silinmelerini dilediğin zaman yukarıdaki adresten isteyebilirsin.
 
@@ -136,4 +136,4 @@ Bu politika değişirse güncellenmiş sürüm, yeni bir «Son güncelleme» tar
 
 ## Uygulanacak hukuk
 
-Bu gizlilik politikası Ukrayna hukukuna tabidir; kendi ikamet ülkenin hukuku uyarınca sana tanınan emredici veri koruma ve tüketici hakları saklıdır.
+Bu gizlilik politikası Ukrayna hukukuna tabidir; ikamet ettiğin ülkenin hukuku uyarınca tüketici olarak sahip olduğun emredici veri koruma hakların saklıdır.

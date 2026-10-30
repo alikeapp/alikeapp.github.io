@@ -7,7 +7,7 @@ page_key: terms
 description: "Alike'ın kullanım koşulları: Alike Pro aboneliği, faturalandırma, yenileme, ücretsiz deneme ve iptal."
 ---
 
-Son güncelleme: 6 Eylül 2026
+Son güncelleme: 30 Ekim 2026
 
 Bu koşullar, Alike iOS uygulamasını kullanımını düzenler. Alike'ı, Ukrayna merkezli bağımsız bir geliştirici olan Oleksandr Solokha yürütür («biz»).
 
@@ -17,7 +17,7 @@ Alike'ı indirerek ya da kullanarak bu koşulları kabul etmiş olursun. Kabul e
 
 ## Alike ne yapar
 
-Alike, fotoğraf kitaplığındaki fotoğrafları tarar, Apple'ın Vision çerçevesiyle cihaz üzerinde karşılaştırır ve görsel olarak benzer olanları gruplar; böylece her grubu gözden geçirip hangi fotoğrafların silineceğini seçebilirsin — ve sen istediğinde, sakladığın bir fotoğrafa geri alınabilir bir iyileştirme uygular.
+Alike, fotoğraf arşivindeki fotoğrafları tarar, Apple'ın Vision çerçevesiyle cihaz üzerinde karşılaştırır ve görsel olarak benzer olanları gruplar; böylece her grubu gözden geçirip hangi fotoğrafların silineceğini seçebilirsin — ve sen istediğinde, sakladığın bir fotoğrafa geri alınabilir bir iyileştirme uygular.
 
 Tüm analiz cihazında çalışır. Ayrıntılar [gizlilik politikamızda](../privacy/).
 
@@ -35,13 +35,13 @@ Alike, hangi fotoğrafların silineceğine karar vermene yardım eder. Senin yer
 
 Her grubu gözden geçirmek ve neyi sileceğine karar vermek yalnızca senin sorumluluğundadır. Her silme senin açık onayını gerektirir ve bir şey kaldırılmadan önce iOS kendi onayını gösterir. Silinen fotoğraflar «Son Silinenler» albümüne gider; iOS onları yaklaşık 30 gün orada tutar.
 
-Bir iyileştirme ancak sen onayladıktan sonra uygulanır ve iOS aslı saklar, böylece geri koyabilirsin. Tek istisna, üzerinde başka bir uygulamanın düzenlemesi bulunan bir fotoğraftır: o düzenlemenin değiştirilmesi geri alınamaz, Alike bu yüzden önce sorar.
+Bir iyileştirme ancak sen onayladıktan sonra uygulanır ve iOS aslını saklar, böylece geri koyabilirsin. Tek istisna, üzerinde başka bir uygulamanın düzenlemesi bulunan bir fotoğraftır: o düzenlemenin değiştirilmesi geri alınamaz, Alike bu yüzden önce sorar.
 
-**Büyük bir temizlikten önce fotoğraf kitaplığını yedekle.** Silmeyi kendi seçtiğin fotoğraflardan — sonradan keşke saklasaydım dediklerin de dahil — sorumlu değiliz.
+**Büyük bir temizlikten önce fotoğraf arşivini yedekle.** Silmeyi kendi seçtiğin fotoğraflardan — sonradan keşke saklasaydım dediklerin de dahil — sorumlu değiliz.
 
 ## İzin verilen kullanım
 
-Alike'ı, erişim hakkın olmayan fotoğrafları işlemek, başkalarının gizliliğini ya da haklarını ihlal etmek veya sana uygulanan hukuka aykırı davranmak için kullanmayacağını kabul edersin.
+Alike'ı, erişim hakkın olmayan fotoğrafları işlemek, başkalarının gizliliğini ya da fikri mülkiyet haklarını ihlal etmek veya sana uygulanan hukuka aykırı davranmak için kullanmayacağını kabul edersin.
 
 ## Alike Pro aboneliği
 
@@ -62,7 +62,7 @@ Fiyatlar satın almadan önce uygulamada kendi para biriminde gösterilir ve ma�
 - **Aboneliğin**, mevcut dönemin bitiminden en az 24 saat önce iptal etmezsen, o günkü fiyattan aynı süre için **otomatik olarak yenilenir**.
 - Yenileme için Apple Hesabın, mevcut dönemin bitiminden önceki 24 saat içinde borçlandırılır.
 - Deneme hakkını Apple, abonelik grubu bazında belirler. Alike Pro grubunda daha önce bir deneme kullandıysan yeniden hak kazanmazsın.
-- Süregelen bir ücretsiz deneme sırasında abonelik satın alırsan kalan deneme süresi düşer.
+- Süregelen bir ücretsiz deneme sırasında abonelik satın alırsan kalan deneme süresi sona erer.
 
 ### Yönetme ve iptal
 
