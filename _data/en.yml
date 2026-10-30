@@ -70,10 +70,10 @@ features:
       body: "Reviewed, Remaining, Selected, and Estimated Savings, plus a cleanup history grouped by month."
     - title: A layout that fits you
       body: "An adaptive grid that switches between a roomy single column and a denser layout, remembered between launches."
-    # The app ships seven languages as of the Tier 1 localization work. Keep this
+    # The app ships 18 locales: 13 languages plus regional variants. Keep this
     # count in step with the catalogs, not with the languages this site is in.
-    - title: Thirteen languages, Dark Mode
-      body: "English, Ukrainian, German, French, Spanish, Latin American Spanish, Brazilian Portuguese, Italian, Dutch, Polish, Turkish, Traditional Chinese and Arabic throughout, and complete Dark Mode support."
+    - title: 18 language variants, Dark Mode
+      body: "English plus British, Canadian and Australian English, Ukrainian, German, French and Canadian French, Spanish and Latin American Spanish, Brazilian and European Portuguese, Italian, Dutch, Polish, Turkish, Traditional Chinese and Arabic throughout the app, with complete Dark Mode support."
     - title: Enhance, and undo
       body: "Improve the photo you keep with one tap. The original stays in your library, and one step puts it back."
     - title: Widgets, home screen and Lock Screen
