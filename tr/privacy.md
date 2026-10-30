@@ -136,4 +136,4 @@ Bu politika değişirse güncellenmiş sürüm, yeni bir «Son güncelleme» tar
 
 ## Uygulanacak hukuk
 
-Bu gizlilik politikası Ukrayna hukukuna tabidir; kendi ikamet ülkenin hukuku uyarınca sana tanınan emredici veri koruma ve tüketici hakları saklıdır.
+Bu gizlilik politikası Ukrayna hukukuna tabidir; ikamet ettiğin ülkenin hukuku uyarınca tüketici olarak sahip olduğun emredici veri koruma hakların saklıdır.
