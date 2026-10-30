@@ -11,14 +11,14 @@ support_url: /pt-br/support/
 
 # Registro: "você", igual ao aviso de assinatura em
 # Docs/legal/subscription-disclosure.md. O vocabulário de sistema segue a
-# terminologia da Apple em português do Brasil — "Apagados recentemente",
+# terminologia da Apple em português do Brasil — "Apagados",
 # "capturas de tela", "Ajustes".
 compare_url: /pt-br/compare/
 guide_similar_url: /pt-br/guides/delete-similar-photos/
 guide_storage_url: /pt-br/guides/free-up-photo-storage/
 
 meta:
-  title: "Alike — excluir fotos parecidas e liberar espaço no iPhone"
+  title: "Alike — apagar fotos parecidas e liberar espaço no iPhone"
   description: "Encontre fotos duplicadas e parecidas no iPhone. Alike escolhe a melhor foto e ajuda a liberar armazenamento. Sem conta, anúncios ou uploads."
 
 nav:
@@ -53,7 +53,7 @@ steps:
       image: step-review
       image_alt: "O mascote comemorando ao lado de uma melhor foto em destaque."
     - title: Limpar
-      body: "Você confirma e as fotos escolhidas vão para \"Apagados recentemente\", onde o iOS as guarda por cerca de 30 dias. Nada é removido sem você dizer."
+      body: "Você confirma e as fotos escolhidas vão para \"Apagados\", onde o iOS as guarda por cerca de 30 dias. Nada é removido sem você dizer."
       image: step-clean
       image_alt: "O mascote comemorando ao lado de uma fototeca organizada."
 
@@ -63,7 +63,7 @@ features:
     - title: Análise no aparelho
       body: "Cada comparação usa o framework Vision da Apple, localmente. Não há envio, nem fila, nem processamento na nuvem."
     - title: Três níveis de sensibilidade
-      body: "Baixo, médio ou alto. Aperte o limite quando quiser só fotos quase idênticas, ou solte para pegar mais."
+      body: "Baixo, médio ou alto. Restrinja o limite para encontrar apenas fotos quase idênticas ou amplie-o para encontrar mais fotos parecidas."
     - title: Detecção da melhor foto
       body: "Escolhida a partir das próprias fotos — nitidez, exposição, rostos e ruído —, então sempre há uma opção sensata a manter. Ela também aprende com as fotos que você mesmo escolhe."
     - title: Revisão guiada
@@ -74,8 +74,8 @@ features:
       body: "Revisadas, restantes, selecionadas e economia estimada, além de um histórico de limpeza agrupado por mês."
     - title: Um layout que combina com você
       body: "Uma grade adaptável que alterna entre uma coluna espaçosa e uma visão mais densa, lembrada entre as aberturas."
-    - title: Treze idiomas, modo escuro
-      body: "Inglês, ucraniano, alemão, francês, espanhol, espanhol da América Latina, português do Brasil, italiano, neerlandês, polonês, turco, chinês tradicional e árabe em todo o app, com modo escuro completo."
+    - title: 18 variantes de idioma e modo escuro
+      body: "Inglês e suas variantes britânica, canadense e australiana, ucraniano, alemão, francês e francês canadense, espanhol e espanhol latino-americano, português do Brasil e de Portugal, italiano, neerlandês, polonês, turco, chinês tradicional e árabe em todo o app, com suporte completo ao modo escuro."
     - title: Melhorar, e desfazer
       body: "Melhore a foto que você mantém com um toque. O original fica na sua fototeca, e um passo o traz de volta."
     - title: Widgets na tela de início e na tela bloqueada
@@ -87,7 +87,7 @@ screenshots:
   pending: "As capturas estão sendo preparadas antes do lançamento."
 
 privacy:
-  title: Privacidade é o ponto inteiro
+  title: A privacidade vem em primeiro lugar
   subtitle: "Limpar fotos significa entregar a um app a sua coleção mais pessoal. O Alike foi feito para que ela nunca precise sair das suas mãos."
   image_alt: "O mascote descansando ao lado de uma fototeca arrumada e finalizada."
   claims:
@@ -98,7 +98,7 @@ privacy:
     - title: Sem análise de uso, sem rastreamento
       body: "Sem eventos de uso, sem identificadores de publicidade, sem SDK de relatório de falhas, sem cookies. O app não faz nenhuma requisição de rede por conta própria."
     - title: Apagar é sempre decisão sua
-      body: "Toda limpeza precisa da sua confirmação, o iOS pergunta uma segunda vez, e as fotos vão para \"Apagados recentemente\"."
+      body: "Toda limpeza precisa da sua confirmação, o iOS pergunta uma segunda vez, e as fotos vão para \"Apagados\"."
   cta: Ler a política de privacidade completa
 
 pricing:
@@ -119,7 +119,7 @@ pricing:
     name: Alike Pro
     badge: Recomendado
     price_note: "Planos anual e mensal, na sua moeda local."
-    trial: 7 dias de teste grátis no plano anual
+    trial: 7 dias de teste grátis no plano anual para novos assinantes qualificados
     features:
       - "Análises ilimitadas"
       - "Limpar seleções inteiras de uma vez"
@@ -139,7 +139,7 @@ faq:
     - q: O Alike envia minhas fotos para algum lugar?
       a: "Não. Toda a comparação acontece no seu aparelho com o framework Vision da Apple, e o app não faz nenhuma requisição de rede por conta própria. A única atividade de saída é feita pela Apple quando você compra ou restaura uma assinatura."
     - q: O Alike apaga fotos sem perguntar?
-      a: "Nunca. Você seleciona o que remover, o Alike pede confirmação, e o iOS mostra a própria confirmação antes de apagar qualquer coisa. As fotos apagadas vão para \"Apagados recentemente\", onde o iOS as guarda por cerca de 30 dias."
+      a: "Nunca. Você seleciona o que remover, o Alike pede confirmação, e o iOS mostra a própria confirmação antes de apagar qualquer coisa. As fotos apagadas vão para \"Apagados\", onde o iOS as guarda por cerca de 30 dias."
     - q: Preciso de uma conta?
       a: "Não. O Alike não tem conta, nem login, nem servidor. Você abre o app e começa a analisar."
     - q: O que o Alike acessa de fato?
@@ -175,7 +175,7 @@ support:
     - "Se a permissão da fototeca está como acesso completo ou acesso limitado"
     - "Se for sobre uma foto aprimorada, se você já tentou \"Voltar ao original\" no Alike ou Editar → Reverter no Fotos da Apple, e se já redefiniu o aprendizado da Melhor Foto nos ajustes do Alike"
   privacy_title: Dúvidas de privacidade
-  privacy_body: "O Alike não tem servidor e não coleta nada, então não há dados de conta para exportar ou apagar. A política de privacidade explica isso por completo, e \"Apagar dados do Alike\" nos Ajustes apaga tudo o que está guardado no seu aparelho."
+  privacy_body: "O Alike não tem servidor e não coleta nada, então não há dados de conta para exportar ou apagar. A política de privacidade explica isso por completo, e \"Apagar dados do Alike\" nos Ajustes apaga apenas os dados locais do Alike. Suas fotos, o acesso às fotos e sua assinatura permanecem intactos."
   subs_title: Assinaturas e reembolsos
   subs_body: "O Alike Pro é vendido pela Apple. Assinaturas, cancelamentos e reembolsos são tratados inteiramente pela sua conta Apple, e não podemos cancelar nem reembolsar no seu lugar."
   subs_manage: "Gerenciar ou cancelar: Ajustes do iOS → seu nome → \"Assinaturas\""

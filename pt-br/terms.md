@@ -7,7 +7,7 @@ page_key: terms
 description: "Termos de Uso do Alike, incluindo a assinatura Alike Pro, cobrança, renovação, teste grátis e cancelamento."
 ---
 
-Última atualização: 6 de setembro de 2026
+Última atualização: 30 de outubro de 2026
 
 Estes Termos de Uso regem o seu uso do app de iOS Alike. O Alike é operado por Oleksandr Solokha, desenvolvedor independente estabelecido na Ucrânia ("nós").
 
@@ -17,7 +17,7 @@ Ao baixar ou usar o Alike, você concorda com estes Termos. Se não concordar, n
 
 ## O que o Alike faz
 
-O Alike analisa as fotos da sua fototeca, compara-as usando o framework Vision da Apple no próprio aparelho e agrupa fotos visualmente parecidas para que você possa revisar cada grupo e escolher quais fotos apagar — e, quando você quiser, aplica uma aprimoramento reversível a uma foto que você mantém.
+O Alike analisa as fotos da sua fototeca, compara-as usando o framework Vision da Apple no próprio aparelho e agrupa fotos visualmente parecidas para que você possa revisar cada grupo e escolher quais fotos apagar — e, quando você quiser, aplica um aprimoramento reversível a uma foto que você mantém.
 
 Toda a análise roda no seu aparelho. Veja nossa [Política de Privacidade](../privacy/) para os detalhes.
 
@@ -33,9 +33,9 @@ Você não pode fazer engenharia reversa, descompilar ou desmontar o app, exceto
 
 O Alike ajuda você a decidir quais fotos apagar. Ele não decide por você, e pode errar: duas fotos que parecem similares para um computador podem não ser intercambiáveis para você.
 
-Você é o único responsável por revisar cada grupo e pelo que escolher apagar. Toda exclusão exige sua confirmação explícita, e o iOS mostra a própria confirmação antes de remover qualquer coisa. As fotos apagadas vão para o seu álbum "Apagados recentemente", onde o iOS as guarda por cerca de 30 dias.
+Você é o único responsável por revisar cada grupo e pelo que escolher apagar. Toda exclusão exige sua confirmação explícita, e o iOS mostra a própria confirmação antes de remover qualquer coisa. As fotos apagadas vão para o seu álbum "Apagados", onde o iOS as guarda por cerca de 30 dias.
 
-Uma aprimoramento só é aplicada depois que você confirma, e o iOS mantém o original para que você possa voltar atrás. A única exceção é uma foto que já tem a edição de outro app: substituir essa edição não pode ser desfeito, e é por isso que o Alike pergunta antes.
+Um aprimoramento só é aplicado depois que você confirma, e o iOS mantém o original para que você possa voltar atrás. A única exceção é uma foto que já tem a edição de outro app: substituir essa edição não pode ser desfeito, e é por isso que o Alike pergunta antes.
 
 **Faça backup da sua fototeca antes de uma limpeza grande.** Não somos responsáveis pelas fotos que você escolher apagar, inclusive aquelas que depois gostaria de ter mantido.
 
@@ -68,7 +68,7 @@ Os preços são exibidos no app na sua moeda local antes da compra e podem varia
 
 Você pode gerenciar ou cancelar sua assinatura a qualquer momento em **Ajustes do iOS → seu nome → "Assinaturas"**, ou pela App Store. Cancelar interrompe as renovações futuras; não reembolsa retroativamente o período em curso, e você mantém o acesso até o fim desse período.
 
-**Não podemos cancelar sua assinatura nem emitir reembolsos por conta própria.** Assinaturas, cancelamentos e reembolsos são tratados inteiramente pela Apple. Os pedidos de reembolso passam pelo [processo de reembolso da Apple](https://support.apple.com/HT204084), e a decisão da Apple é definitiva. Algumas jurisdições concedem direitos legais de arrependimento ou reembolso que a Apple respeita independentemente do acima.
+**Não podemos cancelar sua assinatura nem emitir reembolsos por conta própria.** Assinaturas, cancelamentos e reembolsos são tratados inteiramente pela Apple. Os pedidos de reembolso passam pelo [processo de reembolso da Apple](https://support.apple.com/HT204084), e a decisão da Apple é definitiva. Algumas jurisdições concedem direitos legais de arrependimento ou reembolso que a Apple respeita independentemente do que foi dito acima.
 
 ### Mudanças de preço ou de recursos
 
@@ -92,7 +92,7 @@ Na máxima extensão permitida por lei, não seremos responsáveis por danos ind
 
 Onde a responsabilidade não puder ser excluída, nossa responsabilidade total agregada limita-se ao valor que você pagou pelo Alike nos doze meses anteriores ao evento que deu origem à reclamação.
 
-**Nada nestes Termos limita responsabilidade que não possa ser limitada por lei**, inclusive a responsabilidade por morte ou lesão corporal causada por negligência, por fraude, ou por quaisquer direitos imperativos que a legislação de defesa do consumidor lhe assegure.
+**Nada nestes Termos limita responsabilidade que não possa ser limitada por lei**, inclusive a responsabilidade por morte ou lesão corporal causada por negligência, por fraude, ou por quaisquer direitos imperativos que a legislação de defesa do consumidor assegure a você.
 
 ## Apple
 
@@ -100,7 +100,7 @@ A Apple não é parte destes Termos e não tem obrigação de prestar suporte ao
 
 ## Rescisão
 
-Estes Termos valem até serem rescindidos. Sua licença termina automaticamente se você deixar de cumpri-los. Você pode encerrá-los a qualquer momento excluindo o app. A rescisão não lhe dá direito ao reembolso de qualquer período de assinatura não utilizado, exceto quando exigido por lei ou concedido pela Apple.
+Estes Termos valem até serem rescindidos. Sua licença termina automaticamente se você deixar de cumpri-los. Você pode encerrá-los a qualquer momento excluindo o app. A rescisão não dá a você direito ao reembolso de qualquer período de assinatura não utilizado, exceto quando exigido por lei ou concedido pela Apple.
 
 ## Alterações destes Termos
 
@@ -110,7 +110,7 @@ Podemos atualizar estes Termos. A versão atualizada será publicada nesta pági
 
 Estes Termos são regidos pelas leis da Ucrânia, e as controvérsias ficam sujeitas aos tribunais da Ucrânia.
 
-**Isso não retira de você a proteção da legislação imperativa de defesa do consumidor do seu país de residência.** Se você for consumidor no Brasil, na União Europeia, no Reino Unido ou em outra jurisdição com proteções imperativas ao consumidor, mantém todos os direitos e recursos que essa legislação lhe assegura, inclusive o direito de propor ação perante os tribunais do seu domicílio.
+**Isso não retira de você a proteção da legislação imperativa de defesa do consumidor do seu país de residência.** Se você for consumidor no Brasil, na União Europeia, no Reino Unido ou em outra jurisdição com proteções imperativas ao consumidor, mantém todos os direitos e recursos que essa legislação assegura a você, inclusive o direito de propor ação perante os tribunais do seu domicílio.
 
 ## Contato
 
