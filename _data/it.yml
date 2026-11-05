@@ -135,7 +135,7 @@ faq:
   title: Domande frequenti
   items:
     - q: Alike carica le mie foto da qualche parte?
-      a: "No. Tutto il confronto avviene sul tuo dispositivo con il framework Vision di Apple, e l'app non fa richieste di rete di propria iniziativa. L'unica attività in uscita la gestisce Apple, quando acquisti o ripristini un abbonamento."
+      a: "No. Tutto il confronto avviene sul tuo dispositivo con il framework Vision di Apple, e l'app non fa richieste di rete di propria iniziativa. L'unica attività in uscita la gestisce iOS: acquisto o ripristino di un abbonamento, download da «Foto di iCloud» e link che tocchi."
     - q: Alike elimina foto senza chiedere?
       a: "Mai. Sei tu a scegliere cosa rimuovere, Alike ti chiede conferma e iOS mostra la propria conferma prima che qualcosa venga eliminato. Le foto eliminate finiscono in «Eliminati di recente», dove iOS le conserva per circa 30 giorni."
     - q: Serve un account?

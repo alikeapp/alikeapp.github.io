@@ -134,7 +134,7 @@ faq:
   title: Questions fréquentes
   items:
     - q: Alike envoie-t-elle mes photos quelque part ?
-      a: "Non. Toute la comparaison se fait sur votre appareil avec le framework Vision d'Apple, et l'app n'effectue aucune requête réseau de son propre fait. La seule activité sortante est gérée par Apple lorsque vous achetez ou restaurez un abonnement."
+      a: "Non. Toute la comparaison se fait sur votre appareil avec le framework Vision d'Apple, et l'app n'effectue aucune requête réseau de son propre fait. La seule activité sortante est gérée par iOS : l'achat ou la restauration d'un abonnement, les téléchargements depuis Photos iCloud et les liens que vous touchez."
     - q: Alike peut-elle supprimer des photos sans demander ?
       a: "Jamais. Vous choisissez ce qui doit être supprimé, Alike vous demande de confirmer, et iOS affiche sa propre confirmation avant toute suppression. Les photos supprimées vont dans « Supprimées récemment », où iOS les conserve environ 30 jours."
     - q: Ai-je besoin d'un compte ?

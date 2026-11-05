@@ -141,7 +141,7 @@ faq:
   title: Preguntas frecuentes
   items:
     - q: ¿Alike sube mis fotos a algún sitio?
-      a: "No. Toda la comparación ocurre en tu dispositivo con el framework Vision de Apple, y la app no hace ninguna petición de red por su cuenta. La única actividad saliente la gestiona Apple cuando compras o restauras una suscripción."
+      a: "No. Toda la comparación ocurre en tu dispositivo con el framework Vision de Apple, y la app no hace ninguna petición de red por su cuenta. La única actividad saliente la gestiona iOS: comprar o restaurar una suscripción, descargar de Fotos en iCloud y los enlaces que tocas."
     - q: ¿Alike elimina fotos sin preguntar?
       a: "Nunca. Tú eliges qué quitar, Alike te pide confirmación, y iOS muestra su propia confirmación antes de eliminar nada. Las fotos eliminadas van a «Eliminados», donde iOS las guarda unos 30 días."
     - q: ¿Necesito una cuenta?

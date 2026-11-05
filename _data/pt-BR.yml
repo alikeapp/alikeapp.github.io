@@ -137,7 +137,7 @@ faq:
   title: Perguntas comuns
   items:
     - q: O Alike envia minhas fotos para algum lugar?
-      a: "Não. Toda a comparação acontece no seu aparelho com o framework Vision da Apple, e o app não faz nenhuma requisição de rede por conta própria. A única atividade de saída é feita pela Apple quando você compra ou restaura uma assinatura."
+      a: "Não. Toda a comparação acontece no seu aparelho com o framework Vision da Apple, e o app não faz nenhuma requisição de rede por conta própria. A única atividade de saída é feita pelo iOS: comprar ou restaurar uma assinatura, baixar do Fotos do iCloud e os links em que você toca."
     - q: O Alike apaga fotos sem perguntar?
       a: "Nunca. Você seleciona o que remover, o Alike pede confirmação, e o iOS mostra a própria confirmação antes de apagar qualquer coisa. As fotos apagadas vão para \"Apagados\", onde o iOS as guarda por cerca de 30 dias."
     - q: Preciso de uma conta?

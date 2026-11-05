@@ -135,7 +135,7 @@ faq:
   title: Częste pytania
   items:
     - q: Czy Alike gdzieś wysyła moje zdjęcia?
-      a: "Nie. Całe porównywanie działa na Twoim urządzeniu, na frameworku Vision od Apple, a aplikacja sama z siebie nie wykonuje zapytań sieciowych. Jedyny ruch wychodzący obsługuje Apple, kiedy kupujesz albo przywracasz subskrypcję."
+      a: "Nie. Całe porównywanie działa na Twoim urządzeniu, na frameworku Vision od Apple, a aplikacja sama z siebie nie wykonuje zapytań sieciowych. Jedyny ruch wychodzący obsługuje iOS: kupno lub przywracanie subskrypcji, pobieranie ze Zdjęć iCloud i odnośniki, w które stukasz."
     - q: Czy Alike usuwa zdjęcia bez pytania?
       a: "Nigdy. To Ty wybierasz, co ma zniknąć, Alike prosi o potwierdzenie, a iOS pokazuje własne potwierdzenie, zanim cokolwiek zostanie usunięte. Usunięte zdjęcia trafiają do albumu „Ostatnio usunięte”, gdzie iOS trzyma je około 30 dni."
     - q: Czy potrzebuję konta?

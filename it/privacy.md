@@ -7,7 +7,7 @@ page_key: privacy
 description: "Come Alike tratta le tue foto: analisi sul dispositivo, niente viene caricato online, nessuna analisi statistica, e si elimina solo con la tua conferma."
 ---
 
-Ultimo aggiornamento: 30 ottobre 2026
+Ultimo aggiornamento: 5 novembre 2026
 
 Alike è un'app per iOS che trova e raggruppa le foto visivamente simili nella tua libreria, così puoi controllarle e liberare spazio. Alike è gestita da Oleksandr Solokha, uno sviluppatore indipendente con sede in Ucraina.
 
@@ -80,7 +80,7 @@ Alike non contiene strumenti di analisi statistica, servizi di terze parti per i
 - condivide, vende o affitta dati personali, perché non ne raccoglie di condivisibili;
 - usa cookie o web beacon.
 
-Alike non effettua richieste di rete di propria iniziativa. L'unica attività in uscita la gestisce Apple: gli acquisti in abbonamento tramite StoreKit e l'apertura di link all'App Store o all'email, quando li tocchi.
+Alike non effettua richieste di rete di propria iniziativa. L'unica attività in uscita la gestisce iOS: gli acquisti in abbonamento tramite StoreKit, il download di una foto da «Foto di iCloud» quando Alike ne richiede una che non si trova sul tuo dispositivo e l'apertura di link all'App Store, a siti web o all'email, quando li tocchi.
 
 ## Eliminare le foto
 
