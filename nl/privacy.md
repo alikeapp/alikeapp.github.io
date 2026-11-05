@@ -80,7 +80,7 @@ Alike bevat geen analytics, geen crashrapportagedienst van derden, geen adverten
 - persoonsgegevens delen, verkopen of verhuren, want er worden er geen verzameld die gedeeld kunnen worden;
 - cookies of webbakens inzetten.
 
-Alike doet uit zichzelf geen netwerkverzoeken. De enige uitgaande activiteit regelt Apple: abonnementsaankopen via StoreKit, het downloaden van een foto uit iCloud-foto's wanneer Alike een foto nodig heeft die niet op je apparaat staat, en het openen van App Store- of e-maillinks wanneer je erop tikt.
+Alike doet uit zichzelf geen netwerkverzoeken. De enige uitgaande activiteit regelt iOS: abonnementsaankopen via StoreKit, het downloaden van een foto uit iCloud-foto's wanneer Alike een foto nodig heeft die niet op je apparaat staat, en het openen van App Store-, web- of e-maillinks wanneer je erop tikt.
 
 ## Foto's verwijderen
 

@@ -80,7 +80,7 @@ Alike ne contient aucune analyse d'usage, aucun service tiers de rapport de plan
 - partager, vendre ou louer des informations personnelles, puisqu'elle n'en collecte aucune à partager ;
 - utiliser des cookies ou des pixels espions.
 
-Alike n'effectue aucune requête réseau de son propre fait. La seule activité sortante est gérée par Apple : les achats d'abonnement via StoreKit, le téléchargement d'une photo depuis Photos iCloud lorsqu'Alike a besoin d'une photo absente de votre appareil, et l'ouverture de liens App Store ou e-mail lorsque vous les touchez.
+Alike n'effectue aucune requête réseau de son propre fait. La seule activité sortante est gérée par iOS : les achats d'abonnement via StoreKit, le téléchargement d'une photo depuis Photos iCloud lorsqu'Alike a besoin d'une photo absente de votre appareil, et l'ouverture de liens App Store, web ou e-mail lorsque vous les touchez.
 
 ## Suppression de photos
 

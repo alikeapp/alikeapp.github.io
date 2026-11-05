@@ -80,7 +80,7 @@ O Alike não contém análise de uso, nem serviço de terceiros de relatório de
 - compartilha, vende ou aluga informações pessoais, porque não coleta nenhuma para compartilhar;
 - usa cookies ou web beacons.
 
-O Alike não faz nenhuma requisição de rede por conta própria. A única atividade de saída é feita pela Apple: compras de assinatura pelo StoreKit, o download de uma foto do Fotos do iCloud quando o Alike precisa de uma que não está no seu dispositivo e a abertura de links da App Store ou de e-mail quando você toca neles.
+O Alike não faz nenhuma requisição de rede por conta própria. A única atividade de saída é feita pelo iOS: compras de assinatura pelo StoreKit, o download de uma foto do Fotos do iCloud quando o Alike precisa de uma que não está no seu dispositivo e a abertura de links da App Store, de sites ou de e-mail quando você toca neles.
 
 ## Apagar fotos
 

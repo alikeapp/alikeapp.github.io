@@ -80,7 +80,7 @@ Alike enthält keine Analyse-Tools, keinen Crash-Reporting-Dienst eines Drittanb
 - personenbezogene Daten weitergeben, verkaufen oder vermieten, denn es werden keine erhoben, die sich weitergeben ließen;
 - Cookies oder Web-Beacons einsetzen.
 
-Alike stellt von sich aus keine Netzwerkanfragen. Die einzige ausgehende Aktivität übernimmt Apple: Abo-Käufe über StoreKit, das Laden eines Fotos aus iCloud-Fotos, wenn Alike ein Foto braucht, das nicht auf deinem Gerät liegt, und das Öffnen von App-Store- oder E-Mail-Links, wenn du sie antippst.
+Alike stellt von sich aus keine Netzwerkanfragen. Die einzige ausgehende Aktivität übernimmt iOS: Abo-Käufe über StoreKit, das Laden eines Fotos aus iCloud-Fotos, wenn Alike ein Foto braucht, das nicht auf deinem Gerät liegt, und das Öffnen von App-Store-, Web- oder E-Mail-Links, wenn du sie antippst.
 
 ## Fotos löschen
 

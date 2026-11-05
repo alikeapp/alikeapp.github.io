@@ -134,7 +134,7 @@ faq:
   title: Häufige Fragen
   items:
     - q: Lädt Alike meine Fotos irgendwohin hoch?
-      a: "Nein. Der gesamte Vergleich läuft mit Apples Vision-Framework auf deinem Gerät, und die App stellt von sich aus keine Netzwerkanfragen. Die einzige ausgehende Aktivität übernimmt Apple, wenn du ein Abo kaufst oder wiederherstellst."
+      a: "Nein. Der gesamte Vergleich läuft mit Apples Vision-Framework auf deinem Gerät, und die App stellt von sich aus keine Netzwerkanfragen. Die einzige ausgehende Aktivität übernimmt iOS: Abo-Käufe und -Wiederherstellungen, Downloads aus iCloud-Fotos und Links, die du antippst."
     - q: Löscht Alike Fotos, ohne zu fragen?
       a: "Niemals. Du wählst aus, was entfernt werden soll, Alike bittet dich um Bestätigung, und iOS zeigt seine eigene Bestätigung, bevor etwas gelöscht wird. Gelöschte Fotos wandern nach „Zuletzt gelöscht“, wo iOS sie etwa 30 Tage aufbewahrt."
     - q: Brauche ich einen Account?

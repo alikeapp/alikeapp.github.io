@@ -135,7 +135,7 @@ faq:
   title: Veelgestelde vragen
   items:
     - q: Uploadt Alike mijn foto's ergens naartoe?
-      a: "Nee. De hele vergelijking draait op je apparaat met Apples Vision-framework, en de app doet uit zichzelf geen netwerkverzoeken. De enige uitgaande activiteit regelt Apple, wanneer je een abonnement koopt of herstelt."
+      a: "Nee. De hele vergelijking draait op je apparaat met Apples Vision-framework, en de app doet uit zichzelf geen netwerkverzoeken. De enige uitgaande activiteit regelt iOS: een abonnement kopen of herstellen, downloads uit iCloud-foto's en links waarop je tikt."
     - q: Verwijdert Alike foto's zonder te vragen?
       a: "Nooit. Jij kiest wat weg mag, Alike vraagt je om bevestiging, en iOS toont zijn eigen bevestiging voordat er iets verdwijnt. Verwijderde foto's gaan naar 'Recent verwijderd', waar iOS ze ongeveer 30 dagen bewaart."
     - q: Heb ik een account nodig?

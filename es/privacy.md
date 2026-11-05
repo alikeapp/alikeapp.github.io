@@ -80,7 +80,7 @@ Alike no contiene analítica, ni servicios de terceros de informes de fallos, ni
 - comparte, vende ni alquila información personal, porque no recopila ninguna que compartir;
 - usa cookies ni balizas web.
 
-Alike no hace ninguna petición de red por su cuenta. La única actividad saliente la gestiona Apple: las compras de suscripción mediante StoreKit, la descarga de una foto de Fotos en iCloud cuando Alike necesita una que no está en tu dispositivo y la apertura de enlaces al App Store o de correo cuando los tocas.
+Alike no hace ninguna petición de red por su cuenta. La única actividad saliente la gestiona iOS: las compras de suscripción mediante StoreKit, la descarga de una foto de Fotos en iCloud cuando Alike necesita una que no está en tu dispositivo y la apertura de enlaces al App Store, a sitios web o de correo cuando los tocas.
 
 ## Eliminar fotos
 

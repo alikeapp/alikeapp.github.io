@@ -133,7 +133,7 @@ faq:
   title: Common questions
   items:
     - q: Does Alike upload my photos anywhere?
-      a: "No. All comparison happens on your device using Apple's Vision framework, and the app makes no network requests of its own. The only outbound activity is handled by Apple when you buy or restore a subscription."
+      a: "No. All comparison happens on your device using Apple's Vision framework, and the app makes no network requests of its own. The only outbound activity is handled by iOS: subscription purchases and restores, downloads from your iCloud Photos, and links you tap."
     - q: Will Alike delete photos without asking?
       a: "Never. You select what to remove, Alike asks you to confirm, and iOS shows its own confirmation before anything is deleted. Deleted photos go to Recently Deleted, where iOS keeps them for about 30 days."
     - q: Do I need an account?

@@ -80,7 +80,7 @@ Alike'ta analitik, üçüncü taraf çökme raporlama hizmeti, reklam ya da herh
 - kişisel verileri paylaşmak, satmak ya da kiralamak — paylaşılabilecek hiçbir veri toplanmadığı için;
 - çerez ya da web işaretçisi kullanmak.
 
-Alike kendiliğinden ağ isteği yapmaz. Tek dışa dönük etkinliği Apple yürütür: StoreKit üzerinden abonelik satın alımları, Alike aygıtında olmayan bir fotoğrafa ihtiyaç duyduğunda o fotoğrafın iCloud Fotoğrafları'ndan indirilmesi ve dokunduğunda App Store ya da e-posta bağlantılarının açılması.
+Alike kendiliğinden ağ isteği yapmaz. Tek dışa dönük etkinliği iOS yürütür: StoreKit üzerinden abonelik satın alımları, Alike cihazında olmayan bir fotoğrafa ihtiyaç duyduğunda o fotoğrafın iCloud Fotoğrafları'ndan indirilmesi ve dokunduğunda App Store, web sitesi ya da e-posta bağlantılarının açılması.
 
 ## Fotoğrafları silme
 

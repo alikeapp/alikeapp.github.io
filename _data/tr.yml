@@ -135,7 +135,7 @@ faq:
   title: Sık sorulan sorular
   items:
     - q: Alike fotoğraflarımı bir yere yüklüyor mu?
-      a: "Hayır. Karşılaştırmanın tamamı cihazında, Apple'ın Vision çerçevesiyle çalışır ve uygulama kendiliğinden ağ isteği yapmaz. Tek dışa dönük işlemi, bir abonelik satın aldığında ya da geri yüklediğinde Apple yürütür."
+      a: "Hayır. Karşılaştırmanın tamamı cihazında, Apple'ın Vision çerçevesiyle çalışır ve uygulama kendiliğinden ağ isteği yapmaz. Tek dışa dönük işlemi iOS yürütür: abonelik satın alma ya da geri yükleme, iCloud Fotoğrafları'ndan indirme ve dokunduğun bağlantılar."
     - q: Alike sormadan fotoğraf siler mi?
       a: "Asla. Neyin kaldırılacağını sen seçersin, Alike onay ister ve bir şey silinmeden önce iOS kendi onayını gösterir. Silinen fotoğraflar Son Silinenler'e gider, iOS onları yaklaşık 30 gün orada tutar."
     - q: Hesap gerekiyor mu?
