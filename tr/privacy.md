@@ -7,7 +7,7 @@ page_key: privacy
 description: "Alike fotoğraflarınla nasıl çalışır: cihaz üzerinde analiz, hiçbir şey yüklenmez, analitik yok ve silme yalnızca senin onayınla olur."
 ---
 
-Son güncelleme: 30 Ekim 2026
+Son güncelleme: 5 Kasım 2026
 
 Alike, fotoğraf arşivindeki görsel olarak benzer fotoğrafları bulup gruplayan ve böylece onları gözden geçirip yer açmanı sağlayan bir iOS uygulamasıdır. Alike'ı, Ukrayna merkezli bağımsız bir geliştirici olan Oleksandr Solokha yürütür.
 
@@ -80,7 +80,7 @@ Alike'ta analitik, üçüncü taraf çökme raporlama hizmeti, reklam ya da herh
 - kişisel verileri paylaşmak, satmak ya da kiralamak — paylaşılabilecek hiçbir veri toplanmadığı için;
 - çerez ya da web işaretçisi kullanmak.
 
-Alike kendiliğinden ağ isteği yapmaz. Tek dışa dönük etkinliği Apple yürütür: StoreKit üzerinden abonelik satın alımları ve dokunduğunda App Store ya da e-posta bağlantılarının açılması.
+Alike kendiliğinden ağ isteği yapmaz. Tek dışa dönük etkinliği Apple yürütür: StoreKit üzerinden abonelik satın alımları, Alike aygıtında olmayan bir fotoğrafa ihtiyaç duyduğunda o fotoğrafın iCloud Fotoğrafları'ndan indirilmesi ve dokunduğunda App Store ya da e-posta bağlantılarının açılması.
 
 ## Fotoğrafları silme
 
